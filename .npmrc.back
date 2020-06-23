@@ -1,0 +1,4 @@
+_auth = dHVhbmFuaEBteWNvbnN0YW50LmNvbTpBS0NwNWZUaldIcmNLTjRwWjlyWmtRWkhmaW9rQUNESFhXdEcxVU1najFzWG5uZ1p5bUQxb2l5d21tMmFRcGV2QllieXlGZWc0
+always-auth = true
+email = tuananh@myconstant.com
+registry=https://hub.chemaxon.com/artifactory/api/npm.npmrc/npm/
