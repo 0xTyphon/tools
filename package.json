@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^16.13.1"
+    "lodash": "^4.17.19",
+    "react": "^16.13.1",
+    "util": "^0.12.3"
   }
 }
