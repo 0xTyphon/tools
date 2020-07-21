@@ -15,7 +15,7 @@ inside of folder
 
 3) cover keys to short keys, run: ```$node convert.js```
 
-4) copy content file of ```en.long.js``` to ```en.js``` in lang of project. 
+4) copy content file of ```toCopy.en.js``` to ```en.js``` in lang of project. 
 	
 ## update conntent key: DON'T need run.
 
@@ -25,5 +25,5 @@ inside of folder
 
 3) cover keys to short keys, run: ```$node convert.js```
 
-4) copy content file of ```en.long.js``` to ```en.js``` in lang of project. 
+4) copy content file of ```toCopy.en.js``` to ```en.js``` in lang of project. 
 	
