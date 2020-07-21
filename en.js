@@ -2689,8 +2689,9 @@ const result =  {
   'history.deposit.status.transferring_fiat': 'Transferring Fiat',
   'history.deposit.status.approving': 'Waiting for admin approval',
   'exchangeInputDepositForm.minAmountRequired': 'Please enter an amount larger than {amount} {currency}',
+  'notification.nextLevel.0': ' ',
   'notification.nextLevel.1': 'Gold',
   'notification.nextLevel.2': 'Platinum',
-  'notification.nextLevel.3': 'Diamond'
+  'notification.nextLevel.3': 'Diamond',
 }; 
  module.exports = result;

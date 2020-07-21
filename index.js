@@ -1,5 +1,5 @@
 const source = require('./srouce.en.jon'); // get last of en.json in i18 (crowdin)
-const sourcejs = require('./srouce.en.jss'); // get last of en.json in i18 (crowdin)
+const sourcejs = require('./srouce.en.jss'); // get last of en.js in lang folder
 const _ = require('lodash');
 const util = require('util');
 const en = require('./en');
