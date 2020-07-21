@@ -1,4 +1,5 @@
-const source = require('./srouce.en');
+const source = require('./srouce.en.jon'); // get last of en.json in i18 (crowdin)
+const sourcejs = require('./srouce.en.jss'); // get last of en.json in i18 (crowdin)
 const _ = require('lodash');
 const util = require('util');
 const en = require('./en');
@@ -18,11 +19,18 @@ let dataString = '';
 		
 rd.on('line', async function(line) {
     const keyLine = myRe.exec(line);
-    keyLine && console.log(keyLine[1]);
+    
+    //get key form json source
     if(keyLine && source[keyLine[1]]){
       console.log(source[keyLine[1]]);
       results[keyLine[1]] = source[keyLine[1]];
+    }  //get key form json source
+    else if(keyLine && sourcejs[keyLine[1]]){
+      console.log(sourcejs[keyLine[1]]);
+      results[keyLine[1]] = sourcejs[keyLine[1]];
     }
+    
+
 }).on('close', async function() {
     results = Object.assign({}, en, results);
     dataString = await util.inspect(results, false, 1000, false);

@@ -12,7 +12,7 @@ for(key of Object.keys(en)){
 
 dataString = util.inspect(results, false, 1000, false)
 
-promises.writeFile('en.long.js', `export default ${dataString};`, function(err) {
+promises.writeFile('toCopy.en.js', `export default ${dataString};`, function(err) {
   if(err) console.lo(err);
   console.log('writeFile source done!')
 });	

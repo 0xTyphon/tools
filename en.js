@@ -2683,17 +2683,14 @@ const result =  {
   'me.emailVerification.resent': 'Resend email verification',
   'me.emailVerification.sent': 'Sent email',
   'history.deposit.status.picked': 'In progress',
-  'history.deposit.status.matching': 'Matching',
   'history.deposit.status.pending': 'Order in progress',
-  'history.deposit.status.picked': 'In progress',
   'history.deposit.status.transferred_fiat': 'Your account will be credited once we have received your transfer.',
   'history.deposit.status.transferred_fiat_invest': 'Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.',
-  'history.deposit.status.transferred': 'Successful',
   'history.deposit.status.transferring_fiat': 'Transferring Fiat',
-  'history.deposit.status.cancelled': 'Cancelled',
-  'history.deposit.status.system_cancelled': 'Order timed out',
-  'history.deposit.status.system_rejected': 'Order timed out',
   'history.deposit.status.approving': 'Waiting for admin approval',
-  'exchangeInputDepositForm.minAmountRequired': 'Please enter an amount larger than {amount} {currency}'
+  'exchangeInputDepositForm.minAmountRequired': 'Please enter an amount larger than {amount} {currency}',
+  'notification.nextLevel.1': 'Gold',
+  'notification.nextLevel.2': 'Platinum',
+  'notification.nextLevel.3': 'Diamond'
 }; 
  module.exports = result;

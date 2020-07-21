@@ -1,4 +1,4 @@
-const source = require('./srouce');
+const source = require('./data');
 const _ = require('lodash');
 const util = require('util');
 const en = require('./en');
@@ -33,7 +33,7 @@ const convertLongKeyValues = (obj) => {
 const data = convertLongKeyValues(source);
 
 dataString = util.inspect(data, false, 1000, false);
-promises.writeFile('srouce.en.js', `const result =  ${dataString}; \n module.exports = result;`, function(err) {
+promises.writeFile('srouce.en.jon.js', `const result =  ${dataString}; \n module.exports = result;`, function(err) {
   if(err) console.lo(err);
   console.log('writeFile source done!')
 });

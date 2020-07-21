@@ -3214,7 +3214,7 @@ export default {
   notification: {
     title: 'Notifications',
     markAllRead: 'Mark all as read',
-    nextLevel: { '0': ' ' },
+    nextLevel: { '0': ' ', '1': 'Gold', '2': 'Platinum', '3': 'Diamond' },
     system: {
       inform: { title: 'Information', desc: '{content}' },
       common: {
