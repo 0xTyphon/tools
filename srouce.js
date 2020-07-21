@@ -146,7 +146,7 @@ const srouce = {
     referral: 'Share & Earn $',
     riskStatement: 'Investment Risk Statement',
     securityAndRisk: 'Security & Risk',
-    achievement: 'Achievement',
+    badges: 'Your Badges',
     phone: {
       us: {
         title: 'US: ',
@@ -3130,6 +3130,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         'Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.',
       exchange: {
         availableCredit: 'Available Credit',
+        collateralBalance: 'Collateral Balance',
         stakingTimeMessage: 'Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.',
         exchangeInfo: 'Estimate amount USD (const) you need to borrow',
         exchangeInfoDesc: 'Estimate amount USD (const) you need to borrow',
@@ -3177,7 +3178,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         monthLoan: '{term}-month loans',
         monthsLoan: '{term}-months loans',
         dayLoan: '{term}-day loans',
-        borrowConfirm: 'You’re about to borrow {amount} {currency} for {term} days at {rate}% APR. Click confirm to start your term and receive your loan instantly. Once your term begins, you won’t be able to cancel your loan, but you can repay early from your Accounts page.'
+        borrowConfirm: 'You\'re about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {percent} collateralization. Click confirm to start your term and receive your loan. Once your term begins you won\'t be able to cancel your loan, but you can repay early from your Accounts page.',
+        borrowIsolateConfirm: 'You\'re about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. Click confirm to start your term and receive your loan. Once your term begins you won’t be able to cancel your loan, but you can repay early from your Accounts page',
+        isolate: 'Isolate',
+        isolateDesc: 'Isolate your loan to use a single cryptocurrency as collateral. If you already have a multi-collateral loan the amount of collateral you can isolate may be limited. Check out our FAQs for more details',
       },
       interestTable: {
         title: 'Why you should borrow with Constant.',
@@ -3335,8 +3339,12 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         termUnit1: '{period} months',
         loanAmount: 'Loan amount:',
         collaterals: 'Collateral:',
-        collateralRequired: 'Collateral Required:',
-        collateralBalance: 'Your Collateral Balance:',
+        collateralRequired: 'Collateral required:',
+        collateralRequiredDesc: 'The total amount of collateral needed to secure your loan.',
+        collateralBalance: 'Collateral available',
+        collateralBalanceDesc: 'Your current collateral balance.',
+        collateralToDeposit: 'Collateral to deposit',
+        collateralToDepositDesc: 'The amount of collateral you need to deposit to back your loan.',
         term: 'Term:',
         interestedRate: 'Interest rate:',
         interestedRateValue: '{percent} APR',
@@ -3751,6 +3759,7 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         'Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.',
       exchange: {
         availableCredit: 'Available Credit',
+        collateralBalance: 'Collateral Balance',
         eventBox: 'Borrow now to get 1% discount from the crypto price.',
         stakingTimeMessage: `Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.`,
         exchangeInfo: 'The amount you will borrow in USD',
@@ -3795,10 +3804,10 @@ While Constant processes your deposits and withdrawals free of charge, transacti
         monthLoan: '{term}-month loans',
         monthsLoan: '{term}-months loans',
         dayLoan: '{term}-day loans',
-        borrowConfirm: `
-        <p>You’re about to borrow {amount} {currency} for {term} days at {rate}% APR. We’ll use these funds to buy a maximum of {collateralAmount} {collateral} to be deposited into your coin balance. Click confirm to get your chosen crypto and start your term.</p> 
-        <p>Once your term begins, you won’t be able to cancel your loan, but you can repay early from your Accounts page.</p>
-        `
+        isolate: 'Isolate',
+        isolateDesc: 'Isolate your loan to use a single cryptocurrency as collateral. If you already have a multi-collateral loan the amount of collateral you can isolate may be limited. Check out our FAQs for more details',
+        borrowConfirm: 'You\'re about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {percent} collateralization. Click confirm to start your term and receive your loan. Once your term begins you won\'t be able to cancel your loan, but you can repay early from your Accounts page.',
+        borrowIsolateConfirm: 'You\'re about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. Click confirm to start your term and receive your loan. Once your term begins you won’t be able to cancel your loan, but you can repay early from your Accounts page',
       },
       compareTable: {
         title: 'Constant vs Exchange Margin Accounts.',
@@ -9950,11 +9959,13 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     submitForm: {
       title: 'Submit the link go to your review',
       subtitle: 'Thanks for requesting the {badgeName} badge. Please enter the link that supports your request below. We\'ll get back to you within two business days with a decision.',
+      subtitleTrustpilot: 'Thanks for requesting the Supporter badge. After reviewing us on Trustpilot, please click on the title of your review to get your link. We\'ll get back to you within two business days with a decision.',
       submit: 'Submit',
       cancel: 'Cancel',
       success: 'Submit proof successfully',
-      needKyc: 'You must pass KYC before you can request this badge. <a href="/me/profile">Submit your KYC documents or approval.</>',
-      proofPending: 'Your badge request is still under review. If you\'ve not had a response in two business days, please contact <a href="mailto://tina@myconstant.com">tina@myconstant.com</a>.',
+      errNeedKyc: 'You must pass KYC before you can request this badge. <a href="/me/profile">Submit your KYC documents or approval.</>',
+      errProofPending: 'Your badge request is still under review. If you\'ve not had a response in two business days, please contact <a href="mailto://tina@myconstant.com">tina@myconstant.com</a>.',
+      errCompletePrevious: 'To qualify for {current}, you need to complete {previous} first.',
     },
     title: 'Badges',
     detail: 'Details',

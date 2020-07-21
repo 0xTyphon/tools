@@ -2071,7 +2071,7 @@ const result =  {
   'error.serverCode.need_kyc': 'For your security, please verify your identity before investing or withdrawing fiat (USD, for example). This step isn’t required for stablecoins.',
   'home1.lendingSection.form.gotoVerifyKyc': 'Go to verify now',
   'home.constantLoan.errorMessages.constantAmountRequired': 'Amount is required to make a borrow!',
-  'home.constantLoan.exchange.borrowConfirm': 'You’re about to borrow {amount} {currency} for {term} days at {rate}% APR. Click confirm to start your term and receive your loan instantly. Once your term begins, you won’t be able to cancel your loan, but you can repay early from your Accounts page.',
+  'home.constantLoan.exchange.borrowConfirm': "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {percent} collateralization. Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your Accounts page.",
   'home.constantLoan.transaction.title': 'Almost there.',
   'home.constantLoan.transaction.message': 'To finalize your loan, please send your collateral to the following wallet address.',
   'home.constantLoan.transaction.cryptoAddress': '{currency} address:',
@@ -2098,10 +2098,7 @@ const result =  {
   'home.constantLoan.transaction.backOrderBook': 'Back',
   'home.constantLoan.transaction.backAccount': 'Done',
   'me.emailVerification.pleaseVerify': 'Please verify your email to activate your account',
-  'home.constantC2CLoan.exchange.borrowConfirm': '\n' +
-    '        <p>You’re about to borrow {amount} {currency} for {term} days at {rate}% APR. We’ll use these funds to buy a maximum of {collateralAmount} {collateral} to be deposited into your coin balance. Click confirm to get your chosen crypto and start your term.</p> \n' +
-    '        <p>Once your term begins, you won’t be able to cancel your loan, but you can repay early from your Accounts page.</p>\n' +
-    '        ',
+  'home.constantC2CLoan.exchange.borrowConfirm': "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate}. Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your Accounts page",
   'home.constantLoan.transaction.exchangeMaxAmount': 'Exchange Max Amount',
   'home.constantC2CLoan.exchange.minTermTooltip': 'This is the minimum amount of time you want to borrow.',
   'me.accountLevel.alert.sendEmailCodeSuccess': 'We sent a verification code to your email',
@@ -2309,6 +2306,394 @@ const result =  {
   'user.forgetPassword.confirmPassword': 'Retype new password',
   'user.register.passwordTooWeak': 'Please try a stronger password with at least 2 of the following: 1 lowercase character, 1 uppercase character, 1 numeric character, and 1 special character.',
   'user.forgetPassword.requiredPassword': 'Password is required',
-  'user.forgetPassword.notValidConfirmPassword': 'Confirm password not match'
+  'user.forgetPassword.notValidConfirmPassword': 'Confirm password not match',
+  'error.serverCode.loginFailure': 'Please make sure your email and password are correct.',
+  'memberShip.member': 'Member',
+  'yourReferral.banner.desc': '\n' +
+    '        <h2>Get a free ${referralReward} bonus for every friend you refer.</h2>\n' +
+    '        <p>Tell your friends and family about us and get <strong>${referralReward} free</strong> for each person who signs up and deposits. You also earn <strong>{referralFlexReward}% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>\n' +
+    '      ',
+  'yourReferral.whatForYou.title': 'What’s in it for you?',
+  'yourReferral.whatForYou.formula.0': 'for everyone who signs up and passes KYC',
+  'yourReferral.whatForYou.formula.1': ' ',
+  'yourReferral.whatForYou.formula.2': 'of your friends’ Flex interest',
+  'yourReferral.whatForYou.formula.3': ' ',
+  'yourReferral.whatForYou.formula.4': 'for your friend if they’re a US resident',
+  'yourReferral.whatForYou.desc': '\n' +
+    '        <div class="section-desc-title">INVITE FRIENDS, EARN TOGETHER</div>\n' +
+    '        <div><strong>Earn ${referralReward} for every friend who signs up and passes KYC</strong>, paid instantly, and with no limits.</div>\n' +
+    '        <div><strong>Then earn {referralFlexReward}% of their Flex interest</strong>, capped at a generous $1,000,000.</div>\n' +
+    '        <div><strong>Your friend gets a 30-day ${kYCTrialAmount} trial bonus</strong> and keeps the interest.</div>\n' +
+    '      ',
+  'yourReferral.whatForYou.data.0.title': 'EARN TOGETHER',
+  'yourReferral.whatForYou.data.0.desc': 'With you and your friends’ earnings linked, you can grow your money faster, while your friends can refer people to multiple their earnings, too.',
+  'yourReferral.whatForYou.data.1.title': 'HELP PEOPLE INVEST BETTER',
+  'yourReferral.whatForYou.data.1.desc': 'Help your friends and family overcome the challenges of today’s investment market. Constant is an ideal way to diversify and enjoy secured returns without fees.',
+  'yourReferral.whatForYou.data.2.title': 'IMPROVE THE PLATFORM',
+  'yourReferral.whatForYou.data.2.desc': 'Every new customer we welcome helps fuel new features and products, giving you a range of investment options, rates, and tools to reach all your financial goals. ',
+  'yourReferral.whatForThem.title': 'What’s in it for them?',
+  'yourReferral.whatForThem.content.left': '\n' +
+    '          <p class="content-title">${kYCTrialAmount} trial bonus</p>\n' +
+    '          <p class="content-desc">When your referree signs up and passes KYC, we’ll deposit a $1,500. bonus in their account. This lasts for 30 days*, at the end of which, we reclaim the bonus but your referee keeps all the interest.</p>\n' +
+    '          <p class="content-desc font-italic">*30-day trial bonus (US residents only).</p>\n' +
+    '        ',
+  'yourReferral.whatForThem.content.right': '\n' +
+    '          <div>\n' +
+    '            <div class="content-title">4% APY</div>\n' +
+    '            <p class="content-desc">on all Flex deposits</p>\n' +
+    '          </div>\n' +
+    '          <div>\n' +
+    '            <div class="content-title">7.5% APR</div>\n' +
+    '            <p class="content-desc">on <strong>crypto-backed</strong> investments</p>\n' +
+    '          </div>\n' +
+    '          <div>\n' +
+    '            <div class="content-title">11% APR</div>\n' +
+    '            <p class="content-desc">on Loan Originator investments</p>\n' +
+    '          </div>\n' +
+    '        ',
+  'yourReferral.howItWorks.title': 'How it works',
+  'yourReferral.howItWorks.data.0.title': ' ',
+  'yourReferral.howItWorks.data.0.desc': 'Share your unique referral link by email or social media.',
+  'yourReferral.howItWorks.data.1.title': ' ',
+  'yourReferral.howItWorks.data.1.desc': 'Your referee signs up using your link and verifies their ID (KYC).',
+  'yourReferral.howItWorks.data.2.title': ' ',
+  'yourReferral.howItWorks.data.2.desc': 'You get ${referralReward} paid instantly to your Constant account.',
+  'yourReferral.howItWorks.data.3.title': ' ',
+  'yourReferral.howItWorks.data.3.desc': 'Your referee earns interest on a 30-day ${kYCTrialAmount} trial bonus.',
+  'yourReferral.howItWorks.data.4.title': ' ',
+  'yourReferral.howItWorks.data.4.desc': 'You get {referralFlexReward}% of their Flex earnings, compounded and paid every second.',
+  'yourReferral.howItWorks.desc': '\n' +
+    '      <p>There are <strong>no limits</strong> to the number of people you can refer for the ${referralReward} bonus.</p>\n' +
+    '      <p>Your Flex earnings are capped at $1,000,000.</p>',
+  'user.login.loginFailureCaptchaV2': "Please check I'm not a robot.",
+  'affiliates.applyForm.userName': 'Your name',
+  'affiliates.applyForm.userEmail': 'Your email address',
+  'affiliates.applyForm.notValidEmail': 'Invalid email address',
+  'affiliates.applyForm.requestSuccess': 'Successfully Requested',
+  'home.constantLoan.exchange.collateralBalance': 'Collateral Balance',
+  'home.constantC2CLoan.exchange.collateralBalance': 'Collateral Balance',
+  'home.constantC2CLoan.exchange.isolate': 'Isolate',
+  'home.constantC2CLoan.exchange.isolateDesc': 'Isolate your loan to use a single cryptocurrency as collateral. If you already have a multi-collateral loan the amount of collateral you can isolate may be limited. Check out our FAQs for more details',
+  'home.constantC2CLoan.exchange.borrowIsolateConfirm': "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your Accounts page",
+  'footer.badges': 'Your Badges',
+  'badges.title': 'Badges',
+  'badges.intro.title': '<h1>Get the recognition you deserve with <br/>Constant Badges</h1>',
+  'badges.intro.desc': 'Earn badges and cash rewards of up to $100 when you use or promote our platform. From passing KYC to referring friends, there’s a badge to recognize all of your achievements. How many will you earn?',
+  'badges.group.getting_started': 'Getting Started',
+  'badges.detail': 'Details',
+  'badges.share': 'Share',
+  'badges.conditions': 'Conditions',
+  'badges.group.warming_up': 'Warming Up',
+  'badges.group.referring': 'Referring',
+  'badges.group.winning': 'Winning',
+  'badges.term.title': 'Terms and Conditions',
+  'badges.term.0': 'Any abuse of the Constant Badges reward program will result in immediate disqualification. Abuse includes spam, cheating, or any other fraud intended to earn badges illegitimately.',
+  'badges.term.1': 'Any content you produce about Constant to claim a badge must not denigrate, disparage, or otherwise damage the Constant brand.',
+  'badges.term.2': 'You earn a reward for each badge once only.',
+  'badges.term.3': 'The maximum reward you can earn from the Constant Badges program is $500 in total.',
+  'badges.term.4': 'Only one Constant account per badge. Duplicate Constant accounts are disqualified.',
+  'badges.term.5': "Badges are awarded retroactively but rewards apply to qualifying activities after July 16th 2020 only. For example, if you passed KYC before July 16th 2020, you'll earn the “Member” badge but not the reward.",
+  'badges.term.6': 'Constant reserves the right to withhold rewards and change the terms and conditions of Constant Badges at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.',
+  'badges.term.note': 'Effective as of 2020/07/16 00:00 AM (GMT+0)',
+  'badges.intro.almostDoneTitle': 'Hi, {name}',
+  'badges.intro.almostDoneDesc': '<p>Earn some quick wins with the badges on the right.</p><p>View all of your earned badges and progress towards others below.</p>',
+  'badges.request': 'Request',
+  'badges.group.getting_started_desc': "It's easy to earn your first four badges – just set up your account, secure it, and deposit at least $100 to earn 4% APY. That's it!",
+  'badges.submitForm.errNeedKyc': 'You must pass KYC before you can request this badge. <a href="/me/profile">Submit your KYC documents or approval.</>',
+  'badges.group.referring_desc': 'We love it when you share your experiences with others. These badges reward you for referring friends and family, writing or streaming about us, or reviewing the platform for your community.',
+  'me.emailSetting.emailConfirmation.two2faRequired': 'Please <a href="/me/securities" class="underline">enable 2-Factor Authorization</a> before {action} email notifications.',
+  'yourReferral.terms.normal': '\n' +
+    '        <h3 class="semiBold">Terms and Conditions</h3>\n' +
+    '        <p>1. Your referral interest is calculated on the interest your friends earn with our Flex account.</p>\n' +
+    '        <p>2. Referral interest is paid to you by Constant and does not deduct from your friends’ earned Flex interest.</p>\n' +
+    '        <p>3. The amount you earn depends on how your friends use the platform:</p>\n' +
+    '        <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>\n' +
+    '        <p>4. You can invite as many friends as you like.</p>\n' +
+    '        <p>5. Your referral earnings are paid in USD, directly into your Constant account.</p>\n' +
+    '        <p>6. The maximum you can earn is $1,000,000.</p>\n' +
+    '        <p>7.You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>\n' +
+    "        <p>8. When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p>\n" +
+    '        <p>9. For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p>\n' +
+    '        <p>10. Constant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>\n' +
+    '        <p class="bold effective">Effective as of 2020/02/17 00:00 AM (GMT+0)</p>\n' +
+    '      ',
+  'yourReferral.whatForYou.trialBonus': 'a ${kYCTrialAmount} trial bonus',
+  'affiliates.whyBecome.trialBonus': 'a ${kYCTrialAmount} trial bonus',
+  'home.loanOriginator.listApplications.settingStatus.active': 'Active',
+  'home.loanOriginator.listApplications.stop': 'Deactivate',
+  'home.loanOriginator.listApplications.dialog.reInvestSetting.messageConfirm.true': '\n' +
+    '                <p>When your term ends, your interest and principal will return to your Constant account. You will then have to add more funds to invest in new loans.</p>\n' +
+    '                <p>Are you sure you want to disable auto-reinvest?</p>\n' +
+    '              ',
+  'home.loanOriginator.listApplications.dialog.reInvestSetting.confirm': 'Yes',
+  'home.loanOriginator.listApplications.dialog.reInvestSetting.cancel': 'No',
+  'loanOriginators.manualInvest.headers.id': 'Loan ID',
+  'loanOriginators.manualInvest.headers.loanOriginator': 'Loan Originator (LO)',
+  'loanOriginators.manualInvest.headers.issuedDate': 'Issued Date',
+  'loanOriginators.manualInvest.headers.loanType': 'Loan Type',
+  'loanOriginators.manualInvest.headers.market': 'Market',
+  'loanOriginators.manualInvest.headers.constantRate': 'Constant Rating',
+  'loanOriginators.manualInvest.headers.remainingTerm': 'Remaining Term',
+  'loanOriginators.manualInvest.headers.interestRate': 'Interest rate %',
+  'loanOriginators.manualInvest.headers.loanAmount': 'Loan Amount / Available for investment',
+  'loanOriginators.manualInvest.headers.loanStatus': 'Loan Status',
+  'home.loanOriginator.listApplications.investedLoanStatus.default': 'Default',
+  'loanOriginators.manualInvest.footer.desc': 'Showing {start} - {end} of {total} selected entries',
+  'loanOriginators.autoInvest.form.investConfirmation.diversified': '\n' +
+    "            <p>You've selected the {name} Plan and a maximum investment amount of {amount} USD. Our {name} Plan is designed for that perfect balance between risk and reward. Do you want to proceed?</p>\n" +
+    '            <p style="color: red">Please note all future deposits will be invested in your {name} Plan up to the maximum investment amount. You can deactivate this Investment Plan or change the details at any time.</p>',
+  'home.loanOriginator.listApplications.dialog.reInvestSetting.messageConfirm.false': '\n' +
+    '                <p>When your term ends, your interest and principal will be reinvested in new loans automatically. Your can disable this feature at any time.</p>\n' +
+    '                <p>Enable auto-reinvest?</p>\n' +
+    '              ',
+  'home.loanOriginator.listApplications.reInvest_desc': 'This option enables investors to automatically invest borrower repayments (such as an interest or principal repayment) in new loans. This maximizes your returns by minimizing the amount of time your money spends idle.',
+  'loanOriginators.autoInvest.form.investConfirmation.shortTerm': '\n' +
+    "            <p>You've selected the {name} Plan and a maximum investment amount of {amount} USD. Our {name} Plan offers the highest rates and shortest terms, but is higher risk than our Diversified Plan. Do you want to proceed?</p>\n" +
+    '            <p style="color: red">Please note all future deposits will be invested in your {name} Plan up to the maximum investment amount. You can deactivate this Investment Plan or change the details at any time.</p>',
+  'home.loanOriginator.listApplications.stopConfirm.shortTerm': '\n' +
+    '            <p>If you deactivate your Best Interest Investment Plan, your available funds – if any – will not be used to invest in new loans.</p> \n' +
+    '            <p>Deactivate your Best Interest Investment Plan?</p>\n' +
+    '          ',
+  'home.loanOriginator.listApplications.noInvestedLoans': 'No invested loan found',
+  'home.loanOriginator.listApplications.dialog.reInvestSetting.autoRenewInvestmentSuccess.true': 'Disabled Auto Reinvest successfully',
+  'home.loanOriginator.listApplications.dialog.reInvestSetting.autoRenewInvestmentSuccess.false': 'Enabled Auto Reinvest successfully',
+  'home.loanOriginator.listApplications.investmentStatus.ready': 'Initial',
+  'home.loanOriginator.listApplications.investmentStatus.activating': 'Fund in transit',
+  'home.loanOriginator.listApplications.investmentStatusDesc.ready': "The Fund is being held at Constant's approved custodian's bank account waiting to be wired to the Loan Originator on the next Settlement Date which is by <strong>{time}</strong>.",
+  'loanOriginators.manualInvest.details.backToLoan': 'Back to loan list',
+  'loanOriginators.manualInvest.details.loanId': 'LOAN ID',
+  'loanOriginators.manualInvest.details.loanDetails': ' Loan Details',
+  'loanOriginators.manualInvest.headers.currency': 'Currency',
+  'loanOriginators.manualInvest.headers.availableForInvestment': 'Loan Amount available for investment',
+  'loanOriginators.manualInvest.headers.originalTerm': 'Original Term',
+  'loanOriginators.manualInvest.headers.buyBackGuarantee': 'Buy back Guarantee',
+  'loanOriginators.manualInvest.headers.paymentType.title': 'Payment Type',
+  'loanOriginators.manualInvest.headers.issueDate': 'Issue Date',
+  'loanOriginators.manualInvest.headers.maturityDate': 'Maturity Date',
+  'loanOriginators.manualInvest.headers.loanPaymentStatus': 'Loan Status',
+  'loanOriginators.manualInvest.details.loanOriginatorDetails': 'Loan Originator Details',
+  'loanOriginators.manualInvest.details.loanOriginator': 'Loan Originator (LO)',
+  'loanOriginators.manualInvest.details.legalEntity': 'Legal Entity',
+  'loanOriginators.manualInvest.details.paymentSchedule': 'Payment Schedule',
+  'home.loanOriginator.listApplications.paymentScheduleHeaders.date': 'Date',
+  'home.loanOriginator.listApplications.paymentScheduleHeaders.principal': 'Principal',
+  'home.loanOriginator.listApplications.paymentScheduleHeaders.interest': 'Interest',
+  'home.loanOriginator.listApplications.paymentScheduleHeaders.total': 'Total',
+  'home.loanOriginator.listApplications.paymentScheduleHeaders.paymentReceived': 'Payment Received',
+  'home.loanOriginator.listApplications.paymentScheduleHeaders.paymentDate': 'Payment Date',
+  'home.loanOriginator.listApplications.paymentScheduleHeaders.status': 'Status',
+  'loanOriginators.manualInvest.headers.paymentType.interest_only.title': 'Interest only',
+  'loanOriginators.manualInvest.headers.paymentType.interest_only.desc': 'Interest only – fixed, regular payments of interest only. The principal is then repaid at the end of the term.',
+  'loanOriginators.manualInvest.details.availableAmount': 'Available amount:',
+  'loanOriginators.manualInvest.details.yourInvestment': 'Your investment: ',
+  'home.loanOriginator.listApplications.paymentScheduleStatus.paid': 'Paid',
+  'home.loanOriginator.listApplications.paymentScheduleStatus.scheduled': 'Schedule',
+  'loanOriginators.manualInvest.details.paymentSchedule_desc': 'The detailed schedule of loan payments for each Loan that is contractually set at the start of the orginal Loan Agreement or Loan Assignment Agreement. In the Assignment Agreement, this refers to the Claim Payment Schedule which is the schedule payments calculated based on the Loan Amount transferred to the Investor from the Loan Originator.',
+  'loanOriginators.manualInvest.details.loanOriginator_desc': 'The lending company that originates and services the loans listed on the Constant marketplace.',
+  'loanOriginators.manualInvest.headers.buyBackGuarantee_desc': "A buy-back guarantee is a guarantee issued by the loan originator to the investor for a particular loan, where the loan orginator promises to rebuy the loan from the investor if that particular loan is delayed by more than 60 days. The buy-back guarantee is given at an individual loan level and is marked with the symbol of a shield. If a loan with a buy-back guarantee is delayed by more than 60 days, the loan originator will buy back the loan from the investor at the nominal value of outstanding principal plus accrued interest. A buy-back guarantee is only as good as the loan originator's financial capability to honor such guarantee at the time of a buy-back event being triggered. A buy-back guarantee is NOT a guarantee from the Constant marketplace and its associates.",
+  'loanOriginators.manualInvest.headers.originalTerm_desc': 'This is the period  (in months and days).',
+  'loanOriginators.manualInvest.headers.remainingTerm_desc': 'This is the period measured in months and days left until the full repayment of the loan is set. ',
+  'loanOriginators.manualInvest.headers.interestRate_desc': 'The interest rate offered for investing in available loans. The interest rate is generally stated in the form of the annual NET interest rate paid to the investor. This is the final interest rate earned by the investor which reflects all potential fees, commission, and reserves (if any).',
+  'loanOriginators.manualInvest.headers.availableForInvestment_desc': 'This is the total amount available to investors for investment consisting of remaining principal of the loan and any accrued interests.',
+  'loanOriginators.manualInvest.headers.market_desc': 'The flags indicate the countries where the loan originator has issued the loans listed on the Constant marketplace.',
+  'loanOriginators.manualInvest.headers.loanPaymentStatus_desc': 'Loan status indicates whether the borrower is repaying on schedule. Loan status include Current, 1-15 days late, 16-30 days late, 31-60 days late, Default (more than 60 days late), Bad Debt (when the Loan is in default but the Loan Originator fails to honor its Buy Back Guarantee.',
+  'loanOriginators.manualInvest.headers.maturityDate_desc': "The date date on which a borrower's final loan payment is due and the loan is scheduled to be fully repaid.",
+  'loanOriginators.manualInvest.headers.issueDate_desc': 'The date when the loan was originally issued by the loan originator to the borrower.',
+  'loanOriginators.manualInvest.headers.paymentType.desc': '\n' +
+    '          Payment type: \n' +
+    '          <p>1. Installments (Full amortization) – fixed, regular payments of the interest and principal. Full amortization reduces the outstanding loan balance to zero at the end of the term.</p>\n' +
+    '          <p>2. Interest only – fixed, regular payments of interest only. The principal is then repaid at the end of the term.</p>\n' +
+    '          ',
+  'loanOriginators.manualInvest.summary.summaryTitle': 'Investment Summary',
+  'loanOriginators.manualInvest.headers.investmentAmount': 'Your investment amount',
+  'loanOriginators.manualInvest.summary.desc': '\n' +
+    '        <ul>\n' +
+    '        <li>Once you click Confirm your investment will be sent to our loan origination partner. Please allow <strong>3-10  business days</strong> for funds to be transferred.</li>\n' +
+    '        <li>Once funds have been transferred successfully to our loan origination partner, your loan status will change to <strong>Active</strong> and you will start earning interest.</li>\n' +
+    '        </ul>\n' +
+    '        ',
+  'loanOriginators.manualInvest.summary.totalTitle': 'Total amount:',
+  'loanOriginators.manualInvest.summary.confirm': 'Confirm',
+  'loanOriginators.manualInvest.headers.loanType_desc': 'The icons below represent different types of loans offered by the loan originator on the Constant marketplace, such as personal loans, business loans, car loans, mortgages, and invoice financing.',
+  'loanOriginators.manualInvest.headers.issuedDate_desc': 'The date when the loan was originally issued by the loan originator to the borrower.',
+  'loanOriginators.manualInvest.headers.loanOriginator_desc': 'The lending company that originates and services the loans listed on the Constant marketplace.',
+  'loanOriginators.manualInvest.headers.id_desc': 'The loan ID is assigned by the loan originator.',
+  'loanOriginators.manualInvest.headers.constantRate_desc': 'Constant assigns ratings for loan originators that offer loans on the Constant marketplace. Constant Ratings range from "A+" to "C-" reflecting the creditworthiness/counterparty risks of the loan originators. An "A+" rating represents the highest creditworthiness while a "C-" rating is the lowest allowable creditworthiness rating for a loan to be listed on the Constant marketplace.',
+  'loanOriginators.manualInvest.headers.loanAmount_desc': 'This is the total loan amount and the current outstanding balance. If the borrower has already made some principal repayments, the amount will differ.',
+  'loanOriginators.manualInvest.summary.investSuccess': " Thank you! We've begun transferring your funds to the borrower. Once this is complete, we'll send you an email to confirm.",
+  'loanOriginators.manualInvest.headers.currency_desc': 'The denominated currency of the Claim Right',
+  'memberShip.whatYouHad': 'Your membership activity',
+  'memberShip.whatYouHadDone': '{type} ${total} in {date}.',
+  'memberShip.invest': 'Invest',
+  'memberShip.or': 'Or',
+  'memberShip.borrow': 'Borrow',
+  'memberShip.whatYouHadDesc': 'Your investment and borrowing activity for the past six months. Here you can see how much you need to invest or borrow to qualify for membership rewards.',
+  'memberShip.invested': 'Invested',
+  'me.bankInfo.alert.success': 'Successfully Updated',
+  'error.serverCode.createdBankExisted': 'Nice! This bank account has already been registered.',
+  'proLending.matchedOrders.titleDesc': 'View your matched orders here.',
+  'proLending.borrowBooking.exchange.amountRequired': 'Amount is required to make a borrow!',
+  'home.constantC2CLoan.errorMessages.notEnoughBalance': 'Please deposit sufficient collateral to secure your loan request',
+  'home.constantC2CLoan.errorMessages.notEnoughCollateralLink': ' here.',
+  'proLending.borrowBooking.exchange.amountMin': 'The minimum amount that you can borrow is {amount}',
+  'proLending.borrowBooking.errorMsgs.notEnoughBalance': 'Your Available Credit is {amount} USD. Please deposit sufficient collateral to credit your requested amount',
+  'proLending.borrowC2CBooking.exchange.collateralRequired': 'Collateral amount is required to make a borrow!',
+  'proLending.borrowC2CBooking.exchange.amountRequired': 'Amount is required to make a borrow!',
+  'proLending.borrowC2CBooking.exchange.exchangeInfoDesc': 'The amount of USD you’re borrowing to buy your chosen crypto. We search multiple exchanges to find the best price for you',
+  'proLending.borrowC2CBooking.exchange.minTermTooltip': 'The duration of your loan term. Repay in cash, stablecoins, or cryptocurrency before your term ends to get your collateral back',
+  'proLending.borrowC2CBooking.exchange.amountLabelDesc': 'Choose a cryptocurrency and amount. You might receive a little less of your chosen cryptocurrency if prices change before completing the sale.',
+  'proLending.investBooking.form.termDesc': 'If there is a borrower looking for a shorter loan at your rates, you will be partially matched. We will continue to find you a match for the rest of the term.',
+  'yourReferral.banner.invite': 'Invite now',
+  'user.login.notValidUsername': 'Invalid email address',
+  'home.constantLoan.errorMessages.minimumBorrowAmount': 'The minimum amount that you can borrow is {amount} {symbol}',
+  'home.constantLoan.exchange.isolate': 'Isolate',
+  'home.constantLoan.exchange.isolateDesc': 'Isolate your loan to use a single cryptocurrency as collateral. If you already have a multi-collateral loan the amount of collateral you can isolate may be limited. Check out our FAQs for more details',
+  'home.constantLoan.exchange.borrowIsolateConfirm': "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. Click confirm to start your term and receive your loan. Once your term begins you won’t be able to cancel your loan, but you can repay early from your Accounts page",
+  'home.constantLoan.transaction.collateralToDeposit': 'Collateral to deposit',
+  'home.constantLoan.transaction.collateralBalanceDesc': 'Your current collateral balance.',
+  'home.constantLoan.transaction.collateralRequiredDesc': 'The total amount of collateral needed to secure your loan.',
+  'home.constantLoan.transaction.collateralToDepositDesc': 'The amount of collateral you need to deposit to back your loan.',
+  'home1.lendingSection.confirm.paymentMethods.0.desc': '\n' +
+    '              <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.</p>\n' +
+    '              <p>If you don’t bank with any of those listed, no problem. You can transfer from any bank account, but please note that your bank might charge you a fee.</p>\n' +
+    '            ',
+  'home1.lendingSection.confirm.paymentMethods.0.referNoteDesc': 'To streamline the deposit process, please include this reference number when making the bank transfer.',
+  'home1.lendingSection.confirm.paymentMethods.-1.desc': '\n' +
+    '              <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n' +
+    '              <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n' +
+    '            ',
+  'home1.lendingSection.confirm.paymentMethods.-1.paymentInfo': '\n' +
+    '              <div class="row">\n' +
+    '                <div class="col">\n' +
+    '                    <label>Amount</label>\n' +
+    '                    <p>{amount} USD</p>\n' +
+    '                </div>\n' +
+    '                <div class="col">\n' +
+    '                    <label>Send to</label>\n' +
+    '                    <p>{email}</p>\n' +
+    '                </div>\n' +
+    '              </div>\n' +
+    '              <div class="row">\n' +
+    '                <div class="col">\n' +
+    '                    <label>Full name</label>\n' +
+    '                    <p>{name}</p>\n' +
+    '                </div>\n' +
+    '                <div class="col">\n' +
+    '                    <label>Type</label>\n' +
+    '                    <p>{type}</p>\n' +
+    '                </div>\n' +
+    '              </div>\n' +
+    '            ',
+  'home1.lendingSection.confirm.paymentMethods.-1.note': 'Before making a transfer, please enter the full name associated with the Zelle account here',
+  'home1.lendingSection.confirm.paymentMethods.-1.placeholder': 'Please enter the full name here',
+  'home1.lendingSection.confirm.paymentMethods.-1.submitButton': 'Submit',
+  'home1.lendingSection.confirm.paymentMethods.-1.referNoteDesc': 'To streamline the deposit process, please include this reference number when making the bank transfer.',
+  'home1.lendingSection.confirm.paymentMethods.-2.desc': '\n' +
+    '              <p>We’ve partnered with Checkbook to make bank transfers even easier.</p>\n' +
+    '              <p>Instead of logging into your bank account separately, enter your login details here and Checkbook will arrange the transfer automatically by ACH/digital check.</p>\n' +
+    '              <p>Neither Constant nor Checkbook store your details, and the service is free.</p>\n' +
+    '            ',
+  'home1.lendingSection.confirm.paymentMethods.-2.referNoteDesc': ' ',
+  'home1.lendingSection.confirm.paymentMethods.-3.desc': '\n' +
+    '              <p>Google Pay is a fast, safe payment tool linked to your Google account. To get started, log into Google Pay and link a payment method (such as a bank card). Then enter the details on the right in your Google Pay account and click send.</p>\n' +
+    '            ',
+  'home1.lendingSection.confirm.paymentMethods.-3.paymentInfo': '\n' +
+    '              <div class="row">\n' +
+    '                <div class="col">\n' +
+    '                    <label>Amount</label>\n' +
+    '                    <p>{amount} USD</p>\n' +
+    '                </div>\n' +
+    '                <div class="col">\n' +
+    '                    <label>Send to</label>\n' +
+    '                    <p>{email}</p>\n' +
+    '                </div>\n' +
+    '              </div>\n' +
+    '            ',
+  'home1.lendingSection.confirm.paymentMethods.-3.note': 'Before making a transfer, please enter the email associated with your Google Pay account below:',
+  'home1.lendingSection.confirm.paymentMethods.-3.placeholder': 'Please enter the email here',
+  'home1.lendingSection.confirm.paymentMethods.-3.submitButton': 'Submit',
+  'home1.lendingSection.confirm.paymentMethods.-3.referNoteDesc': 'To streamline the deposit process, please include this reference number when sending your money using Google Pay.',
+  'home1.lendingSection.confirm.paymentMethods.-4.desc': '\n' +
+    '              <p>Venmo is a fast, easy, and convenient payment app from the makers of PayPal </p>\n' +
+    '              <p>To use Venmo, simply download the app and send your money to us using the details on the right-hand side of this page.</p>\n' +
+    '            ',
+  'home1.lendingSection.confirm.paymentMethods.-4.paymentInfo': '\n' +
+    '              <div class="row">\n' +
+    '                <div class="col">\n' +
+    '                    <label>Amount</label>\n' +
+    '                    <p>{amount} USD</p>\n' +
+    '                </div>\n' +
+    '                <div class="col">\n' +
+    '                    <label>Send to</label>\n' +
+    '                    <p>{phone}</p>\n' +
+    '                </div>\n' +
+    '              </div>\n' +
+    '            ',
+  'home1.lendingSection.confirm.paymentMethods.-4.note': 'Before making a transfer, please enter the phone number associated with your Venmo account below:',
+  'home1.lendingSection.confirm.paymentMethods.-4.placeholder': 'Please enter the phone number here',
+  'home1.lendingSection.confirm.paymentMethods.-4.submitButton': 'Submit',
+  'home1.lendingSection.confirm.paymentMethods.-4.referNoteDesc': 'To streamline the deposit process, please include this reference number when sending your money using Venmo.',
+  'home1.lendingSection.confirm.paymentMethods.-5.desc': '\n' +
+    '              <p>PayPal is one of the world’s most trusted and secure payment services. To get started, create a free PayPal account and link a card or bank account. Then enter the details on the right from your PayPal account and click send.</p>\n' +
+    '            ',
+  'home1.lendingSection.confirm.paymentMethods.-5.paymentInfo': '\n' +
+    '              <div class="row">\n' +
+    '                <div class="col">\n' +
+    '                    <label>Amount</label>\n' +
+    '                    <p>{amount} USD</p>\n' +
+    '                </div>\n' +
+    '                <div class="col">\n' +
+    '                    <label>Send to</label>\n' +
+    '                    <p>{email}</p>\n' +
+    '                </div>\n' +
+    '              </div>\n' +
+    '              <div class="row">\n' +
+    '                <div class="col">\n' +
+    '                    <label>Full name</label>\n' +
+    '                    <p>{name}</p>\n' +
+    '                </div>\n' +
+    '                <div class="col">\n' +
+    '                    <label>Type</label>\n' +
+    '                    <p>{type}</p>\n' +
+    '                </div>\n' +
+    '              </div>\n' +
+    '            ',
+  'home1.lendingSection.confirm.paymentMethods.-5.note': 'Before making a transfer, please enter the email associated with your PayPal account below:',
+  'home1.lendingSection.confirm.paymentMethods.-5.placeholder': 'Please enter the email here',
+  'home1.lendingSection.confirm.paymentMethods.-5.submitButton': 'Submit',
+  'home1.lendingSection.confirm.paymentMethods.-5.referNoteDesc': 'To streamline the deposit process, please include this reference number when sending your money using PayPal.',
+  'home1.lendingSection.confirm.paymentMethods.-6.desc': '\n' +
+    '            <p class="title"><strong>Important info for Prime Trust transfers</strong></p>\n' +
+    '            <p class="desc">Prime Trust only accepts wire transfers, not ACH. Make sure you complete a wire transfer from your personal bank account or we might be unable to locate your funds.</p>\n' +
+    '            <p class="desc">For more information on transferring to Prime Trust, <a href="https://blog.myconstant.com/how-to-wire-your-money-to-constant-via-prime-trust/" target="_blank" class="underline">check out our blog</a>. It’s vital you include your reference number when you wire the money so we can match it to your account.</p>\n' +
+    '            <p class="desc">When you have made your transfer, please send an email with your wire receipt to <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a> to help us speed up the process. Your wire receipt, sometimes called a transaction confirmation, holds all the details of the transfer and might be emailed to you or be made available through online banking.</p>\n' +
+    '            ',
+  'home1.lendingSection.confirm.paymentMethods.-6.referNoteDesc': 'To receive your deposit you MUST include this reference number when your wire your funds from your bank.',
+  'home1.lendingSection.confirm.zelle': '\n' +
+    '          <p>Amount: {amount} USD</p>\n' +
+    '          <p>Send to: <strong>finance@myconstant.com</strong></p>\n' +
+    '          <p>Full name: <strong>Const LLC</strong></p>\n' +
+    '          <p>Type: <strong>Personal Account</strong></p>\n' +
+    '          <br /><br />\n' +
+    '          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>\n' +
+    "          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n" +
+    '        ',
+  'me.proSaving.listApplications.alert.depositSavingSuccess': "Thanks! Your investment order was successful. Your term has begun and you've started earning interest.",
+  'user.register.notValidEmail': 'Invalid email address',
+  'me.emailVerification.resent': 'Resend email verification',
+  'me.emailVerification.sent': 'Sent email',
+  'history.deposit.status.picked': 'In progress',
+  'history.deposit.status.matching': 'Matching',
+  'history.deposit.status.pending': 'Order in progress',
+  'history.deposit.status.picked': 'In progress',
+  'history.deposit.status.transferred_fiat': 'Your account will be credited once we have received your transfer.',
+  'history.deposit.status.transferred_fiat_invest': 'Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.',
+  'history.deposit.status.transferred': 'Successful',
+  'history.deposit.status.transferring_fiat': 'Transferring Fiat',
+  'history.deposit.status.cancelled': 'Cancelled',
+  'history.deposit.status.system_cancelled': 'Order timed out',
+  'history.deposit.status.system_rejected': 'Order timed out',
+  'history.deposit.status.approving': 'Waiting for admin approval',
+  'exchangeInputDepositForm.minAmountRequired': 'Please enter an amount larger than {amount} {currency}'
 }; 
  module.exports = result;

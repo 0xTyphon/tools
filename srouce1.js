@@ -7397,6 +7397,6 @@ const srouce = {
             "done": "Done"
         }
     }
-}
+};
 
  module.exports = srouce;
