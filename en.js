@@ -94,10 +94,10 @@ const result =  {
   'testimonials.title': 'Let’s get to know each other better',
   'testimonials.desc': 'Transparency is important to us. Below, you’ll find reviews, testimonials, case studies, and other important information so you can use our platform with confidence.',
   'testimonials.viewAll': 'View All',
-  'newHome.crypto.desc': "Fully secured, fully backed. All lending is secured by crypto collateral and loan originators' buy-back guarantee.",
+  'newHome.crypto.desc': "All lending includes either cryptocurrency collateral or the loan originator’s buy-back guarantee to protect your investment against borrower defaults.",
   'newHome.whyItBetter.title': 'Why it’s better',
   'newHome.whyItBetter.desc': 'Unlike traditional P2P platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both.',
-  'newHome.whyItBetter.content.0.title': 'Fully secured',
+  'newHome.whyItBetter.content.0.title': 'Protection',
   'newHome.whyItBetter.content.0.desc': 'Crypto collateral and buy-back guarantees protect your investments from borrower defaults so you can rely on great returns.',
   'newHome.whyItBetter.content.1.title': 'Free withdrawals',
   'newHome.whyItBetter.content.1.desc': 'We never charge you a penny for accessing your own money. Withdraw as much as you like for free.',
@@ -119,10 +119,11 @@ const result =  {
   'newHome.howItWorks.content.3.desc': 'We work with trusted, vetted loan originators to connect you with more borrowers and better returns.',
   'newHome.howItWorks.content.4.title': 'Custodial partner',
   'newHome.howItWorks.content.4.desc': 'We use Prime Trust to safely manage the transfer and storage of investor funds and borrower collateral.',
-  'newHome.banner.title1': 'Experience fully secured <span style="color:#F5A623;">peer-to-peer</span> lending.',
+  'newHome.banner.title1': 'Experience multi-market <span style="color:#F5A623;">peer-to-peer</span> lending.',
   'newHome.banner.subTitle': '\n' +
-    '        <p>Your investments are fully backed by borrower collateral, <br/>smart contracts, or buy-back guarantee.</p>\n' +
-    '        <p>While not on loan or waiting for a match, your funds earn an automatic 4% APY, and can be withdrawn anytime for free.</p>\n' +
+    '        <p>Invest in people and businesses around the world for up to 11% APR. All lending is backed by borrower collateral or buy-back guarantee. Earn across multiple markets, spreading risk and maximizing reward.</p>\n' +
+    '        <p>Or, borrow against 40+ cryptocurrencies to get the cash you need, instantly. Your crypto is securely held until you repay. Unlock the value of your crypto without selling up. </p>\n' +
+    '        <p>While not on loan or waiting for a match, your funds earn an automatic 4% APY, and you can withdraw anytime for free. So no downtime, no wasted earnings.</p>\n' +
     '      ',
   'newHome.banner.intro.youtube.title': 'Fully Secured Peer To Peer Lending - How It Works',
   'newHome.banner.invest.title': '\n' +
@@ -219,12 +220,11 @@ const result =  {
   'seo.borrow.description': 'Get an easy online loan for as low as 7% APR through our fully secured peer-to-peer lending platform. No credit checks, no paperwork. Borrow money online and get a loan today!',
   'home.constantLoan.intro.content': '\n' +
     '        <p>Borrow the way you want</p>\n' +
-    '        <p class="h1">Set your own rates.</p>\n' +
-    '        <p class="h1">Borrow against 60+ cryptocurrencies.</p>\n' +
-    '        <h1>Get cash for crypto without needing to sell.</h1>\n' +
+    '        <p class="h1">Borrow from just 7% APR.</p>\n' +
+    '        <p class="h1">Use 40+ cryptos as collateral.</p>\n' +
+    '        <h1>Get cash for crypto without selling up.</h1>\n' +
     '        <p/>\n' +
-    '        <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and returned to you when you repay. Free withdrawals in cash or stablecoins.</p>\n' +
-    '        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href="https://blog.myconstant.com/multi-crypto-loans" target="_blank" class="underline">our blog</a> and FAQs for more details.</p>\n' +
+    '        <p>Borrow against your cryptocurrency portfolio from just 7% APR. You choose the term, we match you with an investor, and you can withdraw your loan in USD or stablecoins. Your collateral is securely stored and returned to you when you repay.</p>\n' +
     '        ',
   'support.newTitle': '\n' +
     "      <h6>Questions? Let's get on a call.</h6>\n" +
@@ -241,9 +241,9 @@ const result =  {
   'home1.lendingSection.form.textRegister': 'Sign up',
   'home1.lendingSection.form.btnBorrow': 'to borrow now',
   'home.constantLoan.what.title': 'Why borrow with us?',
-  'home.constantLoan.what.whatCaption0': 'Set your own rates',
+  'home.constantLoan.what.whatCaption0': 'Flexible terms',
   'home.constantLoan.what.whatDesc0': '\n' +
-    '          <p>Our P2P matching algorithm replaces centralized banks and allows you to tap into true market demand.</p>\n' +
+    '          <p>Borrow any amount from 1-9 months, giving you the flexibility to repay at a time that suits you. </p>\n' +
     '        ',
   'home.constantLoan.what.whatCaption1': 'Protected by Ethereum',
   'home.constantLoan.what.whatDesc1': '\n' +
@@ -259,12 +259,12 @@ const result =  {
     '        ',
   'ourPartners.title': 'Our Partners',
   'home.constantLoan.howItWorks.title': 'How it works',
-  'home.constantLoan.howItWorks.title1': '1. Set your own terms',
-  'home.constantLoan.howItWorks.desc1': 'Choose how much you want to borrow and for how long, and then select the interest rate you want to pay.',
-  'home.constantLoan.howItWorks.title2': '2. Wait to be matched',
-  'home.constantLoan.howItWorks.desc2': 'The Constant matching algorithm finds investors that can lend you the money you need at the rates you want.',
+  'home.constantLoan.howItWorks.title1': '1. Choose a term',
+  'home.constantLoan.howItWorks.desc1': 'Borrow any amount for 30, 90, or 180 days. The shorter your term, the lower the interest.',
+  'home.constantLoan.howItWorks.title2': '2. Deposit your collateral',
+  'home.constantLoan.howItWorks.desc2': 'Send collateral to secure your loan. You can combine different cryptocurrencies to meet the minimum collateral value.',
   'home.constantLoan.howItWorks.title3': '3. Get cash to spend',
-  'home.constantLoan.howItWorks.desc3': 'Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while supported collateral is held in Prime Trust cold storage. Collateral can be withdrawn once you repay.',
+  'home.constantLoan.howItWorks.desc3': 'Once you’ve sent your collateral, you can withdraw your loan in fiat or stablecoins. Your collateral is securely stored and returned to you when you repay.',
   'home.constantLoan.faqs.question1': 'How long will it take to get my loan?',
   'home.constantLoan.faqs.answer1': '\n' +
     '        <p>As soon as we receive your collateral, we’ll deposit your loan into your Constant account. You can withdraw your loan as fiat to your bank account or as a stablecoin to your wallet address. All withdrawals are free.</p>\n' +
@@ -406,15 +406,15 @@ const result =  {
   'home1.lendingSection.intro.content': '\n' +
     '          <p>Invest the way you want</p>\n' +
     '          <h1>Earn up to 7.5% APR now.</h1>\n' +
-    '          <p class="h1">Invest from as little as $50.</p>\n' +
-    '          <p class="h1">All lending secured.</p>\n' +
+    '          <p class="h1">Start investing from just $50.</p>\n' +
+    '          <p class="h1">Experience crypto-backed P2P lending.</p>\n' +
     '          <p />\n' +
     '          <p>\n' +
-    '          Your investments are fully backed by borrower collateral. Unmatched portions earn an automatic 4% APY, and can be withdrawn anytime.\n' +
+    '          Lend to cryptocurrency holders across the world for a return of up to 7.5% APR. You choose the term, we match you with a borrower, and you keep the interest. All lending is backed by collateral, which is sold if the borrower defaults.\n' +
     '          </p>\n' +
     '        ',
   'home1.lendingSection.intro.youtube.title': 'Why invest with Constant?',
-  'home1.lendingSection.intro.desc.1': 'Fully secured by collateral',
+  'home1.lendingSection.intro.desc.1': 'All lending backed by crypto',
   'home1.lendingSection.intro.desc.2': 'Your choice of term',
   'home1.lendingSection.intro.desc.3': '24/7 customer service',
   'home1.lendingSection.form.text1': 'Set your own lending terms',
@@ -436,14 +436,14 @@ const result =  {
   'deposit.what.title': 'Why invest with us?',
   'home1.whatCaption0': 'Match instantly',
   'home1.whatDesc0': '\n' +
-    '      <p>When you invest, your funds contribute to a lending pool from which borrowers get loans in return for interest. The longer you leave your money in the pool, the more interest you earn. Our algorithm replaces the centralized inefficiency of the current banking system, paying you interest the moment you deposit.</p>\n' +
+    '      <p>Your investment funds a lending pool from which borrowers get loans in return for interest. The longer you leave your money in the pool, the more interest you earn.</p>\n' +
     '    ',
   'home1.whatCaption1': 'Invest or insure deposits',
   'home1.whatDesc1': '      <p>Earn 4% APY on your balance with Flex. Or, insure your balance up to $130,000,000 with our custodial partner, Prime Trust.</p>\n' +
     '      <br />\n' +
     '      <a href="/blog/flex-or-prime-trust-constant" target="_blank">Your balance, your choice.</a>',
   'home1.whatCaption3': 'Collateral backed',
-  'home1.whatDesc3': '<p>We strictly require every loan to be 150% backed by collateral. For someone to borrow $10,000, they have to put up $15,000 in collateral value.</p>\n' +
+  'home1.whatDesc3': '<p>Every loan is up to 200% backed by cryptocurrency collateral. To borrow $10,000, for example, a borrower must put up to $20,000 worth of cryptocurrency into escrow. Then if the borrower defaults, we sell the collateral to repay you. </p>\n' +
     '      <br />\n' +
     '      <p>So if borrowers default, you don’t lose a cent.</p>\n' +
     '      <br />\n' +
@@ -499,6 +499,8 @@ const result =  {
   'seo.cryptoCredit.title': 'Crypro Credit - Peer-to-Peer Lending Platform - MyConstant',
   'seo.cryptoCredit.keyword': 'crypto credit',
   'seo.cryptoCredit.description': 'Borrow cash against your crypto to buy new coins. You set the rate and term, we match you with an investor, and then deposit your chosen coin. No exchanges. No trading fees. Best rates.',
+  'home.constantLoan.cryptosDesc': 'Your collateral is securely stored in either a Prime Trust cold wallet, an Ethereum smart contract, or a password-protected web wallet until you repay your loan.',
+  'home.constantC2CLoan.cryptosDesc': 'Your collateral is securely stored in either a Prime Trust cold wallet, an Ethereum smart contract, or a password-protected web wallet until you repay your loan.',
   'home.constantC2CLoan.intro.content': '\n' +
     '        <p>Fast and easy crypto credit</p>\n' +
     '        <h1>Trade the margin.</h1>\n' +
@@ -529,9 +531,9 @@ const result =  {
   'home.constantC2CLoan.compareTable.withdraw': 'Free withdraws',
   'home.constantC2CLoan.compareTable.description': '(?) We search multiple exchanges to find the best price for your chosen cryptocurrency. <br/>Exchange margin accounts typically only use the price on that exchange, so you can miss out on better deals elsewhere. ',
   'home.constantC2CLoan.why.title': 'Why borrow with us?',
-  'home.constantC2CLoan.why.whatCaption0': 'Set your own rates',
+  'home.constantC2CLoan.why.whatCaption0': 'Flexible terms',
   'home.constantC2CLoan.why.whatDesc0': '\n' +
-    '          <p>Our P2P matching algorithm allows you to tap into true market demand. Choose the market rate to guarantee a match, or go higher to match even faster.</p>\n' +
+    '          <p>Borrow any amount from 1-9 months, giving you the flexibility to buy your chosen crypto and then repay at a time that suits you.</p>\n' +
     '        ',
   'home.constantC2CLoan.why.whatCaption1': 'No exchanges',
   'home.constantC2CLoan.why.whatDesc1': '\n' +
@@ -585,10 +587,10 @@ const result =  {
     '        <p>With Constant Crypto Credit, you set the rate and term to a level you’re comfortable with. Then, we search multiple exchanges to find you the best price, and faster, so you don’t ever miss out on better deals. All trading and withdrawals are free, too.</p> \n' +
     '        <p>While with us, your collateral is held in a Prime Trust wallet insured to $100M. Most exchanges store collateral in uninsured hot wallets which are less secure and don’t cover you against theft.</p> \n' +
     '        ',
-  'deposit.howItWorks.title1': 'Make a deposit',
-  'deposit.howItWorks.desc1': 'Make a bank transfer of USD, or wallet transfer of one of our supported stablecoins. If you have a different fiat currency, we convert it for you.',
+  'deposit.howItWorks.title1': 'Deposit your funds',
+  'deposit.howItWorks.desc1': 'Create your deposit order and then transfer your funds in USD or a supported stablecoin. If you send a different fiat currency, we’ll convert it for you. ',
   'deposit.howItWorks.title2': 'Earn {interest}% APY',
-  'deposit.howItWorks.desc2': 'Your deposits earn {interest}% APY the moment they hit your account. The only time this changes is if you then invest them at a different rate.',
+  'deposit.howItWorks.desc2': 'Your funds supply liquidity to decentralized exchanges and lending pools. In return, you earn {interest}% APY, compounded and paid into your account every second.',
   'deposit.howItWorks.title3': 'Watch your money grow',
   'deposit.howItWorks.desc3': 'Your balance compounds and increases every second. So no downtime, no wasted earnings.',
   'footer.cta.type6.title': '<h3>Open an account and grow your money</h3>',
@@ -600,11 +602,11 @@ const result =  {
     '      <p>Do more with your money</p>\n' +
     '      <h1>Enjoy 50x better interest<br/>than a savings account<sup>*</sup>.</h1>\n' +
     '      <p/>\n' +
-    '      <p>Earn {interest}% APY on any amount. You deposit, we lend on your behalf, and you keep the interest. All loans secured by collateral and you can withdraw anytime for free. Grow your money without locking it in.</p>\n' +
+    '      <p>Earn {interest}% APY through decentralized lending and liquidity pools. You deposit, we lend on your behalf, and you keep the interest. Unlimited free withdrawals and no fees. Grow your money without locking it in.</p>\n' +
     '      <p><sup>*</sup>Comparison based on data from <a href=https://www.valuepenguin.com/banking/average-bank-interest-rates">ValuePenguin</a>.</p>\n' +
     '    ',
   'deposit.learnMore': 'Learn more here',
-  'deposit.intro.desc.1': 'Fully secured by collateral',
+  'deposit.intro.desc.1': 'Multiple markets',
   'deposit.intro.desc.2': 'Compounded & paid every second',
   'deposit.intro.desc.3': 'Unlimited free withdrawals',
   'exchangeInputDepositForm.howMuchDoYouWantToDeposit': 'How much do you want to grow?',
@@ -634,9 +636,9 @@ const result =  {
   'deposit.what.whatCaption0': 'Immediate growth',
   'deposit.what.whatDesc0': '<p>{interest}% APY on all deposits. See your earnings reflected immediately.</p>',
   'deposit.what.whatCaption1': 'Zero downtime',
-  'deposit.what.whatDesc1': '<p>Earn {interest}% APY before you start investing. Compounded and paid every second.</p>',
-  'deposit.what.whatCaption2': 'No limits',
-  'deposit.what.whatDesc2': '<p>No minimum or maximum deposit, no minimum or maximum term. </p>',
+  'deposit.what.whatDesc1': '<p>Earn {interest}% APY between fixed-term investments. Compounded and paid every second.</p>',
+  'deposit.what.whatCaption2': 'Unlimited earnings',
+  'deposit.what.whatDesc2': '<p>No maximum deposit, no maximum term. Invest from just $10 and withdraw anytime. </p>',
   'deposit.what.whatCaption3': 'Withdraw anytime',
   'deposit.what.whatDesc3': '<p>To any local bank account or wallet address, as often as you like.</p>',
   'deposit1.faqs.question1': 'What is Flex?',
@@ -2203,9 +2205,9 @@ const result =  {
   'user.account.membershipReward': 'MEMBERSHIP REWARDS >>',
   'headerBar.extraMenuMobile.invest.title': 'Invest',
   'headerBar.extraMenuMobile.investFlex.title': 'Fiat Flex',
-  'headerBar.extraMenuMobile.investFlex.desc': '{percent}% APY. Fully secured. Withdraw anytime.',
-  'headerBar.extraMenuMobile.investCustom.title': 'Fiat Custom',
-  'headerBar.extraMenuMobile.investCustom.desc': 'Your terms. Best rates. Fully secured.',
+  'headerBar.extraMenuMobile.investFlex.desc': '{percent}% APY. Withdraw anytime. No fees.',
+  'headerBar.extraMenuMobile.investCustom.title': 'Crypto-backed',
+  'headerBar.extraMenuMobile.investCustom.desc': 'Your terms. Best rates. Backed by crypto.',
   'headerBar.extraMenuMobile.investFlexCrypto.title': 'Crypto Lend',
   'headerBar.extraMenuMobile.investFlexCrypto.desc': 'Get 10% APY on BTC, ETH, and BNB.',
   'headerBar.extraMenuMobile.investLO.title': 'Loan Originator',
@@ -2315,16 +2317,21 @@ const result =  {
     '        <p>Tell your friends and family about us and get <strong>${referralReward} free</strong> for each person who signs up and deposits. You also earn <strong>{referralFlexReward}% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>\n' +
     '      ',
   'yourReferral.whatForYou.title': 'What’s in it for you?',
-  'yourReferral.whatForYou.formula.0': 'for everyone who signs up and passes KYC',
+  'yourReferral.whatForYou.formula.0': 'For every friend who signs up and deposits',
   'yourReferral.whatForYou.formula.1': ' ',
   'yourReferral.whatForYou.formula.2': 'of your friends’ Flex interest',
   'yourReferral.whatForYou.formula.3': ' ',
   'yourReferral.whatForYou.formula.4': 'for your friend if they’re a US resident',
   'yourReferral.whatForYou.desc': '\n' +
     '        <div class="section-desc-title">INVITE FRIENDS, EARN TOGETHER</div>\n' +
-    '        <div><strong>Earn ${referralReward} for every friend who signs up and passes KYC</strong>, paid instantly, and with no limits.</div>\n' +
+    '        <div><strong>Earn ${referralReward} for every friend who signs up and deposits</strong>, paid instantly, and with no limits.</div>\n' +
     '        <div><strong>Then earn {referralFlexReward}% of their Flex interest</strong>, capped at a generous $1,000,000.</div>\n' +
-    '        <div><strong>Your friend gets a 30-day ${kYCTrialAmount} trial bonus</strong> and keeps the interest.</div>\n' +
+    '        <div><strong>Your friend gets a 30-day ${kYCTrialAmount} trial bonus</strong> and keeps the interest (US referees only).</div>\n' +
+    '      ',
+  'yourReferral.whatForYou.descNotUS': '\n' +
+    '        <div class="section-desc-title">INVITE FRIENDS, EARN TOGETHER</div>\n' +
+    '        <div><strong>Earn {referralFlexReward}% of their Flex interest</strong>, capped at a generous $1,000,000.</div>\n' +
+    '        <div><strong>Your friend gets a 30-day ${kYCTrialAmount} trial bonus</strong> and keeps the interest (US referees only).</div>\n' +
     '      ',
   'yourReferral.whatForYou.data.0.title': 'EARN TOGETHER',
   'yourReferral.whatForYou.data.0.desc': 'With you and your friends’ earnings linked, you can grow your money faster, while your friends can refer people to multiple their earnings, too.',
@@ -2405,17 +2412,18 @@ const result =  {
   'me.emailSetting.emailConfirmation.two2faRequired': 'Please <a href="/me/securities" class="underline">enable 2-Factor Authorization</a> before {action} email notifications.',
   'yourReferral.terms.normal': '\n' +
     '        <h3 class="semiBold">Terms and Conditions</h3>\n' +
-    '        <p>1. Your referral interest is calculated on the interest your friends earn with our Flex account.</p>\n' +
-    '        <p>2. Referral interest is paid to you by Constant and does not deduct from your friends’ earned Flex interest.</p>\n' +
-    '        <p>3. The amount you earn depends on how your friends use the platform:</p>\n' +
+    '<p>1. The bonus is paid when your referee signs up, passes KYC, and deposits.</p>\n' +
+    '        <p>2. Your referral interest is calculated on the interest your friends earn with our Flex account.</p>\n' +
+    '        <p>3. Referral interest is paid to you by Constant and does not deduct from your friends’ earned Flex interest.</p>\n' +
+    '        <p>4. The amount you earn depends on how your friends use the platform:</p>\n' +
     '        <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>\n' +
-    '        <p>4. You can invite as many friends as you like.</p>\n' +
-    '        <p>5. Your referral earnings are paid in USD, directly into your Constant account.</p>\n' +
-    '        <p>6. The maximum you can earn is $1,000,000.</p>\n' +
-    '        <p>7.You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>\n' +
-    "        <p>8. When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p>\n" +
-    '        <p>9. For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p>\n' +
-    '        <p>10. Constant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>\n' +
+    '        <p>5. You can invite as many friends as you like.</p>\n' +
+    '        <p>6. Your referral earnings are paid in USD, directly into your Constant account.</p>\n' +
+    '        <p>7. The maximum you can earn is $1,000,000.</p>\n' +
+    '        <p>8.You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>\n' +
+    "        <p>9. When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p>\n" +
+    '        <p>10. For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p>\n' +
+    '        <p>11. Constant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>\n' +
     '        <p class="bold effective">Effective as of 2020/02/17 00:00 AM (GMT+0)</p>\n' +
     '      ',
   'yourReferral.whatForYou.trialBonus': 'a ${kYCTrialAmount} trial bonus',
