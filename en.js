@@ -94,7 +94,7 @@ const result =  {
   'testimonials.title': 'Let’s get to know each other better',
   'testimonials.desc': 'Transparency is important to us. Below, you’ll find reviews, testimonials, case studies, and other important information so you can use our platform with confidence.',
   'testimonials.viewAll': 'View All',
-  'newHome.crypto.desc': "All lending includes either cryptocurrency collateral or the loan originator’s buy-back guarantee to protect your investment against borrower defaults.",
+  'newHome.crypto.desc': 'All lending includes either cryptocurrency collateral or the loan originator’s buy-back guarantee to protect your investment against borrower defaults.',
   'newHome.whyItBetter.title': 'Why it’s better',
   'newHome.whyItBetter.desc': 'Unlike traditional P2P platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both.',
   'newHome.whyItBetter.content.0.title': 'Protection',
@@ -3040,6 +3040,460 @@ const result =  {
   'memberShip.pointExpiredDate': '{value} points will expire on {date}',
   'memberShip.tierProgressDesc': 'Earn {points} points by {date} to maintain {level} membership',
   'memberShip.getLevelDate': 'From {date}',
-  'memberShip.history.redeemDesc': "Membership rewards are paid after you've reviewed us on TrustPilot. If you've reviewed us already, your rewards will go straight into your account. Otherwise, click the Unlock Your Rewards button below to submit your TrustPilot username and claim your rewards."
+  'memberShip.history.redeemDesc': "Membership rewards are paid after you've reviewed us on TrustPilot. If you've reviewed us already, your rewards will go straight into your account. Otherwise, click the Unlock Your Rewards button below to submit your TrustPilot username and claim your rewards.",
+  'loanOriginators.faqs.question4': 'How do you choose loan originators?',
+  'loanOriginators.faqs.answer4': "<p>Before we onboard a lending company onto our platform, we conduct a thorough due diligence process and analysis of the lending company's profile, background, corporate documents, lending practice and credit policy, historical loan performance as well as their financial strengths. </p>\n" +
+    "<p>During this process, we review how the lending company lends to its borrowers, how it conducts its loan monitoring as well as how it pursues the debt recovery process in the event of default. We analyze the key indicators of the lending company's operational control, risk management, and most importantly, its financial health via its audited and interim financial statements.</p>\n" +
+    "<p>We also take into account management experience and qualifications and the lending company's transparency and openness. All assessments of these indicators are input into our rating model and we assign a Constant Rating to the lending company.</p>",
+  'loanOriginators.faqs.question5': 'How do you calculate a loan originator’s Constant Rating?',
+  'loanOriginators.faqs.answer5': '\n' +
+    '        <p>We give every loan originator a rating between A and D, A being the best. We only work with C-rated companies and above. Our rating system gives you a guide to the quality of the loans and the loan originator themselves, which determines the risk of lending to that loan originator. </p>\n' +
+    '<p>To calculate a rating, we consider many factors, including (but not limited to):</p> \n' +
+    '<ul>\n' +
+    '<li>Years of operation.</li>\n' +
+    '<li>Country of operation.</li>\n' +
+    '<li>Share of the market.</li>\n' +
+    '<li>Reputation.</li>\n' +
+    '<li>Growth rate.</li>\n' +
+    '<li>Risk management.</li>\n' +
+    '<li>Transparency.</li>\n' +
+    '<li>Financial strength.</li>\n' +
+    '</ul>\n' +
+    '<p>We feed all the factors into an algorithmic rating system that produces a final result. However, this rating is not fixed – we regularly review and update ratings so you always have the most up-to-date information before you invest.</p>\n' +
+    '<p><a href="#">Learn more about the Constant Rating system.</a> </p> \n' +
+    '        ',
+  'loanOriginators.faqs.question6': 'What’s the difference between a Loan Originator loan and a crypto-backed loan?',
+  'loanOriginators.faqs.answer6': '\n' +
+    '        <p>Loan Originator loans offer longer terms (6-15 months) and better interest rates (up to 11% APR). Depending on the loan originator, you might also receive monthly repayments that you can withdraw immediately, whereas crypto-backed borrowers usually repay at the end of the term.</p> \n' +
+    '<p>A Loan Originator loan is secured by the loan originator. If borrowers default for a minimum of 60 days, the loan originator will buy back the loan. This returns your principal and earned profit up to and including the 60-day default period.</p> \n' +
+    '<p>A crypto-backed loan is secured by collateral. If borrowers default or their collateral falls too much in value, we sell it to repay you. This is usually instant, depending on how quickly we can sell the collateral.</p> \n' +
+    '<p>Those are the key differences, but you can see a full comparison on our Loan Originator homepage.</p> \n' +
+    '\n' +
+    '        ',
+  'loanOriginators.faqs.question7': 'How do you protect my investment on a Loan Originator loan?',
+  'loanOriginators.faqs.answer7': '\n' +
+    '        <p>First, you have the loan originator’s buy-back guarantee. If borrowers default for 60 days, the loan originator will buy back the loan to return your principal and earned profit up to and including the 60-day period. However, since you rely on the loan originator’s ability to buy back the loan, we’ve given each of them a rating.</p> \n' +
+    '<p>The Constant Rating is based on the loan originator’s business and performance, including the default rate, their stake in each loan, and types of loan offered. You can use the Constant Rating to choose between loan originators, but please remember it is just a guide. A high Constant Rating doesn’t guarantee the loan originator will buy back the loan in all cases.</p>\n' +
+    '<p>Like all investment, use caution and diversify.</p>',
+  'loanOriginators.faqs.question8': 'Does the buy-back guarantee protect me in all cases?',
+  'loanOriginators.faqs.answer8': '\n' +
+    '        <p>In most cases, but not all. Since the loan originator buys back the loan, it depends on their ability to do so, and that’s why we give them a Constant rating from A to D, A being the best. Most of the loans we offer will be C or above. </p>\n' +
+    '        <p>Also, certain countries allow borrowers to request extensions on loans. In this case, an extension isn’t considered a default, so you might wait a bit longer for your returns. If the borrower still hasn’t repaid in full by the end of the extension, the loan originator will buy back the loan as usual. </p>\n' +
+    '        ',
+  'loanOriginators.faqs.question9': 'What happens if a loan originator doesn’t honor the buy-back guarantee?',
+  'loanOriginators.faqs.answer9': 'We don’t expect this to happen, but if it does, there are several options available to us. If they can’t honor the buy-back guarantee due to financial issues, we may negotiate a repayment plan with the loan originator and repay you in full or periodically as they repay. Otherwise, you or us may wish to pursue legal action against the loan originator. In either case, we can’t make any assurances and ask that you diversify across different loan originators to spread your risk. ',
+  'loanOriginators.faqs.question10': 'How do I deposit money for my investments?',
+  'loanOriginators.faqs.answer10': '\n' +
+    '        <p>You have two options: Zelle or bank transfer, both of which are free.</p>\n' +
+    '\n' +
+    '<p>Zelle is faster, but you can only send a certain amount per day. </p>\n' +
+    '\n' +
+    '<p>We support both ACH and wire bank transfers for any amount. These take a day or two to reach us (depending on your bank) and then a short processing period of around 1 business day before it appears in your account.</p> \n' +
+    '\n' +
+    '<p>Once we receive your funds, we then forward them to the loan originator. This might take 3 to 10 business days depending on the loan originator, as some of them only do weekly settlement. We’ll let you know as soon as your funds have been matched and you’ve started earning interest.</p>\n' +
+    '\n' +
+    '<p>For more information, please check our service times. </p>\n' +
+    '        ',
+  'loanOriginators.faqs.question11': 'What currencies do you accept?',
+  'loanOriginators.faqs.answer11': 'You can send us any currency and we’ll convert it to USD. ',
+  'loanOriginators.faqs.question12': 'Are Loan Originator loans in USD only?',
+  'loanOriginators.faqs.answer12': 'For the moment, yes. We might open up new currencies such as EUR or GBP in the future. You can still invest using other currencies, but please bear in mind we’ll convert your currency to USD upon receipt.',
+  'loanOriginators.faqs.question13': 'Do you charge any fees?',
+  'loanOriginators.faqs.answer13': 'No. All investing, currency conversion, and withdrawals are free. How do we make money? We make a slim profit on the difference between the interest rate you earn and the rate charged to the borrower. ',
+  'loanOriginators.faqs.question14': 'How long does it take to match with a Loan Originator borrower?',
+  'loanOriginators.faqs.answer14': '<p>Matching is usually instant, but you won’t start earning interest until your funds reach the loan originator. This will involve an international bank transfer. Also, some loan originators do weekly settlement only.</p> \n' +
+    '<p>For guidance, you’ll start earning interest within 3-10 business days. </p>\n',
+  'loanOriginators.faqs.question15': 'When do I start earning interest on a Loan Originator loan?',
+  'loanOriginators.faqs.answer15': '\n' +
+    '        <p>You start earning interest as soon as your funds reach the loan originator. This takes 3-10 business days after you’ve matched with a borrower. </p>\n' +
+    '<p>Depending on the loan originator, you might be able to withdraw your interest earnings periodically, perhaps monthly. In other cases, you might need to wait until the end of your term before you can withdraw your earnings.</p> \n' +
+    '<p>In either case, some loan originators do weekly settlement, which combined with international transfer times, mean it could take 3-10 business days before you can withdraw any repayments.</p>  \n',
+  'loanOriginators.faqs.question16': 'Can I invest in a portion of a Loan Originator loan?',
+  'loanOriginators.faqs.answer16': 'Yes. You can view a list of available loans and fulfil all or part of each loan order. This helps you diversify, since you can spread your money across more loans. ',
+  'home.constantC2CLoan.faqs.question4': 'Am I borrowing cryptocurrency or USD?',
+  'home.constantC2CLoan.faqs.answer4': '\n' +
+    '        You borrow USD that we then use to buy your chosen cryptocurrency for you. We do the hard work on the exchanges so you can focus on your trading strategy.\n' +
+    '        ',
+  'home.constantC2CLoan.faqs.question5': 'How do I repay a Crypto Credit loan?',
+  'home.constantC2CLoan.faqs.answer5': '\n' +
+    '          <p>You can repay your loan in the following ways:</p>\n' +
+    '            <p>1) Deposit USD or a supported stablecoin. <br/>\n' +
+    '            2) Repay the equivalent USD value using your collateral.</p> \n' +
+    '        ',
+  'home.constantC2CLoan.faqs.question6': 'How do you protect my collateral?',
+  'home.constantC2CLoan.faqs.answer6': '\n' +
+    '          <p>Your collateral is stored in a Prime Trust wallet that’s insured to $100,000,000. This protects you against:</p>\n' +
+    '            <p> - Third-party hacks, copying, or theft of private keys.<br>\n' +
+    '             - Insider theft of dishonest acts by BitGo employees or executives.<br>\n' +
+    '             - Loss of keys.</p>\n' +
+    '          <p>When you repay, we co-sign the release of your collateral back into your coin balance and you can then withdraw it to any wallet address you choose.</p>\n' +
+    '          <a target="_blank" href="https://blog.myconstant.com/how-we-protect-your-money-and-collateral">How we protect your collateral.</a>\n' +
+    '        ',
+  'home.constantC2CLoan.faqs.question7': 'How long will it take to match and get my cryptocurrency?',
+  'home.constantC2CLoan.faqs.answer7': '\n' +
+    '        This depends on the rates and terms you set. Market rates will match you in thirty minutes, and you’ll match even faster if you set a higher rate. As we know timely settlement is important for margin traders, it might be worth paying more for a fast match. \n' +
+    '        ',
+  'home.constantC2CLoan.faqs.question8': 'Do you check my credit score?',
+  'home.constantC2CLoan.faqs.answer8': '\n' +
+    '          As we only offer secured loans backed by collateral, there is no need for credit scoring. All you need is adequate collateral to secure your loan. When creating your loan order, you’ll see how much collateral you need. \n' +
+    '        ',
+  'home.constantC2CLoan.faqs.question9': 'What happens if I don’t repay the loan?',
+  'home.constantC2CLoan.faqs.answer9': '\n' +
+    '          If you don’t repay the loan, your collateral will be sold to repay your investor. You get to keep your chosen cryptocurrency. That’s it.\n' +
+    '        ',
+  'home.constantC2CLoan.faqs.question10': 'What happens if my crypto collateral falls in value?',
+  'home.constantC2CLoan.faqs.answer10': '\n' +
+    '        <p>We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. You keep your chosen cryptocurrency, but lose your collateral. </p>\n' +
+    '        <p>You receive email notifications at 125%, 120% and 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>\n' +
+    '        <a target="_blank" href="https://blog.myconstant.com/extra-protection-for-your-collateral-auto-top-up">How to avoid liquidation with auto top-up.</a> \n' +
+    '        ',
+  'home.constantC2CLoan.faqs.question11': 'Can I repay early?',
+  'home.constantC2CLoan.faqs.answer11': '\n' +
+    "        <p>If you'd like to pay back your loan before 75% of the term is up, that's absolutely fine. You simply have to pay interest for the days you are in possession of the loan, and just 50% of the original interest rate for the remaining days of the term.</p>\n" +
+    "        <p>If you'd like to pay back your loan after 75% of the term is up and claim back your collateral, that's also fine, but the interest due on that loan is the full percentage for the entire term.</p>\n" +
+    '        ',
+  'home.constantC2CLoan.faqs.question12': 'Can I recall excess if the value of my collateral increases?',
+  'home.constantC2CLoan.faqs.answer12': '\n' +
+    '        <p>Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.</p>\n' +
+    '        <a target="_blank" href="https://blog.myconstant.com/how-to-deposit-top-up-recall-crypto-constant">How to deposit, top-up, and recall excess collateral.</a>\n' +
+    '        ',
+  'home.constantC2CLoan.faqs.question13': 'What is the LTV (Loan-to-Value) Ratio? Is it always the same?',
+  'home.constantC2CLoan.faqs.answer13': '\n' +
+    '        The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral. If you’re borrowing against stablecoins, the LTV ratio is 100% (you must put up 100% of the loan amount in stablecoins to obtain a loan).\n' +
+    '        ',
+  'home.constantC2CLoan.faqs.question14': 'What happens if I repay late?',
+  'home.constantC2CLoan.faqs.answer14': '\n' +
+    '        The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due.\n' +
+    '        ',
+  'home.constantLoan.faqs.question4': 'What happens if I don’t repay the loan?',
+  'home.constantLoan.faqs.answer4': 'If you don’t repay the loan, your collateral will be sold to repay your investor. You get to keep the loan. That’s it.',
+  'home.constantLoan.faqs.question5': 'What happens if my crypto collateral falls in value?',
+  'home.constantLoan.faqs.answer5': '\n' +
+    '        <p>We will notify you three times at 5% intervals before your collateral falls to 110% of the loan value + interest to date. At that point, we’ll create a sell order to repay the investor. You keep the loan, but you lose your collateral.</p>\n' +
+    '        <p>Borrowers will receive notifications at 125%, 120% and 115% of the investor’s principal plus earned interest. You can choose to repay early to avoid liquidation or top up more collateral. In the event of a flash crash, collateral will be automatically liquidated at 110%.</p>\n' +
+    '        <p>If you’re borrowing against stablecoins, you will be notified at 115%, 110%, and finally 105%. Once your collateral falls to 100% of the loan amount it will be sold to repay the investor.</p>\n' +
+    '        <p><a href="https://blog.myconstant.com/extra-protection-for-your-collateral-auto-top-up" className="underline" target="_blank">How to avoid liquidation with auto top-up.</a></p>\n' +
+    '      ',
+  'home.constantLoan.faqs.question6': 'Can I repay early?',
+  'home.constantLoan.faqs.answer6': '\n' +
+    "          <p>If you'd like to pay back your loan before 75% of the term is up, that's absolutely fine. You simply have to pay interest for the days you are in possession of the loan, and just 50% of the original interest rate for the remaining days of the term.</p>\n" +
+    "          <p>If you'd like to pay back your loan after 75% of the term is up and claim back your collateral, that's also fine, but the interest due on that loan is the full percentage for the entire term.</p>\n" +
+    '        ',
+  'home.constantLoan.faqs.question7': 'Can I recall excess if the value of my collateral increases?',
+  'home.constantLoan.faqs.answer7': '\n' +
+    '        <p>Yes. If the value of your collateral rises during your loan term, you can withdraw the difference from your Accounts page.</p>\n' +
+    '        <p><a href="https://blog.myconstant.com/how-to-deposit-top-up-recall-crypto-constant" className="underline" target="_blank">How to deposit, top-up, and recall excess collateral.</a></p>\n' +
+    '      ',
+  'home.constantLoan.faqs.question8': 'What is the LTV (Loan-to-Value) Ratio? Is it always the same?',
+  'home.constantLoan.faqs.answer8': '\n' +
+    '        <p>The LTV ratio varies according to the trading activity and liquidity of your chosen collateral. Most supported collateral has an LTV ratio of 66% for 9-month loans or shorter. That means we require 150% of the loan value in collateral. If you’re borrowing against stablecoins, the LTV ratio is 100% (you must put up 100% of the loan amount in stablecoins to obtain a loan).</p>\n' +
+    '      ',
+  'home.constantLoan.faqs.question9': 'How do I repay my loan?',
+  'home.constantLoan.faqs.answer9': '\n' +
+    '          <p>We’ll deduct your repayment directly from your Constant account balance. Adding funds is easy. You can do one or a combination of the following:</p>\n' +
+    '          <ol>\n' +
+    '            <li>Transfer USD to one of our US bank accounts.</li>\n' +
+    '            <li>Send any one of our supported stablecoins: USDT/USDC/TUSD/GUSD/PAX/USDS.</li>\n' +
+    '            <li>Repay the equivalent USD value using your collateral.</li>\n' +
+    '          </ol>\n' +
+    '          <p>Your balance will update when funds have been received in your Constant account.</p>\n' +
+    '        ',
+  'home.constantLoan.faqs.question10': 'What happens if I repay late?',
+  'home.constantLoan.faqs.answer10': 'The grace period for receiving payment is 3 days after your term ends. On the 2nd and 3rd day, you will incur a late fee of 10% of the total interest due.',
+  'home.constantLoan.faqs.question11': 'Is it still possible to take out a single-collateral loan?',
+  'home.constantLoan.faqs.answer11': '\n' +
+    '        <p>\n' +
+    '        Yes, after you take out a loan you can click on the Isolate button in the loan menu on your accounts page to switch to a single-collateral loan. To switch you must meet the 110% minimum collateral value requirement for the crypto. However, you cannot collateralize with more crypto than your collateral rate allows (more on that below).\n' +
+    '        </p>\n' +
+    '        ',
+  'home.constantLoan.faqs.question12': 'Is repayment any different with multi-collateral credit lines?',
+  'home.constantLoan.faqs.answer12': '\n' +
+    '        <p>\n' +
+    '        Nope! You must still repay each loan individually. However, crypto selected for collateral repayments will still follow a 24-hour trading volume priority based on what you have available.\n' +
+    '        </p>\n' +
+    '        ',
+  'home.constantLoan.faqs.question13': 'I can’t find where to choose multiple collaterals for my borrow order',
+  'home.constantLoan.faqs.answer13': '\n' +
+    '        <p>\n' +
+    '        If you take out a crypto-backed loan or buy new cryptos using Crypto Credit, you’ll only see the option to use one collateral. To borrow with multiple collaterals you must start on <a href="https://www.myconstant.com/pro-lending" target="_blank" class="underline">our pro page.</a>\n' +
+    '        </p>\n' +
+    '        ',
+  'home.constantLoan.faqs.question14': 'Why do you prioritize collaterals based on 24-hour exchange volume?',
+  'home.constantLoan.faqs.answer14': '\n' +
+    '        <p>\n' +
+    '        Loan security is our top priority on Constant. In the unfortunate case of liquidation, we always want to make sure we can sell collateral as fast as possible to cover the loan value.\n' +
+    '        </p>\n' +
+    '        ',
+  'home.constantLoan.faqs.question15': 'Will auto top-up add collateral to my loan based on 24-hour exchange volume?',
+  'home.constantLoan.faqs.answer15': '\n        <p>\n        Yes.\n        </p>\n        ',
+  'home.constantLoan.faqs.question16': 'Can I choose to auto top-up some loans and manually top-up others?',
+  'home.constantLoan.faqs.answer16': '\n' +
+    '        <p>\n' +
+    '        No. You can only toggle auto top-up on or off for all multi-collateral loans at the same time. However, you can choose this setting separately for each isolated (single-collateral) loan.\n' +
+    '        </p>\n' +
+    '        ',
+  'home.constantLoan.faqs.question17': 'Will I still receive notifications to repay individual multi-collateral loans on schedule?',
+  'home.constantLoan.faqs.answer17': '\n        <p>\n        Yes.\n        </p>\n        ',
+  'home.constantLoan.faqs.question18': 'Do you have a feature for paying all loans in one term period at the same time?',
+  'home.constantLoan.faqs.answer18': '\n' +
+    '        <p>\n' +
+    '        Right now you still must pay off all of your loans individually.\n' +
+    '        </p>\n' +
+    '        ',
+  'home.constantLoan.faqs.question19': 'If I have multiple active loans, which collaterals do I get back when I repay my earliest loans?',
+  'home.constantLoan.faqs.answer19': '\n' +
+    '        <p>\n' +
+    '        If you still have active loans after repaying, your collateral won’t be released back to your available balance. Instead, it will go into your collateral balance for multi-collateral. If you want to remove collateral from this balance, you’ll need to recall excess from the overview screen and choose the crypto type and amount you want.\n' +
+    '        </p>\n' +
+    '        ',
+  'home.constantLoan.faqs.question20': 'I can’t recall excess on my crypto even though my collateral value is over 110%.',
+  'home.constantLoan.faqs.answer20': '\n' +
+    '        <p>\n' +
+    '        Collateral value is only used to determine loan liquidation. It is calculated by:\n' +
+    '        </p>\n' +
+    '        <p class="font-italic">\n' +
+    '        (number of coins * value)+”repeat for each coin”/(loan value + up-to-date interest + matching fee)\n' +
+    '        </p>\n' +
+    '        <p>\n' +
+    '        We calculate how much collateral you withdraw through recall excess based on the collateral rate. For more information on the collateral rate see below.\n' +
+    '        </p>\n' +
+    '        ',
+  'home.constantLoan.faqs.question21': 'What is the collateral rate and why is it different from the collateral value?',
+  'home.constantLoan.faqs.answer21': '\n' +
+    '        <p>\n' +
+    '        Collateral value only takes into account the monetary value of your collateral in your collateral balance compared to your loan amount. We base liquidation off collateral value. Your collateral rate is a more in-depth number that takes into account the LTV ratios required for different cryptocurrencies. We use this number to determine how much you can withdraw with recall excess as well as the maximum amount of crypto you can place in an Isolated loan.\n' +
+    '        </p>\n' +
+    '        <p>\n' +
+    '        You can find your collateral rate through this equation:\n' +
+    '        </p>\n' +
+    '        <p class="font-italic">\n' +
+    '        x = (number of coins)*(coin value)*(LTV)+“repeat for each coin”<br />\n' +
+    '        Collateral rate = (x/(loan value at first + up-to-date interest + matching fees))*100\n' +
+    '        </p>\n' +
+    '        ',
+  'deposit1.faqs.question4': 'Do you have a referral program for Flex?',
+  'deposit1.faqs.answer4': 'Yes, we do. For every friend you refer to Flex, you’ll get 10% of their interest earnings for the first year (up to a maximum of $1,000,000). For more details, <a href="/referral">visit your Referrals page.</a>',
+  'deposit1.faqs.question5': 'Can I withdraw anytime?',
+  'deposit1.faqs.answer5': 'Yes. Since you’re not lending your deposits to an individual, but to a lending pool, you can deposit or withdraw as much and as often as you like.',
+  'deposit1.faqs.question6': 'How do my deposits earn interest?',
+  'deposit1.faqs.answer6': 'Flex uses an API with Compound Finance to lend your deposits to a liquidity pool. Others borrow from the pool in return for putting up collateral, and you earn the interest. In other words, Flex is very similar to how investments work on Constant, only with Flex you can withdraw anytime.',
+  'deposit1.faqs.question7': 'Are my deposits insured?',
+  'deposit1.faqs.answer7': '\n' +
+    "      <p>Not always, no. While held with our trust partner, Prime Trust, your deposits are covered by a $130,000,000 insurance policy. However, we expect deposits will spend most of their time earning interest through Compound Finance, so will instead be protected by collateral put up by Compound's users.</p>\n" +
+    '      <p><a href="https://blog.myconstant.com/flex-or-prime-trust-constant" class="underline" target="_blank">Earn interest on your deposits or insure them?</a></p>\n' +
+    '      ',
+  'deposit1.faqs.question8': 'Can I deposit collateral or other cryptocurrency into Flex?',
+  'deposit1.faqs.answer8': 'At the moment, Flex only accepts USD and USD-backed stablecoins.',
+  'deposit1.faqs.question9': 'Can I earn interest while waiting for an investment order to match?',
+  'deposit1.faqs.answer9': "No, your funds are set aside while waiting for a match so won't earn interest on Flex. If you decide to cancel the order, your funds will return to earning interest in Flex.",
+  'deposit1.faqs.question10': 'Will the interest rate change?',
+  'deposit1.faqs.answer10': "The interest rate depends on supply and demand in Compound's lending market. Sometimes it's higher, sometimes it's lower, but for the time being we've fixed this at 4% APY.",
+  'deposit1.faqs.question11': 'Are there any fees?',
+  'deposit1.faqs.answer11': 'No – all deposits and withdrawals on Flex are free.',
+  'deposit1.faqs.question12': 'How does Constant make money?',
+  'deposit1.faqs.answer12': 'Flex deposits earn interest through an API with Compound Finance, another lending platform. Compound sets interest rates according to supply and demand, and Constant will make a slim profit on any difference between the Flex and Compound rates.',
+  'home1.faqs.question4': 'How do you protect my investment?',
+  'home1.faqs.answer4': '\n' +
+    '        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too:</p>\n' +
+    '        <ol>\n' +
+    '          <li>All of our borrowers must put up 150% of the loan amount as crypto collateral (100% if stablecoins to reflect their stability). If they don’t repay, we sell the collateral to repay you.</li>\n' +
+    '          <li>We also include a liquidation threshold to insure against a fall in the collateral’s value. If the value falls to 110% of your principal and earned interest (100% if a stablecoin), it’s sold to repay you.</li>\n' +
+    '          <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>\n' +
+    '        </ol>\n' +
+    '        <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>\n' +
+    '        <p><a href="/blog/how-we-protect-your-money-and-collateral" className="underline" target="_blank">Read more about how we protect you.</a></p>\n' +
+    '      ',
+  'home1.faqs.question5': 'What happens when my money isn’t on loan?',
+  'home1.faqs.answer5': '\n' +
+    '        <p>When not on loan or waiting for a match, your money earns 4% APY through Flex – an anytime-withdrawal account powered by Compound Finance. Secured, flexible, and automatic, Flex is an easy way to keep growing your money between investments. All withdrawals are free and unlimited.</p>\n' +
+    "        <p>If you're waiting for a match, your money remains in the custody of Prime Trust, an accredited US financial institution that insures deposits up to $130M.</p>\n" +
+    '        <p>Flex is enabled by default, but you can disable it from your Accounts page. You will no longer earn interest and your funds will remain in Prime Trust custody (unless you invest in a fixed-term loan).</p>\n' +
+    '        <p><a href="https://blog.myconstant.com/flex-or-prime-trust-constant" className="underline" target="_blank">Prime Trust or Flex?</a></p>\n' +
+    '      ',
+  'home1.faqs.question6': 'What happens if a borrower repays early?',
+  'home1.faqs.answer6': '\n' +
+    '        <p>If a borrower repays before 75% of the loan term is complete, they’ll pay you earned interest to date plus 50% of the interest due on the remainder of the term.</p>\n' +
+    '        <p>If a borrower repays after 75% of the loan term is complete, they’ll pay you 100% of the interest due on the loan.</p>\n' +
+    '      ',
+  'home1.faqs.question7': 'What happens if you have to sell borrower collateral to repay me?',
+  'home1.faqs.answer7': '\n' +
+    '        <p>If a borrower can’t repay, or their collateral falls to 110% of your principal and earned profit, we’ll sell the collateral to repay you. In either case, you’ll get your principal back. You’ll also get earned interest to date if the collateral is sold mid-term, or 100% of the interest due if the collateral is sold after the term ends.</p>\n' +
+    '      ',
+  'home1.faqs.question8': 'Can I end my investment term early?',
+  'home1.faqs.answer8': '\n' +
+    '        <p>Yes. To end your term early, you can sell your investment to another investor from your Accounts page. Once sold, you’ll get your principal back and 2% APR on elapsed term time. Selling relies on finding a buyer willing to accept your rate and term so might take around 24 hours. You’ll also lose any earned membership points on your sold investment.</p>\n' +
+    '      ',
+  'home1.faqs.question9': 'How long until I start earning interest?',
+  'home1.faqs.answer9': '\n' +
+    '        <p>Your investments join a lending reserve from which borrowers can get loans. This means you start earning interest the moment we receive your funds.</p>\n' +
+    '      ',
+  'affiliates.faqs.3.question': 'How long will the application approval process take?',
+  'affiliates.faqs.3.answer': '\n' +
+    '          <p>\n' +
+    '          Approval should take no longer than three business days, but might take a little longer if we need more information from you.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.4.question': 'Do I need to pay to become a Constant affiliate?',
+  'affiliates.faqs.4.answer': '\n' +
+    '          <p>\n' +
+    '          No – we’ll be paying you!\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.5.question': 'Where can I promote Constant to earn under the program?',
+  'affiliates.faqs.5.answer': '\n' +
+    '          <p>\n' +
+    '          Anywhere you want! Blogs, social media, websites – you name it.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.6.question': 'Do I need to register as a business to become an affiliate?',
+  'affiliates.faqs.6.answer': '\n          <p>\n          No, you don’t.\n          </p>\n          ',
+  'affiliates.faqs.7.question': 'Do I need to have my own website to become an affiliate?',
+  'affiliates.faqs.7.answer': '\n' +
+    '          <p>\n' +
+    '          No, but you do need an online platform to share your affiliate link. This could be YouTube or another social media channel, for example, or an email newsletter.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.8.question': 'What promotions am I not allowed to use?',
+  'affiliates.faqs.8.answer': '\n' +
+    '          <p>\n' +
+    '          You can’t make false or misleading statements about Constant, or use Constant keywords in Google ads. Neither can you use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic. You are not allowed to send spam with Constant ads or use other aggressive marketing methods. If you use any of these methods, your affiliate account will permanently cancelled.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.9.question': 'How long do affiliate cookies last?',
+  'affiliates.faqs.9.answer': '\n' +
+    '          <p>\n' +
+    '          When someone clicks your affiliate link, a cookie is created. That cookie will stay on their computer for 30 days unless manually cleared. You’ll earn rewards on all sign-ups containing your unique cookie data.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.10.question': 'Who has control of what’s being published on an affiliate’s site/blog?',
+  'affiliates.faqs.10.answer': '\n' +
+    '          <p>\n' +
+    '          As long as you publish in accordance with the affiliate program terms and conditions, you have full control over publication.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.11.question': 'If someone has my affiliate cookie but invests from a different source, do I still earn the rewards?',
+  'affiliates.faqs.11.answer': '\n' +
+    '          <p>\n' +
+    '          Yes. It doesn’t matter where the person signs up as long as they do so with your unique cookie installed.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.12.question': "What if my referral doesn't show up in reporting?",
+  'affiliates.faqs.12.answer': '\n' +
+    '          <p>\n' +
+    '          If this happens, email us at <a href="mailto:hello@myconstant.com" target="_blank">hello@myconstant.com</a> with the details so we can see if something went wrong.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.13.question': 'Will I have any report on my performance?',
+  'affiliates.faqs.13.answer': '\n' +
+    '          <p>\n' +
+    '          Yes, you’ll receive monthly reports, notifications when you earn, and occasional updates on how to boost your earnings through our affiliate program.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.14.question': 'Can my affiliate account get cancelled?',
+  'affiliates.faqs.14.answer': '\n' +
+    '          <p>\n' +
+    '          Yes. We will cancel your membership if you break any of the clauses in our affiliate program terms and conditions.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.15.question': 'What happens if my affiliate account is inactive?',
+  'affiliates.faqs.15.answer': '\n' +
+    '          <p>\n' +
+    '          We understand it might take time for your referees to sign up. You have a full six months before we consider reviewing your membership, and we’ll be in touch regularly before then with ideas on how to kickstart your affiliate earnings.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.16.question': 'How do I cancel my affiliate membership?',
+  'affiliates.faqs.16.answer': '\n' +
+    '          <p>\n' +
+    '          Hopefully you won’t need to! But if so, send us an email at <a href="mailto:hello@myconstant.com" target="_blank">hello@myconstant.com</a> and we’ll arrange it for you.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.17.question': 'What technical skills do I need to become an affiliate?',
+  'affiliates.faqs.17.answer': '\n' +
+    '          <p>\n' +
+    '          As long as you can work a computer or smartphone and know how to use the internet, you can become an affiliate.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.18.question': 'Can I use the Constant logo in my own banners?',
+  'affiliates.faqs.18.answer': '\n' +
+    '          <p>\n' +
+    '          Yes, but please send your design to us first for approval. You’ll get a better response if your banner is consistent with our brand guidelines.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.19.question': 'What affiliate platform should I choose?',
+  'affiliates.faqs.19.answer': '\n' +
+    '          <p>\n' +
+    '          That’s up to you. Our affiliates use many different platforms, including podcasts, blogs, streaming accounts, social media, personal websites and others.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.20.question': 'Do I get paid if I invest myself?',
+  'affiliates.faqs.20.answer': '\n' +
+    '          <p>\n' +
+    '          You won’t get paid under the affiliate program, no.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.21.question': 'Are my earnings taxable?',
+  'affiliates.faqs.21.answer': '\n' +
+    '          <p>\n' +
+    '          Yes. Please consult your local tax authority for more information.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.22.question': 'Can people I refer see my username?',
+  'affiliates.faqs.22.answer': '\n' +
+    '          <p>\n' +
+    '          No. The affiliate program is private for both you and your referees.\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.23.question': 'Can I promote my affiliate link across multiple platforms?',
+  'affiliates.faqs.23.answer': '\n' +
+    '          <p>\n' +
+    '          Yes – in fact, we encourage it!\n' +
+    '          </p>\n' +
+    '          ',
+  'affiliates.faqs.24.question': 'In what currency will I get paid?',
+  'affiliates.faqs.24.answer': '\n          <p>\n          You’ll be paid in USD.\n          </p>\n          ',
+  'me.proSaving.listApplications.termStatus.transferred_fiat': 'Pending',
+  'me.history.orderType.7': 'Deposit',
+  'me.history.orderType.101': 'Bonus',
+  'me.history.user.status.transferMoneyToAgent': 'Please make a transfer to complete your deposit',
+  'history.support.messageDepositConfirm': 'How can we help you with this deposit?',
+  'history.support.wireReceipt': 'wire receipt',
+  'app.common.fileupload': 'Upload',
+  'history.support.wireReceiptRemove': 'Remove receipt',
+  'me.twoFa.qrScanModal.requiredPassword': 'Password is required',
+  'home.constantLoan.listApplications.errorRecallLowCreditRate': 'To recall excess, your collateral rate must be more than {recallRate}%. Your current collateral rate is {creditRate}%',
+  'me.kyc.uploadImageClick': 'Click here to upload your images.',
+  'me.proSaving.listApplications.termStatus.created': 'Matched',
+  'me.proSaving.listApplications.itemMatched.void': 'End your term early',
+  'home.constantLoan.listApplications.mapStatus1.payoffDone': 'Repaid',
+  'home.constantC2CLoan.listApplications.heading': 'Crypto Credit',
+  'home.constantLoan.listApplications.heading': 'Loans',
+  'me.proSaving.listApplications.investment': 'investment',
+  'me.proSaving.listApplications.termStatus.voided': 'Sold',
+  'me.proSaving.listApplications.termStatus.matched': 'Matched',
+  'me.proSaving.listApplications.rewardFrom.rewardInvestNote': 'This will increase your rate by {rateUp}%',
+  'me.proSaving.listApplications.itemMatched.dialog.void.messageConfirm': '\n' +
+    '              <p>To end your term early, you can sell your investment to another investor. Once sold, you get your principal of ${amount} back and 2% APR on elapsed term time, but you’ll lose any earned membership points on this investment. Selling normally takes around 24 hours.</p> \n' +
+    '              <p>Would you like to sell your investment?</p> \n' +
+    '              ',
+  'me.proSaving.listApplications.alert.voidInvestmentSuccess': 'Thanks. Your investment has rejoined the matching queue and we’ll let you know when we find a buyer. In the meantime, you can cancel your sell order from your Accounts page.',
+  'me.proSaving.listApplications.termStatus.voiding': 'Selling',
+  'me.proSaving.listApplications.alert.stopSellingInvestmentSuccess': 'Thanks – we’ve cancelled your sell order and the investment remains yours.',
+  'loanOriginators.manualInvest.sortBy': 'Sort by: ',
+  'loanOriginators.manualInvest.sortHeaders.mostPopuplar': 'Most popular',
+  'loanOriginators.manualInvest.sortHeaders.issuedDate': 'Issued Date',
+  'loanOriginators.manualInvest.sortHeaders.loanType': 'Loan Type',
+  'loanOriginators.manualInvest.sortHeaders.constantRate': 'Constant Rating',
+  'loanOriginators.manualInvest.sortHeaders.remainingTerm': 'Remaining Term',
+  'loanOriginators.manualInvest.sortHeaders.interestRate': 'Interest Rate',
+  'loanOriginators.manualInvest.sortHeaders.investmentAmount': 'Available For Investment',
+  'loanOriginators.manualInvest.filter.loanOriginator': 'Loan Originator (LO)',
+  'loanOriginators.manualInvest.filter.selectAll': 'Select',
+  'loanOriginators.manualInvest.filter.clearAll': 'Clear All',
+  'loanOriginators.manualInvest.filter.issuedDate': 'Issued Date',
+  'loanOriginators.manualInvest.filter.constantRate': 'Constant Rating',
+  'loanOriginators.manualInvest.filter.loanType': 'Loan Type',
+  'loanOriginators.manualInvest.filter.interestRate': 'Interest Rate',
+  'loanOriginators.manualInvest.filter.investmentAmount': 'Available Investment Amount (USD)',
+  'loanOriginators.manualInvest.investButton': 'Invest'
 }; 
  module.exports = result;
