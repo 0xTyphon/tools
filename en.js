@@ -3494,6 +3494,13 @@ const result =  {
   'loanOriginators.manualInvest.filter.loanType': 'Loan Type',
   'loanOriginators.manualInvest.filter.interestRate': 'Interest Rate',
   'loanOriginators.manualInvest.filter.investmentAmount': 'Available Investment Amount (USD)',
-  'loanOriginators.manualInvest.investButton': 'Invest'
+  'loanOriginators.manualInvest.investButton': 'Invest',
+  'history.withdrawFiat.bankName': 'Bank name',
+  'history.withdrawFiat.beneficiaryName': 'Beneficiary name',
+  'history.withdrawFiat.accountNumber': 'Account number',
+  'home.transferCrypto.confirmMsg': '\n' +
+    '      <p>You’re about to convert {constAmount} CONST (USD) to {amount} {name} and then withdraw it to wallet address {address}.</p>\n' +
+    '      <p>Do you want to proceed?</p>\n' +
+    '      '
 }; 
  module.exports = result;

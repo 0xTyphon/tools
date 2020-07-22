@@ -448,7 +448,10 @@ export default {
         status: 'Status',
         action: 'Action'
       },
-      noHistoryData: 'Make a withdrawal to get started.'
+      noHistoryData: 'Make a withdrawal to get started.',
+      bankName: 'Bank name',
+      beneficiaryName: 'Beneficiary name',
+      accountNumber: 'Account number'
     },
     withdrawCrypto: {
       title: 'Withdrawals History',
@@ -2343,7 +2346,11 @@ export default {
       timeLimit: 'Your money will arrive within ',
       timeLimitMinute: 'minutes',
       timeLimit2: '48 hours',
-      validateMaxInput: 'Please make sure your balance is sufficient.'
+      validateMaxInput: 'Please make sure your balance is sufficient.',
+      confirmMsg: '\n' +
+        '      <p>You’re about to convert {constAmount} CONST (USD) to {amount} {name} and then withdraw it to wallet address {address}.</p>\n' +
+        '      <p>Do you want to proceed?</p>\n' +
+        '      '
     },
     transfer: {
       caption: 'How much do you want to send?',
