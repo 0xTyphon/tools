@@ -1,41 +1,18 @@
 const _ = require('lodash');
 const util = require('util');
 const en = require('./en');
-const srouce = require('./srouce1');
+const source = require('./srouce.en.jon'); // get last of en.json in i18 (crowdin)
+const sourcejs = require('./srouce.en.jss'); // get last of en.js in lang folder
 const { promises } = require('fs');
 const fs = require('fs');
 
 const result = {};
 
-const recursiveFun = (results, obj, arr = []) => {
-  if (typeof obj === 'string') {
-    return;
-  }
-  // eslint-disable-next-line
-  for (const keyName of Object.keys(obj)) {
-    if (typeof obj[keyName] === 'string') {
-      const addKey = {};
-      const getKeyName = arr.length === 0 ? keyName : `${arr.join('.')}.${keyName}`;
-      addKey[getKeyName] = obj[keyName];
-      // eslint-disable-next-line
-      results[getKeyName] = obj[keyName];
-    } else {
-      recursiveFun(results, obj[keyName], arr.concat(keyName));
-    }
-  }
-};
-
-const convertLongKeyValues = (obj) => {
-  const endKeyValue = {};
-  recursiveFun(endKeyValue, obj);
-  return endKeyValue;
-};
-
-const data = convertLongKeyValues(srouce);
-
 for(key of Object.keys(en)){
-	if(data[key])
-		result[key] = data[key];
+	if(source[key])
+		result[key] = source[key];
+  else if(sourcejs[key])
+    result[key] = sourcejs[key];
   else 
     result[key] = en[key];
 }

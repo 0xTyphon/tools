@@ -105,6 +105,7 @@ const result =  {
   'footer.referral': 'Share & Earn',
   'footer.riskStatement': 'Investment Risk Statement',
   'footer.securityAndRisk': 'Security & Risk',
+  'footer.badges': 'Your Badges',
   'footer.phone.us.title': 'US: ',
   'footer.phone.us.phone': '+1 646 809 8338',
   'footer.phone.us.time': '(Mon - Fri 9am - 5pm<br />Mon - Thurs 7pm - 4am PST)',
@@ -158,9 +159,9 @@ const result =  {
   'lending.stakingDesc': 'Earn 6-35% APR on a Constant node. Low minimums. Withdraw anytime.',
   'headerBar.home': 'Home',
   'headerBar.account': 'Account',
-  'headerBar.lending': 'Lending',
+  'headerBar.setting': 'Setting',
   'headerBar.flex': 'High-Yield Savings',
-  'headerBar.flexMobile': 'Savings',
+  'headerBar.crypto': 'Crypto',
   'headerBar.staking': 'Staking <sup>NEW</sup>',
   'headerBar.transfer': 'Send',
   'headerBar.save': 'Invest',
@@ -204,6 +205,27 @@ const result =  {
   'headerBar.extraMenu.borrowPRV.desc': 'Borrow against PRV from 6% APR. Secure escrow. No credit checks',
   'headerBar.extraMenu.borrowCoins.title': 'Crypto Credit',
   'headerBar.extraMenu.borrowCoins.desc': 'Borrow cash, get crypto.<br/>No exchanges.',
+  'headerBar.extraMenuMobile.invest.title': 'Invest',
+  'headerBar.extraMenuMobile.invest.desc': '\n          <p>Get a better return on your money.</p>\n        ',
+  'headerBar.extraMenuMobile.borrow.title': 'Borrow',
+  'headerBar.extraMenuMobile.borrow.desc': '\n          <p>Get cash for crypto without needing to sell.</p>\n        ',
+  'headerBar.extraMenuMobile.investFlex.title': 'Fiat Flex',
+  'headerBar.extraMenuMobile.investFlex.desc': '{percent}% APY. Fully secured. Withdraw anytime.',
+  'headerBar.extraMenuMobile.investCustom.title': 'Fiat Custom',
+  'headerBar.extraMenuMobile.investCustom.desc': 'Your terms. Best rates. Fully secured.',
+  'headerBar.extraMenuMobile.investLO.title': 'Loan Originator',
+  'headerBar.extraMenuMobile.investLO.desc': 'Earn up to 11% APR. Terms from 6-15 months. <br/>Includes loan originator’s buy-back guarantee <br/>in case of default.',
+  'headerBar.extraMenuMobile.investStaking.title': 'Crypto Staking',
+  'headerBar.extraMenuMobile.investStaking.desc': '6%-35% APR. Low minimums. Withdraw anytime.',
+  'headerBar.extraMenuMobile.investStaking.descHotFix': '6%-35% APR. Low minimums. Withdraw anytime.',
+  'headerBar.extraMenuMobile.investFlexCrypto.title': 'Crypto Lend',
+  'headerBar.extraMenuMobile.investFlexCrypto.desc': 'Get 10% APY on BTC, ETH, and BNB.',
+  'headerBar.extraMenuMobile.borrowFiat.title': 'Crypto-backed Loans',
+  'headerBar.extraMenuMobile.borrowFiat.desc': 'Your terms. Best rates. No credit checks.',
+  'headerBar.extraMenuMobile.borrowPRV.title': 'Crypto Incognito Loans',
+  'headerBar.extraMenuMobile.borrowPRV.desc': 'Borrow against PRV from 6% APR. Secure escrow. No credit checks',
+  'headerBar.extraMenuMobile.borrowCoins.title': 'Crypto Credit',
+  'headerBar.extraMenuMobile.borrowCoins.desc': 'Borrow cash, get crypto. No exchanges.',
   'error.required': 'Required',
   'error.requiredOne': 'Please fill in the required fields.',
   'error.greaterThan': 'Please enter a number greater than {min}',
@@ -551,6 +573,7 @@ const result =  {
   'me.accountInfo.emailNotVerified': 'Please verify your email.',
   'me.accountInfo.verifyBtn': 'Resend verification',
   'me.accountInfo.enable2Fa': 'Enable 2FA to add extra security to your account',
+  'me.accountInfo.enableSms': 'Enable SMS Authentication to add extra security to your account',
   'me.changePassword.newPasswordIsRequired': 'New password is required',
   'me.changePassword.oldPassword': 'Old password',
   'me.changePassword.newPassword': 'New password',
@@ -691,6 +714,33 @@ const result =  {
   'me.emailSetting.emailConfirmation.disableFailed': 'Failed To Disable',
   'me.emailSetting.emailConfirmation.enableFailed': 'Failed To Enable',
   'me.emailSetting.emailConfirmation.two2faRequired': 'Please <a href="/me/securities" class="underline">enable 2-Factor Authorization</a> before {action} email notifications.',
+  'me.smsSettings.title': 'SMS Authentication',
+  'me.smsSettings.labelOff': 'Turn on now?',
+  'me.smsSettings.labelOn': 'Disable',
+  'me.smsSettings.noteOn': '<p>Nice – SMS authentication is protecting your account.</p>\n' +
+    '                <p>When you withdraw or transfer, you’ll receive an authorization code via SMS to your registered device. Enter this code when prompted to confirm the transaction. </p>',
+  'me.smsSettings.noteOff': '<p>Hey! You’re not using SMS authentication right now.</p>\n' +
+    '                <p>Enable it here, follow the on-screen instructions, and add some extra security to your account. </p>',
+  'me.smsSettings.phoneNumber': 'Step 2: Enter your mobile number and then click “Send code”.',
+  'me.smsSettings.smsCode': 'Step 3: Enter the SMS authentication code we sent you and then click “Done”.',
+  'me.smsSettings.inputAuthCode': 'Step 1: Enter your Google Authentication code.',
+  'me.smsSettings.sendCode': 'Send code',
+  'me.smsSettings.reSendCode': 'Resend code',
+  'me.smsSettings.back': 'Back',
+  'me.smsSettings.cancel': 'Cancel',
+  'me.smsSettings.done': 'Done',
+  'me.smsSettings.invalidateSms': 'Sms authentication code not matched, please try again',
+  'me.smsSettings.enableSms': 'Enable SMS Authentication',
+  'me.smsSettings.disableSms': 'Disable SMS Authentication',
+  'me.smsSettings.enableSmsSuccess': 'Thanks for enabling SMS authentication. You’ll receive an authorization code via SMS whenever you request a withdrawal or transfer. You can disable this setting at any time.',
+  'me.smsSettings.disableSmsSuccess': 'Thanks for disabling SMS authentication. We recommend using all available security measures to protect your account.',
+  'me.smsSettings.inputSms.popupTitle': 'SMS Authentication',
+  'me.smsSettings.inputSms.newTitle': 'SMS Authentication',
+  'me.smsSettings.inputSms.newInputCode': 'Please input the 6-digit code sent to your phone.',
+  'me.smsSettings.inputSms.cantAccess': 'Can’t get SMS code?',
+  'me.smsSettings.inputSms.resendCode': 'Resend code',
+  'me.smsSettings.inputSms.resendCodeSuccess': 'Resend code success!',
+  'me.smsSettings.inputSms.resendCodeFailed': 'Resend code fail!',
   'me.flexInterestConfig.title': 'Earn 4% APY on your balance with Flex',
   'me.flexInterestConfig.label': 'Earn 4% APY through Flex',
   'me.flexInterestConfig.noteOn': 'Your balance is earning 4% APY through Flex. You can withdraw anytime for free.',
@@ -734,9 +784,34 @@ const result =  {
   'me.localHistory.confirm.content.Approve': '\n' +
     '             <div>\n' +
     '              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n' +
-    '              <p>If you’ve sent <strong>{TotalVND} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n' +
+    '              <p>If you’ve sent <strong>{TotalVND} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p>\n' +
     '              <p>Otherwise, please send <strong>{TotalVND} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n' +
-    '              <div name=bank">',
+    '              <div name="bank">\n' +
+    '                <div>\n' +
+    '                  <span>Bank Name:</span>\n' +
+    '                  <strong>{BankName}</strong>\n' +
+    '                </div>\n' +
+    '                <div>\n' +
+    '                  <span>Account Name:</span>\n' +
+    '                  <strong>{BankAccountName}</strong>\n' +
+    '                </div>\n' +
+    '                <div>\n' +
+    '                  <span>Account Number: </span>\n' +
+    '                  <strong>{BankAccountNumber}</strong>\n' +
+    '                </div>\n' +
+    '                <div>\n' +
+    '                  <span>Amount: </span>\n' +
+    '                  <strong>{TotalVND}&nbsp;{Currency}</strong>\n' +
+    '                </div>\n' +
+    '                <div>\n' +
+    '                  <span>Reference: </span>\n' +
+    '                  <strong>{Reference}</strong>\n' +
+    '                </div>\n' +
+    '              </div>\n' +
+    '              <br />\n' +
+    '              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>\n' +
+    '             </div>\n' +
+    '          ',
   'me.localHistory.confirm.content.Finish': '\n' +
     '            <div>\n' +
     '                <p>You’re selling <strong>{Amount} Constant</strong> at <strong>{Price} </strong> {Currency} per Constant.</p>\n' +
@@ -833,6 +908,7 @@ const result =  {
   'me.history.orderType.24': 'LO investment',
   'me.history.orderType.25': 'LO repayment',
   'me.history.orderType.26': 'LO Investment',
+  'me.history.orderType.33': 'Badge reward',
   'me.history.orderType.101': 'Bonus',
   'me.history.orderType.102': 'Coupon Signup',
   'me.history.orderType.received': 'Received',
@@ -1194,7 +1270,7 @@ const result =  {
   'me.proSaving.listApplications.depositMatched': 'Deposit',
   'me.proSaving.listApplications.cancelDepositMatched': 'Cancel Deposit',
   'me.proSaving.listApplications.withdrawDesc': 'Withdraw funds to your bank account or wallet address.',
-  'me.proSaving.listApplications.depositDesc': 'Earn 4% APY by default.\n',
+  'me.proSaving.listApplications.depositDesc': 'Store your money in USD. Earn 4% APY with Flex.',
   'me.proSaving.listApplications.transferDesc': 'Send money across the world - to as many people as you like.',
   'me.proSaving.listApplications.row': 'Row',
   'me.proSaving.listApplications.errorMessage': 'Error Message',
@@ -1551,6 +1627,9 @@ const result =  {
   'user.account.currentBalance': 'Current Balance',
   'user.account.interestRate': 'Interest Rate',
   'user.account.estimatedValue': 'Estimated Value',
+  'user.account.membershipReward': 'MEMBERSHIP REWARDS >>',
+  'user.account.member': 'Member',
+  'user.account.totalBalance': 'Total Balance',
   'landingPage.faqsSectionLink': '\n' +
     '      <p></p>\n' +
     '      <p>Questions?</p>\n' +
@@ -1568,8 +1647,8 @@ const result =  {
     '        <p>Start investing from just $50.</p>\n' +
     '      ',
   'landingPage.steadyGrowth.title': '\n' +
-    '        <p class="header">Earn 7% APR now.</p>\n' +
-    '        <p>Don’t go down with the market. Enjoy steady growth with fully-secured P2P lending. No fees.</p>\n' +
+    '        <p class="header">Start growing at 7.5% APR today.</p>\n' +
+    '        <p>Don’t fall with the market. Enjoy steady growth with fully-backed P2P lending. No fees. Free withdrawals.</p>\n' +
     '        <p>Start investing from just $50.</p>\n' +
     '      ',
   'landingPage.netReturns.title': '\n' +
@@ -1590,6 +1669,13 @@ const result =  {
   'landingPage.earnABetterRate.intro.desc.1': 'Vetted loan originators',
   'landingPage.earnABetterRate.intro.desc.2': 'Greater choice of loans',
   'landingPage.earnABetterRate.intro.desc.3': 'Zero fees',
+  'landingPage.trialBonus.title': '\n' +
+    '        <p class="header">See what it’s like to grow ${kYCTrialAmount} by the second.</p>\n' +
+    '        <p>Today when you sign up and verify your ID, we’ll deposit ${kYCTrialAmount} into your account to earn 4% APY for 30 days. At the end of 30 days, we’ll take the ${kYCTrialAmount} back but you can keep the interest and use it how you want.</p>\n' +
+    '        <p>Use your earnings to grow at 7.5% or more with our other investment tools.</p>\n' +
+    '        <p>You can start investing from just $50.</p>\n' +
+    '        <p>This offer is only available for a limited time.</p>\n' +
+    '      ',
   'landingPage.howItWorks.title': 'How It Works',
   'landingPage.howItWorks.data.0.title': 'Step 1',
   'landingPage.howItWorks.data.0.desc': '\n            <p>Sign up for your free Constant account.</p>\n            ',
@@ -2247,6 +2333,7 @@ const result =  {
   'home.constantLoan.intro.youtube.title': 'Why borrow with Constant?',
   'home.constantLoan.headLine': 'Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.',
   'home.constantLoan.exchange.availableCredit': 'Available Credit',
+  'home.constantLoan.exchange.collateralBalance': 'Collateral Balance',
   'home.constantLoan.exchange.stakingTimeMessage': 'Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.',
   'home.constantLoan.exchange.exchangeInfo': 'Estimate amount USD (const) you need to borrow',
   'home.constantLoan.exchange.exchangeInfoDesc': 'Estimate amount USD (const) you need to borrow',
@@ -2293,7 +2380,10 @@ const result =  {
   'home.constantLoan.exchange.monthLoan': '{term}-month loan',
   'home.constantLoan.exchange.monthsLoan': '{term}-month loan',
   'home.constantLoan.exchange.dayLoan': '{term}-day loans',
-  'home.constantLoan.exchange.borrowConfirm': 'You’re about to borrow {amount} {currency} for {term} days at {rate}% APR. Click confirm to start your term and receive your loan instantly. Once your term begins, you won’t be able to cancel your loan, but you can repay early from your Accounts page.',
+  'home.constantLoan.exchange.borrowConfirm': "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {percent} collateralization. Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your Accounts page.",
+  'home.constantLoan.exchange.borrowIsolateConfirm': "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. Click confirm to start your term and receive your loan. Once your term begins you won’t be able to cancel your loan, but you can repay early from your Accounts page",
+  'home.constantLoan.exchange.isolate': 'Isolate',
+  'home.constantLoan.exchange.isolateDesc': 'Isolate your loan to use a single cryptocurrency as collateral. If you already have a multi-collateral loan the amount of collateral you can isolate may be limited. Check out our FAQs for more details',
   'home.constantLoan.interestTable.title': 'Why you should borrow with Constant.',
   'home.constantLoan.interestTable.description': 'Constant crypto-backed loans have a generous loan to value ratio, no matter the amount you borrow. Benefit from the kindest interest rates on the market with our short term loans and get more liquidity out of your crypto.',
   'home.constantLoan.what.title': 'Why borrow with us?',
@@ -2365,8 +2455,12 @@ const result =  {
   'home.constantLoan.transaction.termUnit1': '{period} months',
   'home.constantLoan.transaction.loanAmount': 'Loan amount:',
   'home.constantLoan.transaction.collaterals': 'Collateral:',
-  'home.constantLoan.transaction.collateralRequired': 'Collateral Required:',
-  'home.constantLoan.transaction.collateralBalance': 'Your Collateral Balance:',
+  'home.constantLoan.transaction.collateralRequired': 'Collateral required:',
+  'home.constantLoan.transaction.collateralRequiredDesc': 'The total amount of collateral needed to secure your loan.',
+  'home.constantLoan.transaction.collateralBalance': 'Collateral available',
+  'home.constantLoan.transaction.collateralBalanceDesc': 'Your current collateral balance.',
+  'home.constantLoan.transaction.collateralToDeposit': 'Collateral to deposit',
+  'home.constantLoan.transaction.collateralToDepositDesc': 'The amount of collateral you need to deposit to back your loan.',
   'home.constantLoan.transaction.term': 'Term:',
   'home.constantLoan.transaction.interestedRate': 'Interest rate:',
   'home.constantLoan.transaction.interestedRateValue': '{percent} APR',
@@ -2707,6 +2801,7 @@ const result =  {
   'home.constantC2CLoan.intro.youtube.title': 'How does Crypto Credit work?',
   'home.constantC2CLoan.headLine': 'Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.',
   'home.constantC2CLoan.exchange.availableCredit': 'Available Credit',
+  'home.constantC2CLoan.exchange.collateralBalance': 'Collateral Balance',
   'home.constantC2CLoan.exchange.eventBox': 'Borrow now to get 1% discount from the crypto price.',
   'home.constantC2CLoan.exchange.stakingTimeMessage': 'Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.',
   'home.constantC2CLoan.exchange.exchangeInfo': 'The amount you will borrow in USD',
@@ -2750,10 +2845,10 @@ const result =  {
   'home.constantC2CLoan.exchange.monthLoan': '{term}-month loans',
   'home.constantC2CLoan.exchange.monthsLoan': '{term}-months loans',
   'home.constantC2CLoan.exchange.dayLoan': '{term}-day loans',
-  'home.constantC2CLoan.exchange.borrowConfirm': '\n' +
-    '        <p>You’re about to borrow {amount} {currency} for {term} days at {rate}% APR. We’ll use these funds to buy a maximum of {collateralAmount} {collateral} to be deposited into your coin balance. Click confirm to get your chosen crypto and start your term.</p> \n' +
-    '        <p>Once your term begins, you won’t be able to cancel your loan, but you can repay early from your Accounts page.</p>\n' +
-    '        ',
+  'home.constantC2CLoan.exchange.isolate': 'Isolate',
+  'home.constantC2CLoan.exchange.isolateDesc': 'Isolate your loan to use a single cryptocurrency as collateral. If you already have a multi-collateral loan the amount of collateral you can isolate may be limited. Check out our FAQs for more details',
+  'home.constantC2CLoan.exchange.borrowConfirm': "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {percent} collateralization. Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your Accounts page.",
+  'home.constantC2CLoan.exchange.borrowIsolateConfirm': "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. Click confirm to start your term and receive your loan. Once your term begins you won’t be able to cancel your loan, but you can repay early from your Accounts page",
   'home.constantC2CLoan.compareTable.title': 'Constant vs Exchange Margin Accounts.',
   'home.constantC2CLoan.compareTable.benefits': 'Benefits',
   'home.constantC2CLoan.compareTable.const': 'Constant',
@@ -4172,6 +4267,7 @@ const result =  {
   'saving.makeTrialOrderFailed': "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
   'saving.validation_error': 'Ensure that there are no more than 10 digits before the decimal point.',
   'saving.invalid_amount': 'Invalid amount, please check your amount and try again',
+  'saving.invalid_payment_method': 'To deposit USD, you must be a KYC-verified US citizen. Please choose another currency to deposit.',
   'send.makeLocalOrderSuccess': 'Thanks! Your transfer is now processing.',
   'send.makeLocalOrderFailed': "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
   'send.zelleOverLimit': "Sorry, we've reached our Zelle transaction limit. Please try again later or choose another withdraw method.",
@@ -4637,6 +4733,7 @@ const result =  {
   'home1.lendingSection.alert.needKyc': '',
   'home1.lendingSection.alert.investUsingBalanceConfirm': 'You’re about to invest {amount} {currency} for {term} days at a rate of {rate}% APR. Click confirm to start your term and begin earning interest. Once you confirm, you won’t be able to cancel your investment but can sell it on our secondary market.',
   'home1.lendingSection.alert.investNotUsingBalanceConfirm': 'You’re about to invest {amount} {currency} for {term} days at {rate}% APR. Click confirm and you’ll start earning interest as soon as we receive your funds. Once your term starts, you won’t be able to cancel your investment but can sell it on our secondary market.',
+  'home1.lendingSection.alert.invalid_payment_method': 'To invest USD, you must be a KYC-verified US citizen. Please choose another currency to deposit.',
   'home1.lendingSection.confirm.needGoldMember': '<p>You must become a Gold member and above, or choose a longer investment term to use this feature</p>',
   'home1.lendingSection.confirm.needPlatinumMember': '<p>You must become a Platinum member and above to use this feature.</p>',
   'home1.lendingSection.confirm.depositLimit': '<p>Your deposit limit is {amount} USD.</p>',
@@ -4960,7 +5057,7 @@ const result =  {
     '    <p class="title">* A receiving fee may be charged by your financial institutions.</p>\n' +
     '    ',
   'getPrices.withdrawCryptoNote': '\n' +
-    '    <p class="title">* Please note that $2,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal will need to be approved manually. </p>\n' +
+    '    <p class="title">* Please note that $2,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal will need to be approved manually. Larger the amount, longer the time.</p>\n' +
     '    <p class="title">* $60,000 is the daily limitation for all the platform.</p>\n' +
     '    <p class="title">* Withdrawal fee for DAI is still kept at 3.5% until further notice.</p>\n' +
     '    <p class="title">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>\n' +
@@ -4969,9 +5066,7 @@ const result =  {
     '    ',
   'getPrices.withdrawCollateralNote': '\n' +
     '    <p class="title">* About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>\n' +
-    '    ',
-  'getPrices.unstakingNote': '\n' +
-    '    <p class="title">* It depends on Incognito chain. Read more <a href="https://incognito.org/t/the-algorithm-of-probability-for-node-selection/836" className="underline bold" target="_blank"><strong>here</strong></a>.</p>\n' +
+    '    <p class="title">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive.</p>\n' +
     '    ',
   'getPrices.holidaysNote': '\n' +
     '    <p class="title">* Our service time may also be affected by public and banking holidays in the US and your local country.</p>\n' +
@@ -5240,12 +5335,63 @@ const result =  {
   'deposit1.faqs.answer11': 'No – all deposits and withdrawals on Flex are free.',
   'deposit1.faqs.question12': 'How does Constant make money?',
   'deposit1.faqs.answer12': 'Flex deposits earn interest through an API with Compound Finance, another lending platform. Compound sets interest rates according to supply and demand, and Constant will make a slim profit on any difference between the Flex and Compound rates.',
-  'yourReferral.v1.howItWorks.step1.title': 'Create your referral link',
-  'yourReferral.v1.howItWorks.step1.desc': 'Open an account to get your unique referral link',
-  'yourReferral.v1.howItWorks.step2.title': 'Refer friends',
-  'yourReferral.v1.howItWorks.step2.desc': 'Invite your friends by email or share your unique referral link on social media',
-  'yourReferral.v1.howItWorks.step3.title': 'Earn together',
-  'yourReferral.v1.howItWorks.step3.desc': 'Get paid every time your friend invests or borrows',
+  'yourReferral.banner.desc': '\n' +
+    '        <h2>Get a free ${bonus} bonus for every friend you refer.</h2>\n' +
+    '        <p>Tell your friends and family about us and get <strong>${bonus} free</strong> for each person who signs up and deposits. You also earn <strong>10% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>\n' +
+    '      ',
+  'yourReferral.banner.invite': 'Invite now',
+  'yourReferral.whatForYou.title': 'What’s in it for you?',
+  'yourReferral.whatForYou.desc': '\n' +
+    '        <div class="section-desc-title">INVITE FRIENDS, EARN TOGETHER</div>\n' +
+    '        <div><strong>Earn ${bonus} for every friend who signs up and passes KYC</strong>, paid instantly, and with no limits.</div>\n' +
+    '        <div><strong>Then earn 10% of their Flex interest</strong>, capped at a generous $1,000,000.</div>\n' +
+    '        <div><strong>Your friend gets a 30-day $1,500 trial bonus</strong> and keeps the interest.</div>\n' +
+    '      ',
+  'yourReferral.whatForYou.formula.0': 'for everyone who signs up and passes KYC',
+  'yourReferral.whatForYou.formula.1': ' ',
+  'yourReferral.whatForYou.formula.2': 'of your friends’ Flex interest',
+  'yourReferral.whatForYou.formula.3': ' ',
+  'yourReferral.whatForYou.formula.4': 'for your friend if they’re a US resident',
+  'yourReferral.whatForYou.data.0.title': 'EARN TOGETHER',
+  'yourReferral.whatForYou.data.0.desc': 'With you and your friends’ earnings linked, you can grow your money faster, while your friends can refer people to multiple their earnings, too.',
+  'yourReferral.whatForYou.data.1.title': 'HELP PEOPLE INVEST BETTER',
+  'yourReferral.whatForYou.data.1.desc': 'Help your friends and family overcome the challenges of today’s investment market. Constant is an ideal way to diversify and enjoy secured returns without fees.',
+  'yourReferral.whatForYou.data.2.title': 'IMPROVE THE PLATFORM',
+  'yourReferral.whatForYou.data.2.desc': 'Every new customer we welcome helps fuel new features and products, giving you a range of investment options, rates, and tools to reach all your financial goals. ',
+  'yourReferral.whatForThem.title': 'What’s in it for them?',
+  'yourReferral.whatForThem.content.left': '\n' +
+    '          <p class="content-title">$1,500 trial bonus</p>\n' +
+    '          <p class="content-desc">When your referree signs up and passes KYC, we’ll deposit a $1,500. bonus in their account. This lasts for 30 days*, at the end of which, we reclaim the bonus but your referee keeps all the interest.</p>\n' +
+    '          <p class="content-desc font-italic">*30-day trial bonus (US residents only).</p>\n' +
+    '        ',
+  'yourReferral.whatForThem.content.right': '\n' +
+    '          <div>\n' +
+    '            <div class="content-title">4% APY</div>\n' +
+    '            <p class="content-desc">on all Flex deposits</p>\n' +
+    '          </div>\n' +
+    '          <div>\n' +
+    '            <div class="content-title">7.5% APR</div>\n' +
+    '            <p class="content-desc">on <strong>crypto-backed</strong> investments</p>\n' +
+    '          </div>\n' +
+    '          <div>\n' +
+    '            <div class="content-title">11% APR</div>\n' +
+    '            <p class="content-desc">on Loan Originator investments</p>\n' +
+    '          </div>\n' +
+    '        ',
+  'yourReferral.howItWorks.title': 'How it works',
+  'yourReferral.howItWorks.desc': '\n' +
+    '      <p>There are <strong>no limits</strong> to the number of people you can refer for the ${bonus} bonus.</p>\n' +
+    '      <p>Your Flex earnings are capped at $1,000,000.</p>',
+  'yourReferral.howItWorks.data.0.title': ' ',
+  'yourReferral.howItWorks.data.0.desc': 'Share your unique referral link by email or social media.',
+  'yourReferral.howItWorks.data.1.title': ' ',
+  'yourReferral.howItWorks.data.1.desc': 'Your referee signs up using your link and verifies their ID (KYC).',
+  'yourReferral.howItWorks.data.2.title': ' ',
+  'yourReferral.howItWorks.data.2.desc': 'You get ${bonus} paid instantly to your Constant account.',
+  'yourReferral.howItWorks.data.3.title': ' ',
+  'yourReferral.howItWorks.data.3.desc': 'Your referee earns interest on a 30-day $1,500 trial bonus.',
+  'yourReferral.howItWorks.data.4.title': ' ',
+  'yourReferral.howItWorks.data.4.desc': 'You get 10% of their Flex earnings, compounded and paid every second.',
   'yourReferral.referral_history.title': 'Referral history',
   'yourReferral.referral_history.noRecord': 'No record found',
   'yourReferral.referral_history.user_email': 'Friend’s email address',
@@ -5325,7 +5471,7 @@ const result =  {
   'menuMobile.membership': 'Membership',
   'menuMobile.btnDeposit': 'Deposit',
   'menuMobile.btnLoansC2C': 'Crypto Credit',
-  'menuMobile.btnReferral': '<div class="textLeft"><small>Share & earn</small><div>Interest</div></div>',
+  'menuMobile.btnReferral': 'Share & Earn',
   'menuMobile.btnTransfer': 'Transfer',
   'menuMobile.btnWithdrawCrypto': '<div class="textLeft"><small>Withdraw to</small><div>Crypto</div></div>',
   'menuMobile.btnWithdrawFiat': '<div class="textLeft"><small>Withdraw to</small><div>Fiat</div></div>',
@@ -5546,6 +5692,7 @@ const result =  {
   'collateralBalance.errorMinValue': 'Amount must greater than {min}',
   'collateralBalance.tabs.collaterals': 'Collateral',
   'collateralBalance.tabs.staking': 'Stake',
+  'collateralBalance.cryptoWallet': 'Crypto Wallet',
   'developers.menu.constantAPI': 'Constant API',
   'developers.menu.accountResource': 'Account resource',
   'developers.menu.loanResource': 'Loan resource',
@@ -6036,6 +6183,7 @@ const result =  {
   'memberShip.or': 'Or',
   'memberShip.keepLevel': '{type} ${value} to keep your level',
   'memberShip.getLevelDate': 'From {date}',
+  'memberShip.member': 'Member',
   'memberShip.title.level0': 'Member',
   'memberShip.title.level1': 'Gold',
   'memberShip.title.level2': 'Platinum',
@@ -7023,6 +7171,160 @@ const result =  {
   'loanOriginators.constantRating.howOfter.downgrade.title': 'We downgrade a loan originator if:',
   'loanOriginators.filter.clearAll': 'Clear All',
   'loanOriginators.filter.cancel': 'Cancel',
-  'loanOriginators.filter.done': 'Done'
+  'loanOriginators.filter.done': 'Done',
+  'badges.intro.title': '<h1>Get the recognition you deserve with <br/>Constant Badges</h1>',
+  'badges.intro.desc': 'Earn badges and cash rewards of up to $100 when you use or promote our platform. From passing KYC to referring friends, there’s a badge to recognize all of your achievements. How many will you earn?',
+  'badges.intro.almostDoneTitle': 'Hi, {name}',
+  'badges.intro.almostDoneDesc': '<p>Earn some quick wins with the badges on the right.</p><p>View all of your earned badges and progress towards others below.</p>',
+  'badges.intro.congratTitle': 'Congratulations!',
+  'badges.intro.congratDesc': "You've earned all our badges. But the awards aren't over yet. Stay tuned for more badges and rewards that recognize your achievements.",
+  'badges.group.getting_started': 'Getting Started',
+  'badges.group.getting_started_desc': "It's easy to earn your first four badges – just set up your account, secure it, and deposit at least $100 to earn 4% APY. That's it!",
+  'badges.group.warming_up': 'Warming Up',
+  'badges.group.warming_up_desc': "These badges reward experimentation – they're all about getting to know our products and trying them out for the first time. Then, sharing your experiences with people and helping them sign up.",
+  'badges.group.referring': 'Referring',
+  'badges.group.referring_desc': 'We love it when you share your experiences with others. These badges reward you for referring friends and family, writing or streaming about us, or reviewing the platform for your community.',
+  'badges.group.winning': 'Winning',
+  'badges.group.winning_desc': "Once you've conquered the previous levels, now it's time to prove you're a winner! These badges reward the biggest and best achievements, and in turn, offer some of the best rewards.",
+  'badges.badge.getting_started_sign_up.title': 'Sign up to Constant',
+  'badges.badge.getting_started_sign_up.desc': '',
+  'badges.badge.getting_started_sign_up.condition': 'To qualify for your badge and reward, you must verify your email address.',
+  'badges.badge.getting_started_sign_up.name': 'Newbie',
+  'badges.badge.getting_started_kyc_us.title': 'Verify your ID',
+  'badges.badge.getting_started_kyc_us.desc': '',
+  'badges.badge.getting_started_kyc_us.condition': 'To qualify for your badge and reward, you must have submitted your identity documents and passed KYC within 7 days of signing up.',
+  'badges.badge.getting_started_kyc_us.name': 'Member',
+  'badges.badge.getting_started_on_2fa.title': 'Enable 2-Factor Authentication',
+  'badges.badge.getting_started_on_2fa.desc': '',
+  'badges.badge.getting_started_on_2fa.condition': 'You earn this badge when you <a href="/me/securities">enable 2FA</a> on your account from your Accounts page.',
+  'badges.badge.getting_started_on_2fa.name': 'Guardian',
+  'badges.badge.getting_started_first_deposit.title': 'Make your first deposit',
+  'badges.badge.getting_started_first_deposit.desc': '',
+  'badges.badge.getting_started_first_deposit.condition': 'To qualify for your badge and reward, you must make a single deposit of at least $100 in fiat currency (USD, for example) into your Flex account',
+  'badges.badge.getting_started_first_deposit.name': 'Icebreaker',
+  'badges.badge.warming_up_review_trustpilot.title': 'Leave a review on Trustpilot',
+  'badges.badge.warming_up_review_trustpilot.desc': '',
+  'badges.badge.warming_up_review_trustpilot.condition': 'To qualify for your badge and reward, your review must be at least 50 words long. You must also be an active Constant customer, with at least one deposit, invest, or borrow order in the past three months.',
+  'badges.badge.warming_up_review_trustpilot.name': 'Supporter',
+  'badges.badge.warming_up_first_friend.title': 'Get a friend to join Constant',
+  'badges.badge.warming_up_first_friend.desc': '',
+  'badges.badge.warming_up_first_friend.condition': 'To qualify for your badge and reward, your friend must deposit at least $10 in fiat currency.',
+  'badges.badge.warming_up_first_friend.name': 'Promoter',
+  'badges.badge.warming_up_invest_first_time.title': 'Invest for the first time',
+  'badges.badge.warming_up_invest_first_time.desc': '',
+  'badges.badge.warming_up_invest_first_time.condition': 'You earn this Bronze Investor badge the very first time you invest with Constant. This badge applies to matched Crypto-Backed and Loan Originator investments only.',
+  'badges.badge.warming_up_invest_first_time.name': 'Investor (Bronze)',
+  'badges.badge.warming_up_invest_monthly_quarter.title': 'Invest every month in a quarter',
+  'badges.badge.warming_up_invest_monthly_quarter.desc': '',
+  'badges.badge.warming_up_invest_monthly_quarter.condition': 'You earn this Silver Investor badge if you invest each month for 3 months in a row. This badge applies to matched Crypto-Backed and Loan Originator investments only.',
+  'badges.badge.warming_up_invest_monthly_quarter.name': 'Investor (Silver)',
+  'badges.badge.warming_up_invest_monthly_year.title': 'Invest every month in a year',
+  'badges.badge.warming_up_invest_monthly_year.desc': '',
+  'badges.badge.warming_up_invest_monthly_year.condition': 'You earn this Gold Investor badge if you invest every month for a whole year. This badge applies to matched Crypto-Backed and Loan Originator investments only.',
+  'badges.badge.warming_up_invest_monthly_year.name': 'Investor (Gold)',
+  'badges.badge.warming_up_borrow_first_time.title': 'Borrow for the first time',
+  'badges.badge.warming_up_borrow_first_time.desc': '',
+  'badges.badge.warming_up_borrow_first_time.condition': 'You earn this Bronze Borrower badge the very first time you borrow with Constant. This badge applies to matched loans only.',
+  'badges.badge.warming_up_borrow_first_time.name': 'Borrower (Bronze)',
+  'badges.badge.warming_up_borrow_monthly_quarter.title': 'Borrow every month in a quarter',
+  'badges.badge.warming_up_borrow_monthly_quarter.desc': '',
+  'badges.badge.warming_up_borrow_monthly_quarter.condition': 'You earn this Silver Borrower badge if you borrow each month for 3 months in a row. This badge applies to matched loans only.',
+  'badges.badge.warming_up_borrow_monthly_quarter.name': 'Borrower (Silver)',
+  'badges.badge.warming_up_borrow_monthly_year.title': 'Borrow every month in a year',
+  'badges.badge.warming_up_borrow_monthly_year.desc': '',
+  'badges.badge.warming_up_borrow_monthly_year.condition': 'You earn this Gold Borrower badge if you borrow every month for a whole year. This badge applies to matched loans only.',
+  'badges.badge.warming_up_borrow_monthly_year.name': 'Borrower (Gold)',
+  'badges.badge.warming_up_sell_secondary_market.title': 'Create a secondary market order',
+  'badges.badge.warming_up_sell_secondary_market.desc': '',
+  'badges.badge.warming_up_sell_secondary_market.condition': 'You earn this badge when you sell an investment for the first time in our secondary market.',
+  'badges.badge.warming_up_sell_secondary_market.name': 'Dealmaker',
+  'badges.badge.warming_up_buy_secondary_market.title': 'Purchase a secondary market order',
+  'badges.badge.warming_up_buy_secondary_market.desc': '',
+  'badges.badge.warming_up_buy_secondary_market.condition': "You earn this badge when you buy another investor's investment for the first time in our secondary market.",
+  'badges.badge.warming_up_buy_secondary_market.name': 'Patron',
+  'badges.badge.winning_invest.title': 'Invest at least $50,000',
+  'badges.badge.winning_invest.desc': '',
+  'badges.badge.winning_invest.condition': 'You earn this badge when you invest a total of $50,000 in Loan Originator or Crypto-Backed investments. This badge applies to matched Crypto-Backed and Loan Originator investments only.',
+  'badges.badge.winning_invest.name': 'Financier',
+  'badges.badge.winning_borrow.title': 'Borrow at least $10,000',
+  'badges.badge.winning_borrow.desc': '',
+  'badges.badge.winning_borrow.condition': "You earn this badge when you've borrowed at least $10,000 through Constant. This badge applies to matched loans only.",
+  'badges.badge.winning_borrow.name': 'Fundraiser',
+  'badges.badge.winning_loyalty_6months.title': 'Active on Constant for 6 months',
+  'badges.badge.winning_loyalty_6months.condition': "You earn this Bronze Loyal badge when you've transacted on the platform or referred new user at least once a month for six months.",
+  'badges.badge.winning_loyalty_6months.name': 'Stalwart (Bronze)',
+  'badges.badge.winning_loyalty_12months.title': 'Active on Constant for 12 months',
+  'badges.badge.winning_loyalty_12months.condition': "You earn this Silver Loyal badge when you've transacted on the platform / referred new user at least once a month for a year.",
+  'badges.badge.winning_loyalty_12months.name': 'Stalwart (Silver)',
+  'badges.badge.winning_loyalty_24months.title': 'Active on Constant for 24 months',
+  'badges.badge.winning_loyalty_24months.condition': "You earn this Gold Loyal badge when you've transacted on the platform / referred new user at least once a month for two years.",
+  'badges.badge.winning_loyalty_24months.name': 'Stalwart (Gold)',
+  'badges.badge.winning_champion.title': 'Achieve all badges',
+  'badges.badge.winning_champion.condition': 'Earn all badges and $10 will be yours.',
+  'badges.badge.winning_champion.name': 'Champion',
+  'badges.badge.referring_friend_10_referees.title': 'Refer 10 KYC-approved investors',
+  'badges.badge.referring_friend_10_referees.condition': 'To qualify for the badge and reward, your referee must first pass KYC and deposit or invest at least $50 in fiat currency.',
+  'badges.badge.referring_friend_10_referees.name': 'Headhunter (Bronze)',
+  'badges.badge.referring_friend_50_referees.title': 'Refer 50 KYC-approved investors',
+  'badges.badge.referring_friend_50_referees.condition': 'To qualify for the badge and reward, your referee must first pass KYC and deposit or invest at least $50 in fiat currency.',
+  'badges.badge.referring_friend_50_referees.name': 'Headhunter (Silver)',
+  'badges.badge.referring_friend_100_referees.title': 'Refer 100 KYC-approved investors',
+  'badges.badge.referring_friend_100_referees.condition': 'To qualify for the badge and reward, your referee must first pass KYC and deposit or invest at least $50 in fiat currency.',
+  'badges.badge.referring_friend_100_referees.name': 'Headhunter (Gold)',
+  'badges.badge.referring_invest_100k.title': 'Your referee invests $100,000',
+  'badges.badge.referring_invest_100k.condition': '\n' +
+    '          When a referee of yours invests a total of $100,000 in matched Crypto-Backed or Loan Originator Investments, you earn this Bronze badge and a $20 bonus.\n' +
+    "          <br/>Each badge is limited to one referee only (the same referee can't be used to earn all three badges).\n" +
+    '        ',
+  'badges.badge.referring_invest_100k.name': 'Luminary (Bronze)',
+  'badges.badge.referring_invest_200k.title': 'Your referee invests $200,000',
+  'badges.badge.referring_invest_200k.condition': '\n' +
+    '          When a referee of yours invests a total of $200,000 in matched Crypto-Backed or Loan Originator Investments, you earn this Silver badge and a $40 bonus.\n' +
+    "          <br/>Each badge is limited to one referee only (the same referee can't be used to earn all three badges).\n" +
+    '        ',
+  'badges.badge.referring_invest_200k.name': 'Luminary (Silver)',
+  'badges.badge.referring_invest_500k.title': 'Your referee invests $500,000',
+  'badges.badge.referring_invest_500k.condition': '\n' +
+    '          When a referee of yours invests a total of $500,000 in matched Crypto-Backed or Loan Originator Investments, you earn this Gold badge and a $100 bonus.\n' +
+    "          <br/>Each badge is limited to one referee only (the same referee can't be used to earn all three badges).\n" +
+    '        ',
+  'badges.badge.referring_invest_500k.name': 'Luminary (Gold)',
+  'badges.badge.referring_article_first.title': 'Write your first article or review about Constant',
+  'badges.badge.referring_article_first.condition': '\n' +
+    '          To qualify for badges and rewards, your article must be at least 700 words, unique, and without plagiarism. You must publish articles on your registered site, and only one article per month will qualify.\n' +
+    "          </br>If you publish articles sooner and don't meet the monthly quota, you won't receive a reward. We reserve the right to evaluate your articles for quality and readability before approving your badges. \n" +
+    '        ',
+  'badges.badge.referring_article_first.name': 'Influencer (Bronze)',
+  'badges.badge.referring_article_monthly_quarter.title': 'Write an article or review about Constant every month for three months',
+  'badges.badge.referring_article_monthly_quarter.condition': 'To qualify for badges and rewards, your article must be at least 700 words, unique, and without plagiarism. You must publish articles on your registered site, and only one article per month will qualify.',
+  'badges.badge.referring_article_monthly_quarter.name': 'Influencer (Silver)',
+  'badges.badge.referring_article_monthly_year.title': 'Write an article or review about Constant every month for one year',
+  'badges.badge.referring_article_monthly_year.condition': 'To qualify for badges and rewards, your article must be at least 700 words, unique, and without plagiarism. You must publish articles on your registered site, and only one article per month will qualify.',
+  'badges.badge.referring_article_monthly_year.name': 'Influencer (Gold)',
+  'badges.term.0': 'Any abuse of the Constant Badges reward program will result in immediate disqualification. Abuse includes spam, cheating, or any other fraud intended to earn badges illegitimately.',
+  'badges.term.1': 'Any content you produce about Constant to claim a badge must not denigrate, disparage, or otherwise damage the Constant brand.',
+  'badges.term.2': 'You earn a reward for each badge once only.',
+  'badges.term.3': 'The maximum reward you can earn from the Constant Badges program is $500 in total.',
+  'badges.term.4': 'Only one Constant account per badge. Duplicate Constant accounts are disqualified.',
+  'badges.term.5': "Badges are awarded retroactively but rewards apply to qualifying activities after July 16th 2020 only. For example, if you passed KYC before July 16th 2020, you'll earn the “Member” badge but not the reward.",
+  'badges.term.6': 'Constant reserves the right to withhold rewards and change the terms and conditions of Constant Badges at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.',
+  'badges.term.7': 'To be eligible for rewards, you must have passed KYC.',
+  'badges.term.title': 'Terms and Conditions',
+  'badges.term.note': 'Effective as of 2020/07/16 00:00 AM (GMT+0)',
+  'badges.submitForm.title': 'Submit the link go to your review',
+  'badges.submitForm.subtitle': "Thanks for requesting the {badgeName} badge. Please enter the link that supports your request below. We'll get back to you within two business days with a decision.",
+  'badges.submitForm.subtitleTrustpilot': "Thanks for requesting the Supporter badge. After reviewing us on Trustpilot, please click on the title of your review to get your link. We'll get back to you within two business days with a decision.",
+  'badges.submitForm.submit': 'Submit',
+  'badges.submitForm.cancel': 'Cancel',
+  'badges.submitForm.success': 'Submit proof successfully',
+  'badges.submitForm.errNeedKyc': 'You must pass KYC before you can request this badge. <a href="/me/profile">Submit your KYC documents or approval.</>',
+  'badges.submitForm.errProofPending': `Your badge request is still under review. If you've not had a response in two business days, please contact <a href="mailto://tina@myconstant.com">tina@myconstant.com</a>.`,
+  'badges.submitForm.errCompletePrevious': 'To qualify for {current}, you need to complete {previous} first.',
+  'badges.title': 'Badges',
+  'badges.detail': 'Details',
+  'badges.share': 'Share',
+  'badges.conditions': 'Conditions',
+  'badges.submit': 'Submit',
+  'badges.request': 'Request'
 }; 
  module.exports = result;

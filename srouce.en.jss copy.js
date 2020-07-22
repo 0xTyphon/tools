@@ -1649,8 +1649,8 @@ const result =  {
     '        <p>Start investing from just $50.</p>\n' +
     '      ',
   'landingPage.steadyGrowth.title': '\n' +
-    '        <p class="header">Start growing at 7.5% APR today.</p>\n' +
-    '        <p>Don’t fall with the market. Enjoy steady growth with fully-backed P2P lending. No fees. Free withdrawals.</p>\n' +
+    '        <p class="header">Earn 7% APR now.</p>\n' +
+    '        <p>Don’t go down with the market. Enjoy steady growth with fully-secured P2P lending. No fees.</p>\n' +
     '        <p>Start investing from just $50.</p>\n' +
     '      ',
   'landingPage.netReturns.title': '\n' +
@@ -1671,13 +1671,6 @@ const result =  {
   'landingPage.earnABetterRate.intro.desc.1': 'Vetted loan originators',
   'landingPage.earnABetterRate.intro.desc.2': 'Greater choice of loans',
   'landingPage.earnABetterRate.intro.desc.3': 'Zero fees',
-  'landingPage.trialBonus.title': '\n' +
-    '        <p class="header">See what it’s like to grow ${kYCTrialAmount} by the second.</p>\n' +
-    '        <p>Today when you sign up and verify your ID, we’ll deposit ${kYCTrialAmount} into your account to earn 4% APY for 30 days. At the end of 30 days, we’ll take the ${kYCTrialAmount} back but you can keep the interest and use it how you want.</p>\n' +
-    '        <p>Use your earnings to grow at 7.5% or more with our other investment tools.</p>\n' +
-    '        <p>You can start investing from just $50.</p>\n' +
-    '        <p>This offer is only available for a limited time.</p>\n' +
-    '      ',
   'landingPage.howItWorks.title': 'How It Works',
   'landingPage.howItWorks.data.0.title': 'Step 1',
   'landingPage.howItWorks.data.0.desc': '\n            <p>Sign up for your free Constant account.</p>\n            ',
@@ -5225,7 +5218,7 @@ const result =  {
     '    <p class="title">* A receiving fee may be charged by your financial institutions.</p>\n' +
     '    ',
   'getPrices.withdrawCryptoNote': '\n' +
-    '    <p class="title">* Please note that $2,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal will need to be approved manually. Larger the amount, longer the time.</p>\n' +
+    '    <p class="title">* Please note that $2,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal will need to be approved manually. </p>\n' +
     '    <p class="title">* $60,000 is the daily limitation for all the platform.</p>\n' +
     '    <p class="title">* Withdrawal fee for DAI is still kept at 3.5% until further notice.</p>\n' +
     '    <p class="title">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>\n' +
@@ -5234,7 +5227,9 @@ const result =  {
     '    ',
   'getPrices.withdrawCollateralNote': '\n' +
     '    <p class="title">* About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>\n' +
-    '    <p class="title">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive.</p>\n' +
+    '    ',
+  'getPrices.unstakingNote': '\n' +
+    '    <p class="title">* It depends on Incognito chain. Read more <a href="https://incognito.org/t/the-algorithm-of-probability-for-node-selection/836" className="underline bold" target="_blank"><strong>here</strong></a>.</p>\n' +
     '    ',
   'getPrices.holidaysNote': '\n' +
     '    <p class="title">* Our service time may also be affected by public and banking holidays in the US and your local country.</p>\n' +
@@ -7478,7 +7473,6 @@ const result =  {
   'badges.term.4': 'Only one Constant account per badge. Duplicate Constant accounts are disqualified.',
   'badges.term.5': "Badges are awarded retroactively but rewards apply to qualifying activities after July 16th 2020 only. For example, if you passed KYC before July 16th 2020, you'll earn the “Member” badge but not the reward.",
   'badges.term.6': 'Constant reserves the right to withhold rewards and change the terms and conditions of Constant Badges at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.',
-  'badges.term.7': 'To be eligible for rewards, you must have passed KYC.',
   'badges.term.title': 'Terms and Conditions',
   'badges.term.note': 'Effective as of 2020/07/16 00:00 AM (GMT+0)',
   'badges.submitForm.title': 'Submit the link go to your review',

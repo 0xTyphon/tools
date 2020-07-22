@@ -1,4 +1,4 @@
-const source = require('./data');
+const source = require('./data.jn');
 const _ = require('lodash');
 const util = require('util');
 const en = require('./en');

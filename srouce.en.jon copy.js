@@ -8,7 +8,7 @@ const result =  {
   'app.navigation.me': 'Profile',
   'app.navigation.wallet': 'Wallet',
   'app.navigation.home': 'Home',
-  'app.common.error': 'OH! something went wrong!',
+  'app.common.error': 'Oops, something went wrong. Please try again.',
   'app.common.retry': 'Server error, please retry',
   'app.common.required': 'Required',
   'app.common.maxInterest': 'Must less than {max} %',
@@ -47,26 +47,26 @@ const result =  {
   'common.table.id': '#',
   'common.table.file_name': 'File',
   'common.table.status': 'Status',
-  'common.table.created_at': 'Created Date',
+  'common.table.created_at': 'Date created',
   'common.table.updated_at': 'Updated Date',
   'common.table.to_email': 'Transfer To',
   'common.table.schedule_date': 'Schedule Date',
   'common.table.amount': 'Amount',
-  'common.table.processing': '<b style="color: #ffc107;">Processing</b>',
-  'common.table.checking': '<b style="color: #ffc107;">Checking</b>',
-  'common.table.done': '<b style="color: ##28a745;">Done</b>',
-  'common.table.failed': '<b style="color: #E64759">Failed</b>',
-  'common.table.pending': '<b style="color: #ffc107;">Pending</b>',
+  'common.table.processing': '<b style=color: #ffc107;">Processing</b>"',
+  'common.table.checking': '<b style=color: #ffc107;">Checking</b>"',
+  'common.table.done': '<b style=color: ##28a745;">Done</b>"',
+  'common.table.failed': '<b style=color: #E64759">Failed</b>"',
+  'common.table.pending': '<b style=color: #ffc107;">Pending</b>"',
   'footer.cta.type1.title': '<h3>Start earning interest</h3>',
-  'footer.cta.type1.btn': 'INVEST NOW',
+  'footer.cta.type1.btn': 'Make an investment',
   'footer.cta.type2.title': '<h3>Do more with your money</h3>',
   'footer.cta.type2.btn': 'Open a free account',
-  'footer.cta.type3.title': '<h3>Want to earn interest on your savings?</h3>',
-  'footer.cta.type3.btn': 'Browse investment plans',
-  'footer.cta.type4.title': '<h3>Get USD without selling your crypto</h3>',
-  'footer.cta.type4.btn': 'BORROW NOW',
-  'footer.cta.type5.title': '<h3>Send money anywhere </h3>',
-  'footer.cta.type5.btn': 'Make a transfer',
+  'footer.cta.type3.title': '<h3>Earn passive income with fully secured investments.</h3>',
+  'footer.cta.type3.btn': 'Make an investment',
+  'footer.cta.type4.title': '<h3>Get fixed-rate loans of any amount.</h3>',
+  'footer.cta.type4.btn': 'Borrow now',
+  'footer.cta.type5.title': '<h3>Invite your friends, earn a bonus</h3>',
+  'footer.cta.type5.btn': 'Invite now',
   'footer.cta.type6.title': '<h3>Open an account and grow your money</h3>',
   'footer.cta.type6.btn': 'Open an account',
   'footer.cta.type9.title': '<h3>Stake and earn</h3>',
@@ -102,16 +102,15 @@ const result =  {
   'footer.membership': 'Membership',
   'footer.kycGuidelines': 'KYC guidelines',
   'footer.contactUs': 'Contact us',
-  'footer.referral': 'Share & Earn $',
+  'footer.referral': 'Share & Earn',
   'footer.riskStatement': 'Investment Risk Statement',
   'footer.securityAndRisk': 'Security & Risk',
-  'footer.badges': 'Your Badges',
   'footer.phone.us.title': 'US: ',
   'footer.phone.us.phone': '+1 646 809 8338',
   'footer.phone.us.time': '(Mon - Fri 9am - 5pm<br />Mon - Thurs 7pm - 4am PST)',
   'footer.phone.us.timeMobile': '(Mon - Fri 9am - 5pm and Mon - Thurs 7pm - 4am PST)',
   'footer.phone.hk.title': 'Hong Kong: ',
-  'footer.phone.hk.phone': '+85 258 01 01 68',
+  'footer.phone.hk.phone': '+852 8191-5657',
   'footer.phone.hk.time': '',
   'footer.phone.vn.title': 'Viet Nam: ',
   'footer.phone.vn.phone': '+84 34 362 8061',
@@ -159,20 +158,20 @@ const result =  {
   'lending.stakingDesc': 'Earn 6-35% APR on a Constant node. Low minimums. Withdraw anytime.',
   'headerBar.home': 'Home',
   'headerBar.account': 'Account',
-  'headerBar.setting': 'Setting',
+  'headerBar.lending': 'Lending',
   'headerBar.flex': 'High-Yield Savings',
-  'headerBar.crypto': 'Crypto',
+  'headerBar.flexMobile': 'Savings',
   'headerBar.staking': 'Staking <sup>NEW</sup>',
-  'headerBar.transfer': 'Transfer',
+  'headerBar.transfer': 'Send',
   'headerBar.save': 'Invest',
   'headerBar.borrow': 'Borrow',
   'headerBar.signIn': 'Sign In',
-  'headerBar.signUp': 'Sign Up',
+  'headerBar.signUp': 'Get Started',
   'headerBar.contactUs': 'Contact Us',
   'headerBar.aboutUs': 'About Us',
   'headerBar.faq': 'FAQ',
   'headerBar.wallet': 'Wallet',
-  'headerBar.walletOrder': 'Balance and Transactions',
+  'headerBar.walletOrder': 'Orders and Transactions',
   'headerBar.landingPro': 'Pro',
   'headerBar.yourWallet': 'Wallet',
   'headerBar.about': 'About',
@@ -188,9 +187,9 @@ const result =  {
   'headerBar.extraMenu.invest.desc': '\n          <p>Get a better return on <br/>your money.</p>\n        ',
   'headerBar.extraMenu.borrow.title': 'Borrow',
   'headerBar.extraMenu.borrow.desc': '\n          <p>Get cash for crypto without needing to sell.</p>\n        ',
-  'headerBar.extraMenu.investFlex.title': 'Fiat Flex',
+  'headerBar.extraMenu.investFlex.title': 'Flex',
   'headerBar.extraMenu.investFlex.desc': '{percent}% APY. Fully secured.<br/>Withdraw anytime.',
-  'headerBar.extraMenu.investCustom.title': 'Fiat Custom',
+  'headerBar.extraMenu.investCustom.title': 'Custom',
   'headerBar.extraMenu.investCustom.desc': 'Your terms. Best rates.<br/>Fully secured.',
   'headerBar.extraMenu.investLO.title': 'Loan Originator',
   'headerBar.extraMenu.investLO.desc': 'Earn up to 11% APR. Terms from <br/>6-15 months. Includes loan originator’s <br/>buy-back guarantee in case of default.',
@@ -205,27 +204,6 @@ const result =  {
   'headerBar.extraMenu.borrowPRV.desc': 'Borrow against PRV from 6% APR. Secure escrow. No credit checks',
   'headerBar.extraMenu.borrowCoins.title': 'Crypto Credit',
   'headerBar.extraMenu.borrowCoins.desc': 'Borrow cash, get crypto.<br/>No exchanges.',
-  'headerBar.extraMenuMobile.invest.title': 'Invest',
-  'headerBar.extraMenuMobile.invest.desc': '\n          <p>Get a better return on your money.</p>\n        ',
-  'headerBar.extraMenuMobile.borrow.title': 'Borrow',
-  'headerBar.extraMenuMobile.borrow.desc': '\n          <p>Get cash for crypto without needing to sell.</p>\n        ',
-  'headerBar.extraMenuMobile.investFlex.title': 'Fiat Flex',
-  'headerBar.extraMenuMobile.investFlex.desc': '{percent}% APY. Fully secured. Withdraw anytime.',
-  'headerBar.extraMenuMobile.investCustom.title': 'Fiat Custom',
-  'headerBar.extraMenuMobile.investCustom.desc': 'Your terms. Best rates. Fully secured.',
-  'headerBar.extraMenuMobile.investLO.title': 'Loan Originator',
-  'headerBar.extraMenuMobile.investLO.desc': 'Earn up to 11% APR. Terms from 6-15 months. <br/>Includes loan originator’s buy-back guarantee <br/>in case of default.',
-  'headerBar.extraMenuMobile.investStaking.title': 'Crypto Staking',
-  'headerBar.extraMenuMobile.investStaking.desc': '6%-35% APR. Low minimums. Withdraw anytime.',
-  'headerBar.extraMenuMobile.investStaking.descHotFix': '6%-35% APR. Low minimums. Withdraw anytime.',
-  'headerBar.extraMenuMobile.investFlexCrypto.title': 'Crypto Lend',
-  'headerBar.extraMenuMobile.investFlexCrypto.desc': 'Get 10% APY on BTC, ETH, and BNB.',
-  'headerBar.extraMenuMobile.borrowFiat.title': 'Crypto-backed Loans',
-  'headerBar.extraMenuMobile.borrowFiat.desc': 'Your terms. Best rates. No credit checks.',
-  'headerBar.extraMenuMobile.borrowPRV.title': 'Crypto Incognito Loans',
-  'headerBar.extraMenuMobile.borrowPRV.desc': 'Borrow against PRV from 6% APR. Secure escrow. No credit checks',
-  'headerBar.extraMenuMobile.borrowCoins.title': 'Crypto Credit',
-  'headerBar.extraMenuMobile.borrowCoins.desc': 'Borrow cash, get crypto. No exchanges.',
   'error.required': 'Required',
   'error.requiredOne': 'Please fill in the required fields.',
   'error.greaterThan': 'Please enter a number greater than {min}',
@@ -241,7 +219,7 @@ const result =  {
   'error.serverCode.generalCode500': 'Something went wrong, please try again! (500)',
   'error.serverCode.generalCode400': 'Something went wrong, please try again! (400)',
   'error.serverCode.generalError': 'Oops! Something went wrong, please try again',
-  'error.serverCode.notEnoughConstant': 'You do not have enough Constant to send yet.',
+  'error.serverCode.notEnoughConstant': 'Please ensure you have sufficient funds in your account to complete this transfer.',
   'error.serverCode.buyMin35Cst': 'The minimum amount you can buy is 35 Constant.',
   'error.serverCode.buyMin5Cst': 'The minimum amount you can buy is 5 Constant.',
   'error.serverCode.registerWithExistEmail': 'This email already exists in our system. Please try another.',
@@ -249,7 +227,7 @@ const result =  {
   'error.serverCode.registerInvalidPassword': 'Please enter a valid password.',
   'error.serverCode.registerPasswordNotMatch': 'Please make sure your password matches your email address.',
   'error.serverCode.notKycUser': 'Please complete the KYC process to buy direct from the network.',
-  'error.serverCode.transferUserNotFound': 'Please enter a valid wallet address.',
+  'error.serverCode.transferUserNotFound': 'Please enter a valid email.',
   'error.serverCode.userInfoInvalidKycPreValidate': 'We could not verify you with the information you uploaded. Please try again.',
   'error.serverCode.cannotTransferToYourSelf': 'Please enter a recipient other than yourself.',
   'error.serverCode.violateBonusPolicy': "Your bonus can't be withdrawn for 30 days. This gives you time to try our platform and make some money through our Flex account.",
@@ -257,13 +235,13 @@ const result =  {
   'error.serverCode.invalidUserType': "Oops we can't find you. Please enter your email address again.",
   'error.serverCode.emailDoesntExist': "Oops we can't find you. Please enter your email address again.",
   'error.serverCode.needToSignIn': 'You need to sign in to complete this process',
-  'error.serverCode.not_enough_balance': 'Your balance is not enough',
-  'error.serverCode.createdBankExisted': 'Bank account has existed already!',
-  'error.serverCode.trial_term_deposit_not_available': 'The Constant introductory trial is only available to new users .',
+  'error.serverCode.not_enough_balance': 'Your balance is insufficient. Please try again with a different amount.',
+  'error.serverCode.createdBankExisted': 'Nice! This bank account has already been registered.',
+  'error.serverCode.trial_term_deposit_not_available': 'The Constant introductory trial is only available for new users.\n',
   'error.serverCode.not_pro_saving_user': 'Sorry, we can only offer services in the USA to SEC accredited investors.',
   'error.serverCode.otpNotMatched': 'Google authentication code not matched, please try again.',
   'error.serverCode.userDocumentCannotChange': 'You cannot change KYC information. Please contact admin for support.',
-  'error.serverCode.missingUserDocuments': "User hasn't had any document yet!",
+  'error.serverCode.missingUserDocuments': 'Please upload required documents.',
   'error.serverCode.userFirstNameInvalid': 'FirstName is invalid',
   'error.serverCode.userLastNameInvalid': 'LastName is invalid',
   'error.serverCode.userDOBInvalid': 'DOB is invalid',
@@ -280,23 +258,23 @@ const result =  {
   'error.serverCode.restrictedEmail': 'Email is restricted',
   'error.serverCode.prvMaxWithdraw': 'Prv is max withdraw',
   'error.serverCode.inValidWalletAddress': 'Receive address invalid',
-  'error.serverCode.undefined': 'Oops! Something went wrong, please try again',
+  'error.serverCode.': 'Oops! Something went wrong, please try again',
   'error.serverCode.loginFailure': 'Please make sure your email and password are correct.',
   'error.serverCode.loginFailureCaptchaV2': 'Something went wrong please try again',
   'error.serverCode.stakingRequireMinTerm': 'Since you staked your collateral to reduce the interest on your loan, you can’t un-stake until your loan matures.',
   'error.serverCode.reserveNotEnough': "Sorry, we can't create your order at the moment. Please contact us at hello@myconstant.com and we'll help fix this issue for you.",
   'error.withdrawGreaterThan': 'The minimum withdrawal amount is {min}',
-  'error.withdrawLessThanOrEqual': 'The maximum withdrawal amount is {max}',
-  'error.reachDayLimit': 'You have reached the daily Zelle withdrawal limit of $500. Please choose a different withdrawal method.',
+  'error.withdrawLessThanOrEqual': 'The maximum withdrawal amount is {max}. Please try other available methods.',
+  'error.reachDayLimit': 'You have reached the daily withdrawal limit of this payment method. Please try other available methods.',
   'error.suspendWithdrawalTo': '<p>For your security, withdrawals and transfers have been temporarily suspended on your account until {date}. This follows a recent change to your security settings. To reinstate withdrawals and transfers early, please <a href="/me/securities" target="_blank" class="underline bold">enable email confirmations</a>.</p>',
-  'errorCode.3000': 'Your Constant balance is not enough to create this order',
+  'errorCode.3000': 'Your balance is insufficient. Please try again with a different amount.',
   'errorCode.3001': 'Cannot cancel this order id',
   'errorCode.3002': 'Type should be sell/Buy',
   'errorCode.3003': 'Cannot find exchange rate',
   'errorCode.3004': 'Your Constant must be less or equal 2000',
-  'errorCode.3005': 'Your price must be large than 0',
+  'errorCode.3005': 'Please enter a price more than 0.',
   'errorCode.3006': "Your price doesn't match with your list",
-  'errorCode.3007': 'Please double check status of your order',
+  'errorCode.3007': 'Please check the status of your transaction.',
   'errorCode.3008': 'Please double check order type',
   'errorCode.3009': 'You are not owner of this order id',
   'errorCode.3010': 'You cannot Buy/Sell with yourself',
@@ -305,9 +283,9 @@ const result =  {
   'errorCode.3013': 'Please check your bank account number',
   'errorCode.3014': 'Please check your routing number or swift code',
   'errorCode.3015': 'Please check your bank number',
-  'errorCode.3016': 'You cannot approve this order. Please contact hello@constant.money for support',
-  'errorCode.3017': 'You cannot finish this order. Please contact hello@constant.money for support',
-  'errorCode.3018': 'Transation Error',
+  'errorCode.3016': "Oops, something went wrong.. Please contact hello@myconstant and we'll do our best to help.\n",
+  'errorCode.3017': "Oops, something went wrong.. Please contact hello@myconstant and we'll do our best to help.\n",
+  'errorCode.3018': 'Oops, something went wrong. Please try again.',
   'errorCode.3019': 'There is no bank info of user',
   'errorCode.8000': 'invalid request',
   'errorCode.8001': 'file invalid',
@@ -331,10 +309,10 @@ const result =  {
   'me.navigation.fiatStableCoin': 'Fiat - Stablecoins',
   'me.navigation.cryptoLend': 'Crypto Lend',
   'me.navigation.topupHistory': 'Top-up History',
-  'me.navigation.withdraws': 'Withdraws',
+  'me.navigation.withdraws': 'Withdrawals',
   'me.navigation.localHistory': 'Transfers and interest earnings',
   'me.navigation.transfers': 'Transfers',
-  'me.navigation.wallets': 'My Wallets',
+  'me.navigation.wallets': 'Constant wallet',
   'me.navigation.constantWallet': 'Constant Wallet',
   'me.navigation.cryptoWallet': 'My Crypto Wallets',
   'me.navigation.bankInfo': 'Bank information',
@@ -343,20 +321,20 @@ const result =  {
   'me.navigation.myTransactions': 'Account activity',
   'me.navigation.overView': 'Overview',
   'me.navigation.cryptoLoanHistory': 'My Crypto Loans',
-  'me.navigation.viewLoanDetail': 'View loan detail here',
-  'me.navigation.viewConstantWallet': 'View constant wallet here',
-  'me.navigation.viewInvestmentDetail': 'View investment detail here',
-  'me.navigation.batchTransfer': 'Batch Transfer',
+  'me.navigation.viewLoanDetail': 'View loan details here',
+  'me.navigation.viewConstantWallet': 'Receive CONST here',
+  'me.navigation.viewInvestmentDetail': 'View investment details here',
+  'me.navigation.batchTransfer': 'Batch transfers',
   'me.navigation.referralInfo': 'Referral Information',
   'me.navigation.openOrders': 'Open Orders',
-  'me.navigation.interests': 'Interests',
+  'me.navigation.interests': 'Interest',
   'me.navigation.accountActivities': 'Account Activity',
-  'me.navigation.staking': 'Staking history',
+  'me.navigation.staking': 'Your staking history',
   'me.navigation.fiat': 'Fiat',
   'me.navigation.crypto': 'Crypto',
   'me.navigation.collateral': 'Collateral',
-  'me.wallet.title': 'This is your wallet address you could send Constant to',
-  'me.wallet.walletAddress': 'Your ether wallet: ',
+  'me.wallet.title': 'Receive CONST here. Trying to deposit crypto collateral? Please do so from the Coin Balance',
+  'me.wallet.walletAddress': 'Your wallet:',
   'me.kyc.needEmail': 'You need to verify your email first.',
   'me.kyc.reviewing': '\n' +
     '        <p>Thanks, it’s nice to meet you.</p>\n' +
@@ -384,7 +362,7 @@ const result =  {
   'me.kyc.plLastName': 'Last Name',
   'me.kyc.lBirthday': 'Birthday',
   'me.kyc.lGender': 'Gender',
-  'me.kyc.isUS': 'Are you a US Citizen?',
+  'me.kyc.isUS': 'Are you a US citizen or resident?\n',
   'me.kyc.isUSYes': 'Yes',
   'me.kyc.isUSNo': 'No',
   'me.kyc.lTaxCountry': 'Country listed on your ID',
@@ -397,7 +375,7 @@ const result =  {
   'me.kyc.btnSubmit': 'Submit',
   'me.kyc.lUpload': 'Upload an image of THE {face} of your {type}',
   'me.kyc.selfie': 'Upload an image of your SELFIE',
-  'me.kyc.descIDUpload': 'Please make sure that the photo is complete and clearly visible, in BMP, JPG, JPEG, or PNG format, and is smaller than 3MB.',
+  'me.kyc.descIDUpload': 'Please make sure that the photo is complete and clearly visible, in BMP, JPG, JPEG, or PNG format, and is smaller than 10MB.',
   'me.kyc.lAddrStr1': 'Address Street',
   'me.kyc.lAddrCountry': 'Country on your proof of address',
   'me.kyc.plAddrCountry': 'Select your country',
@@ -528,7 +506,7 @@ const result =  {
   'me.sellOrder.yourInvest': 'Your Invests',
   'me.personalProfile.title': 'Personal Detail',
   'me.personalProfile.name': 'Name',
-  'me.personalProfile.userName': 'Nickname',
+  'me.personalProfile.userName': 'Name',
   'me.personalProfile.optional': 'Optional',
   'me.personalProfile.fullName': 'Full name',
   'me.personalProfile.email': 'Email',
@@ -560,20 +538,19 @@ const result =  {
   'me.personalProfile.errorsInvalidKYC': 'User info is invalid for KYC pre-validate',
   'me.personalProfile.errorsMissParramKYC': 'User info is not enough to verify KYC',
   'me.personalProfile.saveSuccess': 'Your profile was updated successfully',
-  'me.personalProfile.saveFailed': 'Failed while updating your profile, please try again',
+  'me.personalProfile.saveFailed': 'Something went wrong, please try again',
   'me.personalProfile.addressInfo': 'Your address and ID information should match the information in the uploaded image.',
   'me.accountInfo.title': 'Your account details',
   'me.accountInfo.email': 'Email',
-  'me.accountInfo.nickname': 'Nickname',
-  'me.accountInfo.nickname_note': 'This name will be shown in your preview',
+  'me.accountInfo.nickname': 'Name',
+  'me.accountInfo.nickname_note': 'What should we call you?',
   'me.accountInfo.language': 'Language',
   'me.accountInfo.alert.passwordFailed': 'Update Password Failed',
-  'me.accountInfo.alert.success': 'Your nickname was changed successfully',
+  'me.accountInfo.alert.success': 'Your name was changed successfully',
   'me.accountInfo.alert.failed': 'Failed',
   'me.accountInfo.emailNotVerified': 'Please verify your email.',
   'me.accountInfo.verifyBtn': 'Resend verification',
   'me.accountInfo.enable2Fa': 'Enable 2FA to add extra security to your account',
-  'me.accountInfo.enableSms': 'Enable SMS Authentication to add extra security to your account',
   'me.changePassword.newPasswordIsRequired': 'New password is required',
   'me.changePassword.oldPassword': 'Old password',
   'me.changePassword.newPassword': 'New password',
@@ -597,7 +574,7 @@ const result =  {
     '            <p>Google 2FA uses your phone as well as your password to protect your account.</p>\n' +
     '              <p>We strongly recommend you enable 2FA to protect your account from fraud, identity theft, and other abuse.</p>\n' +
     '                <p>Enable 2FA now to double the security protection on your account.</p>',
-  'me.twoFa.description2Fa': 'Important actions (withdraw, transfer, etc.) will require you to enter a password via Google Authenticator or Authy.',
+  'me.twoFa.description2Fa': 'Important actions (withdraw, transfer, etc.) will require you to enter a code via Google Authenticator or Authy.',
   'me.twoFa.invalidatePassword': 'Password not matched, please try again',
   'me.twoFa.invalidateOtp': 'Google authentication code not matched, please try again',
   'me.twoFa.qrScanModal.title': 'Scan QR Code',
@@ -653,7 +630,7 @@ const result =  {
   'me.twoFa.input2Fa.newInputCode': 'Please input the 6-digit code from your Google Authenticator app.',
   'me.twoFa.input2Fa.cantAccess': 'Can’t access Google Authentication?',
   'me.twoFa.disable2FaSuccess': 'Disable 2FA successfully!',
-  'me.twoFa.enable2FaSuccess': 'Enable 2FA successfully!',
+  'me.twoFa.enable2FaSuccess': '2FA successfully enabled.',
   'me.setting.title': 'General Settings',
   'me.notificationSetting.title': 'Notification Settings',
   'me.notificationSetting.secondaryMarketSetting.title': 'Secondary market mobile notifications',
@@ -714,33 +691,6 @@ const result =  {
   'me.emailSetting.emailConfirmation.disableFailed': 'Failed To Disable',
   'me.emailSetting.emailConfirmation.enableFailed': 'Failed To Enable',
   'me.emailSetting.emailConfirmation.two2faRequired': 'Please <a href="/me/securities" class="underline">enable 2-Factor Authorization</a> before {action} email notifications.',
-  'me.smsSettings.title': 'SMS Authentication',
-  'me.smsSettings.labelOff': 'Turn on now?',
-  'me.smsSettings.labelOn': 'Disable',
-  'me.smsSettings.noteOn': '<p>Nice – SMS authentication is protecting your account.</p>\n' +
-    '                <p>When you withdraw or transfer, you’ll receive an authorization code via SMS to your registered device. Enter this code when prompted to confirm the transaction. </p>',
-  'me.smsSettings.noteOff': '<p>Hey! You’re not using SMS authentication right now.</p>\n' +
-    '                <p>Enable it here, follow the on-screen instructions, and add some extra security to your account. </p>',
-  'me.smsSettings.phoneNumber': 'Step 2: Enter your mobile number and then click “Send code”.',
-  'me.smsSettings.smsCode': 'Step 3: Enter the SMS authentication code we sent you and then click “Done”.',
-  'me.smsSettings.inputAuthCode': 'Step 1: Enter your Google Authentication code.',
-  'me.smsSettings.sendCode': 'Send code',
-  'me.smsSettings.reSendCode': 'Resend code',
-  'me.smsSettings.back': 'Back',
-  'me.smsSettings.cancel': 'Cancel',
-  'me.smsSettings.done': 'Done',
-  'me.smsSettings.invalidateSms': 'Sms authentication code not matched, please try again',
-  'me.smsSettings.enableSms': 'Enable SMS Authentication',
-  'me.smsSettings.disableSms': 'Disable SMS Authentication',
-  'me.smsSettings.enableSmsSuccess': 'Thanks for enabling SMS authentication. You’ll receive an authorization code via SMS whenever you request a withdrawal or transfer. You can disable this setting at any time.',
-  'me.smsSettings.disableSmsSuccess': 'Thanks for disabling SMS authentication. We recommend using all available security measures to protect your account.',
-  'me.smsSettings.inputSms.popupTitle': 'SMS Authentication',
-  'me.smsSettings.inputSms.newTitle': 'SMS Authentication',
-  'me.smsSettings.inputSms.newInputCode': 'Please input the 6-digit code sent to your phone.',
-  'me.smsSettings.inputSms.cantAccess': 'Can’t get SMS code?',
-  'me.smsSettings.inputSms.resendCode': 'Resend code',
-  'me.smsSettings.inputSms.resendCodeSuccess': 'Resend code success!',
-  'me.smsSettings.inputSms.resendCodeFailed': 'Resend code fail!',
   'me.flexInterestConfig.title': 'Earn 4% APY on your balance with Flex',
   'me.flexInterestConfig.label': 'Earn 4% APY through Flex',
   'me.flexInterestConfig.noteOn': 'Your balance is earning 4% APY through Flex. You can withdraw anytime for free.',
@@ -768,8 +718,8 @@ const result =  {
   'me.localHistory.status.canceled': 'Cancelled',
   'me.localHistory.status.timeout': 'Order timed out',
   'me.localHistory.status.transferMoneyToAgent': 'Waiting for buyer to send money',
-  'me.localHistory.status.waitAgentTransferMoney': 'Waiting for seller to send money',
-  'me.localHistory.status.transferredMoneyToAgent': 'Funds have been sent to your bank account.',
+  'me.localHistory.status.waitAgentTransferMoney': 'Processing',
+  'me.localHistory.status.transferredMoneyToAgent': 'Deposit received. Your balance will update shortly.',
   'me.localHistory.status.done': 'Successful',
   'me.localHistory.status.inProgress': 'Order in progress',
   'me.localHistory.confirm.title.Cancel': 'Cancel order #{ID}',
@@ -784,34 +734,9 @@ const result =  {
   'me.localHistory.confirm.content.Approve': '\n' +
     '             <div>\n' +
     '              <p>You’re buying <strong>{Amount} Constant</strong> at <strong>{Price}</strong> {Currency} per Constant.</p>\n' +
-    '              <p>If you’ve sent <strong>{TotalVND} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p>\n' +
+    '              <p>If you’ve sent <strong>{TotalVND} {Currency}</strong> to the seller’s bank account, please click “Confirm payment” below.</p> \n' +
     '              <p>Otherwise, please send <strong>{TotalVND} {Currency}</strong> to the seller’s bank account. Remember to include your reference number <ref> in the transfer description.</p>\n' +
-    '              <div name="bank">\n' +
-    '                <div>\n' +
-    '                  <span>Bank Name:</span>\n' +
-    '                  <strong>{BankName}</strong>\n' +
-    '                </div>\n' +
-    '                <div>\n' +
-    '                  <span>Account Name:</span>\n' +
-    '                  <strong>{BankAccountName}</strong>\n' +
-    '                </div>\n' +
-    '                <div>\n' +
-    '                  <span>Account Number: </span>\n' +
-    '                  <strong>{BankAccountNumber}</strong>\n' +
-    '                </div>\n' +
-    '                <div>\n' +
-    '                  <span>Amount: </span>\n' +
-    '                  <strong>{TotalVND}&nbsp;{Currency}</strong>\n' +
-    '                </div>\n' +
-    '                <div>\n' +
-    '                  <span>Reference: </span>\n' +
-    '                  <strong>{Reference}</strong>\n' +
-    '                </div>\n' +
-    '              </div>\n' +
-    '              <br />\n' +
-    '              <p>IMPORTANT: If you don’t complete your transfer within 30 minutes, your order will be cancelled. This protects you and our network from misuse.</p>\n' +
-    '             </div>\n' +
-    '          ',
+    '              <div name=bank">',
   'me.localHistory.confirm.content.Finish': '\n' +
     '            <div>\n' +
     '                <p>You’re selling <strong>{Amount} Constant</strong> at <strong>{Price} </strong> {Currency} per Constant.</p>\n' +
@@ -822,7 +747,7 @@ const result =  {
   'me.history.backToOrder': 'View detail',
   'me.history.backToOrderMsg': 'Go back to confirmation page',
   'me.history.title': 'Transaction History',
-  'me.history.balance': 'Total balance: {balance} CONSTANT',
+  'me.history.balance': 'Total balance: {balance} USD',
   'me.history.holdingBalance': 'Holding Balance: {balance} USD',
   'me.history.withdrawAndTransfer': 'Withdrawals and Transfers',
   'me.history.investmentOrder': 'Investments',
@@ -835,7 +760,7 @@ const result =  {
   'me.history.cryptoAddress': 'Crypto address',
   'me.history.reference_number': 'Reference No.',
   'me.history.type': 'Type',
-  'me.history.amount': 'Amount',
+  'me.history.amount': 'USD Amount',
   'me.history.amountText': 'Amount',
   'me.history.toEmail': 'To Email',
   'me.history.toAddress': 'To Address',
@@ -843,7 +768,7 @@ const result =  {
   'me.history.fromEmail': 'From Email',
   'me.history.viewDetail': 'Details',
   'me.history.currency': 'Currency',
-  'me.history.noHistoryData': 'Get Constant here',
+  'me.history.noHistoryData': 'Make a deposit to get started.',
   'me.history.fee': 'fee',
   'me.history.received': 'received',
   'me.history.withdrawals': 'Withdrawals',
@@ -856,7 +781,7 @@ const result =  {
   'me.history.status': 'Status',
   'me.history.note': 'Note',
   'me.history.total': 'Total',
-  'me.history.value': 'Value',
+  'me.history.value': 'Currency Amount',
   'me.history.link': 'Link',
   'me.history.action': 'Action',
   'me.history.cancel': 'Cancel',
@@ -868,7 +793,7 @@ const result =  {
   'me.history.reject': 'Reject',
   'me.history.rejectMess': 'Are you sure you want to reject this order?',
   'me.history.close': 'Close',
-  'me.history.detail': 'Transaction Detail',
+  'me.history.detail': 'Transaction Details',
   'me.history.extID': 'External ID',
   'me.history.exportToExcel': 'Export to excel',
   'me.history.openOrders': 'Open orders',
@@ -884,7 +809,7 @@ const result =  {
   'me.history.orderType.0': 'Buy',
   'me.history.orderType.1': 'Convert',
   'me.history.orderType.2': 'Transfer',
-  'me.history.orderType.3': 'Saving',
+  'me.history.orderType.3': 'Investments',
   'me.history.orderType.4': 'Interest',
   'me.history.orderType.5': 'Fee',
   'me.history.orderType.6': 'Import',
@@ -908,7 +833,6 @@ const result =  {
   'me.history.orderType.24': 'LO investment',
   'me.history.orderType.25': 'LO repayment',
   'me.history.orderType.26': 'LO Investment',
-  'me.history.orderType.33': 'Badge reward',
   'me.history.orderType.101': 'Bonus',
   'me.history.orderType.102': 'Coupon Signup',
   'me.history.orderType.received': 'Received',
@@ -967,7 +891,7 @@ const result =  {
   'me.history.user.status.canceled': 'Cancelled',
   'me.history.user.status.timeout': 'Order timed out',
   'me.history.user.status.transferMoneyToAgent': 'Please make a transfer to complete your deposit',
-  'me.history.user.status.waitAgentTransferMoney': 'Waiting for seller to send money',
+  'me.history.user.status.waitAgentTransferMoney': 'Processing',
   'me.history.user.status.transferredMoneyToAgent': 'Your account will be credited once we have received your transfer.',
   'me.history.user.status.transferredMoneyToAgentInvest': 'Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.',
   'me.history.user.status.done': 'Successful',
@@ -978,7 +902,7 @@ const result =  {
   'me.history.bankInfo.bankCountryAndCurrency': 'Country/Currency',
   'me.history.bankInfo.bankAccountCurrency': 'Account Currency',
   'me.history.bankInfo.bankCountry': 'Bank Country',
-  'me.history.bankInfo.bankAccountName': 'Bank account name',
+  'me.history.bankInfo.bankAccountName': 'Beneficiary name',
   'me.history.bankInfo.bankAccountNumber': 'Your account number',
   'me.history.risk.bank': 'Have the same bank account with:',
   'me.history.risk.destination': 'Have the same destination transfer to:',
@@ -1039,7 +963,7 @@ const result =  {
   'me.accountLevel.idTypes.passport': 'Passport',
   'me.accountLevel.idTypes.driver_license': 'Driver License',
   'me.accountLevel.idTypes.id_card': 'Government ID Card',
-  'me.bankInfo.emptyBank': 'Get Constant here',
+  'me.bankInfo.emptyBank': 'Make a deposit to get started.',
   'me.bankInfo.getBankFailed': 'Failed while getting user list banks',
   'me.bankInfo.btnAdd': 'Add a new bank',
   'me.bankInfo.titleAddBank': 'Add a new bank',
@@ -1134,15 +1058,15 @@ const result =  {
   'me.phoneVerification.verifyFailed': 'Verify failed, please try again!',
   'me.phoneVerification.verifySuccess': 'Your phone was verified successfully, now your level is Level 2',
   'me.kycVerification.pleaseComplete': 'Please complete the KYC process to {action}.',
-  'me.kycVerification.complete': 'Complete KYC',
+  'me.kycVerification.complete': 'Verify',
   'me.kycVerification.pleaseKYCBeforeAction': 'For your security, we’ll need you to verify your ID before {action}.',
   'me.kycVerification.updatedSuccess': 'Your information was updated successfully',
   'me.kycVerification.updatedFailed': 'Failed while updating your information, please try again!',
   'me.kycVerification.checkVerifyFailed': 'Failed while checking your verify status',
-  'me.kycVerification.action.invest': 'invest',
-  'me.kycVerification.action.transfer': 'transfer',
-  'me.kycVerification.action.deposit': 'deposit',
-  'me.kycVerification.action.withdraw': 'withdraw',
+  'me.kycVerification.action.invest': 'making a deposit',
+  'me.kycVerification.action.transfer': 'making a transfer',
+  'me.kycVerification.action.deposit': 'making a deposit',
+  'me.kycVerification.action.withdraw': 'withdrawing',
   'me.referDialog.labelShare': 'Invite your friends to join Constant',
   'me.referDialog.btnShare': 'Copy link',
   'me.referDialog.copied': 'Referral link copied to clipboard.',
@@ -1153,11 +1077,11 @@ const result =  {
   'me.referDialog.noOptionsMessage': 'No data',
   'me.referDialog.addNewEmail': 'Add {email}',
   'me.proSaving.listApplications.headingNote': 'We will send you notifications via email if your collateral falls in value. Sometimes, these may wind up in your spam folder, so do check, and drag the email to your main inbox to prevent this from happening in the future. Do also frequently check our site - the values shown here are updated real-time.',
-  'me.proSaving.listApplications.noLoans': "You don't have any loans",
-  'me.proSaving.listApplications.noInvestment': "You don't have any investment",
-  'me.proSaving.listApplications.totalInterestEarned': "You've already earned",
-  'me.proSaving.listApplications.noRecord': 'You have no invest',
-  'me.proSaving.listApplications.getListFailed': 'Failed while getting your invests, please try again',
+  'me.proSaving.listApplications.noLoans': 'Request your first fixed rate loan here.',
+  'me.proSaving.listApplications.noInvestment': 'Make your first investment of any amount today.',
+  'me.proSaving.listApplications.totalInterestEarned': 'Interest earned',
+  'me.proSaving.listApplications.noRecord': 'You have not made any investments yet.',
+  'me.proSaving.listApplications.getListFailed': 'Sorry, something went wrong. Please try again.',
   'me.proSaving.listApplications.createdDate': 'Created Date',
   'me.proSaving.listApplications.amount': 'Principal',
   'me.proSaving.listApplications.staking': 'Stake balance',
@@ -1244,9 +1168,9 @@ const result =  {
   'me.proSaving.listApplications.termStatus.voiding': 'Selling',
   'me.proSaving.listApplications.termStatus.voided': 'Sold',
   'me.proSaving.listApplications.termStatus.locked': 'Verifying',
-  'me.proSaving.listApplications.interestInfo.header.title': 'Want to unlock more returns for all your accounts?',
+  'me.proSaving.listApplications.interestInfo.header.title': 'Want to increase interest earnings across all your accounts?',
   'me.proSaving.listApplications.interestInfo.body.item1.title': '+{percent}%',
-  'me.proSaving.listApplications.interestInfo.body.item1.description': 'Invest 1,000 USD or more',
+  'me.proSaving.listApplications.interestInfo.body.item1.description': 'Deposit 1,000 USD or more',
   'me.proSaving.listApplications.interestInfo.body.item2.title': '+{total_percent}% {percent_claimed}',
   'me.proSaving.listApplications.interestInfo.body.item2.description': '{refer} Get an extra {referralRate}% each',
   'me.proSaving.listApplications.interestInfo.body.item2.refer': 'Refer up to 15 friends.',
@@ -1257,10 +1181,10 @@ const result =  {
   'me.proSaving.listApplications.interestInfo.body.item3.twitter': 'Twitter',
   'me.proSaving.listApplications.interestInfo.footer.title': 'That’s {percent}%',
   'me.proSaving.listApplications.interestInfo.footer.description': 'On top of what you already earn - for every account.',
-  'me.proSaving.listApplications.interestInfo.shareFbSuccess': 'Share referral link success.',
-  'me.proSaving.listApplications.shareAndEarn': "Earn 10% of friends' interest: Refer now",
+  'me.proSaving.listApplications.interestInfo.shareFbSuccess': 'Success! Thanks for telling your friends about Constant.',
+  'me.proSaving.listApplications.shareAndEarn': 'Invite friends, earn 10% more',
   'me.proSaving.listApplications.shareAndEarnUS': 'Invite a friend, earn $10 or more.',
-  'me.proSaving.listApplications.withdraw': 'Withdraw fiat',
+  'me.proSaving.listApplications.withdraw': 'Withdraw',
   'me.proSaving.listApplications.withdrawFiat': 'Fiat',
   'me.proSaving.listApplications.withdrawCrypto': 'Crypto',
   'me.proSaving.listApplications.transfer': 'Transfer',
@@ -1270,8 +1194,8 @@ const result =  {
   'me.proSaving.listApplications.depositMatched': 'Deposit',
   'me.proSaving.listApplications.cancelDepositMatched': 'Cancel Deposit',
   'me.proSaving.listApplications.withdrawDesc': 'Withdraw funds to your bank account or wallet address.',
-  'me.proSaving.listApplications.depositDesc': 'Store your money in USD. Earn 4% APY with Flex.',
-  'me.proSaving.listApplications.transferDesc': 'Send money across the world instantly - to as many people as you like.',
+  'me.proSaving.listApplications.depositDesc': 'Earn 4% APY by default.\n',
+  'me.proSaving.listApplications.transferDesc': 'Send money across the world - to as many people as you like.',
   'me.proSaving.listApplications.row': 'Row',
   'me.proSaving.listApplications.errorMessage': 'Error Message',
   'me.proSaving.listApplications.saving': 'Invest now',
@@ -1291,30 +1215,30 @@ const result =  {
   'me.proSaving.listApplications.dialog.autoTopup.messageConfirm.true': 'Are you sure you want to turn off auto top-up? Your collateral will be liquidated if it falls to {LiqPer}%.',
   'me.proSaving.listApplications.dialog.autoTopup.messageConfirm.disable': 'Are you sure you want to turn off auto top-up? Your collateral will be liquidated if it falls to {LiqPer}%.',
   'me.proSaving.listApplications.dialog.autoTopup.messageConfirm.enable': 'Auto top-up enabled. Collateral value that falls to {AutoTopupPer}% will be restored to {AutoTopupToPer}%.',
-  'me.proSaving.listApplications.dialog.autoTopup.autoTopUpCollateralSuccess.true': 'Turn auto top up on successfully',
-  'me.proSaving.listApplications.dialog.autoTopup.autoTopUpCollateralSuccess.false': 'Turn auto top up off successfully',
+  'me.proSaving.listApplications.dialog.autoTopup.autoTopUpCollateralSuccess.true': 'Auto top-up turned on successfully',
+  'me.proSaving.listApplications.dialog.autoTopup.autoTopUpCollateralSuccess.false': 'Auto top-up turned off successfully',
   'me.proSaving.listApplications.dialog.autoTopup.autoTopUpCollateralFailed.true': 'Turn auto top up on failed',
   'me.proSaving.listApplications.dialog.autoTopup.autoTopUpCollateralFailed.false': 'Turn auto top up off failed',
   'me.proSaving.listApplications.dialog.autoTopup.confirm': 'Yes',
   'me.proSaving.listApplications.dialog.autoTopup.cancel': 'No',
   'me.proSaving.listApplications.dialog.autoRenew.messageConfirm.true': 'Are you sure you want to turn off auto renew?',
   'me.proSaving.listApplications.dialog.autoRenew.messageConfirm.false': 'When you repay your loan, your collateral balance will be used to secure a new loan order at the same amount, interest rate, and term.',
-  'me.proSaving.listApplications.dialog.autoRenew.autoRenewCollateralSuccess.true': 'Turn auto renew on successfully',
-  'me.proSaving.listApplications.dialog.autoRenew.autoRenewCollateralSuccess.false': 'Turn auto renew off successfully',
+  'me.proSaving.listApplications.dialog.autoRenew.autoRenewCollateralSuccess.true': 'Auto-renew turned on successfully',
+  'me.proSaving.listApplications.dialog.autoRenew.autoRenewCollateralSuccess.false': 'Auto-renew turned off successfully',
   'me.proSaving.listApplications.dialog.autoRenew.autoRenewCollateralFailed.true': 'Turn auto top up on failed',
   'me.proSaving.listApplications.dialog.autoRenew.autoRenewCollateralFailed.false': 'Turn auto top up off failed',
   'me.proSaving.listApplications.dialog.autoRenew.confirm': 'Yes',
   'me.proSaving.listApplications.dialog.autoRenew.cancel': 'No',
-  'me.proSaving.listApplications.dialog.withdrawAccount.title': 'Saving',
-  'me.proSaving.listApplications.dialog.withdrawAccount.body': 'Want to multiply your returns? Commit any amount for any time horizon.',
+  'me.proSaving.listApplications.dialog.withdrawAccount.title': 'Investments',
+  'me.proSaving.listApplications.dialog.withdrawAccount.body': 'Want to get more out of your money? Invest in fully secured peer-to-peer lending and choose your own interest rate.',
   'me.proSaving.listApplications.dialog.withdrawAccount.termTitle': '{month} month{termType}',
   'me.proSaving.listApplications.dialog.withdrawAccount.percentReceive': 'You will earn {percent}% APR.',
   'me.proSaving.listApplications.dialog.withdrawAccount.confirm': 'Invest',
   'me.proSaving.listApplications.dialog.withdrawAccount.cancel': 'Cancel',
   'me.proSaving.listApplications.dialog.withdrawAccount.messageConfirm': 'You are about to invest {amount} Constant.',
-  'me.proSaving.listApplications.dialog.withdrawAccount.validateMaxAmountError': "Sorry, you don't have enough Constant to deposit this amount.",
-  'me.proSaving.listApplications.dialog.withdrawAccount.validateMinAmountError': "You can't input amount less than {amount} CONSTANT",
-  'me.proSaving.listApplications.dialog.checkTrialKyc.messageConfirm': 'For your security, please verify your identity before making a withdrawal from your Anytime Account.',
+  'me.proSaving.listApplications.dialog.withdrawAccount.validateMaxAmountError': 'Please top up your Constant account with sufficient funds.',
+  'me.proSaving.listApplications.dialog.withdrawAccount.validateMinAmountError': 'Please enter an amount larger than {amount} USD.',
+  'me.proSaving.listApplications.dialog.checkTrialKyc.messageConfirm': 'For your security, please verify your identity before making a withdrawal.',
   'me.proSaving.listApplications.dialog.checkTrialKyc.confirm': 'Verify my ID',
   'me.proSaving.listApplications.dialog.checkTrialKyc.cancel': 'Maybe later',
   'me.proSaving.listApplications.dialog.cancelDeposit.messageConfirm': 'Are you sure you want to cancel your deposit order?',
@@ -1336,7 +1260,7 @@ const result =  {
   'me.proSaving.listApplications.dialog.deleteLoan.messageConfirm': 'Are you sure you want to delete this loan request?',
   'me.proSaving.listApplications.dialog.deleteLoan.confirm': 'Yes',
   'me.proSaving.listApplications.dialog.deleteLoan.cancel': 'No',
-  'me.proSaving.listApplications.dialog.cancelDepositKyc.messageConfirm': 'To activate this investment order, all you need to do is verify your ID. Cancel anyway?',
+  'me.proSaving.listApplications.dialog.cancelDepositKyc.messageConfirm': 'Are you sure you want to cancel your investment free trial?',
   'me.proSaving.listApplications.dialog.cancelDepositKyc.confirm': 'Yes, cancel',
   'me.proSaving.listApplications.dialog.cancelDepositKyc.cancel': 'Verify my ID',
   'me.proSaving.listApplications.dialog.getRemainCollateral.amount': 'Amount',
@@ -1380,11 +1304,11 @@ const result =  {
   'me.proSaving.listApplications.confirm.batch.confirm': 'Confirm',
   'me.proSaving.listApplications.confirm.batch.cancel': 'Cancel',
   'me.proSaving.listApplications.alert.cancelBorrowSuccess': 'You successfully cancelled borrow',
-  'me.proSaving.listApplications.alert.deleteSavingSuccess': 'You successfully deleted investment',
+  'me.proSaving.listApplications.alert.deleteSavingSuccess': 'Investment order deleted',
   'me.proSaving.listApplications.alert.deleteSavingFailed': 'Failed To delete Invest Saving',
   'me.proSaving.listApplications.alert.depositSavingSuccess': "Thanks! Your investment order was successful. Your term has begun and you've started earning interest.",
   'me.proSaving.listApplications.alert.depositSavingFailed': 'Failed To Invest Saving. Please refresh your browser and try again.',
-  'me.proSaving.listApplications.alert.stopSavingSuccess': 'You ended your term deposit. Withdraw your funds anytime.',
+  'me.proSaving.listApplications.alert.stopSavingSuccess': 'You successfully cancelled your investment.',
   'me.proSaving.listApplications.alert.stopSavingFailed': 'End your term failed.',
   'me.proSaving.listApplications.alert.stopSellingInvestmentSuccess': 'Thanks – we’ve cancelled your sell order and the investment remains yours.',
   'me.proSaving.listApplications.alert.stopSellingInvestmentFailed': 'End your term failed.',
@@ -1400,9 +1324,7 @@ const result =  {
   'me.proSaving.listApplications.batchTransferDialog.title': '',
   'me.proSaving.listApplications.batchTransferDialog.desc': '\n' +
     '            <p>\n' +
-    `              For your convenience, here's a template format you can <a href="https://drive.google.com/uc?authuser=0&id=1W6RJ8roPsVN5_H345Xw6rEKIIIh34wVx&export=download">download</a>. <br />\n` +
-    '            </p>\n' +
-    '          ',
+    `              For your convenience, here's a template format you can <a href=https://drive.google.com/open?id=141JCoBRpf7lUAiK0Y3IRBrMX1ChOfLbM&export=download">download</a>. <br />`,
   'me.proSaving.listApplications.field.amount': 'USD amount number greater than 0',
   'me.proSaving.listApplications.field.to_email': 'Email address is invalid',
   'me.proSaving.listApplications.field.schedule_date': 'Date format must be YYYY-MM-DDTHH:MM',
@@ -1414,8 +1336,8 @@ const result =  {
   'me.proSaving.listApplications.phone': 'Phone',
   'me.proSaving.listApplications.status': 'Status',
   'me.proSaving.listApplications.note': 'Note',
-  'me.proSaving.listApplications.investMore': 'Invest More',
-  'me.proSaving.listApplications.depositFrom.title': 'Make more deposit for your collateral',
+  'me.proSaving.listApplications.investMore': 'Save More',
+  'me.proSaving.listApplications.depositFrom.title': 'Deposit more collateral',
   'me.proSaving.listApplications.depositFrom.collateralRecommended': 'To restore your collateral value to the recommended {LvtPer}%, please top up {amount} {symbol}. <br>You are free to top up any amount you wish.',
   'me.proSaving.listApplications.depositFrom.amount': 'Amount',
   'me.proSaving.listApplications.depositFrom.requiredAmount': 'Amount is required!',
@@ -1427,7 +1349,7 @@ const result =  {
   'me.proSaving.listApplications.depositFrom.cancel': 'Cancel',
   'me.proSaving.listApplications.depositFrom.depositFailed': 'Failed while depositing, please try again',
   'me.proSaving.listApplications.depositFrom.depositSuccess': 'Your deposit was completed successfully',
-  'me.proSaving.listApplications.rewardFrom.title': 'Make more deposit for your collateral',
+  'me.proSaving.listApplications.rewardFrom.title': 'Deposit more collateral',
   'me.proSaving.listApplications.rewardFrom.amount': 'How many STAR do you want to redeem?',
   'me.proSaving.listApplications.rewardFrom.requiredAmount': 'Amount is required!',
   'me.proSaving.listApplications.rewardFrom.maxAmount': 'Your amount must be <= {max}.',
@@ -1437,7 +1359,7 @@ const result =  {
   'me.proSaving.listApplications.rewardFrom.cancel': 'Cancel',
   'me.proSaving.listApplications.rewardFrom.notAvailable': 'Uh oh! Something went wrong, Your reward not available. please try again...',
   'me.proSaving.listApplications.rewardFrom.rewardTitle': 'STAR balance: {balance}',
-  'me.proSaving.listApplications.rewardFrom.rewardSubTile': 'You can apply a maximum of {maxRate} STAR per redemption.',
+  'me.proSaving.listApplications.rewardFrom.rewardSubTile': 'You can apply a maximum of 3 STAR at one time.',
   'me.proSaving.listApplications.rewardFrom.rewardNote': 'This will lower your rate by {rateDown}%',
   'me.proSaving.listApplications.rewardFrom.rewardInvestNote': 'This will increase your rate by {rateUp}%',
   'me.proSaving.listApplications.rewardFrom.rewardApplyFailed': 'Something went wrong. Please try again.',
@@ -1487,7 +1409,7 @@ const result =  {
   'me.staking.balance': '{name} balance: {balance} {symbol} and balance reward: {reward} {symbol}',
   'me.staking.matched': 'Matched: {amount} {symbol}',
   'me.staking.withdraw': 'Withdraw',
-  'me.staking.withdrawReward': 'Withdraw',
+  'me.staking.withdrawReward': 'Withdraw Reward',
   'me.staking.cancel': 'Cancel',
   'me.staking.cancelMess': 'Are you sure you want to cancel?',
   'me.staking.cancelStakingFailed': 'Something went wrong. Please try again.',
@@ -1513,10 +1435,10 @@ const result =  {
   'me.staking.status.12': 'Cancelled',
   'me.staking.status.13': 'Reward Pending',
   COIN_EXCHANGE_LP_FAQ_TITLE: 'Frequently Asked Questions',
-  'landing_page.label.footer': 'Constant MVP is an online exchange developed by Shanzhai Limited, a Hong Kong based company, offering bulk crypto purchasing at competitive prices with full delivery service.<br />Join the dojo: <a href="https://t.me/coin_bowl" class="landing-link">t.me/coin_bowl</a><br />Contact us: <a href="mailto:hello@constant.money" class="landing-link" target="_top">hello@constant.money</a>',
+  'landing_page.label.footer': 'Constant MVP is an online exchange developed by Shanzhai Limited, a Hong Kong based company, offering bulk crypto purchasing at competitive prices with full delivery service.<br />Join the dojo: <a href=https://t.me/coin_bowl" class="landing-link">t.me/coin_bowl</a><br />Contact us: <a href="mailto:hello@constant.money" class="landing-link" target="_top">hello@constant.money</a>"',
   'user.kycInformation': 'KYC Information',
-  'user.referral': 'Share & Earn $',
-  'user.logout': 'Log out',
+  'user.referral': 'Share & Earn',
+  'user.logout': 'Sign out',
   'user.history': 'History',
   'user.myOrders': 'My orders',
   'user.bankInfo': 'Bank Information',
@@ -1530,7 +1452,7 @@ const result =  {
   'user.memberShip': 'Membership',
   'user.supportCenter': 'Support Center',
   'user.login.popupTitle': 'Welcome to Constant',
-  'user.login.title': 'Login to your account',
+  'user.login.title': 'Hi there.',
   'user.login.username': 'Your email',
   'user.login.email': 'Email',
   'user.login.password': 'Password',
@@ -1553,12 +1475,12 @@ const result =  {
   'user.login.loginEmailTitle': 'or log in with email',
   'user.login.loginFailed': 'Failed while logging in, please try again',
   'user.forgetPassword.title': 'Forgot your password?',
-  'user.forgetPassword.description': 'Please type your email you used to sign in to reset your password. You may need to check your spam folder or unblock hello@constant.money',
+  'user.forgetPassword.description': 'Enter the email you originally signed up with. If it seems to be taking a while, please check your spam folder.',
   'user.forgetPassword.username': 'Your email',
   'user.forgetPassword.requiredUsername': 'Email is required',
   'user.forgetPassword.notValidUsername': 'Invalid email address',
   'user.forgetPassword.submitButton': 'Submit',
-  'user.forgetPassword.resetPasswordIntro': 'We have sent a link to your email. Please follow the instruction to sign in with new password',
+  'user.forgetPassword.resetPasswordIntro': 'We have sent a link to your email. Please follow the instructions to sign in with your new password.',
   'user.forgetPassword.newPasswordTitle': 'Enter a new password for your {email} account.',
   'user.forgetPassword.password': 'New password',
   'user.forgetPassword.requiredPassword': 'Password is required',
@@ -1621,17 +1543,14 @@ const result =  {
   'user.userLogin.balance': 'Balance',
   'user.userLogin.star': 'Star',
   'user.userLogin.deposit': 'Deposit',
-  'user.userLogin.withdrawFiat': 'Withdraw to Fiat',
-  'user.userLogin.withdrawCrypto': 'Withdraw to Crypto',
+  'user.userLogin.withdrawFiat': 'Withdraw fiat',
+  'user.userLogin.withdrawCrypto': 'Withdraw crypto',
   'user.userLogin.transfer': 'Transfer',
   'user.userLogin.history': 'History',
-  'user.userLogin.shareAndEarn': 'Share & Earn $',
+  'user.userLogin.shareAndEarn': 'Share & Earn',
   'user.account.currentBalance': 'Current Balance',
   'user.account.interestRate': 'Interest Rate',
   'user.account.estimatedValue': 'Estimated Value',
-  'user.account.membershipReward': 'MEMBERSHIP REWARDS >>',
-  'user.account.member': 'Member',
-  'user.account.totalBalance': 'Total Balance',
   'landingPage.faqsSectionLink': '\n' +
     '      <p></p>\n' +
     '      <p>Questions?</p>\n' +
@@ -1649,8 +1568,8 @@ const result =  {
     '        <p>Start investing from just $50.</p>\n' +
     '      ',
   'landingPage.steadyGrowth.title': '\n' +
-    '        <p class="header">Start growing at 7.5% APR today.</p>\n' +
-    '        <p>Don’t fall with the market. Enjoy steady growth with fully-backed P2P lending. No fees. Free withdrawals.</p>\n' +
+    '        <p class="header">Earn 7% APR now.</p>\n' +
+    '        <p>Don’t go down with the market. Enjoy steady growth with fully-secured P2P lending. No fees.</p>\n' +
     '        <p>Start investing from just $50.</p>\n' +
     '      ',
   'landingPage.netReturns.title': '\n' +
@@ -1671,13 +1590,6 @@ const result =  {
   'landingPage.earnABetterRate.intro.desc.1': 'Vetted loan originators',
   'landingPage.earnABetterRate.intro.desc.2': 'Greater choice of loans',
   'landingPage.earnABetterRate.intro.desc.3': 'Zero fees',
-  'landingPage.trialBonus.title': '\n' +
-    '        <p class="header">See what it’s like to grow ${kYCTrialAmount} by the second.</p>\n' +
-    '        <p>Today when you sign up and verify your ID, we’ll deposit ${kYCTrialAmount} into your account to earn 4% APY for 30 days. At the end of 30 days, we’ll take the ${kYCTrialAmount} back but you can keep the interest and use it how you want.</p>\n' +
-    '        <p>Use your earnings to grow at 7.5% or more with our other investment tools.</p>\n' +
-    '        <p>You can start investing from just $50.</p>\n' +
-    '        <p>This offer is only available for a limited time.</p>\n' +
-    '      ',
   'landingPage.howItWorks.title': 'How It Works',
   'landingPage.howItWorks.data.0.title': 'Step 1',
   'landingPage.howItWorks.data.0.desc': '\n            <p>Sign up for your free Constant account.</p>\n            ',
@@ -1715,25 +1627,25 @@ const result =  {
   'review.label.button': 'Submit',
   'review.thanksMessage': 'Thank you! Your message has been sent.',
   'home.blockTitle1': 'Customer stories',
-  'home.blockDesc1': 'People make smarter investments with Constant.',
-  'home.blockTitle2': 'How it works',
+  'home.blockDesc1': 'People save better with Constant.',
+  'home.blockTitle2': 'How to invest',
   'home.blockCap2': 'Enjoy an interest rate 60x the national average.',
   'home.blockDesc2': '\n    ',
   'home.blockTitle3': 'What we do',
   'home.blockCap3': 'We’re building a fairer, freer, financial system.',
-  'home.titleBlock4': 'Why you should invest with Constant.',
-  'home.titleCap4': 'Our investment options all offer fixed returns, and have different levels of flexibility to choose from. Get your money to work for you.',
+  'home.titleBlock4': 'Why you should save with Constant.',
+  'home.titleCap4': 'We’ve done our homework.',
   'home.titleDesc4': '\n      <p></p>\n      <p></p>\n    ',
   'home.optionText': 'or',
   'home.howItWorks.step1': 'Step 1',
-  'home.howItWorks.title1': 'You make an investment',
-  'home.howItWorks.desc1': 'Choose among our flexible Investment Plans, then make a bank transfer of any amount to the FDIC insured Constant Vault. Your funds will be held in USD, to protect against volatility. We earn you interest and make sure your money is secure, by lending your funds only to borrowers who are willing to overcollateralize.',
+  'home.howItWorks.title1': 'Investors',
+  'home.howItWorks.desc1': 'Enter the amount you want to lend, and the interest rate you want to charge.',
   'home.howItWorks.step2': 'Step 2',
-  'home.howItWorks.title2': 'Your money multplies',
-  'home.howItWorks.desc2': 'No matter which commitment period you choose, returns are paid out daily into a Flexible Account. Flexible means you can withdraw whenever you like, and earn an extra 1% annually. Stay liquid and make profit on your profit.',
+  'home.howItWorks.title2': 'Constant',
+  'home.howItWorks.desc2': 'The algorithm matches investors with borrowers that fit their criteria, and makes the transaction happen seamlessly.',
   'home.howItWorks.step3': 'Step 3',
-  'home.howItWorks.title3': 'You withdraw profit',
-  'home.howItWorks.desc3': 'Your investment income is in USD, but you can withdraw it to any local bank account at the end of the commitment period. Or you could reinvest it to keep growing your money.',
+  'home.howItWorks.title3': 'Borrowers',
+  'home.howItWorks.desc3': 'Enter the amount you want to borrow, and the interest rate you are willing to pay.',
   'home.stories.quote0': 'Apart from the bank beating interest rates, this is an incredibly interesting project from a technology standpoint. Banks need to up their game.',
   'home.stories.author0': 'Zen Chang',
   'home.stories.title0': 'Engineer, lover of new fintech projects.',
@@ -1751,11 +1663,11 @@ const result =  {
   'home.buy.subintroTitle2': 'Fully backed and secured.',
   'home.buy.subintroDesc2': 'Every Constant is backed by USD, independently held by a US accredited financial custodian, subject to regular audits.',
   'home.buy.subintroTitle3': '100% insured.',
-  'home.buy.subintroDesc3': 'All users are fully FDIC and US treasury insured, regardless of amount.',
+  'home.buy.subintroDesc3': 'All users benefit from a collective insurance policy with total coverage of $130M.',
   'home.buy.subintroTitle4': 'Borderless. Zero fees.',
   'home.buy.subintroDesc4': 'Constant moves instantly from your account to anyone, anywhere in the world. For free.',
   'home.buy.howItWorks': 'How it works',
-  'home.buy.backToNewOrder': 'Place new order',
+  'home.buy.backToNewOrder': 'Make another transfer',
   'home.buy.goHistory': 'Go to History',
   'home.buy.components.sellInfoInput.continueBtn': 'Continue',
   'home.buy.components.sellInfoInput.submitBtn': 'Sell',
@@ -1768,7 +1680,7 @@ const result =  {
   'home.buy.components.orderInfo.sellTitle': 'Order Confirmation Convert Constant',
   'home.buy.components.orderInfo.buyThankMsg': 'Thanks! Please wire the Constant Trust {amount} to complete your order.',
   'home.buy.components.orderInfo.sellThankMsg': 'You sent request convert {amount}. It could be take 30 minutes transfer to your bank account.',
-  'home.buy.components.orderInfo.orderThankMsg': 'Thanks! Please wire the Constant Trust {amount} USD to complete your order.',
+  'home.buy.components.orderInfo.orderThankMsg': 'Thanks! Please make a wire transfer of {amount} USD to our custodian Prime Trust LLC.',
   'home.buy.components.orderInfo.importantMsg': 'Do include your reference number {referenceNumber} in the transfer description.',
   'home.buy.components.orderInfo.important': 'IMPORTANT',
   'home.buy.components.buy.caption': 'BUY CONSTANT DIRECT FROM THE NETWORK',
@@ -1784,7 +1696,7 @@ const result =  {
   'home.buy.components.buy.totalAmount': 'Total amount',
   'home.buy.components.buy.fee': 'Fee',
   'home.buy.components.buy.reference': 'Reference',
-  'home.buy.components.sell.title': 'Where should we send your investment income to?',
+  'home.buy.components.sell.title': 'Where should we send your funds to?',
   'home.buy.components.sell.caption': 'CHANGE CONSTANT TO CASH WITH THE US NETWORK',
   'home.buy.components.sell.headLine': 'Get cash wired from the US to your bank account.',
   'home.buy.components.sell.redeemSuccessful': 'Your selling was completed successfully',
@@ -1828,14 +1740,11 @@ const result =  {
   'home.convert.buy.header.actor': 'Seller',
   'home.convert.buy.header.bank': 'Bank',
   'home.convert.buy.orderWithdraw.title': 'Almost there.',
-  'home.convert.buy.orderWithdraw.message': 'Please wire {amount} so you have sufficient funds in your account to complete the transfer.',
+  'home.convert.buy.orderWithdraw.message': 'Please make a wire transfer of {amount} to our custodian Prime Trust, so you have sufficient funds in your account to complete the transfer.',
   'home.convert.buy.introHolderTemplate': '\n' +
     '          <h1>Buy from local sellers in {country}</h1>\n' +
     '          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n' +
-    '          <p>Email us at <a href="mailto:{email}">{email}</a></p>\n' +
-    '          <p>Or</p>\n' +
-    '          <p>Chat with us at <a href="telegram:{telegram}">{telegram}</a></p>\n' +
-    '        ',
+    '          <p>Email us at <a href=mailto:{email}">{email}</a></p>',
   'home.convert.buy.confirmTemplate': '\n' +
     '          <div name="thanks">\n' +
     "            <p>Thanks! Please wire <strong>{FiatAmount} {FiatCurrency}</strong> to the seller's bank account.</p>\n" +
@@ -1883,9 +1792,9 @@ const result =  {
   'home.convert.buy.cryptoAddress': '{currency} address:',
   'home.convert.buy.scanQR': 'Alternatively, scan this QR code directly from your mobile wallet to complete the investment.',
   'home.convert.buy.scanDepositQR': 'Alternatively, scan this QR code directly from your mobile wallet to complete the deposit.',
-  'home.convert.buy.accountName': 'Account Name:',
+  'home.convert.buy.accountName': 'Account name',
   'home.convert.buy.bankName': 'Bank name',
-  'home.convert.buy.accountNumber': 'Account Number:',
+  'home.convert.buy.accountNumber': 'Account number',
   'home.convert.buy.routingNumberWire': 'Routing Number Wire',
   'home.convert.buy.swiftCode': 'Swift Code',
   'home.convert.buy.accountType': 'Account Type',
@@ -1897,22 +1806,22 @@ const result =  {
   'home.convert.buy.collateralBalance': 'Your Balance',
   'home.convert.buy.collateralRequired': 'Collateral Required',
   'home.convert.buy.value': 'Value',
-  'home.convert.buy.constant': 'Constant:',
-  'home.convert.buy.reference': 'Reference:',
-  'home.convert.buy.buyThankMsg': "Please wire {fiatAmount} {fiatCurrency} to the seller's bank account.",
+  'home.convert.buy.constant': 'Constant',
+  'home.convert.buy.reference': 'Reference',
+  'home.convert.buy.buyThankMsg': 'Simply make a transfer of {fiatAmount} to complete your deposit.',
   'home.convert.buy.buyDepositThankMsg': "Please wire {fiatAmount} {fiatCurrency} to the seller's bank account.",
   'home.convert.buy.buyCryptoThankMsg': 'Please transfer {fiatAmount} {fiatCurrency} to the following wallet address to complete your investment.',
   'home.convert.buy.buyCryptoDepositThankMsg': 'Please transfer {fiatAmount} {fiatCurrency} to the following wallet address to complete your deposit.',
   'home.convert.buy.buyFlexCryptoDepositThankMsg': 'Please transfer a minimum of {fiatAmount} {fiatCurrency} to the following wallet address to start earning interest.',
   'home.convert.buy.importantMsg': 'Do include your reference number {referenceNumber} in the transfer description.',
-  'home.convert.buy.important': 'IMPORTANT',
+  'home.convert.buy.important': 'Important',
   'home.convert.buy.dgxFeeMsg': '(includes the 0.13% DGX transfer fee)',
-  'home.convert.buy.thankYou': 'Thank you!',
-  'home.convert.buy.minuteWindow': '15 MINUTE WINDOW:',
+  'home.convert.buy.thankYou': 'Almost there.',
+  'home.convert.buy.minuteWindow': 'Please complete your transfer within 12 hours.',
   'home.convert.buy.minuteWindowCryptoInvest': 'Send your cryptocurrency now to start earning interest',
   'home.convert.buy.minuteWindowDescriptionCryptoInvest': 'For the sake of security, this order will time-out after 6 hours. If you need a little longer, just re-enter the amount you’d like to invest when you’re ready.',
   'home.convert.buy.warningMessageCryptoInvest': 'You can deposit as much as you like, but you only earn interest on the first 5 BTC or equivalent value for each supported asset.',
-  'home.convert.buy.minuteWindowDescription': 'Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled.',
+  'home.convert.buy.minuteWindowDescription': 'For the sake of security, this session will time-out after 12 hours. If you need a little longer, just re-enter the amount you would like to invest when you’re ready.',
   'home.convert.buy.minuteWindowDepositDescription': 'For the sake of security, this session will time-out after 12 hours. If you need a little longer, just re-enter the amount you would like to deposit when you’re ready.',
   'home.convert.buy.minuteWindowDescriptionDGX': 'Invested DGX is converted to USD. When your term ends, you can choose to withdraw in DGX at the spot price, as USD, or a supported stablecoin.',
   'home.convert.sell.type': 'Sell',
@@ -1935,39 +1844,34 @@ const result =  {
   'home.convert.sell.introHolderTemplate': '\n' +
     '          <h1>Convert to local currency your country</h1>\n' +
     '          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n' +
-    '          <p>Email us at <a href="mailto:{email}">{email}</a></p>\n' +
-    '          <p>Or</p>\n' +
-    '          <p>Chat with us at <a href="telegram:{telegram}">{telegram}</a></p>\n' +
-    '        ',
-  'home.convert.sell.confirmTemplate': '\n' +
-    '          <div name="thanks">\n' +
+    '          <p>Email us at <a href=mailto:{email}">{email}</a></p>',
+  'home.convert.sell.confirmTemplate': '<div name="thanks">\n' +
     '            <p>Thank you!</p>\n' +
     '            <p>We’re preparing your funds to be withdrawn to the registered bank account. You should be getting another notification once your withdrawal is in motion. Once you’ve received your funds, please click confirm on the Order History page, so we can finalize the record.</p>\n' +
-    '            <p>If you do not receive a notification confirming your withdrawal after 30 minutes, please send <a href="mailto:annie@myconstant.com">annie@myconstant.com</a> an email, and we’ll get it sorted for you.</p>\n' +
-    '          </div>\n' +
-    '        ',
+    '            <p>If you do not receive a notification confirming your withdrawal after 30 minutes, please send <a href="mailto:hello@myconstant.com">hello@myconstant.com</a> an email, and we’ll get it sorted for you.</p>\n' +
+    '          </div>',
   'home.convert.titleRequestModal': '{type} Constant',
   'home.convert.unitText': 'per Constant',
   'home.convert.payTo': 'Buyer will send VND to',
   'home.convert.payToForm.bankCountry': 'Bank Country',
-  'home.convert.payToForm.bankAddress': 'Bank Address',
+  'home.convert.payToForm.bankAddress': 'Bank address',
   'home.convert.payToForm.depositoryBank': 'Depository Bank',
   'home.convert.payToForm.bankPhone': 'Bank phone',
   'home.convert.payToForm.bankName': 'Bank name',
-  'home.convert.payToForm.accountNumber': 'Account Number',
+  'home.convert.payToForm.accountNumber': 'Account number',
   'home.convert.payToForm.bankBranchName': 'Bank branch name',
   'home.convert.payToForm.bankAccountName': 'Beneficiary name',
-  'home.convert.payToForm.bankAccountNumber': 'Your account number',
+  'home.convert.payToForm.bankAccountNumber': 'Account Number',
   'home.convert.payToForm.bankAccountType': 'Bank Account Type',
   'home.convert.payToForm.swiftCode': 'Swift code',
   'home.convert.payToForm.routingNumber': 'Routing number',
   'home.convert.payToForm.btnChangeText': 'Change',
   'home.convert.payToForm.achCheckType': 'Ach Check Type',
-  'home.convert.payToForm.yourBanks': 'Your banks',
+  'home.convert.payToForm.yourBanks': "Recipient's Bank",
   'home.convert.payToForm.addNewBank': 'Add a new bank account',
-  'home.convert.payToForm.emptyBank': 'Empty bank',
+  'home.convert.payToForm.emptyBank': 'Please select a bank',
   'home.convert.payToForm.openYourBank': 'Click here to open your banks',
-  'home.convert.payToForm.BeneficiaryAddressStreet1': 'Beneficiary Street 1',
+  'home.convert.payToForm.BeneficiaryAddressStreet1': 'Beneficiary Street \n',
   'home.convert.payToForm.BeneficiaryAddressStreet2': 'Beneficiary Street 2',
   'home.convert.payToForm.BeneficiaryAddressCity': 'Beneficiary City',
   'home.convert.payToForm.BeneficiaryAddressCountry': 'Beneficiary Country',
@@ -1984,9 +1888,9 @@ const result =  {
   'home.convert.payToForm.transferMethodsCheckbook.ach.title': 'ACH',
   'home.convert.payToForm.transferMethodsCheckbook.ach.desc': 'Fee: Free. Time: next business day',
   'home.convert.fee': 'Fee',
-  'home.convert.backOrderBook': 'Buy more Constant',
-  'home.convert.confirmMessage': 'Please make payment and click "Confirm payment"',
-  'home.convert.confirmButton': 'Confirm payment',
+  'home.convert.backOrderBook': 'Back',
+  'home.convert.confirmMessage': 'After you have made a transfer, please click confirm.',
+  'home.convert.confirmButton': 'Confirm',
   'home.convert.errorMsgs.required': 'Required',
   'home.convert.errorMsgs.greaterThan': 'Must be greater than 0',
   'home.convert.errorMsgs.notEnough': 'Constant is not enough',
@@ -2012,15 +1916,15 @@ const result =  {
   'home.direct.subintroDesc3': 'Constant keeps your savings secure and grows your money over time.',
   'home.direct.subintroTitle4': 'Borderless. Zero fees.',
   'home.direct.subintroDesc4': 'Constant moves instantly from your account to anyone, anywhere in the world. For free.',
-  'home.direct.backToNewOrder': 'Place new order',
+  'home.direct.backToNewOrder': 'Make another transfer ',
   'home.direct.goHistory': 'Go to History',
   'home.direct.confirmOrderFailed': 'Failed while confirm your order, please try again',
   'home.direct.components.sellInfoInput.continueBtn': 'Continue',
   'home.direct.components.sellInfoInput.submitBtn': 'Sell',
   'home.direct.components.sellInfoInput.close': 'Close',
-  'home.direct.components.sellInfoInput.agreeSell': 'Agree to convert',
-  'home.direct.components.sellInfoInput.confirmText': "You're converting {amount} {currency}",
-  'home.direct.components.sellInfoInput.confirmSubText': 'Please check your information again.',
+  'home.direct.components.sellInfoInput.agreeSell': 'Agree to send',
+  'home.direct.components.sellInfoInput.confirmText': "You're sending {amount} {currency}",
+  'home.direct.components.sellInfoInput.confirmSubText': "Please check the recipient's bank info again.",
   'home.direct.components.sellInfoInput.input2FA': 'Input 2FA',
   'home.direct.components.orderInfo.buyTitle': 'Order Confirmation Buy Constant',
   'home.direct.components.orderInfo.sellTitle': 'Order Confirmation Convert Constant',
@@ -2033,11 +1937,11 @@ const result =  {
   'home.direct.components.orderInfo.important': 'IMPORTANT',
   'home.direct.components.orderInfo.thankYou': 'Thank you!',
   'home.direct.components.orderInfo.achThankYou': 'Thanks for growing your money with Constant.',
-  'home.direct.components.orderInfo.minuteWindow': '15 MINUTE WINDOW:',
-  'home.direct.components.orderInfo.minuteWindowDescription': 'Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled.',
-  'home.direct.components.orderInfo.direct.thankYou': 'Thanks {name}, your funds are on the way to your bank account.',
-  'home.direct.components.orderInfo.direct.content1': "There is no Constant Trust in your neighborhood yet, so we're sending your money from the main Trust in the USA. As with all international transfers, it may take a couple of days for your investment income to reach you.",
-  'home.direct.components.orderInfo.direct.content2': 'Thanks for being patient, and thanks again for investing with Constant.',
+  'home.direct.components.orderInfo.minuteWindow': 'Please complete your transfer within 3 days.',
+  'home.direct.components.orderInfo.minuteWindowDescription': 'For the sake of security, this session will time-out after 3 days. If you need a little longer, just re-enter the amount you would like to invest when you’re ready.',
+  'home.direct.components.orderInfo.direct.thankYou': "Thanks {name}, your funds are on the way to your recipient's bank account.\n",
+  'home.direct.components.orderInfo.direct.content1': "There is no Constant Trust in your neighborhood yet, so we're sending your money from the main Trust in the USA. As with all international transfers, it may take a couple of days for your funds to reach you.",
+  'home.direct.components.orderInfo.direct.content2': 'Thanks for being patient, and thanks again for saving with Constant.',
   'home.direct.components.buy.purchaseFailed': 'Failed while purchasing, please try again',
   'home.direct.components.buy.purchaseSuccessful': 'Your purchase was completed successfully',
   'home.direct.components.buy.inputLabel': 'BUY',
@@ -2095,39 +1999,7 @@ const result =  {
   'home.local.errorMsgs.required': 'Required',
   'home.local.errorMsgs.greaterThan': 'Must be greater than 0',
   'home.local.errorMsgs.notEnough': 'Constant is not enough',
-  'home.local.confirmTemplate': '\n' +
-    '        <div name="thanks">\n' +
-    '          Thanks! Please wire <strong>{Constant} {Currency}</strong> to Constant Escrow to  keep your money safe while the deal finalizes.\n' +
-    '        </div>\n' +
-    '        <div name="bank">\n' +
-    '          <p>{BankName}</p>\n' +
-    '          <p>\n' +
-    '            <span>Account: </span>\n' +
-    '            <span>{BankAccountNumber}</span>\n' +
-    '          </p>\n' +
-    '          <p>\n' +
-    '            <span>Amount: </span>\n' +
-    '            <span>{Constant}&nbsp;{Currency}</span>\n' +
-    '          </p>\n' +
-    '          <p>\n' +
-    '            <span>Reference: </span>\n' +
-    '            <span>{Reference}</span>\n' +
-    '          </p>\n' +
-    '        </div>\n' +
-    '        <div name="notice">\n' +
-    '          <b>IMPORTANT</b>\n' +
-    '          <span>\n' +
-    '            Do include your reference number <b>{Reference}</b> in the transfer description\n' +
-    '          </span>\n' +
-    '        </div>\n' +
-    '        <div name="window">\n' +
-    '          <b>30 MINUTE WINDOW: </b>\n' +
-    '          <span>\n' +
-    '            Please complete your transfer <b>within 30 minutes</b>. After that, your\n' +
-    '            order will be automatically cancelled.\n' +
-    '          </span>\n' +
-    '        </div>\n' +
-    '      ',
+  'home.local.confirmTemplate': '\n        <div name=thanks">',
   'home.local.introHolderTemplate': '\n' +
     '        <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n' +
     '        <p>Email us at <a href="mailto:{email}">{email}</a></p>\n' +
@@ -2135,7 +2007,7 @@ const result =  {
     '        <p>Chat with us at <a href="telegram:{telegram}">{telegram}</a></p>\n' +
     '      ',
   'home.transfer.title': 'Transfer',
-  'home.transfer.caption': 'SEND CONSTANT ANYWHERE',
+  'home.transfer.caption': 'How much do you want to send?',
   'home.transfer.transferType': 'Transfer Type',
   'home.transfer.transferTypeCaption.email': 'Via Email',
   'home.transfer.transferTypeCaption.batch': 'To multiple people',
@@ -2144,11 +2016,11 @@ const result =  {
   'home.transfer.validateMaxInputBalanceZero': 'Please make sure your balance is sufficient.',
   'home.transfer.transferFeeLabel': 'Transfer fee',
   'home.transfer.subTitle': 'Free. To anyone, anywhere.',
-  'home.transfer.introTitle': 'Send money to anyone, anywhere. For free.',
+  'home.transfer.introTitle': 'Send money to anyone, anywhere.',
   'home.transfer.transferBtn': 'Send',
   'home.transfer.address.email': 'Recipient’s email',
   'home.transfer.phToAddress': 'Recipient’s email or Ethereum wallet address',
-  'home.transfer.confirmMsg': 'Are you sure you want to transfer {amount} CONSTANT to {address}?',
+  'home.transfer.confirmMsg': 'Are you sure you want to transfer {amount} USD to {address}?',
   'home.transfer.batchConfirmMsg': 'Are you sure you want to transfer to multiple people from the uploaded file?',
   'home.transfer.transferFailed': 'Failed while transfering, please try again',
   'home.transfer.transferSuccessful': 'Your transfer was completed successfully',
@@ -2167,7 +2039,7 @@ const result =  {
   'home.transfer.subintroDesc2': 'You can send any amount of Constant to anyone at anytime, for free.',
   'home.transfer.subintroTitle3': 'Always reliable.',
   'home.transfer.subintroDesc3': 'Unlike other digital currencies, Constant keeps a stable value. This means you can get the equivalent of 1 USD for 1 Constant. In any location, at any time.',
-  'home.transfer.backToNewOrder': 'Place new order',
+  'home.transfer.backToNewOrder': 'Another transfer',
   'home.transfer.goHistory': 'Orders and Transactions',
   'home.transfer.components.orderInfo.title': 'Transfer confirmation',
   'home.transfer.components.orderInfo.desc': ' ',
@@ -2202,7 +2074,7 @@ const result =  {
   'home.transferCrypto.validateMaxInputBalanceZero': 'Please make sure your balance is sufficient.',
   'home.transferCrypto.transferFeeLabel': 'Transfer fee',
   'home.transferCrypto.subTitle': 'Free. To anyone, anywhere.',
-  'home.transferCrypto.introTitle': 'Send money to anyone, anywhere. For free.',
+  'home.transferCrypto.introTitle': 'Withdraw to your crypto wallet.',
   'home.transferCrypto.transferBtn': 'Send',
   'home.transferCrypto.address': '{currency} wallet address',
   'home.transferCrypto.phToAddress': 'Recipient’s email or Ethereum wallet address',
@@ -2375,7 +2247,6 @@ const result =  {
   'home.constantLoan.intro.youtube.title': 'Why borrow with Constant?',
   'home.constantLoan.headLine': 'Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.',
   'home.constantLoan.exchange.availableCredit': 'Available Credit',
-  'home.constantLoan.exchange.collateralBalance': 'Collateral Balance',
   'home.constantLoan.exchange.stakingTimeMessage': 'Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.',
   'home.constantLoan.exchange.exchangeInfo': 'Estimate amount USD (const) you need to borrow',
   'home.constantLoan.exchange.exchangeInfoDesc': 'Estimate amount USD (const) you need to borrow',
@@ -2384,29 +2255,29 @@ const result =  {
   'home.constantLoan.exchange.maxRate': 'Your maximum interest rate',
   'home.constantLoan.exchange.maxRateTooltip': 'This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.',
   'home.constantLoan.exchange.minTerm': 'Length of term',
-  'home.constantLoan.exchange.minTermTooltip': 'This is the minimum amount of time you want to borrow.',
+  'home.constantLoan.exchange.minTermTooltip': 'This is how long you want to borrow for.',
   'home.constantLoan.exchange.caption': 'Crypto-backed loan',
   'home.constantLoan.exchange.captionPRV': 'Get the best loan rate in the market',
   'home.constantLoan.exchange.buttonText': 'Borrow cash',
   'home.constantLoan.exchange.month': '{period}-month',
-  'home.constantLoan.exchange.months': '{period}-months',
+  'home.constantLoan.exchange.months': '{period}-month',
   'home.constantLoan.exchange.apr': 'APR',
   'home.constantLoan.exchange.termLabel': 'Pick a loan term',
   'home.constantLoan.exchange.amountLabel': 'How much do you want to borrow?',
-  'home.constantLoan.exchange.collateralLabel': 'Collateral required (75% Loan to Value ratio)',
-  'home.constantLoan.exchange.collateralRequiredLabel': 'Collateral required ({value}% Loan to Value ratio)',
+  'home.constantLoan.exchange.collateralLabel': 'Collateral required (66% Loan to Value ratio)\n',
+  'home.constantLoan.exchange.collateralRequiredLabel': 'Collateral required ({value}% LTV)',
   'home.constantLoan.exchange.startDateLabel': 'Start date',
   'home.constantLoan.exchange.endDateLabel': 'End date',
   'home.constantLoan.exchange.collateralNote': 'For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.',
   'home.constantLoan.exchange.collateralNoteFee': 'Fee: {fee} {currency} (1%)',
   'home.constantLoan.exchange.collateralNoteMatchedFee': 'Fee: 1%',
   'home.constantLoan.exchange.yourBalance': 'Your current balance is {value} {symbol}',
-  'home.constantLoan.exchange.collateralNoteTotal': 'Total loan received: {total} {currency}',
+  'home.constantLoan.exchange.collateralNoteTotal': 'You will receive: {total} {currency}',
   'home.constantLoan.exchange.collateralNoteDGXExtraFees': 'Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance.',
-  'home.constantLoan.exchange.usingStaking': 'Get {discount}% off your interest rate by staking collateral',
+  'home.constantLoan.exchange.usingStaking': 'Get {discount}% off your rate by staking collateral',
   'home.constantLoan.exchange.usingStakingMobile': 'Get {discount}% off with staking',
   'home.constantLoan.exchange.usingStakingDesc': 'Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.',
-  'home.constantLoan.exchange.stakingMinAmount': 'stake amount must be great than {minVal} {currency}',
+  'home.constantLoan.exchange.stakingMinAmount': 'The staking amount must be greater than {minVal} {currency}',
   'home.constantLoan.exchange.collateralNoteMatch': 'Estimated time to match: {hours} hours',
   'home.constantLoan.exchange.collateralNoteMatchTime': 'The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching {hours} hours {type}.',
   'home.constantLoan.exchange.collateralNoteMatchNoneTime': 'The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching.',
@@ -2416,16 +2287,13 @@ const result =  {
   'home.constantLoan.exchange.toolTipCollateral': '\n' +
     '          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.\n' +
     '        ',
-  'home.constantLoan.exchange.walletAddressLabel': 'Which {symbol} wallet should we return your collateral to?',
+  'home.constantLoan.exchange.walletAddressLabel': 'Receiving {symbol} wallet for returned funds',
   'home.constantLoan.exchange.walletAlias': 'Enter your {symbol} wallet address',
   'home.constantLoan.exchange.moreInfo': 'Your funds will reach you as soon as your collateral is confirmed on its blockchain.  ETA: 2 minutes for ETH and 10 minutes for BTC.',
-  'home.constantLoan.exchange.monthLoan': '{term}-month loans',
-  'home.constantLoan.exchange.monthsLoan': '{term}-months loans',
+  'home.constantLoan.exchange.monthLoan': '{term}-month loan',
+  'home.constantLoan.exchange.monthsLoan': '{term}-month loan',
   'home.constantLoan.exchange.dayLoan': '{term}-day loans',
-  'home.constantLoan.exchange.borrowConfirm': "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {percent} collateralization. Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your Accounts page.",
-  'home.constantLoan.exchange.borrowIsolateConfirm': "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. Click confirm to start your term and receive your loan. Once your term begins you won’t be able to cancel your loan, but you can repay early from your Accounts page",
-  'home.constantLoan.exchange.isolate': 'Isolate',
-  'home.constantLoan.exchange.isolateDesc': 'Isolate your loan to use a single cryptocurrency as collateral. If you already have a multi-collateral loan the amount of collateral you can isolate may be limited. Check out our FAQs for more details',
+  'home.constantLoan.exchange.borrowConfirm': 'You’re about to borrow {amount} {currency} for {term} days at {rate}% APR. Click confirm to start your term and receive your loan instantly. Once your term begins, you won’t be able to cancel your loan, but you can repay early from your Accounts page.',
   'home.constantLoan.interestTable.title': 'Why you should borrow with Constant.',
   'home.constantLoan.interestTable.description': 'Constant crypto-backed loans have a generous loan to value ratio, no matter the amount you borrow. Benefit from the kindest interest rates on the market with our short term loans and get more liquidity out of your crypto.',
   'home.constantLoan.what.title': 'Why borrow with us?',
@@ -2459,26 +2327,7 @@ const result =  {
   'home.constantLoan.howItWorks.step3': 'STEP 3',
   'home.constantLoan.howItWorks.title3': '3. Get cash to spend',
   'home.constantLoan.howItWorks.desc3': 'Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while supported collateral is held in Prime Trust cold storage. Collateral can be withdrawn once you repay.',
-  'home.constantLoan.reference': '\n' +
-    '        <div name="ref-container">\n' +
-    '          <div name="ref-item">\n' +
-    '            <span name="ref-label">Interested rate:</span>\n' +
-    '            <span name="ref-value">{intRate}</span>\n' +
-    '          </div>\n' +
-    '          <div name="ref-item">\n' +
-    '            <span name="ref-label">Collateral value:</span>\n' +
-    '            <span name="ref-value">{colValue}</span>\n' +
-    '          </div>\n' +
-    '          <div name="ref-item">\n' +
-    '            <span name="ref-label">Collateral return:</span>\n' +
-    '            <span name="ref-value">{colReturn}</span>\n' +
-    '          </div>\n' +
-    '          <div name="ref-item">\n' +
-    '            <span name="ref-label">Default threshold:</span>\n' +
-    '            <span name="ref-value">{defThreshold}</span>\n' +
-    '          </div>\n' +
-    '        </div>\n' +
-    '      ',
+  'home.constantLoan.reference': '\n        <div name=ref-container">',
   'home.constantLoan.transaction.title': 'Almost there.',
   'home.constantLoan.transaction.message': 'To finalize your loan, please send your collateral to the following wallet address.',
   'home.constantLoan.transaction.exchangeMaxAmount': 'Exchange Max Amount',
@@ -2506,75 +2355,18 @@ const result =  {
     '        ',
   'home.constantLoan.transaction.collateralNoteDGXExtraFees': 'Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance.',
   'home.constantLoan.transaction.transactionID': 'transaction ID',
-  'home.constantLoan.transaction.noticeTpl': 'Please send <strong>{collateralAmount} {collateralSymbol}</strong> as collateral to the following address within the next <strong>60 minutes</strong>.',
-  'home.constantLoan.transaction.summarizeContent': '\n' +
-    '          <div name="ref-container">\n' +
-    '            <div name="ref-item">\n' +
-    '              <span name="ref-label">Loan amount:</span>\n' +
-    '              <span name="ref-value">{loanAmount}</span>\n' +
-    '            </div>\n' +
-    '            <div name="ref-item">\n' +
-    '              <span name="ref-label">Interested rate:</span>\n' +
-    '              <span name="ref-value">{interestedRate}</span>\n' +
-    '            </div>\n' +
-    '            <div name="ref-item">\n' +
-    '              <span name="ref-label">Collaterals:</span>\n' +
-    '              <span name="ref-value">{collaterals}</span>\n' +
-    '            </div>\n' +
-    '            <div name="ref-item">\n' +
-    '              <span name="ref-label">Term:</span>\n' +
-    '              <span name="ref-value">{term}</span>\n' +
-    '            </div>\n' +
-    '          </div>\n' +
-    '        ',
-  'home.constantLoan.transaction.summarizeContent1': '\n' +
-    '          <div class="row">\n' +
-    '            <div class="col-md-6 col-sm-4">\n' +
-    '                <p class="semiBold">Loan amount:</p>\n' +
-    '            </div>\n' +
-    '            <div class="col">\n' +
-    '                <p>{loanAmount}</p>\n' +
-    '            </div>\n' +
-    '           </div>\n' +
-    '           <div class="row">\n' +
-    '            <div class="col-md-6 col-sm-4">\n' +
-    '                <p class="semiBold">Interested rate:</p>\n' +
-    '            </div>\n' +
-    '            <div class="col">\n' +
-    '                <p>{interestedRate}</p>\n' +
-    '            </div>\n' +
-    '           </div>\n' +
-    '           <div class="row">\n' +
-    '            <div class="col-md-6 col-sm-4">\n' +
-    '                <p class="semiBold">Collaterals:</p>\n' +
-    '            </div>\n' +
-    '            <div class="col">\n' +
-    '                <p>{collaterals}</p>\n' +
-    '            </div>\n' +
-    '           </div>\n' +
-    '        ',
-  'home.constantLoan.transaction.repaymentField': '\n' +
-    '            <div class="row">\n' +
-    '              <div class="col-md-6 col-sm-4">\n' +
-    '                  <p class="semiBold">Repayment date:</p>\n' +
-    '              </div>\n' +
-    '              <div class="col">\n' +
-    '                  <p>{repayment}</p>\n' +
-    '              </div>\n' +
-    '           </div>\n' +
-    '        ',
+  'home.constantLoan.transaction.noticeTpl': 'To receive this loan, please deposit the required collateral. Simply go to your cryptocurrency wallet and send <strong>{collateralAmount} {collateralSymbol}</strong> to the following wallet address. Please complete this action within the next <strong>60 minutes</strong>.',
+  'home.constantLoan.transaction.summarizeContent': '\n          <div name=ref-container">',
+  'home.constantLoan.transaction.summarizeContent1': '\n          <div class=row">',
+  'home.constantLoan.transaction.repaymentField': '\n            <div class=row">',
   'home.constantLoan.transaction.borrowMore': 'Borrow more',
   'home.constantLoan.transaction.termField': 'Term',
   'home.constantLoan.transaction.termUnit': '{period} month',
   'home.constantLoan.transaction.termUnit1': '{period} months',
   'home.constantLoan.transaction.loanAmount': 'Loan amount:',
   'home.constantLoan.transaction.collaterals': 'Collateral:',
-  'home.constantLoan.transaction.collateralRequired': 'Collateral required:',
-  'home.constantLoan.transaction.collateralRequiredDesc': 'The total amount of collateral needed to secure your loan.',
-  'home.constantLoan.transaction.collateralBalance': 'Collateral available',
-  'home.constantLoan.transaction.collateralBalanceDesc': 'Your current collateral balance.',
-  'home.constantLoan.transaction.collateralToDeposit': 'Collateral to deposit',
-  'home.constantLoan.transaction.collateralToDepositDesc': 'The amount of collateral you need to deposit to back your loan.',
+  'home.constantLoan.transaction.collateralRequired': 'Collateral Required:',
+  'home.constantLoan.transaction.collateralBalance': 'Your Collateral Balance:',
   'home.constantLoan.transaction.term': 'Term:',
   'home.constantLoan.transaction.interestedRate': 'Interest rate:',
   'home.constantLoan.transaction.interestedRateValue': '{percent} APR',
@@ -2585,26 +2377,7 @@ const result =  {
   'home.constantLoan.transaction.backAccount': 'Done',
   'home.constantLoan.transaction.bitgo.title': 'Secured by BitGo',
   'home.constantLoan.transaction.bitgo.content': 'You’re sending your collateral to BitGo, a qualified digital asset custodian. Your collateral will be securely stored inside a Prime Trust wallet that’s insured to $100M. So no matter what happens to Constant, your collateral is secure.',
-  'home.constantLoan.history.itemTpl': '\n' +
-    '          <div name="loan-info-container">\n' +
-    '            <div name="loan-info-item">\n' +
-    '              <span name="loan-info-label">Loan amount:</span>\n' +
-    '              <span name="loan-info-value">{loanAmount}</span>\n' +
-    '            </div>\n' +
-    '            <div name="loan-info-item">\n' +
-    '              <span name="loan-info-label">Interest rate:</span>\n' +
-    '              <span name="loan-info-value">{interestedRate}</span>\n' +
-    '            </div>\n' +
-    '            <div name="loan-info-item">\n' +
-    '              <span name="loan-info-label">Collaterals:</span>\n' +
-    '              <span name="loan-info-value">{collaterals}</span>\n' +
-    '            </div>\n' +
-    '            <div name="loan-info-item">\n' +
-    '              <span name="loan-info-label">Term:</span>\n' +
-    '              <span name="loan-info-value">{term}</span>\n' +
-    '            </div>\n' +
-    '          </div>\n' +
-    '        ',
+  'home.constantLoan.history.itemTpl': '\n          <div name=loan-info-container">',
   'home.constantLoan.history.address': 'Address',
   'home.constantLoan.history.collateralAddress': 'Collateral Address',
   'home.constantLoan.history.renew': 'Renew',
@@ -2613,28 +2386,24 @@ const result =  {
   'home.constantLoan.history.status.payingInterest': 'paying',
   'home.constantLoan.history.status.done': 'done',
   'home.constantLoan.history.status.cancelled': 'cancelled',
-  'home.constantLoan.history.status.withdrawed': 'withdrawed',
-  'home.constantLoan.history.status.expired': 'Expired',
+  'home.constantLoan.history.status.withdrawed': 'withdrawn',
+  'home.constantLoan.history.status.expired': 'Timed out',
   'home.constantLoan.history.status.fullPayment': 'full payment',
   'home.constantLoan.history.confirmPay.payingInterest.title': 'Interest Payment',
   'home.constantLoan.history.confirmPay.payingInterest.content': '\n' +
-    '              <p>Your Interest payment is <strong>{amountConstant}</strong> Constant</p>\n' +
-    '              <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>\n' +
-    '            ',
+    '<p>Your Interest payment is <strong>{amountConstant}</strong> Usd/Constant</p>               <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>            ',
   'home.constantLoan.history.confirmPay.payingInterest.success': 'Pay Successfully',
   'home.constantLoan.history.confirmPay.fullPayment.title': 'Full Payment',
   'home.constantLoan.history.confirmPay.fullPayment.content': '\n' +
-    '              <p>Your Interest payment is <strong>{amountConstant}</strong> Constant</p>\n' +
-    '              <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>\n' +
-    '            ',
+    '<p>Your Interest payment is <strong>{amountConstant}</strong> Usd/Constant</p>               <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>            ',
   'home.constantLoan.history.confirmPay.fullPayment.success': 'Pay successfully',
   'home.constantLoan.history.interestPaymentTitle': 'Interest Payment',
-  'home.constantLoan.history.interestPaymentContent': '<p>Your Interest payment is <strong>{amountPayInterest}</strong> Constant</p>',
+  'home.constantLoan.history.interestPaymentContent': '<p>Your Interest payment is <strong>{amountPayInterest}</strong> USD/Constant</p>',
   'home.constantLoan.history.balanceNotEnough': 'Your Balance is not enough to pay',
   'home.constantLoan.history.paySuccess': 'Pay Successfully',
-  'home.constantLoan.history.noHistoryData': 'Get Crypto loan here',
-  'home.constantLoan.history.paymentDetail': 'Payment detail',
-  'home.constantLoan.history.itemPayment': '#{id} {description} <strong>{amount}</strong> Constant at {paymentDate}',
+  'home.constantLoan.history.noHistoryData': 'Explore our USD loans.',
+  'home.constantLoan.history.paymentDetail': 'Repayment details',
+  'home.constantLoan.history.itemPayment': '#{id} {description} <strong>{amount}</strong> USD/Constant on {paymentDate}',
   'home.constantLoan.history.noPaymentDetail': 'No payment detail',
   'home.constantLoan.history.payConstant': 'Pay by Constant',
   'home.constantLoan.history.payCollateral': 'Pay by Collateral',
@@ -2643,13 +2412,13 @@ const result =  {
   'home.constantLoan.errorMessages.collateralAmountRequired': 'Collateral amount is required to make a borrow!',
   'home.constantLoan.errorMessages.walletAddressRequired': 'Wallet Address is required to make a borrow!',
   'home.constantLoan.errorMessages.minimumBorrowAmount': 'The minimum amount that you can borrow is {amount} {symbol}',
-  'home.constantLoan.errorMessages.inValidWalletAddress': 'Your wallet address invalid',
+  'home.constantLoan.errorMessages.inValidWalletAddress': 'Your wallet address is invalid',
   'home.constantLoan.errorMessages.notSupportBech32': 'BTC bech32 not supported',
   'home.constantLoan.errorMessages.rangeInterestRate': 'Interest rate must be greater than {min}% and less than {max}%',
   'home.constantLoan.errorMessages.rangeMarketRate': 'Interest rate must be greater than or equivalent {value}%',
   'home.constantLoan.errorMessages.stakingMinTimeRequire': 'Length of term must be equal or greater than {days} days',
   'home.constantLoan.depositCollateral.collateralTypeLabel': 'Collateral type',
-  'home.constantLoan.depositCollateral.walletAddressLabel': 'Your {symbol} wallet address',
+  'home.constantLoan.depositCollateral.walletAddressLabel': 'Returning {symbol} wallet address',
   'home.constantLoan.depositCollateral.walletAlias': '0x687C906b2....8bd9369242e',
   'home.constantLoan.depositCollateral.generateWallet': 'Generate wallet address',
   'home.constantLoan.learnMore': 'Learn more',
@@ -2701,7 +2470,7 @@ const result =  {
   'home.constantLoan.listApplications.collateral': 'Collateral',
   'home.constantLoan.listApplications.collateralValue': 'Collateral value',
   'home.constantLoan.listApplications.liquidWaring': 'Your collateral will be liquidated, Please top up more collateral.',
-  'home.constantLoan.listApplications.interestPrice': 'Interest:',
+  'home.constantLoan.listApplications.interestPrice': 'Interest',
   'home.constantLoan.listApplications.rate': 'Rate',
   'home.constantLoan.listApplications.yourLoan': 'Match{plural} {matched}',
   'home.constantLoan.listApplications.partialMatchesDesc': 'Some loan requests may be split into smaller amounts to fill multiple investment orders. The platform will keep trying to match you completely for the duration of your term.',
@@ -2723,10 +2492,10 @@ const result =  {
   'home.constantLoan.listApplications.mapStatus.tnxFailed': 'Transaction failed',
   'home.constantLoan.listApplications.mapStatus.cancelled': 'Cancelled',
   'home.constantLoan.listApplications.mapStatus.rejected': 'Rejected',
-  'home.constantLoan.listApplications.mapStatus.expired': 'Expired',
+  'home.constantLoan.listApplications.mapStatus.expired': 'Timed out',
   'home.constantLoan.listApplications.mapStatus.fullPayment': 'full payment',
   'home.constantLoan.listApplications.mapStatus1.pending': 'Pending',
-  'home.constantLoan.listApplications.mapStatus1.approved': 'Approved',
+  'home.constantLoan.listApplications.mapStatus1.approved': 'Matched',
   'home.constantLoan.listApplications.mapStatus1.rejected': 'Rejected',
   'home.constantLoan.listApplications.mapStatus1.paid': 'Paid',
   'home.constantLoan.listApplications.mapStatus1.tnxPending': 'Transaction Pending',
@@ -2780,7 +2549,7 @@ const result =  {
   'home.constantLoan.listApplications.actionsModal.cancel': 'Cancel',
   'home.constantLoan.listApplications.actionsModal.confirm': 'Confirm',
   'home.constantLoan.listApplications.amountLabel': 'Loan amount',
-  'home.constantLoan.listApplications.feePayLabel': 'Payment fee',
+  'home.constantLoan.listApplications.feePayLabel': 'Late Payment Fee',
   'home.constantLoan.listApplications.feePayoffLabel': 'Early repayment fee',
   'home.constantLoan.listApplications.feePayoffDesc': ' If less than 75% of your term has elapsed, the early repayment fee is 50% of the interest on your remaining term. If more than 75% has elapsed, 100% of the interest on the entire term is due.',
   'home.constantLoan.listApplications.matchingFee': 'Matching fee',
@@ -2789,10 +2558,10 @@ const result =  {
   'home.constantLoan.listApplications.interestDue': 'Interest due',
   'home.constantLoan.listApplications.totalRepayment': 'Total repayment',
   'home.constantLoan.listApplications.totalPayment': 'Total Payment',
-  'home.constantLoan.listApplications.repaymentByCollateral': 'Do you want to pay by your collateral?',
+  'home.constantLoan.listApplications.repaymentByCollateral': 'Do you want to repay with collateral?',
   'home.constantLoan.listApplications.repaymentMethod': 'Payment method: ',
-  'home.constantLoan.listApplications.willPayCollateral': 'Collateral will be pay is',
-  'home.constantLoan.listApplications.willReturnCollateral': 'Collateral will be return is',
+  'home.constantLoan.listApplications.willPayCollateral': 'Collateral to be repaid',
+  'home.constantLoan.listApplications.willReturnCollateral': 'Collateral to be returned',
   'home.constantLoan.listApplications.feePayoffExchangeRate': 'Collateral value is based on the current market price of {value} USD/{currency}',
   'home.constantLoan.listApplications.payCollateralFee': 'Repay with collateral fee',
   'home.constantLoan.listApplications.payCollateralFeeDesc': 'This fee is to cover the difference in price during liquidation process.',
@@ -2800,13 +2569,12 @@ const result =  {
   'home.constantLoan.listApplications.copyMessage': 'Address has been copied!',
   'home.constantLoan.listApplications.errorRemainCollateral': 'You can not to get the remaining collateral back at the moment',
   'home.constantLoan.listApplications.errorRemainCollateralHtml': '\n' +
-    '          Please wait for assistance, or contact us at <a href="mailto:hello@myconstant.com">hello@myconstant.com</a>\n' +
-    '        ',
+    '          Please wait for assistance, or contact us at <a href=mailto:hello@myconstant.com">hello@myconstant.com</a>',
   'home.constantLoan.listApplications.errorCollateralNotEnoughHtml': 'Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.',
   'home.constantLoan.listApplications.errorRecallLowCreditRate': 'To recall excess, your collateral rate must be more than {recallRate}%. Your current collateral rate is {creditRate}%',
   'home.constantLoan.listApplications.errorRecallLowCollateralRate': 'To recall excess, <a href="">collateral rate must be more than {requiredRate}%. Your current collateral value is {currentRate}%',
   'home.constantLoan.listApplications.errorIsolateNotEnough': 'Your Collateral Balance does not meet the minimum amount required to set multi-collateral to isolated.',
-  'home.constantLoan.listApplications.depositFrom.title': 'Make more deposit for your collateral',
+  'home.constantLoan.listApplications.depositFrom.title': 'Deposit more collateral',
   'home.constantLoan.listApplications.depositFrom.amount': 'Amount',
   'home.constantLoan.listApplications.depositFrom.requiredAmount': 'Amount is required!',
   'home.constantLoan.listApplications.depositFrom.amountDesc': 'How much do you want to deposit?',
@@ -2939,7 +2707,6 @@ const result =  {
   'home.constantC2CLoan.intro.youtube.title': 'How does Crypto Credit work?',
   'home.constantC2CLoan.headLine': 'Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.',
   'home.constantC2CLoan.exchange.availableCredit': 'Available Credit',
-  'home.constantC2CLoan.exchange.collateralBalance': 'Collateral Balance',
   'home.constantC2CLoan.exchange.eventBox': 'Borrow now to get 1% discount from the crypto price.',
   'home.constantC2CLoan.exchange.stakingTimeMessage': 'Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.',
   'home.constantC2CLoan.exchange.exchangeInfo': 'The amount you will borrow in USD',
@@ -2983,10 +2750,10 @@ const result =  {
   'home.constantC2CLoan.exchange.monthLoan': '{term}-month loans',
   'home.constantC2CLoan.exchange.monthsLoan': '{term}-months loans',
   'home.constantC2CLoan.exchange.dayLoan': '{term}-day loans',
-  'home.constantC2CLoan.exchange.isolate': 'Isolate',
-  'home.constantC2CLoan.exchange.isolateDesc': 'Isolate your loan to use a single cryptocurrency as collateral. If you already have a multi-collateral loan the amount of collateral you can isolate may be limited. Check out our FAQs for more details',
-  'home.constantC2CLoan.exchange.borrowConfirm': "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {percent} collateralization. Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your Accounts page.",
-  'home.constantC2CLoan.exchange.borrowIsolateConfirm': "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. Click confirm to start your term and receive your loan. Once your term begins you won’t be able to cancel your loan, but you can repay early from your Accounts page",
+  'home.constantC2CLoan.exchange.borrowConfirm': '\n' +
+    '        <p>You’re about to borrow {amount} {currency} for {term} days at {rate}% APR. We’ll use these funds to buy a maximum of {collateralAmount} {collateral} to be deposited into your coin balance. Click confirm to get your chosen crypto and start your term.</p> \n' +
+    '        <p>Once your term begins, you won’t be able to cancel your loan, but you can repay early from your Accounts page.</p>\n' +
+    '        ',
   'home.constantC2CLoan.compareTable.title': 'Constant vs Exchange Margin Accounts.',
   'home.constantC2CLoan.compareTable.benefits': 'Benefits',
   'home.constantC2CLoan.compareTable.const': 'Constant',
@@ -3475,7 +3242,7 @@ const result =  {
   'home.prvLoan.faqs.question8': 'Where can I get PRV?',
   'home.prvLoan.faqs.answer8': 'You can buy PRV directly within the Incognito app (in pDEX). Or, you can convert your Constant balance to PRV by selecting PRV from the dropdown box on our crypto withdrawal page.',
   'home.proLending.watchBoard.invest.title': 'Investments',
-  'home.proLending.watchBoard.borrow.title': 'Borrows',
+  'home.proLending.watchBoard.borrow.title': 'Loans',
   'home.proLending.balances': 'Balances',
   'home.loanOriginator.listApplications.shortTerm': 'Best Interest',
   'home.loanOriginator.listApplications.diversified': 'Diversified',
@@ -3606,20 +3373,34 @@ const result =  {
   'home.midBanner2': 'Secure and grow your money',
   'home.whatChatWithUs': 'Chat with us',
   'home.whatCaption0': '7% annual return',
-  'home.whatCaption1': 'Your money multiplies',
-  'home.whatCaption2': 'Available worldwide',
-  'home.whatCaption3': 'We’re here to help',
+  'home.whatCaption1': 'Insured up to $130M while waiting for a match',
+  'home.whatCaption2': 'Things we don’t do.',
+  'home.whatCaption3': 'Only invest in secured loans',
   'home.whatTitle': 'What can you do with Constant?',
   'home.whatTitle0': 'Save in USD',
   'home.whatTitle1': 'Up to 130M USD',
   'home.whatTextLink1': 'Read the full policy',
   'home.whatLink1': '/privacy-policy',
-  'home.whatDesc1': '<p>No matter which commitment period you choose, returns are paid out daily into a Flexible Account. Flexible means you can withdraw whenever you like - or reinvest and make profit on your profit.</p>',
+  'home.whatDesc1': '<p>Funds that have not yet been loaned out are kept safe at multiple bank accounts with an aggregated insurance of $130M. \n' +
+    '</p>\n' +
+    '<br />\n' +
+    '<p>You can withdraw anytime.\n' +
+    '</p>',
   'home.whatTitle2': 'By the US Government',
   'home.whatTitle3': 'No minimum deposit',
-  'home.whatDesc0': '<p>Don’t sit on your money. Put it to work. We’re proud of our rates, and we don’t want you to have to wait to enjoy them. Your investment earnings are paid out daily for you to withdraw anytime. </p>',
-  'home.whatDesc2': '<p>Anyone should have access to better opportunities. Constant is accessible to anyone with an internet connection. Make your first investment in just 15 seconds, anywhere in the world.</p>',
-  'home.whatDesc3': '<p>You work hard for your money. We make sure it’s taken care of, and you shouldn’t have to pay extra for it. Our Investment Specialists are here to help whenever you need. No commission fees.</p>',
+  'home.whatDesc0': '<p>Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.\n' +
+    '</p>\n' +
+    '<br />\n' +
+    '<p>You decide your rates. No hidden fees.\n' +
+    '</p>',
+  'home.whatDesc2': '<p>When your money is on loan, it is no longer insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>\n' +
+    '<br />\n' +
+    '<p>Together, our $130M insurance policy and smart contract security, keep your money independently safe.\n' +
+    '</p>\n',
+  'home.whatDesc3': '<p>We strictly require every loan to be 150% backed by collateral. For someone to borrow $10,000, they have to put up $15,000 in collateral value.</p>\n' +
+    '<br />\n' +
+    '<p>So if borrowers default, you don’t lose a cent.\n' +
+    '</p>',
   'home.whatMore0': 'How we guarantee zero risk high returns',
   'home.whatMore1': 'How we protect your money',
   'home.whatMore2': 'How to pick a plan that’s right for you',
@@ -3666,13 +3447,14 @@ const result =  {
   'pwaInstallRequest.yesBtn': 'Yes, thanks',
   'pwaInstallRequest.addFailed': 'Failed while adding app, please try later',
   'pwaInstallRequest.added': 'Nice! Next time you can access Constant quickly from the app.',
-  'referralPage.title': 'Multiply your investment earnings.',
-  'referralPage.description': 'Earn 6% more on top of what you’re already making <br/> across all your currently active accounts.',
+  'referralPage.title': 'Multiply your interest earnings.',
+  'referralPage.description': 'Earn 2.6% more on top of what you’re already making<br/>\n' +
+    'across all your currently active accounts.',
   'referralPage.expirationDate': 'This program begins on March 15 and ends on June 15, 2019',
   'referralPage.body.item1.title': 'Share on facebook',
   'referralPage.body.item1.description': 'Post about Constant to spread the word.',
   'referralPage.body.item1.bonusRate': '0.5',
-  'referralPage.body.item2.title': 'Make an investment of $1000 or more',
+  'referralPage.body.item2.title': 'Make a deposit of $1000 or more',
   'referralPage.body.item2.description': 'Choose a term and deposit funds via bank transfer.',
   'referralPage.body.item2.bonusRate': '2.5',
   'referralPage.body.item3.title': 'Refer up to 15 friends',
@@ -3994,15 +3776,14 @@ const result =  {
   'affiliates.faqs.24.answer': '\n          <p>\n          You’ll be paid in USD.\n          </p>\n          ',
   'affiliates.faqs.desc': 'Unlike traditional P2P platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both.',
   'homeWhatwedo.desc': '\n' +
-    '      <p>We are committed to economic freedom. That’s freedom of movement and freedom of choice. We are committed to economic equality. That’s equal accessibility and equal opportunity. In essence, we want to make money more useful, and growth more attainable, for anyone, anywhere in the world.</p>\n' +
-    '      <p>What does that look like? Fair interest rates. Inclusive loans. A state-less, stable currency that you can invest, borrow, and spend. Transactions secured and carried out collectively by users of the network. A financial solution for the people, made possible by the people.</p>\n' +
-    '      <p>Constant is proud to be 100% digital, online 24/7. So no waiting for your broker to pick up the phone, no queuing at bank branches, and no bank holidays. Our team of economists, designers, engineers and industry experts write code, policy and efficient software in major cities around the globe. If you’re in the neighborhood, drop by anytime. </p>\n' +
-    '    ',
+    '    <p>As the world becomes increasingly interconnected, distance shrinks and opportunities grow. Doors are opening — increasing acceptance of diversity, better education, broader opportunities, a global market. In many ways, our neighborhood is now the world. </p>\n' +
+    '<p>Unfortunately, financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. Around the world, money sits languishing in even the best bank accounts, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there. Billions of global-thinking people don’t have the means or opportunity to set their money free.</p>\n' +
+    '<p>We need a local bank for our global village. Welcome to Constant. </p>    ',
   'faqs.title': 'Frequently Asked Questions',
   'faqs.label.account': 'ACCOUNT',
-  'faqs.label.initialInvestment': 'INITIAL INVESTMENT',
-  'faqs.label.invest': 'INVEST',
-  'faqs.label.returns': 'RETURNS',
+  'faqs.label.initialInvestment': 'TRIAL DEPOSIT',
+  'faqs.label.invest': 'SAVE',
+  'faqs.label.returns': 'INTEREST',
   'faqs.label.general': 'GENERAL',
   'faqs.label.deposit': 'DEPOSIT',
   'faqs.label.transfer': 'TRANSFER',
@@ -4018,12 +3799,7 @@ const result =  {
   'faqs.buy.answer1': '\n' +
     '        <p>\n' +
     '          You can buy Constant from us or through one of our exchange partners. Constant is currently listed on four exchanges:\n' +
-    '          <a href="https://www.idcm.io/" target="_blank">IDCM</a>,\n' +
-    '          <a href="https://p2pb2b.io/" target="_blank">P2PB2B</a>,\n' +
-    '          <a href="https://crex24.com/" target="_blank">Crex24</a>, and\n' +
-    '          <a href="https://www.bancor.network/" target="_blank">Bancor</a>.\n' +
-    '        </p>\n' +
-    '      ',
+    '          <a href=https://www.idcm.io/" target="_blank">IDCM</a>',
   'faqs.buy.question2': 'Can I buy Constant on the website?',
   'faqs.buy.answer2': '\n' +
     '        <p>Yes, simply deposit any local currency on the “Bank” section of the website and we’ll automatically convert it to Constant. You can then transfer Constant for free to any Constant account or Ethereum wallet.</p>\n' +
@@ -4034,13 +3810,13 @@ const result =  {
     '      ',
   'faqs.sell.question1': 'Where can I sell Constant?',
   'faqs.sell.answer1': '\n' +
-    '        <p>You can sell Constant to us at $1 each. Simply select withdraw from the “Bank” section of our website and we’ll send USD (or local currency) to your bank account. If your Constant is in a separate wallet, you’ll need to transfer it to your Constant account first before you can withdraw it (this is free).</p>\n' +
+    '        <p>You can sell Constant to us at $1 each. Simply select withdraw from the “Bank” section of our website and we’ll send USD (or local currency) to your bank account. If your Constant is in a separate wallet, you’ll need to transfer it to your Constant account first before you can withdraw it (this is free). All withdrawals cost 0.25% per transaction (maximum of $35 applies).</p>\n' +
     '        <br />\n' +
     '        <p>You can also sell Constant on exchanges, but please bear in mind the market price might differ from the one we guarantee on our site. This is because we can’t control the market, and exchange prices will vary depending on supply and demand.</p>\n' +
     '      ',
   'faqs.value.question1': 'Will the price of Constant go “to the moon”?',
   'faqs.value.answer1': '\n' +
-    '        <p>Constant is a stablecoin designed to always match the value of USD. However, we can’t control the market, nor the effect of supply and demand, so you never know what price Constant will be. In some cases, people will pay more for stability. All we can guarantee is that you can always buy or redeem Constant from us for $1.</p>\n' +
+    '        <p>Constant is a stablecoin designed to always match the value of USD. However, we can’t control the market, nor the effect of supply and demand, so you might see different prices on exchanges. In some cases, people will pay more for stability. All we can guarantee is that you can always buy or redeem Constant from us for $1.</p>\n' +
     '      ',
   'faqs.value.question2': 'Why is Constant’s price different on exchanges?',
   'faqs.value.answer2': '\n' +
@@ -4089,8 +3865,7 @@ const result =  {
   'faqs.repayment.answer6': '\n        <p>Not at the moment, but we’re looking into this.</p>\n      ',
   'faqs.interest.question1': 'What is the interest rate?',
   'faqs.interest.answer1': '\n' +
-    '        <p>Please check our <a href="#">Crypto Loans</a> webpage for the latest interest rates. Rates differ according to the length of term selected.</p>\n' +
-    '      ',
+    '        <p>Please check our <a href=#">Crypto Loans</a> webpage for the latest interest rates. Rates differ according to the length of term selected.</p>',
   'faqs.interest.question2': 'Why is the interest rate so low?',
   'faqs.interest.answer2': '\n' +
     '        <p>Our terms are intentionally short, strict, and simple so we can offer you the best loan rates on the market while still protecting our investors. We don’t waste money on debt collection, reams of paperwork, or other unnecessary bureaucracy. Just cash loans for crypto collateral, all secured by the blockchain.</p>\n' +
@@ -4103,38 +3878,37 @@ const result =  {
     '      ',
   'faqs.cryptoLoanTech.question2': ' ',
   'faqs.cryptoLoanTech.answer2': '\n' +
-    '        <p>All of our loans are paid out in our USD-backed stablecoin, Constant. You can then withdraw Constant for USD (or local currency) on our website, or trade it for any other currency with our partner exchanges - and spend it however you want. Since we’re loaning you Constant, you repay in Constant, too, which you can buy from us or from exchanges. </p>\n' +
+    '        <p>All of our loans are paid out in our USD-backed stablecoin, Constant. You can then withdraw Constant for USD (or local currency) on our website, or trade it for any other currency with our partner exchanges, and spend it however you want. Since we’re loaning you Constant, you repay in Constant, too, which you can buy from us or from exchanges. </p>\n' +
     '        <p>Crypto Loans are very simple. If you don’t repay the loan, or if your collateral falls below 70% of its original market value, we keep and sell your crypto. The loan is yours to keep.</p>\n' +
     '        <p>Overcollateralization is a safety mechanism designed to give our investors confidence and our borrowers the friendliest rates on the market. Constant Crypto Loans are one of the safest and easiest loans to obtain, manage, and repay.</p>\n' +
     '      ',
-  'faqs.tech.question1': 'Why do you digitize my investment?',
+  'faqs.tech.question1': 'Why do you digitize my savings?',
   'faqs.tech.answer1': '\n' +
-    '        <p>When you invest money for the long term, some local currencies can lose value due to inflation. This eats into your investment income, diminishing your returns. We don’t think that’s fair. So instead, we convert your principal into a “digital dollar” that’s 100% backed by real USD – the world’s reserve currency.</p>\n' +
-    '        <br />\n' +
-    '        <p>Our digital dollar is called Constant. Anytime you invest or withdraw, we create or destroy Constant to ensure it’s 1:1 backed, always matching the value of USD. That way, you never need worry about inflation and other economic pressures eating into your investment. You just sit back and watch your money grow.</p>\n' +
+    '        <p>When you save for the long term, some local currencies can lose value due to inflation. This eats into your interest, making saving an uphill battle. We don’t think that’s fair. So instead, we convert your savings into a “digital dollar” that’s 100% backed by real USD – the world’s reserve currency.</p>\n' +
+    '        <p>Our digital dollar is called Constant. Anytime you save or withdraw, we create or destroy Constant to ensure it’s 1:1 backed, always matching the value of USD. That way, you never need worry about inflation and other economic pressures eating into your interest. You just sit back and watch your money grow.</p>\n' +
     '      ',
   'faqs.tech.question2': 'How does digitization work?',
   'faqs.tech.answer2': '\n' +
-    '        <p>First, we send your investment principal to the Constant Vault for safekeeping. Then, we create new Constant tokens on the Ethereum blockchain that match the USD value of your principal. For example, if you gave us the equivalent of $100 in your local currency, we send $100 to the Constant Vault and create 100 Constant.</p>\n' +
-    '        <br />\n' +
-    '        <p>Constant remains in your account for your commitment period, earning investment income that you can save or withdraw daily. Then, when your period ends, you can withdraw your principal from the Constant Vault (and any returns) and we’ll destroy the Constant. Or, if you’d rather use the Constant tokens to send money abroad, trade on exchanges, or reinvest for another period, please do!</p>\n' +
+    '        <p>First, we send your savings to the Constant Vault for safekeeping. Then, we create new Constant tokens on the Ethereum blockchain that match the USD value of your savings. For example, if you gave us the equivalent of $100 in your local currency, we send $100 to the Constant Vault and create 100 Constant.</p>\n' +
+    '        <p>We then put your savings to work by lending them to overcollateralized borrowers. There is no risk to you since borrowers give us collateral that exceeds the value of the loan. We then use this extra lending income to pay you better interest rates.\n' +
+    '         <p>When your term ends, you can withdraw your savings and interest and we’ll destroy the Constant. Or, if you’d rather use the Constant tokens to send money abroad, trade on exchanges, or save for another period, please do!</p>\n' +
     '      ',
   'faqs.withdraw.question1': 'How do I withdraw Constant?',
   'faqs.withdraw.answer1': '\n' +
     '        <p>Constant works with your local banking system so you can withdraw in USD or local currency. Although we store your deposits as USD, they’ll be automatically converted back into your local currency (at the real-time market rate) if you withdraw to a non-USD bank account.</p>\n' +
     '        <br />\n' +
-    '        <p>To withdraw funds, simply request the amount you’d like to withdraw from the Withdraw tab, enter the bank details, and click Withdraw. Alternatively, you can also withdraw funds as Constant, our USD-backed stablecoin, to an ETH or EOS wallet. Just enter the wallet address and click Withdraw.</p>\n' +
-    '      ',
+    '        <p>To withdraw funds, simply request the amount you’d like to withdraw from the Withdraw tab, enter the bank details, and click Withdraw. All withdrawals cost 0.25% per transaction (maximum fee of $35). Alternatively, you can also withdraw funds as Constant, our USD-backed stablecoin, to an ETH or EOS wallet for free. Just enter the wallet address and click Withdraw.</p>\n' +
+    '     ',
   'faqs.withdraw.question2': 'In which currencies can I withdraw?',
   'faqs.withdraw.answer2': '\n' +
-    '        <p>The currency you withdraw depends on the native currency of your bank account. If you have a USD bank account, you’ll receive USD. In all other cases, your bank will convert the USD we send to your local currency.</p>\n' +
+    '        <p>The currency you withdraw depends on the native currency of your bank account. If you have a USD bank account, you’ll receive USD. In all other cases, your bank will convert the USD we send to your local currency. All withdrawals are charged at 0.25% (maximum fee of $35) per transaction.</p>\n' +
     '        <br />\n' +
-    '        <p>Of course, you don’t have to withdraw to a bank account at all. You can withdraw your money as Constant, our USD-backed stablecoin, to an ETH or EOS wallet and then trade it for other currency pairs on supported exchanges.</p>\n' +
+    '        <p>Of course, you don’t have to withdraw to a bank account at all. You can withdraw your money as Constant, our USD-backed stablecoin, to an ETH or EOS wallet (for free) and then trade it for other currency pairs on supported exchanges.</p>\n' +
     '      ',
   'faqs.withdraw.question3': 'Do you charge withdrawal fees?',
   'faqs.withdraw.answer3': '\n' +
     '        <p>\n' +
-    '        The Constant Vault, where we store your funds, is a US-based escrow account. So, withdrawing from this to a bank outside the US will incur a small one-off fee to cover KYC (Know Your Customer). The fee depends on your country of residence, but won’t be more than $35, and you only pay it once. Afterwards, <b>all withdrawals are free.</b>\n' +
+    '        Yes, we charge a small fee of 0.25% per transaction (maximum of $35). \n' +
     '        </p>\n' +
     '      ',
   'faqs.withdraw.question4': 'Is there a limit on the number of withdrawals I can make?',
@@ -4143,14 +3917,12 @@ const result =  {
   'faqs.withdraw.answer5': '<p>If you’re based in the US, your funds should arrive the same day as you request the withdrawal. If you’re based outside of the US, it might take a day or two, depending on your bank and country of residence.</p>',
   'faqs.deposit.question1': 'Are my deposits safe?',
   'faqs.deposit.answer1': '\n' +
-    '        <p>Yes. First, we convert your deposit to USD to stabilise and protect your funds from inflationary devaluation. Then, we send your funds to the Constant Vault, an escrow operated by Prime Trust, an accredited US financial institution.</p>\n' +
+    '        <p>Yes. First, we convert your deposit to USD to stabilize and protect your funds from inflationary devaluation. Then, we send your funds to the Constant Vault, an escrow operated by Prime Trust, an accredited US financial institution.</p>\n' +
     '        <br />\n' +
-    '        <p>Since the Constant Vault is regulated under US law, your deposits are FDIC-insured to $5,000,000. (We split deposits greater than $250,000 across 20 banks to achieve protection up to $5,000,000).</p>\n' +
+    '        <p>The Constant Vault keeps your money safe across multiple insured accounts, with total coverage of up to $130,000,000.</p>\n' +
     '      ',
   'faqs.deposit.question2': 'Is there a limit to how much I can deposit?',
-  'faqs.deposit.answer2': '\n' +
-    '        <p>No, though if you plan on depositing more than $5,000,000, please contact us to discuss ways of increasing the insurance protection on your account. </p>\n' +
-    '      ',
+  'faqs.deposit.answer2': '\n        <p>No, you can deposit as much as you like. </p>\n      ',
   'faqs.deposit.question3': 'How do I make a deposit?',
   'faqs.deposit.answer3': '\n' +
     '        <p>You can deposit funds in two ways:</p>\n' +
@@ -4174,7 +3946,7 @@ const result =  {
   'faqs.transfer.question1': 'How long will my transfer take?',
   'faqs.transfer.answer1': '<p>It should be immediate, though at times of heavy network congestion, perhaps up to 30 seconds.</p>',
   'faqs.transfer.question2': 'How much does a transfer cost?',
-  'faqs.transfer.answer2': '<p>Nothing. Constant transfers are free for everyone.</p>',
+  'faqs.transfer.answer2': '<p>Nothing. Constant transfers are free to send and receive for everyone. If you want to withdraw to your local bank account, we charge a small fee of 0.25% per transaction (maximum $35).</p>',
   'faqs.transfer.question3': 'To which countries can I transfer money?',
   'faqs.transfer.answer3': '<p>You can send funds to anyone, anywhere, anytime.</p>',
   'faqs.transfer.question4': 'How do transfers work?',
@@ -4183,7 +3955,7 @@ const result =  {
     '        <br />\n' +
     '        <p>When you transfer USD, we digitize it in the form of our USD-backed stablecoin, Constant. Since Constant lives on the blockchain, it can be moved to anyone in the world for free – as quickly as sending an email.</p>\n' +
     '        <br />\n' +
-    '        <p>At the other end, once your recipient receives Constant, they can then withdraw it again as USD or local currency (depending on their bank account).</p>,\n' +
+    "        <p>At the other end, once your recipient receives Constant, they can then withdraw it again as USD or local currency (depending on their bank account). There's a small withdrawal fee of 0.25% per transaction (maximum $35).</p>\n" +
     '        <p>Here’s a simple example:</p>\n' +
     '        <ul>\n' +
     '          <li>You request a transfer of $100 to Mary.</li>\n' +
@@ -4196,120 +3968,109 @@ const result =  {
   'faqs.transfer.answer5': '\n' +
     '        <p>Yes – very safe. First, transfers take place on the blockchain, an immutable public ledger that’s extremely tough to hack. It’s virtually impossible to make fraudulent changes without getting noticed since transactions are collectively validated by the network. Even if your money went astray, it would be easy to trace.</p>\n' +
     '        <br />\n' +
-    '        <p>Second, the blockchain is always on. There is no risk of downtime and no way for your money to get lost. It either reaches the recipient or stays in your account. Nevertheless, both your and the recipient’s Constant account are both FDIC-insured to $5,000,000. So were the worst to happen, we’ve got you covered.</p>\n' +
+    '        <p>Second, the blockchain is always on. There is no risk of downtime and no way for your money to get lost. It either reaches the recipient or stays in your account. Nevertheless, your money is kept safe with our independent custodian Prime Trust, who offers coverage to $130,000,000. So were the worst to happen, we’ve got you covered.</p>\n' +
     '      ',
   'faqs.transfer.question6': 'Does the recipient need a Constant account to receive funds?',
   'faqs.transfer.answer6': '<p>To receive funds, your recipient needs either a Constant account or a web wallet that supports ERC-20 tokens. That way they can either receive USD or our USD-backed stablecoin, both of which can be withdrawn as USD or local currency (if the recipient doesn’t have a USD bank account).</p>',
   'faqs.account.question1': 'Can I open a Constant account in my country?',
   'faqs.account.answer1': 'Anyone can open a Constant account, no matter where you live. All you need is an internet connection.',
   'faqs.account.question2': 'How do I open a Constant account?',
-  'faqs.account.answer2': 'Simply register with an email address and password to get started. To withdraw returns from your free $1,000 initial investment, you’ll need to verify your ID, which shouldn’t take more than a few minutes.',
-  'faqs.account.question3': 'What is the minimum capital?',
-  'faqs.account.answer3': 'You can invest any amount you want. Better yet, once you’ve opened your account, we’ll give you a free initial investment of $1,000 so you can start earning investment income immediately. The $1,000 principal is returned to us at the end of your term (sorry!), but you keep the ROI. Not bad, right?',
+  'faqs.account.answer2': 'Simply register with an email address and password to get started. To withdraw interest and savings from a Savings Plan, you’ll need to verify your ID, which shouldn’t take more than a few minutes.',
+  'faqs.account.question3': 'What is the minimum deposit?',
+  'faqs.account.answer3': 'You can save as much or as little as you want.',
   'faqs.account.question4': 'Do you need to verify my identity?',
-  'faqs.account.answer4': 'You can open a Constant account without verifying your identity. However, to withdraw earned investment income on your $1,000 initial investment (or any other investment amount), we will need to verify your identity. We do this to protect you from fraud and to comply with financial regulations.',
+  'faqs.account.answer4': 'You can open a Constant account without verifying your identity. However, to withdraw savings or interest, we will need to verify your identity. We do this to protect you from fraud and to comply with financial regulations.',
   'faqs.account.question5': 'How do I reset my password?',
   'faqs.account.answer5': 'Go to the Login page and click “Forgotten your password?”. Then enter your email address and we will send you instructions on how to reset your password. If you can’t see our email after a few minutes, please check your spam/junk folder.',
   'faqs.account.question6': 'Do I need to connect my bank account / bank info?',
-  'faqs.account.answer6': "You don't need a bank account to use Constant. However, if you withdraw your Constant investment income to USD (or local equivalent), you will need to enter the receiving bank account details. For additional security, we don't store this information for future transactions.",
-  'faqs.initialInvestment.question1': 'Is the initial investment promotion still available?',
-  'faqs.initialInvestment.answer1': 'Yes, the initial investment promotion is available until further notice. We’ll keep it going for as long as we can.',
+  'faqs.account.answer6': "You don't need a bank account to use Constant. However, if you withdraw your savings and interest to USD (or local equivalent), you will need to enter the receiving bank account details. For additional security, we don't store this information for future transactions.",
+  'faqs.initialInvestment.question1': 'Is the trial deposit still available?',
+  'faqs.initialInvestment.answer1': 'Yes, the trial deposit promotion is available until further notice. We’ll keep it going for as long as we can.',
   'faqs.initialInvestment.question2': 'Am I eligible for this promotion?',
-  'faqs.initialInvestment.answer2': 'As long as you’re a new customer and haven’t accepted an initial trial investment before, you are eligible.',
+  'faqs.initialInvestment.answer2': 'As long as you’re a new customer and haven’t accepted a trial deposit before, you are eligible.',
   'faqs.initialInvestment.question3': 'Can I withdraw the $1,000?',
-  'faqs.initialInvestment.answer3': 'While we’d love to give you $1,000, we can’t. The $1,000 will be returned to us at the end of your commitment period, but you keep the returns, which is still a pretty good deal.',
-  'faqs.initialInvestment.question4': 'How can I track the returns from this promotion?',
-  'faqs.initialInvestment.answer4': 'Just log into your account and click Your Investments. Total earned investment income is on the top right of the dashboard.',
-  'faqs.initialInvestment.question5': 'What happens at the end of my commitment period?',
-  'faqs.initialInvestment.answer5': 'At the end of the term, we’ll pay you the total profit (assuming you haven’t withdrawn it already) and the $1,000 principal will be returned to us. Please note that we will need to verify your identity before you can withdraw investment income to your bank account. This protects you from fraud and complies with financial regulations.',
-  'faqs.initialInvestment.question6': 'Can I invest more in the initial investment promotion?',
-  'faqs.initialInvestment.answer6': 'No, but you can invest in other Investment Plans whenever you like.',
-  'faqs.initialInvestment.question7': 'Can I choose different commitment periods for other Investment Plans?',
-  'faqs.initialInvestment.answer7': 'Absolutely! Participation in the initial investment promotion is separate from your other Investment Plans, so you can choose the amounts and terms for your other investments.',
-  'faqs.invest.question1': 'What is a Constant Investment Plan?',
-  'faqs.invest.answer1': 'Our Investment Plans are simple, low-risk, and effective ways to grow your money. You choose a commitment period, invest your money, and at the end of the period you get your money back plus earned investment income. It really is as simple as that.',
-  'faqs.invest.question2': 'How do Constant Investment Plans work?',
+  'faqs.initialInvestment.answer3': 'While we’d love to give you $1,000, we can’t. The $1,000 will be returned to us at the end of your savings term, but you keep the interest, which is still a pretty good deal.',
+  'faqs.initialInvestment.question4': 'How can I track interest from this promotion?',
+  'faqs.initialInvestment.answer4': "Just log into your account and click 'Your Money'. Total earned interest is on the top right of the dashboard.",
+  'faqs.initialInvestment.question5': 'What happens at the end of my savings term?',
+  'faqs.initialInvestment.answer5': 'At the end of the term, we’ll pay you the interest (assuming you haven’t withdrawn it already) and the $1,000 trial deposit will be returned to us. Please note that we will need to verify your identity before you can withdraw interest to your bank account. This protects you from fraud and complies with financial regulations.',
+  'faqs.initialInvestment.question6': 'Can I deposit more money into my trial plan?',
+  'faqs.initialInvestment.answer6': 'No, but you can add new Savings Plans whenever you like.',
+  'faqs.initialInvestment.question7': 'Can my other deposits have a different term to the trial deposit?',
+  'faqs.initialInvestment.answer7': 'Absolutely! Your trial deposit is separate to your other Savings Plans, so you can choose the amounts and terms for your other deposits.',
+  'faqs.invest.question1': 'What is a Constant Savings Plan?',
+  'faqs.invest.answer1': 'Our Savings Plans are simple, risk-free, and effective ways to grow your money. You choose a savings term, deposit your money, and at the end of the term you get your money back plus earned interest. It really is as simple as that.',
+  'faqs.invest.question2': 'How do Constant Savings Plans work?',
   'faqs.invest.answer2': '\n' +
-    '        <p>Under the “INVEST” tab on our website, you’ll be able to choose from several different Investment Plans. Each one is designed to maintain the value of your principal investment and pay you daily investment income.</p>\n' +
+    '        <p>Under the “SAVE” tab on our website, you’ll be able to choose from several different Savings Plans. Each one is designed to maintain the value of your deposit and pay you compounded interest.</p>\n' +
     '        <br />\n' +
-    '        <p>To maintain the value of your principal, we send your money to the Constant Vault where it’s protected by US law and insured to $5,000,000. Over time, your Constant earns investment income which you can withdraw as you earn (daily) or save until the end of your commitment period.</p>\n' +
+    "        <p>To maintain the value of your deposit, we convert your savings to USD – the world's reserve currency. Then, we lend your savings to overcollateralized borrowers and share the lending income with you as interest. You can withdraw this interest at the end of your term.\n" +
     '        <br />\n' +
-    '        <p>Of course, you don’t have to withdraw your principal and investment income. You can transfer your money abroad, leave it locked to the USD for stability, or simply reinvest in another Investment Plan to earn even more interest. The choice is yours!</p>\n' +
+    "        <p>There is no risk to you since borrowers give us collateral that exceeds the value of the loan. If they don't repay, we sell their collateral in plenty of time to return your savings and pay you interest. </p>\n" +
+    '        <br />\n' +
+    '        <p>Of course, you don’t have to withdraw your savings. You could send money abroad, store it in your Constant account to keep the value locked to the USD, or start another Savings Plan to earn even more interest. The choice is yours!\n' +
+    '</p>\n' +
     '      ',
-  'faqs.invest.question3': 'How do you protect my investment?',
-  'faqs.invest.answer3': 'Your principal is securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. Your investment is FDIC-insured to $250,000. You can read more about the Constant Vault on <a href="https://medium.com/@constantmoney" target="_blank">our blog</a>',
+  'faqs.invest.question3': 'How do you protect my savings?',
+  'faqs.invest.answer3': 'When not on loan, your deposits are securely held in the Constant Vault, which is overseen by an accredited US financial institution called Prime Trust. The Constant Vault is insured up to $130,000,000. You can read more about the Constant Vault on <a href=https://medium.com/@constantmoney" target="_blank">our blog</a>"',
   'faqs.invest.question4': 'Which currencies do you accept?',
-  'faqs.invest.answer4': 'We accept any currency sent to our US-based Constant Vault bank account. It is then converted to USD and stored in the FDIC-insured Vault.',
+  'faqs.invest.answer4': 'We accept any currency sent to our US-based Constant Vault bank account and convert it to USD.\n',
   'faqs.invest.question5': 'Do you accept cryptocurrency?',
   'faqs.invest.answer5': 'Not at this time.',
-  'faqs.invest.question6': 'Can I access my principal investment at any time?',
+  'faqs.invest.question6': 'Can I access my savings at any time?',
   'faqs.invest.answer6': '\n' +
-    '        <p>To give you the best guaranteed returns, we hold on to your principal for the duration of your commitment period. Think of your principal as a seed that we water and help grow. To do that, we need time, which is why we offer different Investment Plans so you can find the right one for you.</p>\n' +
-    '      ',
-  'faqs.invest.question7': 'Where is my investment stored?',
+    '          <p>To give you the best interest rates, we lend your savings to overcollateralized borrowers. In other words, we lend to borrowers that put up collateral worth more than the loan, which removes any risk to you. Think of your savings deposit as a seed that we water and help grow. To do that, we need time, which is why we offer different Savings Plans so you can find the right one for you. \n' +
+    '</p>      ',
+  'faqs.invest.question7': 'Where are my savings stored?',
   'faqs.invest.answer7': '\n' +
-    '        <p>Your principal and investment income are stored inside the Constant Vault, which is regulated under US law and protected by $5,000,000 FDIC insurance (investments above $250,000 will be spread across different Vaults).</p>\n' +
+    '        <p>Your savings are stored inside the Constant Vault. When not on loan, your money is kept safe with Prime Trust, an accredited financial institution, offering you total coverage of up to $130,000,000.</p>\n' +
     '      ',
-  'faqs.invest.question8': 'Can I add to my Investment Plan during the term?',
+  'faqs.invest.question8': 'Can I add to my Savings Plan during the term?',
   'faqs.invest.answer8': '\n' +
-    '        <p>You can’t add to an Investment Plan once it’s started, but there’s no limit on how many Investment Plans you can have. So if you’d like to invest more, simply open another Investment Plan and watch your money grow.</p>\n' +
+    '        <p>You can’t add to your Savings Plan once it’s started, but there’s no limit on how many Savings Plans you can have. So if you’d like to save more, simply open another Savings Plan and watch your money grow. </p>\n' +
     '      ',
   'faqs.invest.question9': 'What is the Constant Vault?',
-  'faqs.invest.answer9': 'The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured by the FDIC to the value of $130,000,000 (a per account limit of $5,000,000 applies).',
+  'faqs.invest.answer9': "The Constant Vault is a publicly-audited trust overseen and managed by Prime Trust, a US accredited financial institution. The Constant Vault is regulated in the US and insured to the value of $130,000,000. When your money isn't on loan, your money is kept safe inside the Constant Vault. ",
   'faqs.invest.question10': 'What is FDIC insurance?',
   'faqs.invest.answer10': '\n' +
-    '        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. You can <a href="https://www.fdic.gov/about/strategic/strategic/mission.html" target="_blank">read more about the FDIC on their website.</a></p>\n' +
-    '        <br />\n' +
-    '        <p>Your account is FDIC-insured to $5,000,000. We achieve this limit by spreading larger deposits over multiple bank accounts.</p>\n' +
-    '      ',
+    '        <p>The Federal Deposit Insurance Corporation (FDIC) is a body set up by the US government to protect the integrity of the US financial system. It does this in a number of ways, including insuring deposits. You can <a href=https://www.fdic.gov/about/strategic/strategic/mission.html" target="_blank">read more about the FDIC on their website.</a></p>',
   'faqs.invest.question11': 'Why do you lend my savings to borrowers?',
   'faqs.invest.answer11': '<p>\n' +
     '        We lend your savings to borrowers so we can pay you better interest rates. Aside from seeing your money grow, you won’t notice any changes to your Savings Plan. There’s no risk to you as all our loans are overcollateralized, meaning we only lend to people who put up collateral worth more than the loan. If someone doesn’t repay, we sell collateral on the market. This guarantees we can always return your savings and pay you interest.\n' +
     '      </p>',
-  'faqs.invest.question12': 'Is there a minimum or maximum amount I can save?',
-  'faqs.invest.answer12': '\n        <p>No. You can save as much or as little as you like.</p>\n      ',
-  'faqs.returns.question1': 'How are my returns paid out?',
-  'faqs.returns.answer1': 'We pay investment profit daily, so you can either wait until the end of your commitment period to withdraw your investment income or withdraw it daily. It’s up to you.',
-  'faqs.returns.question2': 'How are my daily returns calculated?',
+  'faqs.invest.question12': 'Is there a minimum or maximum amount I can invest?',
+  'faqs.invest.answer12': '\n<p>No. You can invest as much or as little as you like.</p>      ',
+  'faqs.returns.question1': 'How is interest paid out?',
+  'faqs.returns.answer1': 'Your interest is compounded and paid to you at the end of your savings term.',
+  'faqs.returns.question2': 'How is interest calculated?',
   'faqs.returns.answer2': 'Your rate of return is calculated by applying the percentage rate of your Investment Plan to the amount of your principal, and then dividing it by 365 to get a daily rate. Your returns are not compounded, so if you invest $500 for one year at a rate of 7%, you would earn $40 investment income at the end of your commitment period (about $0.11 per day).',
-  'faqs.returns.question3': 'How can I track my earnings?',
-  'faqs.returns.answer3': 'Just log into your account and click My Investments. You’ll see your total earned investment income on the top right of the dashboard.',
-  'faqs.returns.question4': 'Will you increase ROI rates in the future?',
-  'faqs.returns.answer4': '\n' +
-    '        <p>You never know ;-)</p>\n' +
-    '        <br />\n' +
-    '        <p>As Constant grows, we’re always looking for new ways of improving our efficiency so we can give you the best returns on your investment.</p>\n' +
-    '      ',
-  'faqs.returns.question5': 'How can you offer such high returns risk-free?',
+  'faqs.returns.question3': 'How can I track earned interest?',
+  'faqs.returns.answer3': 'Just log into your account and click My Savings. You’ll see your total earned interest on the top right of the dashboard.',
+  'faqs.returns.question4': 'Will you increase interest rates in the future?',
+  'faqs.returns.answer4': '<p>You never know ;-)</p>\n' +
+    '<p>As Constant grows, we’re always looking for new ways of improving our efficiency so we can give you the best interest rates on the market.</p>',
+  'faqs.returns.question5': 'How can you offer such high interest rates?',
   'faqs.returns.answer5': '\n' +
-    '        <p>We pay investment income from earnings we make on our risk-free loans. We can afford to give you higher rates than most other low-risk investment products because we use technology to strip out inefficiency and accelerate returns.</p>\n' +
-    '        <br />\n' +
-    '        <p>As a tech company disrupting the investment sector, we don’t need branches, managers, or advisors. Instead, we use custom-designed blockchain technology to remove costly middlemen and intermediary processes, while still providing an auditable transaction history. As a result, we can afford to give much better returns on your investment.</p>\n' +
-    '      ',
+    '        <p>We pay interest from earnings we make on our risk-free loans. We can afford to give you higher rates than banks because we use technology to strip out inefficiency and boost income.</p>\n' +
+    '        <p>As a tech company disrupting the finance sector, we don’t need branches, managers, or advisors. Instead, we use custom-designed blockchain technology to remove costly middlemen and intermediary processes, while still providing an auditable transaction history. As a result, we can afford to give much better interest rates on your savings.</p>',
   'faqs.general.question1': 'What is Constant?',
   'faqs.general.answer1': '\n' +
-    '        <p>Constant is a financial services platform that helps you do more with your money. From investments to loans, our financial services leverage the best of blockchain tech to put you first, helping you achieve economic freedom.</p>\n' +
-    '        <br />\n' +
+    '        <p>Constant is a financial services platform that helps you do more with your money. From savings to loans, our financial services leverage the best of blockchain tech to put you first, helping you achieve economic freedom.</p>\n' +
     '        <p>We’ve thrown out credit scoring, paperwork, and fees to give you more of what you deserve – industry-leading rates, risk-free loans, a stable, state-less currency, and free international transfers.</p>\n' +
-    '        <br />\n' +
-    '        <p>Available all day, every day, anywhere in the world.</p>\n' +
-    '      ',
+    '        <p>Available all day, every day, anywhere in the world.</p>',
   'faqs.general.question2': 'Is Constant a bank?',
   'faqs.general.answer2': '\n' +
     '        <p>No. Constant is even better.</p>\n' +
-    '        <br />\n' +
     '        <p>We’re 100% digital and open 24-7, so no queuing at bank branches, and no bank holidays.</p>\n' +
-    '        <br />\n' +
-    '        <p>Our Investment Plans earn you up to 60x more investment income than a typical savings account pays in interest. And our Crypto Loans offer some of the lowest interest rates on the market.</p>\n' +
-    '        <br />\n' +
+    '        <p>Our Savings Plans earn you up to 40x more interest than a typical savings account. And our Crypto Loans offer some of the lowest interest rates on the market.</p>\n' +
     '        <p>We don’t run credit checks, we don’t give you reams of paperwork to sign, and we are open to anyone, anywhere.</p>\n' +
     '      ',
   'faqs.general.question3': 'Is Constant regulated?',
-  'faqs.general.answer3': 'Yes. Your investments are held securely in our trust, which is regulated under US law. That’s why we ask you to verify your identity when you withdraw investments to your bank account.',
+  'faqs.general.answer3': 'Yes. When not on loan, your savings are stored in the Constant Vault, which is regulated under US law. That’s why we ask you to verify your identity when you withdraw savings to your bank account.',
   'faqs.general.question4': 'How does Constant make money?',
-  'faqs.general.answer4': 'We charge interest on collateralized loans to pay you investment income, and make a very slim profit from the difference.',
+  'faqs.general.answer4': 'We charge interest on collateralized loans to pay you interest, and make a very slim profit from the difference.',
   'faqs.general.question5': 'Who are the people behind Constant?',
-  'faqs.general.answer5': 'We’re a diverse team of engineers, economists, monetary policymakers, and industry experts. You can read all about our team on <a href="/about-us" target="_blank">About Us</a>.',
+  'faqs.general.answer5': 'We’re a diverse team of engineers, economists, monetary policymakers, and industry experts. You can read all about our team on <a href=/about-us" target="_blank">About Us</a>."',
   'faqs.general.question6': 'Where is Constant based?',
   'faqs.general.answer6': 'Everywhere! We are a registered US entity supported by a global team with presences in the USA, Vietnam, and Malta. If you’re in our neighborhood, drop by anytime.',
   'statistics.s0': 'Users',
@@ -4319,7 +4080,7 @@ const result =  {
   'statistics.s4': 'Borrowed',
   'statistics.s5': 'Repaid',
   'exchangeInputDepositForm.maxAmountRequired': 'Please enter an amount smaller than {amount} {currency}',
-  'exchangeInputDepositForm.minAmountRequired': 'Please enter an amount larger than {amount} {currency}',
+  'exchangeInputDepositForm.minAmountRequired': 'All investments must be at least {amount} {currency}',
   'exchangeInputDepositForm.minDepositRequired': 'Please enter an amount larger than {amount} {currency}',
   'exchangeInputDepositForm.minUsdRequired': 'Please enter an amount larger than 0.01 USD',
   'exchangeInputDepositForm.minVndRequired': 'Please enter an amount larger than 10,000 VND',
@@ -4338,7 +4099,7 @@ const result =  {
   'exchangeInputDepositForm.amountMustBeLargerThan': 'Your amount must be larger than {min} {fiatCurrency}',
   'exchangeInputDepositForm.todayRate': 'Today’s rate.',
   'exchangeInputDepositForm.todayRateValues': '{rate}% APY',
-  'exchangeInputDepositForm.howMuchDoYouWantToDeposit': 'HOW MUCH DO YOU WANT TO DEPOSIT? ',
+  'exchangeInputDepositForm.howMuchDoYouWantToDeposit': 'How much do you want to grow?',
   'exchangeInputDepositForm.howMuchDoYouWantToInvest': 'Which cryptocurrency would you like to invest?',
   'exchangeInputDepositForm.minDepositAmount': 'Minimum investment amount: {amount}',
   'exchangeInputDepositForm.interestRate': 'Interest rate: {interest}% APY',
@@ -4347,21 +4108,21 @@ const result =  {
   'exchangeInputSellForm.amountResult.withdrawFee': 'Withdrawal fee: {fee} {currency}',
   'exchangeInputSellForm.amountResult.sendFee': 'Send fee: {fee} {currency}',
   'exchangeInputSellForm.amountResult.fiatAmountResultLabel': 'According to the markets today, you’ll receive: {fiatAmount} {fiatCurrency}',
-  'exchangeInputSellForm.amountResult.explain': '* The maximum you can withdraw is {amountExcludeFee} {currency}, so you have enough to cover the withdrawal fee.',
-  'exchangeInputSellForm.amountResult.explainNoFee': '* The maximum you can withdraw is {amountExcludeFee} {currency}.',
+  'exchangeInputSellForm.amountResult.explain': '* The maximum you can send is {amountExcludeFee} {currency}, so you have enough to cover the transfer fee.',
+  'exchangeInputSellForm.amountResult.explainNoFee': '* The maximum amount you can withdraw is {amountExcludeFee} {currency}.',
   'exchangeInputSellForm.paymentMethod': 'Payment method',
   'exchangeInputSellForm.email.name': 'Recipient',
   'exchangeInputSellForm.email.placeholder': 'Enter receiving email address',
   'exchangeInputSellForm.venmo.name': 'Recipient',
   'exchangeInputSellForm.venmo.placeholder': 'Enter receiving phone number',
   'exchangeInputSellForm.currencyDropdownLabel': 'Your currency',
-  'exchangeInputSellForm.sellBtn': 'Withdraw',
+  'exchangeInputSellForm.sellBtn': 'Send',
   'exchangeInputSellForm.getAmountFailed': 'Failed while getting amount',
   'exchangeInputSellForm.getFeeFailed': 'Failed while calculating fee, please try again',
   'exchangeInputSellForm.getCurrencyListFailed': 'Failed while getting supported currencies',
   'exchangeInputSellForm.howMuchDoYouWantToSend': 'How much do you want to send?',
-  'exchangeInputSellForm.howMuchDoYouWantToWithdraw': 'How much do you want to withdraw?',
-  'exchangeInputSellForm.yourAnytimeBalance': 'Your Anytime Balance: {balance} {currency}',
+  'exchangeInputSellForm.howMuchDoYouWantToWithdraw': 'How much do you want to send?',
+  'exchangeInputSellForm.yourAnytimeBalance': 'Your Balance: {balance} {currency}',
   'exchangeInputSellForm.whichCurrencyYouWant': 'Which currency do you want to receive?',
   'exchangeInputSellForm.recipientBankInformation': 'Recipient’s bank information',
   'exchangeInputSellForm.toABankAccount': 'To a bank account',
@@ -4374,21 +4135,22 @@ const result =  {
   'exchangeInputSellForm.validateMaxInput': 'Please make sure your balance is sufficient.',
   'exchangeInputSellForm.validateMaxInputBalanceZero': 'Please make sure your balance is sufficient.',
   'exchangeInputSellForm.suggestOtherPayment': "Minimum withdrawal by bank transfer is ${minDirect}. Please use Zelle instead (it's much faster, too).",
-  'exchangeInputBuyTrialForm.title': '<h6>We’re giving you a 1000 USD free initial investment. Just so you can see how it works. At the end of the trial, you keep all the returns.</h6>',
+  'exchangeInputBuyTrialForm.title': '<h6>We’re giving you a trial investment of 1000 USD. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the 1000 USD back, but the interest is yours to keep.\n' +
+    '</h6>',
   'exchangeInputBuyTrialForm.highlightText': 'you keep all the interest.',
   'exchangeInputBuyTrialForm.trialLeft': '{number} trials left.',
   'exchangeInputBuyTrialForm.noMoreTrialLeft': 'No more trial left.',
-  'exchangeInputBuyTrialForm.submitBtn': 'INVEST NOW',
+  'exchangeInputBuyTrialForm.submitBtn': 'Start your free trial',
   'exchangeInputBuyTrialForm.btnDesc': 'New customers only. This 1000 USD trial deposit will be returned at the end of your chosen term, but you keep all the interest.',
-  'exchangeInputBuyTrialForm.termLabel': 'Pick your investment option',
+  'exchangeInputBuyTrialForm.termLabel': 'Choose your term',
   'termSelector.label': 'Choose a commitment period.',
   'termSelector.month': 'months',
   'termSelector.rate': '{rate}%',
-  'termSelector.apr': 'Annual Return',
+  'termSelector.apr': 'APY',
   'termSelector.amountText': '({amount} {currency})',
   'termSelector.anytimeTerm': 'anytime',
-  'termSelector.oneMonthTerm': '1 month',
-  'termSelector.term': '{term} months',
+  'termSelector.oneMonthTerm': '3 month',
+  'termSelector.term': '{term} month',
   'termSelector.fiatAmountText': '{fiatAmount} {fiatCurrency}',
   'termSelector.desc': 'Your returns are guaranteed at: {interestAmountText} after 1 year.',
   'termSelector.desc1': 'Your returns are guaranteed at: {interestAmountText} after {time}.',
@@ -4398,32 +4160,31 @@ const result =  {
   'termSelector.trialExpires': 'The 1000 USD principal expires, but the profit is yours to keep.',
   'termSelector.item.termTitle': '{month}-Month{termType}',
   'saving.trialLeftNum': 'ONLY {trialLeft} TRIALS LEFT',
-  'saving.title': '<h1><span>Invest</span> the way you want.</h1>',
-  'saving.subTitle': 'The right investment is the one you’re comfortable with. The one that grows reliably over time. Select an option that feels good, and we’ll teach your money how to work for you.',
-  'saving.makeLocalOrderSuccess': 'Your order was created successfully',
+  'saving.title': '<h5>Invest the way you want</h5>',
+  'saving.subTitle': '<h2 class=toolTipMark">Set your own rates. </h2> ',
+  'saving.makeLocalOrderSuccess': 'Thanks! Please make a transfer from your bank.',
   'saving.crypto_amount_exists': 'Crypto amount exists',
   'saving.makeLocalOrderFailed': "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
-  'saving.makeDirectOrderSuccess': 'Your order was created successfully',
+  'saving.makeDirectOrderSuccess': 'Thanks! Please make a transfer from your bank.',
   'saving.makeDirectOrderFailed': "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
   'saving.makeAchDirectOrderFailed': 'Please check your bank details are in order and try again.',
-  'saving.makeTrialOrderSuccess': 'Your order was created successfully',
+  'saving.makeTrialOrderSuccess': 'Congrats! Your trial has been activated.',
   'saving.makeTrialOrderFailed': "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
   'saving.validation_error': 'Ensure that there are no more than 10 digits before the decimal point.',
   'saving.invalid_amount': 'Invalid amount, please check your amount and try again',
-  'saving.invalid_payment_method': 'To deposit USD, you must be a KYC-verified US citizen. Please choose another currency to deposit.',
-  'send.makeLocalOrderSuccess': 'Your order was created successfully',
+  'send.makeLocalOrderSuccess': 'Thanks! Your transfer is now processing.',
   'send.makeLocalOrderFailed': "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
   'send.zelleOverLimit': "Sorry, we've reached our Zelle transaction limit. Please try again later or choose another withdraw method.",
   'send.invalidBankAccountName': 'For your security, the beneficiary name must match the name you registered when signing up with Constant. Please enter a different name or email hello@myconstant.com if you need help',
-  'send.makeDirectOrderSuccess': 'Your order was created successfully',
+  'send.makeDirectOrderSuccess': 'Thanks! Your transfer is now processing.',
   'send.makeDirectOrderFailed': "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
   'send.transferConfirm': "We've already sent you a verification link by email. Please click this link to approve your transaction.",
   'send.info.title': 'SEND MONEY',
-  'send.info.desc1': 'Conveninent.',
+  'send.info.desc1': 'Convenient.',
   'send.info.desc2': 'Reliable.',
   'send.info.desc3': 'Just 0.25% to receive.',
   'send.info.desc4': '\n' +
-    '        <h5>All you need is an internet connection to make as many transfers as you like - any amount, anywhere in the world. Send money home, pay your international clients, transfer salaries to your distributed team. With a single click</h5>\n' +
+    '        <h6>All you need is an internet connection to make as many transfers as you like - any amount, anywhere in the world. Send money home, pay your international clients, transfer salaries to your distributed team. With a single click.</h6>\n' +
     '      ',
   'send.what.whatCaption0': '0.25%',
   'send.what.whatCaption1': 'Convenient',
@@ -4431,7 +4192,7 @@ const result =  {
   'send.what.whatCaption3': 'We’re here to help',
   'send.what.whatDesc0': '<p>We only charge 0.25% for withdrawing to a local bank. For amounts of $14,000 and above, fees are capped at $35, never more.</p>',
   'send.what.whatDesc1': '<p>No waiting in line or waiting for business hours - all you need is an internet connection. Simply enter the amount and where you want to send it to.</p>',
-  'send.what.whatDesc2': '<p>All funds you send are FDIC insured up to $130M, and once a transfer is made, it’s unstoppable. That’s how we protect your money, and make sure it gets to where it needs to go.</p>',
+  'send.what.whatDesc2': '<p>All funds you send are protected by our independent custodian, Prime Trust, and once a transfer is made, it’s unstoppable. That’s how we protect your money, and make sure it gets to where it needs to go.</p>\n',
   'send.what.whatDesc3': '<p>Our team is based in your preferred time zone. If you’re in the US, call us at 1-844-201-7242. If you’re in Vietnam, call us at +84 36 656 2949.</p>',
   'send.howItWorks.title': 'How to send',
   'send.howItWorks.step1': 'Step 1',
@@ -4439,13 +4200,13 @@ const result =  {
   'send.howItWorks.desc1': 'All you need is an email address. You can also sign up using a facebook or google account.',
   'send.howItWorks.step2': 'Step 2',
   'send.howItWorks.title2': 'Make a deposit',
-  'send.howItWorks.desc2': 'Make a bank transfer to the FDIC-insured Constant Vault.',
+  'send.howItWorks.desc2': 'Make a bank transfer to one of our international accounts.\n',
   'send.howItWorks.step3': 'Step 3',
   'send.howItWorks.title3': 'Send money',
   'send.howItWorks.desc3': "Enter the amount you’d like to send and the recipient's bank account info. We take care of the rest.",
-  'withdraw.makeLocalOrderSuccess': 'Your order was created successfully',
+  'withdraw.makeLocalOrderSuccess': 'Success! Your funds should reach your recipient shortly.',
   'withdraw.makeLocalOrderFailed': "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
-  'withdraw.makeDirectOrderSuccess': 'Your order was created successfully',
+  'withdraw.makeDirectOrderSuccess': 'Success! Your funds should reach your recipient shortly.',
   'withdraw.makeDirectOrderFailed': "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
   'withdraw.info.content': '\n' +
     '      <p>Withdraw to your local bank.</p>\n' +
@@ -4458,19 +4219,19 @@ const result =  {
   'withdraw.what.whatCaption0': 'Works with your bank',
   'withdraw.what.whatCaption1': 'Easy, quick withdrawals',
   'withdraw.what.whatCaption2': 'Withdraw in your local currency',
-  'withdraw.what.whatCaption3': 'Unlimited low-cost withdrawals',
+  'withdraw.what.whatCaption3': 'Unlimited free withdrawals',
   'withdraw.what.whatDesc0': '<p>Easily transfer Constant funds to your local bank account. Just let us know where to send it.</p>',
   'withdraw.what.whatDesc1': '<p>Funds should reach you within 2 days, but times may vary depending on your bank’s operating hours.</p>',
-  'withdraw.what.whatDesc2': '<p>Your money is stored in USD. If you withdraw in a different currency, it will be converted at the current market rate.</p>',
-  'withdraw.what.whatDesc3': '<p>Withdraw as often as you like. The only fee we charge is a 0.25% withdrawal fee - capped at $35. Never more.</p>',
+  'withdraw.what.whatDesc2': '<p>Withdraw as often as you like for free. Never pay a penny to access your money.</p>',
+  'withdraw.what.whatDesc3': '<p>Withdraw as often as you like for free. Please note that Constant cannot be liable for charges from your own bank.</p>',
   'withdraw.howItWorks.step1': 'Step 1',
   'withdraw.howItWorks.title1': 'Sign up',
   'withdraw.howItWorks.desc1': 'All you need is an email address. You can also sign up using a facebook or google account.',
   'withdraw.howItWorks.step2': 'Step 2',
   'withdraw.howItWorks.title2': 'Make a deposit',
-  'withdraw.howItWorks.desc2': 'Make a bank transfer to the FDIC-insured Constant Vault.',
+  'withdraw.howItWorks.desc2': 'Make a bank transfer to one of our international accounts.',
   'withdraw.howItWorks.step3': 'Step 3',
-  'withdraw.howItWorks.title3': 'Send money',
+  'withdraw.howItWorks.title3': 'Withdraw to your local bank',
   'withdraw.howItWorks.desc3': "Enter the amount you’d like to send and the recipient's bank account info. We take care of the rest.",
   'transfer.info.content': '\n' +
     '      <h2>Send money to anyone, anywhere.</h2>\n' +
@@ -4491,30 +4252,30 @@ const result =  {
     '      <p><sup>*</sup>Comparison based on data from <a href=https://www.valuepenguin.com/banking/average-bank-interest-rates">ValuePenguin</a>.</p>\n' +
     '    ',
   'deposit.learnMore': 'Learn more here',
-  'deposit.title': 'Your global USD bank account.',
+  'deposit.title': 'Deposit USD or USD stablecoins here.',
   'deposit.availableInVn': 'Available now in Vietnam.',
-  'deposit.subTitle.sub1': 'Save in US dollars, instead of unstable local currencies. Enjoy instant transfers of any amount - to anyone or any business - anywhere in the world. For free.',
-  'deposit.subTitle.sub2': 'Your account is backed by the full faith and credit of the United States government, insured by the Federal Deposit Insurance Corporation (FDIC). Established in 1933, the FDIC has a perfect record of no lost funds.  {learnMore}',
+  'deposit.subTitle.sub1': 'Deposit funds to make an investment, repay a loan, or simply keep your money secure. Enjoy instant, international transfers, smart contract security for crypto funds, and $130M of collective insurance on fiat deposits.',
+  'deposit.subTitle.sub2': 'It all starts here. Make a deposit in in less than a minute.',
   'deposit.subTitle.learnMore': 'Learn more +',
   'deposit.what.title': 'Why invest with us?',
-  'deposit.what.whatCaption0': 'Protect the value of your money',
-  'deposit.what.whatCaption1': 'Move your money anywhere for free',
-  'deposit.what.whatCaption2': 'Insure your money up to $5M',
-  'deposit.what.whatCaption3': 'Withdraw your money anytime',
-  'deposit.what.whatDesc0': '<p>Save in USD, the world reserve currency, accepted by merchants worldwide. Protect your money against inflation and instability.</p>',
-  'deposit.what.whatDesc1': '<p>Send and receive any amount, anywhere in the world, instantly and for free. Do bigger business, send money home, unlock greater mobility.</p>',
-  'deposit.what.whatDesc2': '<p>Benefit from the maximum coverage the FDIC provides - multiplied by 20. Since the FDIC insures each account up to $250K, we store your money across 20 of them.</p>',
-  'deposit.what.whatDesc3': '<p>Constant works with your local banking system to make sure that all your funds can be withdrawn anytime, in your currency of choice.</p>',
+  'deposit.what.whatCaption0': 'Immediate growth',
+  'deposit.what.whatCaption1': 'Zero downtime',
+  'deposit.what.whatCaption2': 'No limits',
+  'deposit.what.whatCaption3': 'Withdraw anytime',
+  'deposit.what.whatDesc0': '<p>{interest}% APY on all deposits. See your earnings reflected immediately.</p>',
+  'deposit.what.whatDesc1': '<p>Earn {interest}% APY before you start investing. Compounded and paid every second.</p>',
+  'deposit.what.whatDesc2': '<p>No minimum or maximum deposit, no minimum or maximum term. </p>',
+  'deposit.what.whatDesc3': '<p>To any local bank account or wallet address, as often as you like.</p>',
   'deposit.howItWorks.title': 'How it works',
   'deposit.howItWorks.step1': 'STEP 1',
-  'deposit.howItWorks.title1': 'YOU MAKE A DEPOSIT',
-  'deposit.howItWorks.desc1': 'Send any currency to your local Constant Trust. If it’s not USD, we convert it.',
+  'deposit.howItWorks.title1': 'Make a deposit',
+  'deposit.howItWorks.desc1': 'Make a bank transfer of USD, or wallet transfer of one of our supported stablecoins. If you have a different fiat currency, we convert it for you.',
   'deposit.howItWorks.step2': 'STEP 2',
-  'deposit.howItWorks.title2': 'WE PROTECT YOUR MONEY',
-  'deposit.howItWorks.desc2': 'Your USD funds are held safely in fully insured US bank accounts.',
+  'deposit.howItWorks.title2': 'Earn {interest}% APY',
+  'deposit.howItWorks.desc2': 'Your deposits earn {interest}% APY the moment they hit your account. The only time this changes is if you then invest them at a different rate.',
   'deposit.howItWorks.step3': 'STEP 3',
-  'deposit.howItWorks.title3': 'YOU GET MORE',
-  'deposit.howItWorks.desc3': 'Now you have a global USD account with free transfers and unlimited withdrawals.\n',
+  'deposit.howItWorks.title3': 'Watch your money grow',
+  'deposit.howItWorks.desc3': 'Your balance compounds and increases every second. So no downtime, no wasted earnings.',
   'deposit.checklist.title': 'Why you should save money with Constant.',
   'deposit.checklist.subTitle': 'Smarter than your average bank.',
   'deposit.checklist.desc1': 'Like traditional banks, we reward you with interest earnings on our collateralized loans. Unlike traditional banks, <b>we give you most of it - since it’s your money, really.</b>',
@@ -4665,7 +4426,7 @@ const result =  {
     '        ',
   'newHome.banner.loanOriginator.btn': 'Explore',
   'newHome.banner.intro.youtube.title': 'Fully Secured Peer To Peer Lending - How It Works',
-  'newHome.crypto.bitGo': '$100M escrow insurance',
+  'newHome.crypto.bitGo': '$100M custody insurance',
   'newHome.crypto.desc': "Fully secured, fully backed. All lending is secured by crypto collateral and loan originators' buy-back guarantee.",
   'newHome.faqs.question1': 'What is peer-to-peer (P2P) lending?',
   'newHome.faqs.answer1': '\n' +
@@ -4715,24 +4476,22 @@ const result =  {
   'newHome.whyItBetter.content.3.desc': 'No call centres, no recorded messages, just real people ready to help you.',
   'newHome.whyItBetter.content.4.title': 'No credit checks',
   'newHome.whyItBetter.content.4.desc': 'We don’t care about your credit history. As long as you have the collateral to secure your loan, you’re always approved.',
-  'support.title': 'Monday to Friday, 9am - 5pm PT',
-  'support.text': 'Call us at {phone}. Monday to Friday, 9am - 5pm PT.',
+  'support.title': 'Monday to Friday, 9am - 5pm PT.',
+  'support.text': 'Questions? Call us at {phone}.',
   'support.newTitle': '\n' +
     "      <h6>Questions? Let's get on a call.</h6>\n" +
-    '      <h6>Set up a time <a href="http://calendly.com/justinconstant" target="_blank">here</a>.</h6>\n' +
-    '    ',
+    '      <h6>Set up a time <a href="http://calendly.com/justinconstant" target="_blank">here</a>.</h6>',
   'support.phone.vn': '+84 34 362 8061',
   'support.phone.us': '+1 844 201 7242',
-  'support.phone.hk': '+85 258 01 01 68',
+  'support.phone.hk': '+852 8191-5657',
   'support.learnMore': 'Learn more here',
-  'ours.title': 'Choose your own freedom.',
+  'ours.title': 'Think P2P.',
   'ours.content': '\n' +
-    '    <h5>Financial freedom looks different for everyone. It’s having the money to do what you want to do. Or simply having enough to never have to worry. Freedom is being able to make your money work for you - so you don’t have to. Freedom is having money that allows you to travel, work and live - anywhere in the world - and thrive.</h5>\n' +
-    '    <h5>Today’s generations are thinking bigger, but financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. People are trapped in centralized systems designed to profit a select few. Money sits languishing in even the best bank accounts, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there. Billions of global-thinking people are lack the means or opportunity to even begin thinking about financial freedom.</h5>\n' +
-    '    <h5>This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</h5>\n' +
-    '    ',
-  'ours.team.title': 'Built for global citizens, by global citizens.',
-  'ours.team.content': 'We’re proud of our extraordinary team of more than 50 scientists, engineers, designers, writers, economists, and customer experience specialists from all over the world — fully devoted to our mission of building simple, elegant, useful tools to suit the needs of our global village.',
+    '    <h6>Financial freedom looks different for everyone. It’s having the money to do what you want to do. Or simply having enough to never have to worry. Freedom is being able to make your money work for you - so you don’t have to. Freedom is having money that allows you to travel, work and live - anywhere in the world - and thrive.</h6>\n' +
+    '    <h6>Today’s generations are thinking bigger, but financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. People are trapped in centralized systems designed to profit a select few. Money sits languishing in even the best bank accounts, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there. Billions of global-thinking people are lack the means or opportunity to even begin thinking about financial freedom.</h6>\n' +
+    '    <h6>This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</h6>',
+  'ours.team.title': 'Choose people, not institutions.',
+  'ours.team.content': 'We’re proud of our extraordinary team of more than 50 scientists, engineers, designers, writers, economists, and community managers from all over the world. We love building new financial opportunities that everyone can benefit from - no matter where you live, or how much you have.',
   'ours.team.footer': '<a nice, friendly, human caption about each photo>',
   'ours.team.captions.0.caption': 'Trong, our technical lead, writing the Constant {link}',
   'ours.team.captions.0.linkCaption': 'smart contract',
@@ -4755,14 +4514,14 @@ const result =  {
   'ours.localOffices.offices.vn.address1': '139 Hong Ha Street',
   'ours.localOffices.offices.vn.address2': 'Ho Chi Minh City',
   'ours.localOffices.offices.vn.phone': '+84 34 362 8061',
-  'ours.localOffices.offices.eu.name': 'Europe (Malta)',
+  'ours.localOffices.offices.eu.name': 'Malta',
   'ours.localOffices.offices.eu.address1': 'Villa Malitah, Mediterranean Street',
   'ours.localOffices.offices.eu.address2': 'The Village, St Julian’s STJ 1870',
   'ours.localOffices.offices.eu.phone': '+356 3550 5252',
   'ours.leaderships.title': 'Meet our team',
   'ours.leaderships.leaders.duyHuynh.name': 'Duy Huynh',
-  'ours.leaderships.leaders.duyHuynh.position': 'Founder',
-  'ours.leaderships.leaders.duyHuynh.description': '<p>Duy spends most of his days studying the great economic thinkers of the last 100 years and turning their ideas into unstoppable lines of code. Prior to Constant, Duy was a software architect at IBM. He then founded Autonomous, putting AI and Robotics into 350,000 modern workspaces all over the world in less than 2 years.</p><p>At age 19, Duy was a PhD computer science researcher funded by NASA, the Semantic Web and Fujitsu. As a competitive programmer, he was an ACM ICPC World Finalist, USA Computing Olympiad winner, and Vietnam Computing Olympiad winner.</p>',
+  'ours.leaderships.leaders.duyHuynh.position': 'Advisor',
+  'ours.leaderships.leaders.duyHuynh.description': '<p>Duy spends most of his days studying the great economic thinkers of the last 100 years and turning their ideas into unstoppable lines of code. Prior to Constant, Duy was a software architect at IBM. He then founded Autonomous, putting AI and Robotics into 350,000 modern workspaces all over the world in less than 2 years.</p><p>At age 19, Duy was a PhD computer science researcher in the High Dependability Computing Program at the University of Maryland, funded by NASA, the Semantic Web and Fujitsu. As a competitive programmer, he was an ACM ICPC World Finalist, USA Computing Olympiad winner, and Vietnam Computing Olympiad winner.</p>\n',
   'ours.leaderships.leaders.thucNguyen.name': 'Thuc Nguyen',
   'ours.leaderships.leaders.thucNguyen.position': 'Cryptography',
   'ours.leaderships.leaders.thucNguyen.description': '<p>Thuc is a leading expert in the field of applied cryptography, and works on privacy, post-quantum cryptography, randomness, and all things cryptography at Constant. His current focus is on preserving the anonymity and confidentiality of Constant transactions through zero-knowledge proofs.</p><p>Thuc is a professor of applied cryptography at the National University of Vietnam, where he co-founded the Department of Applied Cryptography and Computer Security. He  co-leads the Decentralized Cryptography Research Group, designing innovative cryptographic tools and developing privacy-preserving cryptosystems that simultaneously achieve post-quantum security and practicality. He also leads key projects on security and cryptography for the Vietnamese government.</p>',
@@ -4773,8 +4532,8 @@ const result =  {
   'ours.leaderships.leaders.billPelletier.position': 'Partnerships',
   'ours.leaderships.leaders.billPelletier.description': '<p>Bill leads outreach aimed at integrating Constant as a payment method for major e-commerce retailers.  Prior to Constant, Bill worked closely with some of the world’s biggest e-commerce retailers, including Amazon, Overstock, Target, Wayfair and Home Depot.  Before that, he developed the investment portfolio of major banks as a private banker, and has also advised multiple high profile clients on mergers & acquisition, trust & estates, and provided litigation support.</p>',
   'ours.leaderships.leaders.ningTan.name': 'Ning Tan',
-  'ours.leaderships.leaders.ningTan.position': 'Communications',
-  'ours.leaderships.leaders.ningTan.description': '<p>Ning facilitates the conversation between product, user and community. Prior to Constant, Ning was the Director of Communications at Autonomous, where she loved helping people in over 60 countries find ways to work smarter.</p><p>Ning specializes in easing the adoption of disruptive tech. She has created voices for friendly IoT products, eager robots, decentralized applications, and a very clever brain from the US military. As a postgraduate at the University of Oxford, she examined how humans navigate traumatic periods in history and respond through storytelling, philosophy and innovation.</p>',
+  'ours.leaderships.leaders.ningTan.position': 'Advisor',
+  'ours.leaderships.leaders.ningTan.description': '<p>Ning facilitates the conversation between product, user and community. Ning was the Director of Communications at Autonomous, where she loved helping people in over 60 countries find ways to work smarter.</p><p>Ning specializes in easing the adoption of disruptive tech. She has created voices for friendly IoT products, eager robots, decentralized applications, and a very clever brain from the US military. As a postgraduate at the University of Oxford, she examined how humans navigate traumatic periods in history and respond through storytelling, philosophy and innovation.</p>',
   'ours.leaderships.leaders.tienNguyen.name': 'Tien Nguyen',
   'ours.leaderships.leaders.tienNguyen.position': 'Technical Advisor. Engineering manager, Essential',
   'ours.leaderships.leaders.tienNguyen.description': '<p>Tien has built some of this decade’s most important products.  He built mobile payments for emerging markets at Google and payment hardware and software solutions for SMB businesses at Square.  Tien also built the Android app at Uber.  He is currently leading app development at Essential.</p>',
@@ -4782,11 +4541,11 @@ const result =  {
   'ours.leaderships.leaders.gaelVo.position': 'Product Operations',
   'ours.leaderships.leaders.gaelVo.description': '<p>Gaël manages financial products at Constant, including remittance, loans, payroll and invoicing. Previously at BNP Paribas, he created a new framework to replace and centralize complex applications, enabling users and other developers to control the system independently.</p><p>Gaël holds a dual master’s degree in computer science and telecommunications from Institut National des Sciences Appliquées de Lyon, and an MBA in finance from Simon Business School in New York. As an MBA intern at Five Star Bank, Gaël developed an automation layer within loan management that cut processing time by 83%.</p>',
   'ours.leaderships.leaders.zonChu.name': 'Zon Chu',
-  'ours.leaderships.leaders.zonChu.position': 'Applications',
+  'ours.leaderships.leaders.zonChu.position': 'CEO',
   'ours.leaderships.leaders.zonChu.description': '<p>Zon leads application development. Prior to Constant, he spent 11 years as a full stack developer, project manager, and technical director for various e-commerce and social network companies in Vietnam and the USA. His e-commerce app for Nguyen Kim, one of the top regional retailers in the Asia-Pacific region, hit 4 million users in 2 years.</p><p>Zon has experience building for large, complex systems. He was a technical director at Viettel Group, where he designed software to manage its 50,000 employees and provide telecommunications services to 63 million subscribers across Asia, Africa and the Americas.</p>',
   'ours.leaderships.leaders.trongDinh.name': 'Trong Dinh',
   'ours.leaderships.leaders.trongDinh.position': 'Smart Contract',
-  'ours.leaderships.leaders.trongDinh.description': '<p>Trong leads smart contract development at Constant, the heart of the stability mechanism. He automates the dialogue between Constant and its partner custodian, which distributes and protects user funds across multiple FDIC-insured banks, protecting users from fraud, downtime and third-party interference. He spends his days implementing new layers of security and adapting the Constant application layer for use on other major blockchains.</p><p>Trong started to build for the blockchain after more than a decade of developing apps for web and mobile.  His first dApp got people to put promises on the blockchain, by helping them think of smart contracts as simple everyday agreements. He was also the CTO of Ninja, one of the top prediction exchanges built on Ethereum.</p>',
+  'ours.leaderships.leaders.trongDinh.description': '<p>Trong leads smart contract development at Constant, the heart of the stability mechanism. He automates the dialogue between Constant and its partner custodian Prime Trust, which distributes and protects user funds across multiple FDIC-insured banks, protecting users from fraud, downtime and third-party interference. He spends his days implementing new layers of security and adapting the Constant application layer for use on other major blockchains.</p><p>Trong started to build for the blockchain after more than a decade of developing apps for web and mobile.  His first dApp got people to put promises on the blockchain, by helping them think of smart contracts as simple everyday agreements. He was also the CTO of Ninja, one of the top prediction exchanges built on Ethereum.</p>\n',
   'ours.leaderships.leaders.baoLe.name': 'Bao Le',
   'ours.leaderships.leaders.baoLe.position': 'Constant Chain',
   'ours.leaderships.leaders.baoLe.description': "<p>Bao leads development on the Constant Chain. He predominantly works on the infrastructure layer of Constant, integrating both on-chain and off-chain components such as the consensus protocol, privacy-preserving zero-knowledge proofs, and monetary policy algorithms. Prior to Constant, Bao built highly scalable systems for emerging markets, including Viettel Group, Vietnam's largest mobile network operator, where he scaled their products for 63M subscribers, and Central Group, Thailand's number 1 retail and service group business.</p><p>Bao leverages his deep knowledge of peer-to-peer applications, cryptography, game theory, and network applications to build highly scalable systems that quantify performance, availability, and extensibility in each line of code.</p>",
@@ -4834,7 +4593,7 @@ const result =  {
   'home1.lendingSection.form.gotoVerifyKyc': 'Go to verify now',
   'home1.lendingSection.form.text1': 'Set your own lending terms',
   'home1.lendingSection.form.text2': '<p>Choose a term you like and as soon as we receive your funds you’ll start earning interest. The longer you invest for the more interest you earn. If you’d like to end your term early, you can sell your investment in our <a href="https://blog.myconstant.com/constant-secondary-market" target="_blank" class="underline">secondary market</a>.</p>',
-  'home1.lendingSection.form.text3': 'We’re giving you a trial investment of $1000. All you have to do is choose your rate, and we’ll find you a match. When the trial is up, we take the $1000 back, but the interest is yours to keep.',
+  'home1.lendingSection.form.text3': 'We’re giving you a trial investment of $1000. When your term is up, we take the $1000 back, but the interest is yours to keep.',
   'home1.lendingSection.form.text4': '\n' +
     "          <h5>You're almost done.</h5>\n" +
     "          <p>For your security, we'll need you to verify your ID before using Constant.</p>\n" +
@@ -4842,9 +4601,7 @@ const result =  {
   'home1.lendingSection.form.text5': 'Free trial',
   'home1.lendingSection.form.text6': '\n' +
     '          <p>\n' +
-    '            <span class="darkorange4 bold">Want to get a borrower instantly?</span> Invest at the current market rate of 10%. Or increase your rate and wait for a matching order.\n' +
-    '          </p>\n' +
-    '        ',
+    '            <span class=darkorange4 bold">Want to get a borrower instantly?</span> Invest at the current market rate of <b>7%</b>. Or increase your rate and wait for a matching order.',
   'home1.lendingSection.form.text7': 'The rate you entered is higher than our market rate so it might take longer to find you a match.',
   'home1.lendingSection.form.btn1': 'Invest now',
   'home1.lendingSection.form.textLogin': 'Log in',
@@ -4854,24 +4611,24 @@ const result =  {
   'home1.lendingSection.form.deposit': 'to deposit now',
   'home1.lendingSection.form.btnBorrow': 'to borrow now',
   'home1.lendingSection.form.btnVerify': 'Verify now',
-  'home1.lendingSection.form.btnTrial': 'Start your free trial',
+  'home1.lendingSection.form.btnTrial': 'Get started',
   'home1.lendingSection.form.btnAuth': 'Log in or Register to invest',
   'home1.lendingSection.form.btnKyc': 'Verify your ID to invest',
   'home1.lendingSection.form.btnKyc1': '<a>Verify your ID</a> to invest',
   'home1.lendingSection.form.minRate': 'Your minimum interest rate',
   'home1.lendingSection.form.maxRate': 'Your maximum interest rate',
-  'home1.lendingSection.form.maxTerm': 'Maximum term',
-  'home1.lendingSection.form.minTerm': 'Minimum term',
+  'home1.lendingSection.form.maxTerm': 'Length of term',
+  'home1.lendingSection.form.minTerm': 'Length of term',
   'home1.lendingSection.form.amount': 'Amount',
   'home1.lendingSection.form.termMonth': '{month}-Month',
   'home1.lendingSection.form.tooltip.amount': '<p>How much do you want to lend?</p>',
-  'home1.lendingSection.form.tooltip.maxTerm': '<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions are protected by the FDIC, and can be withdrawn at any time.</p>',
-  'home1.lendingSection.form.tooltip.minRate': '<p>This is the minimum rate you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>',
+  'home1.lendingSection.form.tooltip.maxTerm': '<p>This is the maximum amount of time you want to lend your money out for. Unloaned portions can be withdrawn at any time.</p>',
+  'home1.lendingSection.form.tooltip.minRate': '<p>This is the annual percentage rate (APR) you are willing to accept for your loan. If there is a borrower willing to pay more, you will earn the higher interest rate.</p>',
   'home1.lendingSection.form.placeholder.amount': 'How much do you want to lend?',
   'home1.lendingSection.alert.success': 'Success',
   'home1.lendingSection.alert.sendEmailVerifyForTrialSuccess': 'Thanks! We sent you a verification email to unlock your free trial.',
   'home1.lendingSection.alert.sendEmailVerifyForTrialFailed': 'Send email failedSorry, we could not send your verification email. Please make sure your email address is valid and try again.',
-  'home1.lendingSection.alert.trialFailed': 'Submit trial was failed',
+  'home1.lendingSection.alert.trialFailed': 'Sorry, we can only offer one free trial per user.',
   'home1.lendingSection.alert.normalSuccess': 'Submit normal success',
   'home1.lendingSection.alert.normalFailed': 'Submit normal failed. Please refresh your browser and try again.',
   'home1.lendingSection.alert.trialSuccess': "Thanks! We're connecting you with a borrower glad to pay your rates. We'll send you an email when you're matched.",
@@ -4880,13 +4637,12 @@ const result =  {
   'home1.lendingSection.alert.needKyc': '',
   'home1.lendingSection.alert.investUsingBalanceConfirm': 'You’re about to invest {amount} {currency} for {term} days at a rate of {rate}% APR. Click confirm to start your term and begin earning interest. Once you confirm, you won’t be able to cancel your investment but can sell it on our secondary market.',
   'home1.lendingSection.alert.investNotUsingBalanceConfirm': 'You’re about to invest {amount} {currency} for {term} days at {rate}% APR. Click confirm and you’ll start earning interest as soon as we receive your funds. Once your term starts, you won’t be able to cancel your investment but can sell it on our secondary market.',
-  'home1.lendingSection.alert.invalid_payment_method': 'To invest USD, you must be a KYC-verified US citizen. Please choose another currency to deposit.',
   'home1.lendingSection.confirm.needGoldMember': '<p>You must become a Gold member and above, or choose a longer investment term to use this feature</p>',
   'home1.lendingSection.confirm.needPlatinumMember': '<p>You must become a Platinum member and above to use this feature.</p>',
   'home1.lendingSection.confirm.depositLimit': '<p>Your deposit limit is {amount} USD.</p>',
   'home1.lendingSection.confirm.methodNotAvailable': '<p>This payment method is temporarily not available. Please choose another one.</p>',
   'home1.lendingSection.confirm.thankYou1': 'Almost there.',
-  'home1.lendingSection.confirm.thankMsg': 'Simply wire {amount} to the Constant Trust to make a deposit.',
+  'home1.lendingSection.confirm.thankMsg': 'Transfer {amount}  to complete your deposit.',
   'home1.lendingSection.confirm.thankMsgCurrentBalance': '<div>Your account currently has a balance of {userBalance}.</div>',
   'home1.lendingSection.confirm.thankMsgDeposit': '<div>Please deposit {amount} to complete your investment.</div>',
   'home1.lendingSection.confirm.thankMsg1': 'You currently have {balance} in your balance. Please make a transfer of the remaining {amount} to proceed.',
@@ -4904,14 +4660,14 @@ const result =  {
   'home1.lendingSection.confirm.value': 'Value',
   'home1.lendingSection.confirm.amount': 'Amount',
   'home1.lendingSection.confirm.reference': 'Reference',
-  'home1.lendingSection.confirm.important': 'IMPORTANT',
-  'home1.lendingSection.confirm.importantMsg': 'Do include your reference number {referenceNumber} in the transfer description.',
-  'home1.lendingSection.confirm.minuteWindow': '15 MINUTE WINDOW:',
-  'home1.lendingSection.confirm.minuteWindowDescription': 'Please complete your transfer within 15 minutes.  After that, your order will be automatically cancelled.',
+  'home1.lendingSection.confirm.important': 'Note',
+  'home1.lendingSection.confirm.importantMsg': 'Do include your reference number {referenceNumber} in the bank transfer description, so we can process your deposit as fast as possible.',
+  'home1.lendingSection.confirm.minuteWindow': 'Please complete your transfer within 3 days.',
+  'home1.lendingSection.confirm.minuteWindowDescription': 'For the sake of security, this session will time-out after 3 days. If you need a little longer, just re-enter the amount you would like to invest when you’re ready.',
   'home1.lendingSection.confirm.referNote': 'Your reference number is {refNumber}',
-  'home1.lendingSection.confirm.backOrderBook': 'Buy more Constant',
-  'home1.lendingSection.confirm.confirmMessage': 'Please make payment and click "Confirm payment"',
-  'home1.lendingSection.confirm.confirmButton': 'Confirm payment',
+  'home1.lendingSection.confirm.backOrderBook': 'Back',
+  'home1.lendingSection.confirm.confirmMessage': 'After you have made a transfer, please click confirm.',
+  'home1.lendingSection.confirm.confirmButton': 'Confirm',
   'home1.lendingSection.confirm.minRate': 'Min rate',
   'home1.lendingSection.confirm.maxTerm': 'Max term',
   'home1.lendingSection.confirm.btnConfirm': 'Confirm',
@@ -5040,10 +4796,8 @@ const result =  {
     '          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>\n' +
     "          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n" +
     '        ',
-  'home1.lendingSection.confirm.bankChosenMessage1': '\n' +
-    '          <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>\n' +
-    '          <p>Please select the bank that is most convenient for you to transfer funds to.</p>\n' +
-    '        ',
+  'home1.lendingSection.confirm.bankChosenMessage1': '<p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to. </p>\n' +
+    '<p>If you don’t bank with any of those listed, no problem. You can transfer from any bank account, but please note that your bank might charge you a fee.</p>\n',
   'home1.lendingSection.confirm.bankChosenMessage': 'We have accounts at major banks to receive your deposits faster. Please select the bank that is most convenient for you to transfer funds to.',
   'home1.lendingSection.confirm.makeAnotherButton': 'Make another investment',
   'home1.lendingSection.confirm.updateBalanceNoteInWorkingTime': "Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",
@@ -5065,37 +4819,23 @@ const result =  {
   'home1.lendingSection.confirm.selectAccountType': 'Select account type',
   'home1.lendingSection.confirm.questionTitle': "Almost there! Just prove you're not a robot.",
   'home1.whatCaption0': 'Match instantly',
-  'home1.whatCaption1': 'Insured up to $130M while waiting for a match',
-  'home1.whatCaption2': 'Protected by Ethereum smart contracts while on loan',
-  'home1.whatCaption3': 'Only invest in secured loans',
+  'home1.whatCaption1': 'Invest or insure deposits',
+  'home1.whatCaption2': 'Built for you',
+  'home1.whatCaption3': 'Collateral backed',
   'home1.whatDesc0': '\n' +
     '      <p>When you invest, your funds contribute to a lending pool from which borrowers get loans in return for interest. The longer you leave your money in the pool, the more interest you earn. Our algorithm replaces the centralized inefficiency of the current banking system, paying you interest the moment you deposit.</p>\n' +
     '    ',
-  'home1.whatDesc1': '\n' +
-    '      <p>Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M.</p>\n' +
+  'home1.whatDesc1': '      <p>Earn 4% APY on your balance with Flex. Or, insure your balance up to $130,000,000 with our custodial partner, Prime Trust.</p>\n' +
     '      <br />\n' +
-    '      <p>You can withdraw anytime.</p>\n' +
-    '      <br />\n' +
-    '      <a href="/blog/5de7367206d81400175587e0" target="_blank">How we deliver FDIC insurance</a>\n' +
-    '    ',
-  'home1.whatDesc2': '\n' +
-    '      <p>When your money is on loan, it is no longer FDIC insured, but protected by a smart contract that runs exactly as programmed - without the need for human involvement.</p>\n' +
-    '      <br />\n' +
-    '      <p>Together, FDIC insurance and smart contract security, keep your money independently safe.</p>\n' +
-    '      <br />\n' +
-    '      <a href="https://www.google.com/url?q=https://github.com/constant-money&sa=D&ust=1555493848999000&usg=AFQjCNEEEN4_WzaIB05aPU2kpKQi_PbKOw" target="_blank">View our code</a>\n' +
-    '    ',
-  'home1.whatDesc3': '\n' +
-    '      <p>We strictly require every loan to be 150% backed by collateral. For someone to borrow $10,000, they have to put up $15,000 in collateral value.</p>\n' +
+    '      <a href="/blog/flex-or-prime-trust-constant" target="_blank">Your balance, your choice.</a>',
+  'home1.whatDesc2': '<p>Enjoy 24-7 customer service, unlimited free withdrawals, and a library of useful content to help you do more with your money. Constant is an open, alternative financial platform and you can <a href="https://github.com/constant-money" target="_blank">view all our code</a> as well as suggest features you’d like to see</p>',
+  'home1.whatDesc3': '<p>We strictly require every loan to be 150% backed by collateral. For someone to borrow $10,000, they have to put up $15,000 in collateral value.</p>\n' +
     '      <br />\n' +
     '      <p>So if borrowers default, you don’t lose a cent.</p>\n' +
     '      <br />\n' +
-    '      <a href="https://medium.com/@constantbanking/how-do-constant-crypto-loans-work-b22b66b5b687" target="_blank">How we protect investor funds</a>\n' +
-    '    ',
+    `      <a href="/blog/how-constant-protects-money-and-collateral" target="_blank">How we protect investors' funds.</a>`,
   'home1.howItWorks.mainTitle': 'How it works',
-  'home1.howItWorks.mainDesc': '\n' +
-    '        <h5>We match investors with borrowers glad to pay their rates, and facilitate the entire transaction from beginning to end.</h5>\n' +
-    '      ',
+  'home1.howItWorks.mainDesc': '<h5>The Constant platform matches investors with borrowers glad to pay their rates. It then manages the transfer of investor funds while securely escrowing collateral in either a smart contract or BitGo custody. </h5>',
   'home1.howItWorks.step1': 'Step 1',
   'home1.howItWorks.title1': '1. Set your own terms',
   'home1.howItWorks.desc1': 'Choose how much you want to invest and for how long. We have 1-month, 3-month, and 6-month terms to choose from for utmost flexibility.',
@@ -5107,15 +4847,10 @@ const result =  {
   'home1.howItWorks.desc3': 'As soon as your funds reach us, you start earning interest on your principal. When your term ends you can withdraw your principal and profit to a bank account or stablecoin wallet for free.',
   'home1.checklist.title': 'Why you should invest with Constant.',
   'home1.checklist.desc': 'We’ve done our homework.',
-  'home1.whatwedo.title': 'How we work',
+  'home1.whatwedo.title': 'Think P2P.',
   'home1.whatwedo.cap': 'We’re building a fairer, freer, financial system.',
-  'home1.whatwedo.desc': '\n' +
-    '        <h5>Financial freedom looks different for everyone. It’s having the money to do what you want to do. Or simply having enough to never have to worry. Freedom is being able to make your money work for you - so you don’t have to. Freedom is having money that allows you to travel, work and live - anywhere in the world - and thrive.</h5>\n' +
-    '        <br />\n' +
-    '        <h5>Today’s generations are thinking bigger, but financial systems are still landlocked and insular, characterized by exclusivity, operating behind closed doors. People are trapped in centralized systems designed to profit a select few. Money sits languishing in even the best bank accounts, steadily losing value as inflation rises. Loans are hard to access, and even more difficult to repay. It is easier to fly to some places than it is to send money there. Billions of global-thinking people are lack the means or opportunity to even begin thinking about financial freedom.</h5>\n' +
-    '        <br />\n' +
-    '        <h5>This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</h5>\n' +
-    '      ',
+  'home1.whatwedo.desc': '<h5>Today’s world is more connected than ever, but financial systems are still sluggish, landlocked and insular, characterized by exclusivity, operating behind closed doors. The rapid growth of the P2P movement indicates a broken status quo, and reveals a world in common pursuit of financial autonomy. Everything we do at Constant is designed to make that goal more achievable.</h5>\n' +
+    '<h5>It’s time to choose people, not institutions. This is a platform that connects all those in pursuit of a richer, more open world. Welcome to Constant.</h5>',
   'home1.faqs.question1': 'How long will it take to find a match?',
   'home1.faqs.answer1': 'You match the moment we receive your funds.',
   'home1.faqs.question2': 'Are there any limits?',
@@ -5161,38 +4896,38 @@ const result =  {
   'home1.faqs.answer9': '\n' +
     '        <p>Your investments join a lending reserve from which borrowers can get loans. This means you start earning interest the moment we receive your funds.</p>\n' +
     '      ',
-  'landingPro.title1': 'Constant Pro, the world’s first peer-to-peer lending for professionals, is coming.',
-  'landingPro.desc1': 'Constant Pro offers an intuitive interface with real time orderbooks, charting tools, trade history, and a simple order process so you can trade on interest rates — within a fully-secured platform, backed by a combination of FDIC, smart contracts, and over-collateralization',
-  'landingPro.emailInput.placeholder': 'Enter the email to be the first to experience it',
+  'landingPro.title1': '<h1>Peer-to-peer lending for the Pros. </h1><h1>Coming soon.</h1>',
+  'landingPro.desc1': 'Keep your finger on the pulse of the market, using an intuitive interface with real-time orderbooks, charting tools and detailed trade history. Trade on interest rates and optimize your returns on a fully-secured platform, uniquely backed by a combination of insurance, smart contracts, and over-collateralization.',
+  'landingPro.emailInput.placeholder': 'Enter your email for early access',
   'landingPro.emailInput.btn': 'Step inside',
-  'landingPro.title2': 'Constant Pro is an entirely new way to lend and borrow directly from one another — cutting out the banks and their hefty fees.',
+  'landingPro.title2': 'Get the interest rate you want. No banks, no institutions. Think P2P.',
   'landingPro.what.title0': 'Set your own rates',
   'landingPro.what.desc0': 'Our peer-to-peer matching algorithm replaces the centralized inefficiency of the current banking system, allowing you to tap into true market demand.',
   'landingPro.what.title1': '$130M insurance',
-  'landingPro.what.desc1': 'Funds that have not yet been loaned out are kept safe at multiple FDIC-insured bank accounts with an aggregated insurance of $130M. You can withdraw anytime.',
+  'landingPro.what.desc1': 'Funds that have not yet been loaned out can be withdrawn at anytime.',
   'landingPro.what.title2': 'Protected by Ethereum',
   'landingPro.what.desc2': 'When your money is on loan, it is protected by a smart contract that is over collateralized by crypto assets.  The smart contract will always run exactly as programmed.',
   'landingPro.what.title3': 'Non-custodial',
   'landingPro.what.desc3': 'For borrowers, Constant does not touch your collateral. It is securely stored in an Ethereum smart contract escrow.',
-  'landingPro.faqs.question1': 'What are the supported cryptocurrencies?',
-  'landingPro.faqs.answer1': 'The treasure box is supporting BTC, ETH and CONST',
-  'landingPro.faqs.question2': 'Do I need a minimum deposit?',
-  'landingPro.faqs.answer2': 'None at all. You can invest as much or as little as you like. ',
-  'landingPro.faqs.question3': 'What is the interest rate?',
-  'landingPro.faqs.answer3': '\n' +
-    '        <p>Enter how much you want to invest and for how long, and the interest rate you want to earn. Make a transfer of that amount to our FDIC-insured escrow account, and wait for a match. This is usually very quick if you’ve set market rates. </p>\n' +
-    '        <p>Once you’ve found a match, we’ll transfer your funds from the escrow to the borrower’s account. You’ll immediately start earning the interest rate you chose. At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – you can reinvest, withdraw, or send money abroad. </p>\n' +
-    '      ',
-  'landingPro.faqs.question4': 'How much is the monthly earning?',
+  'landingPro.faqs.question1': 'What is the difference between Constant and Constant Pro?',
+  'landingPro.faqs.answer1': 'Constant Pro is designed for those who want a little more control over how they manage their money. Constant Pro gives users a full view of what’s going on behind the scenes – so they can examine real-time rates, choose which orders to match with, and secure the best outcomes.',
+  'landingPro.faqs.question2': 'What does it mean to be fully secured?',
+  'landingPro.faqs.answer2': '<p>All investor funds are fully backed by collateral, and all portions that are not yet on loan benefit from our $130M insurance policy. Borrower collateral is stored safely in escrow, which means no one can touch it until it is transferred back to them after repayment.</p>\n' +
+    '<p>Unlike other platforms, Constant also allows users to set their own interest rates and terms. Ethereum powered smart contracts automate the loan agreement and always run exactly as programmed – ensuring both investors and borrowers are protected.</p>',
+  'landingPro.faqs.question3': 'Is there a maximum or minimum amount for investing and borrowing?',
+  'landingPro.faqs.answer3': 'There are no limits with Constant. You can invest or borrow as much or little as you like.',
+  'landingPro.faqs.question4': 'Who can participate?',
   'landingPro.faqs.answer4': '\n' +
     '        <p>We’ve taken important steps to safeguard not just your investment, but your returns, too. </p>\n' +
     '        <p>All of our borrowers must put up 150% of the loan amount as crypto collateral. We also include a liquidation threshold to insure against a fall in the collateral’s value.</p>\n' +
     '        <p>Your loan terms are hardcoded into an Ethereum smart contract that strictly defines how your money is used. When not on loan, we store your money in FDIC-insured bank accounts, overseen by Prime Trust, an accredited financial institution.</p>\n' +
     '        <p>Combined, these protective measures ensure that no matter what happens – if the borrower doesn’t repay, the crypto market dips, or some other unfortunate event occurs – the return of your principal and profit is guaranteed.</p>\n' +
     '      ',
-  'landingPro.faqs.question5': 'Who can participate?',
-  'landingPro.faqs.answer5': 'When not on loan, we store your money across multiple FDIC-insured bank accounts (with total coverage of $130,000,000). Prime Trust, an accredited US financial institution, manages these accounts on our behalf – we never take custody of the funds.',
-  'landingProReferral.loginRequired': 'You need to login to do the action.',
+  'landingPro.faqs.question5': 'Which currencies do you support?',
+  'landingPro.faqs.answer5': '<p>Investment funds are held in USD – other fiat currencies will be converted.</p>\n' +
+    '<p>For borrower collateral, we accept BTC and ETH. </p>\n' +
+    '<p>Loans are offered in USD, VND and Constant – the platform’s native stablecoin, pegged 1:1 with the USD.</p>',
+  'landingProReferral.loginRequired': 'Please log in to your account.',
   'landingProReferral.shares.title': 'Share your unique referral link',
   'landingProReferral.shares.fb': 'Share on Facebook',
   'landingProReferral.shares.tw': 'Share on Twitter',
@@ -5202,7 +4937,7 @@ const result =  {
   'landingProReferral.referral.btn': 'Copy',
   'landingProReferral.referral.copied': 'Referral link copied to clipboard.',
   'landingProReferral.inviteEmail.title': 'Invite friends via email',
-  'landingProReferral.inviteEmail.placeholder': 'Enter email address, seperate by commas',
+  'landingProReferral.inviteEmail.placeholder': 'Enter email addresses, separated by commas',
   'landingProReferral.inviteEmail.btn': 'Invite',
   'landingProReferral.inviteEmail.sendInvitationsSuccess': 'Send Invitations Successfully!',
   'landingProReferral.inviteEmail.sendInvitationsFail': 'Send Invitations Failed!',
@@ -5225,7 +4960,7 @@ const result =  {
     '    <p class="title">* A receiving fee may be charged by your financial institutions.</p>\n' +
     '    ',
   'getPrices.withdrawCryptoNote': '\n' +
-    '    <p class="title">* Please note that $2,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal will need to be approved manually. Larger the amount, longer the time.</p>\n' +
+    '    <p class="title">* Please note that $2,000 is a daily limitation on automated crypto withdrawal. If you withdraw more than that number, your withdrawal will need to be approved manually. </p>\n' +
     '    <p class="title">* $60,000 is the daily limitation for all the platform.</p>\n' +
     '    <p class="title">* Withdrawal fee for DAI is still kept at 3.5% until further notice.</p>\n' +
     '    <p class="title">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive as well.</p>\n' +
@@ -5234,7 +4969,9 @@ const result =  {
     '    ',
   'getPrices.withdrawCollateralNote': '\n' +
     '    <p class="title">* About collateral issue, please ping <a href="https://t.me/andy_9210" className="underline bold" target="_blank"><strong>@andy_9210</strong></a> on telegram to get direct support.</p>\n' +
-    '    <p class="title">* Network congestion on chains such as Ethereum or Binance may result in funds taking longer to arrive.</p>\n' +
+    '    ',
+  'getPrices.unstakingNote': '\n' +
+    '    <p class="title">* It depends on Incognito chain. Read more <a href="https://incognito.org/t/the-algorithm-of-probability-for-node-selection/836" className="underline bold" target="_blank"><strong>here</strong></a>.</p>\n' +
     '    ',
   'getPrices.holidaysNote': '\n' +
     '    <p class="title">* Our service time may also be affected by public and banking holidays in the US and your local country.</p>\n' +
@@ -5285,7 +5022,7 @@ const result =  {
   'modules.faqs.viewAll': 'View all',
   'modules.faqs.viewLess': 'View less',
   'modules.faqs.hide': 'Hide',
-  'proLending.matchStats.lastInterest': 'Last Interest',
+  'proLending.matchStats.lastInterest': 'Latest match',
   'proLending.matchStats.change': '24H Change',
   'proLending.matchStats.high': '24H High',
   'proLending.matchStats.low': '24H Low',
@@ -5296,20 +5033,20 @@ const result =  {
   'proLending.watchBoard.borrowed': 'Borrowed at Market',
   'proLending.watchBoard.reserves': 'Reserve orders',
   'proLending.watchBoard.investments': 'Investing orders',
-  'proLending.watchBoard.borrows': 'Borrowing orders',
+  'proLending.watchBoard.borrows': 'Borrowing Orders',
   'proLending.watchBoard.voidInvestmentBorrows': 'Secondary Investments',
   'proLending.watchBoard.voidInvestmentBorrowsDesc': 'These are matched orders investors want to sell. You can’t change the term or rate on a secondary investment, but you earn all the interest due on the loan regardless of how much time is left in the term.',
   'proLending.watchBoard.loanOriginatorInvestments': 'Loan Originator Investments',
   'proLending.watchBoard.loanOriginatorInvestmentsDesc': 'Investments backed by the loan originator’s buy-back guarantee. Unlike crypto-backed investments, there might not always be collateral securing the loan. Instead, the loan originator guarantees to buy back the loan should the borrower default for 60 days or more, returning your principal and earned profit.',
   'proLending.watchBoard.bankBondBorrows': 'Bond Orders',
   'proLending.watchBoard.interestSpread': 'Interest spread',
-  'proLending.watchBoard.interestSpreadDesc': 'Interest spread is the difference between the the lowest lending rate and the highest borrowing rate',
+  'proLending.watchBoard.interestSpreadDesc': 'Interest spread is the difference between the lowest lending rate and the highest borrowing rate.',
   'proLending.watchBoard.interestSpreadValues': '0.10%',
-  'proLending.watchBoard.amount': 'Amount(USD)',
-  'proLending.watchBoard.interest': 'Interest(APR)',
+  'proLending.watchBoard.amount': 'Amount (USD)',
+  'proLending.watchBoard.interest': 'Interest (APR)\n',
   'proLending.watchBoard.term': 'Term',
   'proLending.watchBoard.termValues': '{term}-Months',
-  'proLending.watchBoard.matched': 'Matched',
+  'proLending.watchBoard.matched': 'Time',
   'proLending.watchBoard.termMonth': 'Term(Months)',
   'proLending.watchBoard.reserveOrderNote': 'Earn 7.5%APR.\nFully secured.\nNo fees.',
   'proLending.balances.collateralBalances': 'Withdraw crypto',
@@ -5320,35 +5057,35 @@ const result =  {
   'proLending.balances.withdrawFrom.amount': 'Amount',
   'proLending.balances.withdrawFrom.amountDesc': 'How much do you want to withdraw?',
   'proLending.balances.withdrawFrom.address': 'Your {name} wallet address',
-  'proLending.balances.withdrawFrom.addressDesc': 'Your crypto currency address to receiving your coins.',
+  'proLending.balances.withdrawFrom.addressDesc': 'Receiving crypto wallet address.\n',
   'proLending.balances.withdrawFrom.bep2Memo': 'Memo',
-  'proLending.balances.withdrawFrom.bep2MemoDesc': 'Memo maybe is your ID if PEP2 crypto!',
-  'proLending.balances.withdrawFrom.bep2MemoRequired': 'Memo is required!',
+  'proLending.balances.withdrawFrom.bep2MemoDesc': "If you are withdrawing to an exchange, please include a MEMO so your funds don't get lost.",
+  'proLending.balances.withdrawFrom.bep2MemoRequired': 'Please include a memo.',
   'proLending.balances.withdrawFrom.ok': 'Ok',
   'proLending.balances.withdrawFrom.cancel': 'Cancel',
-  'proLending.balances.withdrawFrom.withdrawFailed': 'Failed while withdrawing, please try again',
+  'proLending.balances.withdrawFrom.withdrawFailed': "Something's not right. Please try again.",
   'proLending.balances.withdrawFrom.withdrawFailedSameAddress': 'Unable to withdraw to the same wallet address.',
-  'proLending.balances.withdrawFrom.withdrawSuccess': 'Your withdrawal was completed successfully',
+  'proLending.balances.withdrawFrom.withdrawSuccess': 'Withdrawal successful.',
   'proLending.balances.withdrawFrom.transferConfirm': "We've already sent you a verification link by email. Please click this link to approve your transaction.",
   'proLending.deposits.depositLabel': 'Select loan collateral',
-  'proLending.deposits.title': 'MAKE A DEPOSIT',
+  'proLending.deposits.title': 'Deposit loan collateral',
   'proLending.deposits.generateWallet': 'Generate receiving wallet address',
   'proLending.deposits.depositNote': 'Deposit collateral to secure a loan',
   'proLending.deposits.walletAddressLabel': 'Send collateral to',
   'proLending.deposits.scanQR': 'Or scan this QR code directly from your mobile wallet to complete the transfer',
   'proLending.openOrders.title': 'Open orders',
-  'proLending.openOrders.titleDesc': 'These are orders waiting for a match. To view your matched orders, [please visit your accounts page].',
-  'proLending.openOrders.invest': 'invest',
-  'proLending.openOrders.borrow': 'borrow',
+  'proLending.openOrders.titleDesc': 'These are orders waiting for a match.',
+  'proLending.openOrders.invest': 'Invest',
+  'proLending.openOrders.borrow': 'Borrow',
   'proLending.openOrders.side': 'Side',
-  'proLending.openOrders.amount': 'Amount(USD)',
+  'proLending.openOrders.amount': 'Amount (USD)',
   'proLending.openOrders.interest': 'Rate(APR)',
   'proLending.openOrders.term': 'Days',
   'proLending.openOrders.date': 'Created',
   'proLending.openOrders.matched': 'Matched',
-  'proLending.openOrders.messageSuccess': 'Your order book have been canceled successfully',
-  'proLending.matchedOrders.title': 'Orders History',
-  'proLending.matchedOrders.titleDesc': 'These are orders matched. To view more your matched orders, [please visit your accounts page].',
+  'proLending.openOrders.messageSuccess': 'Your order has been cancelled successfully.',
+  'proLending.matchedOrders.title': 'Order History',
+  'proLending.matchedOrders.titleDesc': 'View your matched orders here.',
   'proLending.matchedOrders.invest': 'invest',
   'proLending.matchedOrders.borrow': 'borrow',
   'proLending.matchedOrders.side': 'Side',
@@ -5357,19 +5094,19 @@ const result =  {
   'proLending.matchedOrders.term': 'Days',
   'proLending.matchedOrders.date': 'Created',
   'proLending.matchedOrders.matched': 'Matched',
-  'proLending.matchedOrders.messageSuccess': 'Your order book have been canceled successfully',
-  'proLending.investBooking.messLoginFirst.invest': 'You must be login before make an investment!',
-  'proLending.investBooking.messLoginFirst.borrow': 'You must be login before make an borrow!',
-  'proLending.investBooking.messDepositFirst': 'your account balance was not enough. You must be deposit before make an investment!',
-  'proLending.investBooking.minAmountRequired': 'Amount must be greater than {value} is required to make an investment!',
-  'proLending.investBooking.amountRequired': 'Amount is required to make an investment!',
-  'proLending.investBooking.interestRequired': 'Interest is required to make an investment!',
+  'proLending.matchedOrders.messageSuccess': 'Your order has been cancelled successfully.',
+  'proLending.investBooking.messLoginFirst.invest': 'Please log in to make an investment.',
+  'proLending.investBooking.messLoginFirst.borrow': 'Please log in to request a loan.',
+  'proLending.investBooking.messDepositFirst': 'Please deposit sufficient funds to make this investment.',
+  'proLending.investBooking.minAmountRequired': 'The minimum amount to invest is {value}.\n',
+  'proLending.investBooking.amountRequired': 'Please enter an amount.',
+  'proLending.investBooking.interestRequired': 'Please enter an amount.',
   'proLending.investBooking.matchedSuccess': "Thanks! Your investment order was successful. Your term has begun and you've started earning interest. To review your investments, please visit your Accounts page.",
   'proLending.investBooking.matchedFailed': 'Your investment had been matched unsuccessfully. Please refresh your browser and try again.',
   'proLending.investBooking.matchedSecondaryInvestmentSuccess': "Done! You've bought a new investment. To track it, please visit the Secondary Market tab on your Accounts page.",
-  'proLending.investBooking.deposit.title': 'Investments deposit',
-  'proLending.investBooking.deposit.depositButton': 'Deposit more',
-  'proLending.investBooking.deposit.depositNote': "If you don't want to miss  invest opportunity, please make sure to keep your funds sufficient.",
+  'proLending.investBooking.deposit.title': 'Deposit investment funds',
+  'proLending.investBooking.deposit.depositButton': 'Deposit funds',
+  'proLending.investBooking.deposit.depositNote': 'Invest USD or USD stablecoins.',
   'proLending.investBooking.form.title': 'Invest',
   'proLending.investBooking.form.amount': 'Amount (USD)',
   'proLending.investBooking.form.interest': 'Interest (APR)',
@@ -5381,11 +5118,11 @@ const result =  {
   'proLending.investBooking.form.availableInvest': 'Available for investment',
   'proLending.investBooking.form.loginButton': 'Log in or Sign up to invest',
   'proLending.investBooking.form.invalidAmount': "Sorry, you don't have enough funds in your account. Please deposit {amount} USD to complete your order.",
-  'proLending.investBooking.form.getFeeFailed': 'Can not get fee in this time, please try again.',
-  'proLending.investBooking.form.fee': 'Invest fee: <span class="amount">{fee}</span> {currency}',
-  'proLending.investBooking.form.amountDesc': '<p>How much do you want to lend?</p>',
+  'proLending.investBooking.form.getFeeFailed': 'Sorry, something went wrong. Please try again.',
+  'proLending.investBooking.form.fee': 'Invest fee: <span class=amount">{fee}</span> {currency}"',
+  'proLending.investBooking.form.amountDesc': 'Enter the amount you want to lend. If there is an open order of the same amount, you will match fully. If there is an open order larger than that amount, you will also match fully. If your amount is larger, you will be partially matched. The remainder will go towards a new open order.',
   'proLending.investBooking.form.termDesc': 'If there is a borrower looking for a shorter loan at your rates, you will be partially matched. We will continue to find you a match for the rest of the term.',
-  'proLending.investBooking.form.interestDesc': 'This is your annual interest rate. If there is a borrower willing to pay more, you will earn the higher rate.',
+  'proLending.investBooking.form.interestDesc': 'This the minimum annual interest rate you are willing to accept. If there is a borrower willing to pay more, you will be matched at the higher rate.',
   'proLending.investBooking.form.goToAccountApp': 'Please go to the Account tab to sign up or log in.',
   'proLending.borrowBooking.title': 'Borrow',
   'proLending.borrowBooking.exchange.amountLabel': 'Amount',
@@ -5393,12 +5130,12 @@ const result =  {
   'proLending.borrowBooking.exchange.exchangeInfo': 'Estimate amount',
   'proLending.borrowBooking.exchange.exchangeInfoDesc': 'Estimate amount USD (const) you need to borrow',
   'proLending.borrowBooking.exchange.collateralLabel': 'Collateral required',
-  'proLending.borrowBooking.exchange.collateralDesc': 'To secure your loan, please deposit 150% the loan value in collateral.',
-  'proLending.borrowBooking.exchange.collateralRequiredDesc': 'To secure your loan, please deposit {value}% the loan value in collateral.',
-  'proLending.borrowBooking.exchange.maxRate': 'Interest rate (APR)',
-  'proLending.borrowBooking.exchange.minTerm': 'Term (days)',
+  'proLending.borrowBooking.exchange.collateralDesc': 'To secure your loan, please deposit 150% of the loan value in collateral.\n',
+  'proLending.borrowBooking.exchange.collateralRequiredDesc': 'To secure your loan, please deposit {value}% of the loan value in collateral.\n',
+  'proLending.borrowBooking.exchange.maxRate': 'Interest (APR)',
+  'proLending.borrowBooking.exchange.minTerm': 'Term (Days)\n',
   'proLending.borrowBooking.exchange.maxRateTooltip': 'This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.',
-  'proLending.borrowBooking.exchange.minTermTooltip': 'This is the minimum amount of time you want to borrow.',
+  'proLending.borrowBooking.exchange.minTermTooltip': 'This is how long you want to borrow for.',
   'proLending.borrowBooking.exchange.buttonText': 'Borrow',
   'proLending.borrowBooking.exchange.loginButton': 'Log in or Sign up to borrow',
   'proLending.borrowBooking.exchange.amountRequired': 'Amount is required to make a borrow!',
@@ -5411,10 +5148,10 @@ const result =  {
   'proLending.borrowBooking.exchange.collateralNoteMatchedFee': 'Fee: 1%',
   'proLending.borrowBooking.exchange.yourBalance': 'Your current balance is {value} {symbol}',
   'proLending.borrowBooking.exchange.collateralNoteTotal': 'Total loan received: {total} {currency}',
-  'proLending.borrowBooking.exchange.usingStaking': 'Get {discount}% off your interest rate by staking collateral',
+  'proLending.borrowBooking.exchange.usingStaking': 'Get {discount}% off your rate by staking collateral\n',
   'proLending.borrowBooking.exchange.usingStakingMobile': 'Get {discount}% off with staking',
   'proLending.borrowBooking.exchange.usingStakingDesc': 'Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.',
-  'proLending.borrowBooking.exchange.stakingMinAmount': 'stake amount must be great than {minVal} {currency}',
+  'proLending.borrowBooking.exchange.stakingMinAmount': 'The staking amount must be greater than {minVal} {currency}',
   'proLending.borrowBooking.exchange.goToAccountApp': 'Please go to the Account tab to sign up or log in.',
   'proLending.borrowBooking.exchange.availableCredit': 'Available Credit',
   'proLending.borrowBooking.exchange.interest': 'Interest (APR)',
@@ -5423,7 +5160,7 @@ const result =  {
   'proLending.borrowBooking.exchange.notEnoughBalance': 'Please deposit sufficient collateral to credit your requested amount',
   'proLending.borrowBooking.createdSuccess': 'Thanks! Your borrow order was successful. Your term has started and your funds are in your account and ready to use. To review your loans, please visit your Accounts page.',
   'proLending.borrowBooking.errorMsgs.notEnoughBalance': 'Your Available Credit is {amount} USD. Please deposit sufficient collateral to credit your requested amount',
-  'proLending.borrowBooking.errorMsgs.generateCollateralAddressFail': "Can't generate collateral address. Please try again!",
+  'proLending.borrowBooking.errorMsgs.generateCollateralAddressFail': 'Something went wrong. Please try again.',
   'proLending.borrowBooking.errorMsgs.maxOfCollateralHolding': "Please try a different coin. To manage risk, the platform can hold only 10% of any coin's 24h trading volume.",
   'proLending.borrowBooking.errorMsgs.error': 'OH! something went wrong! Please refresh your browser and try again.',
   'proLending.borrowC2CBooking.title': 'Crypto Credit',
@@ -5503,63 +5240,12 @@ const result =  {
   'deposit1.faqs.answer11': 'No – all deposits and withdrawals on Flex are free.',
   'deposit1.faqs.question12': 'How does Constant make money?',
   'deposit1.faqs.answer12': 'Flex deposits earn interest through an API with Compound Finance, another lending platform. Compound sets interest rates according to supply and demand, and Constant will make a slim profit on any difference between the Flex and Compound rates.',
-  'yourReferral.banner.desc': '\n' +
-    '        <h2>Get a free ${bonus} bonus for every friend you refer.</h2>\n' +
-    '        <p>Tell your friends and family about us and get <strong>${bonus} free</strong> for each person who signs up and deposits. You also earn <strong>10% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>\n' +
-    '      ',
-  'yourReferral.banner.invite': 'Invite now',
-  'yourReferral.whatForYou.title': 'What’s in it for you?',
-  'yourReferral.whatForYou.desc': '\n' +
-    '        <div class="section-desc-title">INVITE FRIENDS, EARN TOGETHER</div>\n' +
-    '        <div><strong>Earn ${bonus} for every friend who signs up and passes KYC</strong>, paid instantly, and with no limits.</div>\n' +
-    '        <div><strong>Then earn 10% of their Flex interest</strong>, capped at a generous $1,000,000.</div>\n' +
-    '        <div><strong>Your friend gets a 30-day $1,500 trial bonus</strong> and keeps the interest.</div>\n' +
-    '      ',
-  'yourReferral.whatForYou.formula.0': 'for everyone who signs up and passes KYC',
-  'yourReferral.whatForYou.formula.1': ' ',
-  'yourReferral.whatForYou.formula.2': 'of your friends’ Flex interest',
-  'yourReferral.whatForYou.formula.3': ' ',
-  'yourReferral.whatForYou.formula.4': 'for your friend if they’re a US resident',
-  'yourReferral.whatForYou.data.0.title': 'EARN TOGETHER',
-  'yourReferral.whatForYou.data.0.desc': 'With you and your friends’ earnings linked, you can grow your money faster, while your friends can refer people to multiple their earnings, too.',
-  'yourReferral.whatForYou.data.1.title': 'HELP PEOPLE INVEST BETTER',
-  'yourReferral.whatForYou.data.1.desc': 'Help your friends and family overcome the challenges of today’s investment market. Constant is an ideal way to diversify and enjoy secured returns without fees.',
-  'yourReferral.whatForYou.data.2.title': 'IMPROVE THE PLATFORM',
-  'yourReferral.whatForYou.data.2.desc': 'Every new customer we welcome helps fuel new features and products, giving you a range of investment options, rates, and tools to reach all your financial goals. ',
-  'yourReferral.whatForThem.title': 'What’s in it for them?',
-  'yourReferral.whatForThem.content.left': '\n' +
-    '          <p class="content-title">$1,500 trial bonus</p>\n' +
-    '          <p class="content-desc">When your referree signs up and passes KYC, we’ll deposit a $1,500. bonus in their account. This lasts for 30 days*, at the end of which, we reclaim the bonus but your referee keeps all the interest.</p>\n' +
-    '          <p class="content-desc font-italic">*30-day trial bonus (US residents only).</p>\n' +
-    '        ',
-  'yourReferral.whatForThem.content.right': '\n' +
-    '          <div>\n' +
-    '            <div class="content-title">4% APY</div>\n' +
-    '            <p class="content-desc">on all Flex deposits</p>\n' +
-    '          </div>\n' +
-    '          <div>\n' +
-    '            <div class="content-title">7.5% APR</div>\n' +
-    '            <p class="content-desc">on <strong>crypto-backed</strong> investments</p>\n' +
-    '          </div>\n' +
-    '          <div>\n' +
-    '            <div class="content-title">11% APR</div>\n' +
-    '            <p class="content-desc">on Loan Originator investments</p>\n' +
-    '          </div>\n' +
-    '        ',
-  'yourReferral.howItWorks.title': 'How it works',
-  'yourReferral.howItWorks.desc': '\n' +
-    '      <p>There are <strong>no limits</strong> to the number of people you can refer for the ${bonus} bonus.</p>\n' +
-    '      <p>Your Flex earnings are capped at $1,000,000.</p>',
-  'yourReferral.howItWorks.data.0.title': ' ',
-  'yourReferral.howItWorks.data.0.desc': 'Share your unique referral link by email or social media.',
-  'yourReferral.howItWorks.data.1.title': ' ',
-  'yourReferral.howItWorks.data.1.desc': 'Your referee signs up using your link and verifies their ID (KYC).',
-  'yourReferral.howItWorks.data.2.title': ' ',
-  'yourReferral.howItWorks.data.2.desc': 'You get ${bonus} paid instantly to your Constant account.',
-  'yourReferral.howItWorks.data.3.title': ' ',
-  'yourReferral.howItWorks.data.3.desc': 'Your referee earns interest on a 30-day $1,500 trial bonus.',
-  'yourReferral.howItWorks.data.4.title': ' ',
-  'yourReferral.howItWorks.data.4.desc': 'You get 10% of their Flex earnings, compounded and paid every second.',
+  'yourReferral.v1.howItWorks.step1.title': 'Create your referral link',
+  'yourReferral.v1.howItWorks.step1.desc': 'Open an account to get your unique referral link',
+  'yourReferral.v1.howItWorks.step2.title': 'Refer friends',
+  'yourReferral.v1.howItWorks.step2.desc': 'Invite your friends by email or share your unique referral link on social media',
+  'yourReferral.v1.howItWorks.step3.title': 'Earn together',
+  'yourReferral.v1.howItWorks.step3.desc': 'Get paid every time your friend invests or borrows',
   'yourReferral.referral_history.title': 'Referral history',
   'yourReferral.referral_history.noRecord': 'No record found',
   'yourReferral.referral_history.user_email': 'Friend’s email address',
@@ -5575,7 +5261,7 @@ const result =  {
     '      </p>\n' +
     '      ',
   'yourReferral.info.balanceTitle': 'YOU CURRENTLY HAVE',
-  'yourReferral.info.title': 'Get your friend involved',
+  'yourReferral.info.title': 'Get your friends involved\n',
   'yourReferral.info.desc': '\n' +
     '        <p>For every friend who makes an investment or loan of $1000 or more, you will earn 1 STAR.</p>\n' +
     '        <p>1 STAR unlocks either +1% APR on an investment or -1% APR on a loan. You can use up to 3 STAR at one time.</p>\n' +
@@ -5601,10 +5287,10 @@ const result =  {
   'yourReferral.history.transaction_type': 'Type',
   'yourReferral.history.status': 'Status',
   'yourReferral.history.detail': 'Detail',
-  'yourReferral.withdraw.amountPlaceholder': 'Please enter your amount here',
+  'yourReferral.withdraw.amountPlaceholder': 'Enter amount',
   'yourReferral.withdraw.amount': 'Amount',
-  'yourReferral.withdraw.address': 'STAR Address',
-  'yourReferral.withdraw.addressPlaceholder': 'Please enter your address here',
+  'yourReferral.withdraw.address': 'Receiving wallet address',
+  'yourReferral.withdraw.addressPlaceholder': 'Enter ERC20 wallet address',
   'yourReferral.withdraw.successMsg': 'Success! You withdraw STAR.',
   'yourReferral.withdraw.failedMsg': 'Something went wrong! Please try again',
   'yourReferral.transfer.email': 'Email',
@@ -5613,13 +5299,11 @@ const result =  {
   'yourReferral.transfer.failedMsg': 'Something went wrong! Please try again',
   'yourReferral.transfer.not_enough_balance': 'Not enough balance',
   'yourReferral.flex.balanceTitle': 'YOU CURRENTLY HAVE',
-  'yourReferral.flex.desc': '\n' +
-    '        <p class="bold">Get your friends involved</p>\n' +
-    '        <p>Refer friends and we’ll give you 10% of the interest they earn in their first year.</p>\n' +
-    '        <p>No matter how often they deposit, you earn 10% of what they do – paid every second.</p>\n' +
-    '        <p>The more they deposit, the more you earn (up to a maximum of $1,000,000).</p>\n' +
-    '        <p>So get referring friends to Flex and earn more interest than ever.</p>\n' +
-    '      ',
+  'yourReferral.flex.desc': '<p class="bold">Get your friends involved</p>\n' +
+    '<p>Refer friends and we’ll give you 10% of the interest they earn in their first year.</p>\n' +
+    '<p>No matter how often they deposit, you earn 10% of what they do – paid every second.</p>\n' +
+    '<p>The more they deposit, the more you earn (up to a maximum of $1,000,000).</p>\n' +
+    '<p>So get referring friends to Flex and earn more interest than ever.</p>',
   'yourReferral.flex.buttonRefer': 'Refer friends',
   'yourReferral.flex.buttonFriendEarn': 'Friends earn interest',
   'yourReferral.flex.buttonYouEarn': 'You earn 10%',
@@ -5641,7 +5325,7 @@ const result =  {
   'menuMobile.membership': 'Membership',
   'menuMobile.btnDeposit': 'Deposit',
   'menuMobile.btnLoansC2C': 'Crypto Credit',
-  'menuMobile.btnReferral': 'Share & Earn',
+  'menuMobile.btnReferral': '<div class="textLeft"><small>Share & earn</small><div>Interest</div></div>',
   'menuMobile.btnTransfer': 'Transfer',
   'menuMobile.btnWithdrawCrypto': '<div class="textLeft"><small>Withdraw to</small><div>Crypto</div></div>',
   'menuMobile.btnWithdrawFiat': '<div class="textLeft"><small>Withdraw to</small><div>Fiat</div></div>',
@@ -5715,9 +5399,9 @@ const result =  {
   'seo.referral.title': 'Secured peer-to-peer lending platform for cryptocurrency bitcoin loan',
   'seo.referral.keyword': 'lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online',
   'seo.referral.description': 'Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts',
-  'seo.staking.title': 'Secured peer-to-peer lending platform for cryptocurrency bitcoin loan',
-  'seo.staking.keyword': 'lending club, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online',
-  'seo.staking.description': 'Constant is the P2P lending platform built on P2P technology with the fastest growth rate in Asia. Lend stablecoin and fiat with your own terms and interest rates or borrow money using cryptocurrency as collateral in this defi product.Fully secured by borrower collateral and smart contracts',
+  'seo.staking.title': 'Staking-as-a-service provider: stake and earn reward for token hodler',
+  'seo.staking.keyword': 'staking service, staking pool, staking-as-a-service, token hodler, constant project, p2p lending, peer to peer, bitcoin loan, bitcoin loans, online loans, p2p loan, lend money online',
+  'seo.staking.description': 'Staking service for all token hodlers. Constant offers the most professional and reliable crypto staking pool services available for traders and cryptocurrency evangelists. Join our masternode for interest paid every 30 minutes. No minimum amount. No fees. Withdraw anytime',
   'seo.cryptoLend.title': 'Crypto Lending - Make your crypto work for you - MyConstant',
   'seo.cryptoLend.keyword': 'crypto lending platform, p2p cryto lending',
   'seo.cryptoLend.description': 'Earn 10.00% APY on BTC, ETH, and BNB on MyConstant Crypto Lending platform. Send your cryptocurrencies to our P2P crypto lending and earn interest on transactions. Withdraw anytime. No fees. Compounded every second.',
@@ -5726,35 +5410,35 @@ const result =  {
   'seo.loanOriginator.description': 'My Constant works with the top loan originators in the world to give investors more choice and better returns. We offer loans with buyback guarantee to protect our investors',
   'staking.todayRate': 'Today’s rate.',
   'staking.todayRateValues': '{rate}% APR',
-  'staking.howMuchDoYouWantToDeposit': 'How much do you want to staking?',
+  'staking.howMuchDoYouWantToDeposit': 'How much do you want to stake?',
   'staking.usingAvailableBalance': 'Use max available amount ({maxAmount} {currency})?',
   'staking.usingAvailableBalanceDesc': 'Use max of your available amount',
-  'staking.depositNow': 'Start staking?',
+  'staking.depositNow': 'Start staking now',
   'staking.depositWithAmount': 'Start staking {amount} {currency}',
-  'staking.validateMinAmountError': "You can't input amount less than {amount} {currency}",
-  'staking.maxValueAmount': "You can't input amount greater than {max}",
+  'staking.validateMinAmountError': "You can't stake less than {amount} {currency}",
+  'staking.maxValueAmount': "You can't stake an amount greater than {max}",
   'staking.requiredAmount': 'Amount is required',
-  'staking.makeStakingSuccess': 'Your staking was created successfully',
+  'staking.makeStakingSuccess': 'You have successfully staked {amount} {cryptocurrency}',
   'staking.makeStakingFailed': 'Something went wrong. Please refresh your browser and try again.',
   'staking.cancel': 'Cancel',
-  'staking.starStaking': 'Create staking',
-  'staking.stakingFromTitle': 'Start staking',
+  'staking.starStaking': 'Start staking',
+  'staking.stakingFromTitle': 'Start staking now',
   'staking.contentHtml': '\n' +
     '        <p>Stake and earn</p>\n' +
     '        <h1>Get up to {reward}% APR<br/>on your cryptocurrencies.</h1>\n' +
     '        <p />\n' +
     '        <p>Join our staking pool for up to {reward}% APR. Interest paid every 30 minutes. Low minimum stake. No fees. Withdraw anytime. Staking has never been this easy.</p>\n' +
     '    ',
-  'staking.withdrawFrom.unStaking.title': 'Un-staking',
+  'staking.withdrawFrom.unStaking.title': 'Unstake',
   'staking.withdrawFrom.unStaking.amount': 'Amount',
-  'staking.withdrawFrom.unStaking.amountDesc': 'How much do you want to un-taking?',
+  'staking.withdrawFrom.unStaking.amountDesc': 'How much do you want to un-stake?',
   'staking.withdrawFrom.unStaking.usingAvailableBalance': 'Use max available amount ({maxAmount} {currency})?',
   'staking.withdrawFrom.unStaking.address': 'Your {name} wallet address?',
   'staking.withdrawFrom.unStaking.addressDesc': 'Receiving crypto wallet address',
   'staking.withdrawFrom.unStaking.maxAmount': 'Your amount must be less than {maxAmount} {symbol}.',
   'staking.withdrawFrom.unStaking.withdrawFailed': 'Something went wrong. Please try again.',
-  'staking.withdrawFrom.unStaking.withdrawAddressFailed': 'Your wallet address invalid. Please try again.',
-  'staking.withdrawFrom.unStaking.withdrawSuccess': 'Your un-taking was completed successfully.',
+  'staking.withdrawFrom.unStaking.withdrawAddressFailed': 'Your wallet address is invalid. Please try again.',
+  'staking.withdrawFrom.unStaking.withdrawSuccess': 'You successfully un-staked your {amount} {cryptocurrency}.',
   'staking.withdrawFrom.unStaking.returnAmount': 'Your {amount} unstaked {currency} will return to your coin balance.',
   'staking.withdrawFrom.withdraw.title': 'Withdraw your reward',
   'staking.withdrawFrom.withdraw.amount': 'Amount',
@@ -5764,20 +5448,20 @@ const result =  {
   'staking.withdrawFrom.withdraw.addressDesc': 'Receiving crypto wallet address',
   'staking.withdrawFrom.withdraw.maxAmount': 'Your amount must be less than {maxAmount} {symbol}.',
   'staking.withdrawFrom.withdraw.withdrawFailed': 'Something went wrong. Please try again.',
-  'staking.withdrawFrom.withdraw.withdrawAddressFailed': 'Your wallet address invalid. Please try again.',
+  'staking.withdrawFrom.withdraw.withdrawAddressFailed': 'Your wallet address is invalid. Please try again.',
   'staking.withdrawFrom.withdraw.withdrawSuccess': 'Your withdrawal was completed successfully.',
   'staking.withdrawFrom.withdraw.returnAmount': 'Your {amount} {currency} reward will return to your coin balance.',
   'staking.withdrawFrom.submit': 'Submit',
   'staking.withdrawFrom.cancel': 'Cancel',
   'staking.confirmation.thankYou': 'Almost there',
   'staking.confirmation.cryptoThankMsg': 'Simply transfer {amount} {currency} to the wallet address below to begin staking.',
-  'staking.confirmation.stakingAmount': 'Staking amount',
-  'staking.confirmation.availableBalance': 'Available Balance',
-  'staking.confirmation.stakingRequired': 'Staking required',
+  'staking.confirmation.stakingAmount': 'Stake amount',
+  'staking.confirmation.availableBalance': 'Available balance',
+  'staking.confirmation.stakingRequired': 'Stake required',
   'staking.confirmation.cryptoAddress': '{currency} address',
-  'staking.confirmation.minuteWindowDescription': 'For the sake of security, your staking request will time-out after 24 hours. If you need a little longer, just re-enter the amount you would like to stake when you’re ready.',
+  'staking.confirmation.minuteWindowDescription': "For the sake of security, your staking request will time-out after 24 hours. If you need a little longer, just re-enter the amount you'd like to stake when you’re ready.",
   'staking.confirmation.minuteWindow': 'Please complete your transfer within 24 hours.',
-  'staking.confirmation.scanQR': 'Alternatively, scan this QR code directly from your mobile wallet to complete the staking.',
+  'staking.confirmation.scanQR': 'Alternatively, scan this QR code directly from your mobile wallet to send your stake.',
   'staking.confirmation.backOrderBook': 'Back',
   'staking.learnMore': 'For more information, ',
   'staking.learnMoreFAQs': 'check out our FAQs.',
@@ -5802,10 +5486,10 @@ const result =  {
   'staking.howItWorks.2.title': '2. Send your crypto to the pool',
   'staking.howItWorks.2.desc': 'Transfer your cryptocurrency to the masternode pool address. Wait for email confirmation or check blockchain explorer for proof of receipt.',
   'staking.howItWorks.3.title': '3. Start earning interest',
-  'staking.howItWorks.3.desc': 'The longer you leave your crypto staking, the more interest you earn. Withdraw anytime to any supported wallet.',
+  'staking.howItWorks.3.desc': 'The longer you stake your crypto, the more interest you earn. Withdraw anytime to any supported wallet.',
   'staking.howItWorks.title': 'How to stake',
   'staking.what.1.caption': 'Low minimum stake',
-  'staking.what.1.desc': 'Join a masternode pool instead of raising the minimum stake alone. Enjoy the rewards no matter how much crypto you own.',
+  'staking.what.1.desc': 'Join our masternode pool and start staking with less. Enjoy the rewards no matter how much crypto you own.',
   'staking.what.2.caption': 'Withdraw anytime',
   'staking.what.2.desc': 'Withdraw your earned interest (paid every 30 minutes) or crypto stake at any time, without penalty.',
   'staking.what.3.caption': 'No fees',
@@ -5821,7 +5505,7 @@ const result =  {
   'collateralBalance.name': 'Name',
   'collateralBalance.totalBalance': 'Total Balance',
   'collateralBalance.collateralBalance': 'Collateral Balance',
-  'collateralBalance.availableBalance': 'Available Balance',
+  'collateralBalance.availableBalance': 'Available balance',
   'collateralBalance.flexBalance': 'Flex Balance',
   'collateralBalance.stakingBalance': 'Staking Balance',
   'collateralBalance.rewardBalance': 'Reward Balance',
@@ -5840,18 +5524,18 @@ const result =  {
   'collateralBalance.autoStakeDesc': 'Auto-stake automatically adds staking rewards above {amount} {currency} back into the staking pool. Enable this if you want to earn even more interest on your {currency}.',
   'collateralBalance.autoStakeDescPRV': 'Auto-stake adds rewards above {amount} {currency} back into the staking pool. This compounding your interest, giving you an effective rate of {percent}% APR. Enable this if you want to earn even more interest on your {currency}.',
   'collateralBalance.autoStakeConfirm.true': 'Auto-staking enabled. Once you’ve earned at least {amount} {currency}, auto-stake will transfer your rewards to the staking pool so you earn even more interest.',
-  'collateralBalance.autoStakeConfirm.false': 'Are you sure you want to turn off auto stake?',
+  'collateralBalance.autoStakeConfirm.false': 'Are you sure you want to turn off auto-stake?',
   'collateralBalance.autoStakeConfirm.confirm': 'Confirm',
   'collateralBalance.autoStakeConfirm.cancel': 'Cancel',
-  'collateralBalance.autoStakeConfirm.autoStakeSuccess.true': 'Turn auto stake on successfully',
-  'collateralBalance.autoStakeConfirm.autoStakeSuccess.false': 'Turn auto stake off successfully',
-  'collateralBalance.autoStakeConfirm.autoStakeFailed.true': 'Turn auto stake on failed',
-  'collateralBalance.autoStakeConfirm.autoStakeFailed.false': 'Turn auto stake off failed',
+  'collateralBalance.autoStakeConfirm.autoStakeSuccess.true': 'Auto-stake turned on successfully',
+  'collateralBalance.autoStakeConfirm.autoStakeSuccess.false': 'Auto-stake turned off successfully',
+  'collateralBalance.autoStakeConfirm.autoStakeFailed.true': "Sorry, we couldn't turn on auto-stake right now. Please try again later. If the problem continues, please email us at hello@myconstant.com.",
+  'collateralBalance.autoStakeConfirm.autoStakeFailed.false': "Sorry, we couldn't turn off auto-stake right now. Please try again later. If the problem continues, please email us at hello@myconstant.com.",
   'collateralBalance.unStaking': 'Unstake',
   'collateralBalance.depositCollateralTitle': 'Deposit Collateral',
   'collateralBalance.topupCollateralTitle': 'Top-up Collateral',
-  'collateralBalance.hideSmallBalance': 'Hide Small Balances',
-  'collateralBalance.hideDesc': 'Balances valued are zero.',
+  'collateralBalance.hideSmallBalance': 'Hide small balances',
+  'collateralBalance.hideDesc': 'Only show balances greater than zero. ',
   'collateralBalance.estimatedAvailableValue': 'Estimated Available Value',
   'collateralBalance.estimatedCollateralValue': 'Estimated Collateral Value',
   'collateralBalance.topupSuccess': 'Top-up Collateral successfully',
@@ -5860,9 +5544,8 @@ const result =  {
   'collateralBalance.topupNoBalanceMessage': 'Please deposit to top-up your multi-collateral balance.',
   'collateralBalance.errorMaxValue': 'Amount must less than {max}',
   'collateralBalance.errorMinValue': 'Amount must greater than {min}',
-  'collateralBalance.tabs.collaterals': 'Collaterals',
-  'collateralBalance.tabs.staking': 'Staking',
-  'collateralBalance.cryptoWallet': 'Crypto Wallet',
+  'collateralBalance.tabs.collaterals': 'Collateral',
+  'collateralBalance.tabs.staking': 'Stake',
   'developers.menu.constantAPI': 'Constant API',
   'developers.menu.accountResource': 'Account resource',
   'developers.menu.loanResource': 'Loan resource',
@@ -6054,7 +5737,7 @@ const result =  {
   'whyPeopleLoveUs.customers.socialMedia.comments.fb.4.name': 'Alex',
   'whyPeopleLoveUs.customers.socialMedia.comments.fb.4.auth': 'Alex',
   'whyPeopleLoveUs.customers.socialMedia.comments.fb.4.desc': '\n' +
-    '                  <p>FYI - I’ve used MyConstant without problems since 2019 - I have a substantial chunk of change invested with no problems or $$ losses. It’s a similar business platform as Worthy Bonds (offering secured loans) where I invested too - but Worthy financial uses business assets as collateral for that loan, which is riskier as those assets can drop in value in times like these and are harder to liquidate if a business defaults on their loan. I like MyConstant approach to secured lending better and just moved more $$ from my Worthy Bonds and Wealthfront accounts to MyConstant. I invested with Fundrise, Diversyfund and others that deliver good returns on investment - I’ve had 0 losses this past decade. I manage investments in my solo 401k too.</p>\n' +
+    '                  <p>FYI - I’ve used MyConstant without problems since 2019 - I have a substantial chunk of change invested with no problems or $ losses. It’s a similar business platform as Worthy Bonds (offering secured loans) where I invested too - but Worthy financial uses business assets as collateral for that loan, which is riskier as those assets can drop in value in times like these and are harder to liquidate if a business defaults on their loan. I like MyConstant approach to secured lending better and just moved more $ from my Worthy Bonds and Wealthfront accounts to MyConstant. I invested with Fundrise, Diversyfund and others that deliver good returns on investment - I’ve had 0 losses this past decade. I manage investments in my solo 401k too.</p>\n' +
     '                ',
   'whyPeopleLoveUs.customers.socialMedia.comments.fb.4.date': ' ',
   'whyPeopleLoveUs.customers.socialMedia.comments.fb.4.link': ' ',
@@ -6353,7 +6036,6 @@ const result =  {
   'memberShip.or': 'Or',
   'memberShip.keepLevel': '{type} ${value} to keep your level',
   'memberShip.getLevelDate': 'From {date}',
-  'memberShip.member': 'Member',
   'memberShip.title.level0': 'Member',
   'memberShip.title.level1': 'Gold',
   'memberShip.title.level2': 'Platinum',
@@ -6377,7 +6059,7 @@ const result =  {
     '            ',
   'memberShip.history.title': 'History',
   'memberShip.history.level': 'Status',
-  'memberShip.history.reward': 'Get reward',
+  'memberShip.history.reward': 'Reward',
   'memberShip.history.date': 'Date',
   'memberShip.history.redeem': 'Redeem',
   'memberShip.history.redeemDesc': "Membership rewards are paid after you've reviewed us on TrustPilot. If you've reviewed us already, your rewards will go straight into your account. Otherwise, click the Unlock Your Rewards button below to submit your TrustPilot username and claim your rewards.",
@@ -6610,7 +6292,7 @@ const result =  {
   'ourStory.b4.content2': 'Helping people across the world get the cash they need to do the things they want.',
   'ourStory.b6.time': 'Today',
   'ourStory.b6.title1': 'Our P2P lending platform is internationally recognized as one of the most flexible, transparent, and rewarding.',
-  'ourStory.b6.content1': 'Our P2P lending platform is internationally recognized as one of the most flexible, transparent, and rewarding.',
+  'ourStory.b6.content1': 'Our team has grown to over 50, spread across California, Vietnam, Malta, and Hong Kong.',
   'ourStory.b6.content2': 'We’re the fastest-growing P2P lender in SE Asia, and have featured in HackerNoon, ZeroHedge, Inc., and many other popular tech and finance publications.',
   'ourStory.b7.content1': '\n' +
     '        <p>And as you’ve probably guessed by reading this far, we’re not done yet...</p>\n' +
@@ -7341,160 +7023,6 @@ const result =  {
   'loanOriginators.constantRating.howOfter.downgrade.title': 'We downgrade a loan originator if:',
   'loanOriginators.filter.clearAll': 'Clear All',
   'loanOriginators.filter.cancel': 'Cancel',
-  'loanOriginators.filter.done': 'Done',
-  'badges.intro.title': '<h1>Get the recognition you deserve with <br/>Constant Badges</h1>',
-  'badges.intro.desc': 'Earn badges and cash rewards of up to $100 when you use or promote our platform. From passing KYC to referring friends, there’s a badge to recognize all of your achievements. How many will you earn?',
-  'badges.intro.almostDoneTitle': 'Hi, {name}',
-  'badges.intro.almostDoneDesc': '<p>Earn some quick wins with the badges on the right.</p><p>View all of your earned badges and progress towards others below.</p>',
-  'badges.intro.congratTitle': 'Congratulations!',
-  'badges.intro.congratDesc': "You've earned all our badges. But the awards aren't over yet. Stay tuned for more badges and rewards that recognize your achievements.",
-  'badges.group.getting_started': 'Getting Started',
-  'badges.group.getting_started_desc': "It's easy to earn your first four badges – just set up your account, secure it, and deposit at least $100 to earn 4% APY. That's it!",
-  'badges.group.warming_up': 'Warming Up',
-  'badges.group.warming_up_desc': "These badges reward experimentation – they're all about getting to know our products and trying them out for the first time. Then, sharing your experiences with people and helping them sign up.",
-  'badges.group.referring': 'Referring',
-  'badges.group.referring_desc': 'We love it when you share your experiences with others. These badges reward you for referring friends and family, writing or streaming about us, or reviewing the platform for your community.',
-  'badges.group.winning': 'Winning',
-  'badges.group.winning_desc': "Once you've conquered the previous levels, now it's time to prove you're a winner! These badges reward the biggest and best achievements, and in turn, offer some of the best rewards.",
-  'badges.badge.getting_started_sign_up.title': 'Sign up to Constant',
-  'badges.badge.getting_started_sign_up.desc': '',
-  'badges.badge.getting_started_sign_up.condition': 'To qualify for your badge and reward, you must verify your email address.',
-  'badges.badge.getting_started_sign_up.name': 'Newbie',
-  'badges.badge.getting_started_kyc_us.title': 'Verify your ID',
-  'badges.badge.getting_started_kyc_us.desc': '',
-  'badges.badge.getting_started_kyc_us.condition': 'To qualify for your badge and reward, you must have submitted your identity documents and passed KYC within 7 days of signing up.',
-  'badges.badge.getting_started_kyc_us.name': 'Member',
-  'badges.badge.getting_started_on_2fa.title': 'Enable 2-Factor Authentication',
-  'badges.badge.getting_started_on_2fa.desc': '',
-  'badges.badge.getting_started_on_2fa.condition': 'You earn this badge when you <a href="/me/securities">enable 2FA</a> on your account from your Accounts page.',
-  'badges.badge.getting_started_on_2fa.name': 'Guardian',
-  'badges.badge.getting_started_first_deposit.title': 'Make your first deposit',
-  'badges.badge.getting_started_first_deposit.desc': '',
-  'badges.badge.getting_started_first_deposit.condition': 'To qualify for your badge and reward, you must make a single deposit of at least $100 in fiat currency (USD, for example) into your Flex account',
-  'badges.badge.getting_started_first_deposit.name': 'Icebreaker',
-  'badges.badge.warming_up_review_trustpilot.title': 'Leave a review on Trustpilot',
-  'badges.badge.warming_up_review_trustpilot.desc': '',
-  'badges.badge.warming_up_review_trustpilot.condition': 'To qualify for your badge and reward, your review must be at least 50 words long. You must also be an active Constant customer, with at least one deposit, invest, or borrow order in the past three months.',
-  'badges.badge.warming_up_review_trustpilot.name': 'Supporter',
-  'badges.badge.warming_up_first_friend.title': 'Get a friend to join Constant',
-  'badges.badge.warming_up_first_friend.desc': '',
-  'badges.badge.warming_up_first_friend.condition': 'To qualify for your badge and reward, your friend must deposit at least $10 in fiat currency.',
-  'badges.badge.warming_up_first_friend.name': 'Promoter',
-  'badges.badge.warming_up_invest_first_time.title': 'Invest for the first time',
-  'badges.badge.warming_up_invest_first_time.desc': '',
-  'badges.badge.warming_up_invest_first_time.condition': 'You earn this Bronze Investor badge the very first time you invest with Constant. This badge applies to matched Crypto-Backed and Loan Originator investments only.',
-  'badges.badge.warming_up_invest_first_time.name': 'Investor (Bronze)',
-  'badges.badge.warming_up_invest_monthly_quarter.title': 'Invest every month in a quarter',
-  'badges.badge.warming_up_invest_monthly_quarter.desc': '',
-  'badges.badge.warming_up_invest_monthly_quarter.condition': 'You earn this Silver Investor badge if you invest each month for 3 months in a row. This badge applies to matched Crypto-Backed and Loan Originator investments only.',
-  'badges.badge.warming_up_invest_monthly_quarter.name': 'Investor (Silver)',
-  'badges.badge.warming_up_invest_monthly_year.title': 'Invest every month in a year',
-  'badges.badge.warming_up_invest_monthly_year.desc': '',
-  'badges.badge.warming_up_invest_monthly_year.condition': 'You earn this Gold Investor badge if you invest every month for a whole year. This badge applies to matched Crypto-Backed and Loan Originator investments only.',
-  'badges.badge.warming_up_invest_monthly_year.name': 'Investor (Gold)',
-  'badges.badge.warming_up_borrow_first_time.title': 'Borrow for the first time',
-  'badges.badge.warming_up_borrow_first_time.desc': '',
-  'badges.badge.warming_up_borrow_first_time.condition': 'You earn this Bronze Borrower badge the very first time you borrow with Constant. This badge applies to matched loans only.',
-  'badges.badge.warming_up_borrow_first_time.name': 'Borrower (Bronze)',
-  'badges.badge.warming_up_borrow_monthly_quarter.title': 'Borrow every month in a quarter',
-  'badges.badge.warming_up_borrow_monthly_quarter.desc': '',
-  'badges.badge.warming_up_borrow_monthly_quarter.condition': 'You earn this Silver Borrower badge if you borrow each month for 3 months in a row. This badge applies to matched loans only.',
-  'badges.badge.warming_up_borrow_monthly_quarter.name': 'Borrower (Silver)',
-  'badges.badge.warming_up_borrow_monthly_year.title': 'Borrow every month in a year',
-  'badges.badge.warming_up_borrow_monthly_year.desc': '',
-  'badges.badge.warming_up_borrow_monthly_year.condition': 'You earn this Gold Borrower badge if you borrow every month for a whole year. This badge applies to matched loans only.',
-  'badges.badge.warming_up_borrow_monthly_year.name': 'Borrower (Gold)',
-  'badges.badge.warming_up_sell_secondary_market.title': 'Create a secondary market order',
-  'badges.badge.warming_up_sell_secondary_market.desc': '',
-  'badges.badge.warming_up_sell_secondary_market.condition': 'You earn this badge when you sell an investment for the first time in our secondary market.',
-  'badges.badge.warming_up_sell_secondary_market.name': 'Dealmaker',
-  'badges.badge.warming_up_buy_secondary_market.title': 'Purchase a secondary market order',
-  'badges.badge.warming_up_buy_secondary_market.desc': '',
-  'badges.badge.warming_up_buy_secondary_market.condition': "You earn this badge when you buy another investor's investment for the first time in our secondary market.",
-  'badges.badge.warming_up_buy_secondary_market.name': 'Patron',
-  'badges.badge.winning_invest.title': 'Invest at least $50,000',
-  'badges.badge.winning_invest.desc': '',
-  'badges.badge.winning_invest.condition': 'You earn this badge when you invest a total of $50,000 in Loan Originator or Crypto-Backed investments. This badge applies to matched Crypto-Backed and Loan Originator investments only.',
-  'badges.badge.winning_invest.name': 'Financier',
-  'badges.badge.winning_borrow.title': 'Borrow at least $10,000',
-  'badges.badge.winning_borrow.desc': '',
-  'badges.badge.winning_borrow.condition': "You earn this badge when you've borrowed at least $10,000 through Constant. This badge applies to matched loans only.",
-  'badges.badge.winning_borrow.name': 'Fundraiser',
-  'badges.badge.winning_loyalty_6months.title': 'Active on Constant for 6 months',
-  'badges.badge.winning_loyalty_6months.condition': "You earn this Bronze Loyal badge when you've transacted on the platform or referred new user at least once a month for six months.",
-  'badges.badge.winning_loyalty_6months.name': 'Stalwart (Bronze)',
-  'badges.badge.winning_loyalty_12months.title': 'Active on Constant for 12 months',
-  'badges.badge.winning_loyalty_12months.condition': "You earn this Silver Loyal badge when you've transacted on the platform / referred new user at least once a month for a year.",
-  'badges.badge.winning_loyalty_12months.name': 'Stalwart (Silver)',
-  'badges.badge.winning_loyalty_24months.title': 'Active on Constant for 24 months',
-  'badges.badge.winning_loyalty_24months.condition': "You earn this Gold Loyal badge when you've transacted on the platform / referred new user at least once a month for two years.",
-  'badges.badge.winning_loyalty_24months.name': 'Stalwart (Gold)',
-  'badges.badge.winning_champion.title': 'Achieve all badges',
-  'badges.badge.winning_champion.condition': 'Earn all badges and $10 will be yours.',
-  'badges.badge.winning_champion.name': 'Champion',
-  'badges.badge.referring_friend_10_referees.title': 'Refer 10 KYC-approved investors',
-  'badges.badge.referring_friend_10_referees.condition': 'To qualify for the badge and reward, your referee must first pass KYC and deposit or invest at least $50 in fiat currency.',
-  'badges.badge.referring_friend_10_referees.name': 'Headhunter (Bronze)',
-  'badges.badge.referring_friend_50_referees.title': 'Refer 50 KYC-approved investors',
-  'badges.badge.referring_friend_50_referees.condition': 'To qualify for the badge and reward, your referee must first pass KYC and deposit or invest at least $50 in fiat currency.',
-  'badges.badge.referring_friend_50_referees.name': 'Headhunter (Silver)',
-  'badges.badge.referring_friend_100_referees.title': 'Refer 100 KYC-approved investors',
-  'badges.badge.referring_friend_100_referees.condition': 'To qualify for the badge and reward, your referee must first pass KYC and deposit or invest at least $50 in fiat currency.',
-  'badges.badge.referring_friend_100_referees.name': 'Headhunter (Gold)',
-  'badges.badge.referring_invest_100k.title': 'Your referee invests $100,000',
-  'badges.badge.referring_invest_100k.condition': '\n' +
-    '          When a referee of yours invests a total of $100,000 in matched Crypto-Backed or Loan Originator Investments, you earn this Bronze badge and a $20 bonus.\n' +
-    "          <br/>Each badge is limited to one referee only (the same referee can't be used to earn all three badges).\n" +
-    '        ',
-  'badges.badge.referring_invest_100k.name': 'Luminary (Bronze)',
-  'badges.badge.referring_invest_200k.title': 'Your referee invests $200,000',
-  'badges.badge.referring_invest_200k.condition': '\n' +
-    '          When a referee of yours invests a total of $200,000 in matched Crypto-Backed or Loan Originator Investments, you earn this Silver badge and a $40 bonus.\n' +
-    "          <br/>Each badge is limited to one referee only (the same referee can't be used to earn all three badges).\n" +
-    '        ',
-  'badges.badge.referring_invest_200k.name': 'Luminary (Silver)',
-  'badges.badge.referring_invest_500k.title': 'Your referee invests $500,000',
-  'badges.badge.referring_invest_500k.condition': '\n' +
-    '          When a referee of yours invests a total of $500,000 in matched Crypto-Backed or Loan Originator Investments, you earn this Gold badge and a $100 bonus.\n' +
-    "          <br/>Each badge is limited to one referee only (the same referee can't be used to earn all three badges).\n" +
-    '        ',
-  'badges.badge.referring_invest_500k.name': 'Luminary (Gold)',
-  'badges.badge.referring_article_first.title': 'Write your first article or review about Constant',
-  'badges.badge.referring_article_first.condition': '\n' +
-    '          To qualify for badges and rewards, your article must be at least 700 words, unique, and without plagiarism. You must publish articles on your registered site, and only one article per month will qualify.\n' +
-    "          </br>If you publish articles sooner and don't meet the monthly quota, you won't receive a reward. We reserve the right to evaluate your articles for quality and readability before approving your badges. \n" +
-    '        ',
-  'badges.badge.referring_article_first.name': 'Influencer (Bronze)',
-  'badges.badge.referring_article_monthly_quarter.title': 'Write an article or review about Constant every month for three months',
-  'badges.badge.referring_article_monthly_quarter.condition': 'To qualify for badges and rewards, your article must be at least 700 words, unique, and without plagiarism. You must publish articles on your registered site, and only one article per month will qualify.',
-  'badges.badge.referring_article_monthly_quarter.name': 'Influencer (Silver)',
-  'badges.badge.referring_article_monthly_year.title': 'Write an article or review about Constant every month for one year',
-  'badges.badge.referring_article_monthly_year.condition': 'To qualify for badges and rewards, your article must be at least 700 words, unique, and without plagiarism. You must publish articles on your registered site, and only one article per month will qualify.',
-  'badges.badge.referring_article_monthly_year.name': 'Influencer (Gold)',
-  'badges.term.0': 'Any abuse of the Constant Badges reward program will result in immediate disqualification. Abuse includes spam, cheating, or any other fraud intended to earn badges illegitimately.',
-  'badges.term.1': 'Any content you produce about Constant to claim a badge must not denigrate, disparage, or otherwise damage the Constant brand.',
-  'badges.term.2': 'You earn a reward for each badge once only.',
-  'badges.term.3': 'The maximum reward you can earn from the Constant Badges program is $500 in total.',
-  'badges.term.4': 'Only one Constant account per badge. Duplicate Constant accounts are disqualified.',
-  'badges.term.5': "Badges are awarded retroactively but rewards apply to qualifying activities after July 16th 2020 only. For example, if you passed KYC before July 16th 2020, you'll earn the “Member” badge but not the reward.",
-  'badges.term.6': 'Constant reserves the right to withhold rewards and change the terms and conditions of Constant Badges at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.',
-  'badges.term.7': 'To be eligible for rewards, you must have passed KYC.',
-  'badges.term.title': 'Terms and Conditions',
-  'badges.term.note': 'Effective as of 2020/07/16 00:00 AM (GMT+0)',
-  'badges.submitForm.title': 'Submit the link go to your review',
-  'badges.submitForm.subtitle': "Thanks for requesting the {badgeName} badge. Please enter the link that supports your request below. We'll get back to you within two business days with a decision.",
-  'badges.submitForm.subtitleTrustpilot': "Thanks for requesting the Supporter badge. After reviewing us on Trustpilot, please click on the title of your review to get your link. We'll get back to you within two business days with a decision.",
-  'badges.submitForm.submit': 'Submit',
-  'badges.submitForm.cancel': 'Cancel',
-  'badges.submitForm.success': 'Submit proof successfully',
-  'badges.submitForm.errNeedKyc': 'You must pass KYC before you can request this badge. <a href="/me/profile">Submit your KYC documents or approval.</>',
-  'badges.submitForm.errProofPending': `Your badge request is still under review. If you've not had a response in two business days, please contact <a href="mailto://tina@myconstant.com">tina@myconstant.com</a>.`,
-  'badges.submitForm.errCompletePrevious': 'To qualify for {current}, you need to complete {previous} first.',
-  'badges.title': 'Badges',
-  'badges.detail': 'Details',
-  'badges.share': 'Share',
-  'badges.conditions': 'Conditions',
-  'badges.submit': 'Submit',
-  'badges.request': 'Request'
+  'loanOriginators.filter.done': 'Done'
 }; 
  module.exports = result;
