@@ -3027,6 +3027,11 @@ const result =  {
     '            ',
   'landingPage.promotionFlex.howWeProtectYou.data.1.desc': '\n' +
     '            <p>When you invest in Flex, your money supplies loans to collateralized borrowers and liquidity to decentralized exchanges. <strong>Flex is a multi-market investment product</strong> that spreads risk across multiple platforms to offer you a consistent return and the convenience of unlimited free withdrawals.</p>\n' +
-    '            '
-};
+    '            ',
+  'user.login.twoFaRequired': '2FA authentication is required for all users with balance over 1000 USD',
+  'memberShip.pointExpiredDate': '{value} points will expire on {date}',
+  'memberShip.tierProgressDesc': 'Earn {points} points by {date} to maintain {level} membership',
+  'memberShip.getLevelDate': 'From {date}',
+  'memberShip.history.redeemDesc': "Membership rewards are paid after you've reviewed us on TrustPilot. If you've reviewed us already, your rewards will go straight into your account. Otherwise, click the Unlock Your Rewards button below to submit your TrustPilot username and claim your rewards."
+}; 
  module.exports = result;

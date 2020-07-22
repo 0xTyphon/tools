@@ -29,7 +29,8 @@ export default {
       loginFailure: 'Please make sure your email and password are correct.',
       username: 'Your email',
       loginFailureCaptchaV2: "Please check I'm not a robot.",
-      notValidUsername: 'Invalid email address'
+      notValidUsername: 'Invalid email address',
+      twoFaRequired: '2FA authentication is required for all users with balance over 1000 USD'
     },
     forgetPassword: {
       title: 'Forgot your password?',
@@ -309,21 +310,21 @@ export default {
     },
     desc: {
       level1: '<h4>What you get:</h4>\n' +
-        '              <p><i class="fal fa-check"></i> $50 credit to your Constant account the first time you reach Gold (after leaving a review on Trustpilot).</p>\n' +
-        '              <p><i class="fal fa-check"></i> US members: $15 credit every time you refer a friend.</p>\n' +
-        '              <p><i class="fal fa-check"></i> 15% of all earned interest from Flex accounts of referred friends during their first year.</p>\n' +
+        '              <p><i class="fal fa-check"></i> ${cashback} credit to your Constant account the first time you reach Gold (after leaving a review on Trustpilot).</p>\n' +
+        '              <p><i class="fal fa-check"></i> US members: ${referralReward} credit every time you refer a friend.</p>\n' +
+        '              <p><i class="fal fa-check"></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>\n' +
         '            ',
       level2: '<h4>What you get:</h4>\n' +
-        '              <p><i class="fal fa-check"></i> $50 credit to your Constant account the first time you reach Platinum (after leaving a review on Trustpilot).</p>\n' +
-        '              <p><i class="fal fa-check"></i> US members: $17.5 credit every time you refer a friend.</p>\n' +
-        '              <p><i class="fal fa-check"></i> 17.5% of all earned interest from Flex accounts of referred friends during their first year.</p>\n' +
+        '              <p><i class="fal fa-check"></i> ${cashback} credit to your Constant account the first time you reach Platinum (after leaving a review on Trustpilot).</p>\n' +
+        '              <p><i class="fal fa-check"></i> US members: ${referralReward} credit every time you refer a friend.</p>\n' +
+        '              <p><i class="fal fa-check"></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>\n' +
         '            ',
       level3: '<h4>What you get:</h4>\n' +
-        '              <p><i class="fal fa-check"></i> $50 credit to your Constant account the first time you reach Diamond (after leaving a review on Trustpilot).</p>\n' +
-        '              <p><i class="fal fa-check"></i> US members: $20 credit every time you refer a friend.</p>\n' +
-        '              <p><i class="fal fa-check"></i> 20% of all earned interest from Flex accounts of referred friends during their first year.</p>\n' +
+        '              <p><i class="fal fa-check"></i> ${cashback} credit to your Constant account the first time you reach Diamond (after leaving a review on Trustpilot).</p>\n' +
+        '              <p><i class="fal fa-check"></i> US members: ${referralReward} credit every time you refer a friend.</p>\n' +
+        '              <p><i class="fal fa-check"></i> {referralFlexReward}% of all earned interest from Flex accounts of referred friends during their first year.</p>\n' +
         '              <p><i class="fal fa-check"></i> Automatic bump to the top of our matching queue for all investments.</p>\n' +
-        '              <p><i class="fal fa-check"></i> 1 STAR token to redeem for a 1% bonus or discounted interest.</p>\n' +
+        '              <p><i class="fal fa-check"></i> {bonus} STAR token to redeem for a {bonus}% bonus or discounted interest.</p>\n' +
         '            '
     },
     membershipPoints: 'Your Membership Points',
@@ -341,7 +342,8 @@ export default {
       level: 'Status',
       reward: 'Reward',
       date: 'Date',
-      redeem: 'Redeem'
+      redeem: 'Redeem',
+      redeemDesc: "Membership rewards are paid after you've reviewed us on TrustPilot. If you've reviewed us already, your rewards will go straight into your account. Otherwise, click the Unlock Your Rewards button below to submit your TrustPilot username and claim your rewards."
     },
     investOrBorrow: 'Invest or Borrow',
     membershipPointsDesc: 'Your total active membership points. You get 1 point for every dollar you invest or borrow. Points expire 180 days from the date you earn them, but you can top them up with new orders. ',
@@ -352,7 +354,10 @@ export default {
     or: 'Or',
     borrow: 'Borrow',
     whatYouHadDesc: 'Your investment and borrowing activity for the past six months. Here you can see how much you need to invest or borrow to qualify for membership rewards.',
-    invested: 'Invested'
+    invested: 'Invested',
+    pointExpiredDate: '{value} points will expire on {date}',
+    tierProgressDesc: 'Earn {points} points by {date} to maintain {level} membership',
+    getLevelDate: 'From {date}'
   },
   exchangeInputDepositForm: {
     submitBtn: {
@@ -3204,12 +3209,12 @@ export default {
         '        <div class="section-desc-title">YOU EARN MORE</div>\n' +
         '        <div><strong>Earn $20 for every US citizen who registers</strong>, paid instantly after they make their first deposit, and with no limits.</div>\n' +
         '        <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>\n' +
-        '        <div><strong>Your referee also gets a $1500 Flex trial</strong> when they pass KYC. We’ll take the trial funds back at the end of the month, but they’ll keep the interest.</div>\n' +
+        '        <div><strong>Your referee also gets a ${kYCTrialAmount} Flex trial</strong> when they pass KYC. We’ll take the trial funds back at the end of the month, but they’ll keep the interest.</div>\n' +
         '      ',
       data: {
         '0': {
           title: 'REWARD YOUR COMMUNITY',
-          desc: 'Your referees get a $1,500 trial bonus and keep the interest when they sign up and pass KYC - with no obligation to invest. Your affiliate offers are an easy way to reward followers who engage with your content.'
+          desc: 'Your referees get a ${kYCTrialAmount} trial bonus and keep the interest when they sign up and pass KYC - with no obligation to invest. Your affiliate offers are an easy way to reward followers who engage with your content.'
         },
         '1': {
           title: 'HELP PEOPLE INVEST BETTER',
@@ -3403,8 +3408,8 @@ export default {
     },
     banner: {
       desc: '\n' +
-        '        <h2>Get a free ${bonus} bonus for every friend you refer.</h2>\n' +
-        '        <p>Tell your friends and family about us and get <strong>${bonus} free</strong> for each person who signs up and deposits. You also earn <strong>10% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>\n' +
+        '        <h2>Get a free ${referralReward} bonus for every friend you refer.</h2>\n' +
+        '        <p>Tell your friends and family about us and get <strong>${referralReward} free</strong> for each person who signs up and deposits. You also earn <strong>{referralFlexReward}% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>\n' +
         '      ',
       invite: 'Invite now'
     },
@@ -3419,9 +3424,9 @@ export default {
       },
       desc: '\n' +
         '        <div class="section-desc-title">INVITE FRIENDS, EARN TOGETHER</div>\n' +
-        '        <div><strong>Earn ${bonus} for every friend who signs up and passes KYC</strong>, paid instantly, and with no limits.</div>\n' +
-        '        <div><strong>Then earn 10% of their Flex interest</strong>, capped at a generous $1,000,000.</div>\n' +
-        '        <div><strong>Your friend gets a 30-day $1,500 trial bonus</strong> and keeps the interest.</div>\n' +
+        '        <div><strong>Earn ${referralReward} for every friend who signs up and passes KYC</strong>, paid instantly, and with no limits.</div>\n' +
+        '        <div><strong>Then earn {referralFlexReward}% of their Flex interest</strong>, capped at a generous $1,000,000.</div>\n' +
+        '        <div><strong>Your friend gets a 30-day ${kYCTrialAmount} trial bonus</strong> and keeps the interest.</div>\n' +
         '      ',
       data: {
         '0': {
@@ -3443,8 +3448,8 @@ export default {
       title: 'What’s in it for them?',
       content: {
         left: '\n' +
-          '          <p class="content-title">$1,500 trial bonus</p>\n' +
-          '          <p class="content-desc">When your referree signs up and passes KYC, we’ll deposit a $1,500. bonus in their account. This lasts for 30 days*, at the end of which, we reclaim the bonus but your referee keeps all the interest.</p>\n' +
+          '          <p class="content-title">${kYCTrialAmount} trial bonus</p>\n' +
+          '          <p class="content-desc">When your referree signs up and passes KYC, we’ll deposit a ${kYCTrialAmount} bonus in their account. This lasts for 30 days*, at the end of which, we reclaim the bonus but your referee keeps all the interest.</p>\n' +
           '          <p class="content-desc font-italic">*30-day trial bonus (US residents only).</p>\n' +
           '        ',
         right: '\n' +
@@ -3476,19 +3481,19 @@ export default {
         },
         '2': {
           title: ' ',
-          desc: 'You get ${bonus} paid instantly to your Constant account.'
+          desc: 'You get ${referralReward} paid instantly to your Constant account.'
         },
         '3': {
           title: ' ',
-          desc: 'Your referee earns interest on a 30-day $1,500 trial bonus.'
+          desc: 'Your referee earns interest on a 30-day ${kYCTrialAmount} trial bonus.'
         },
         '4': {
           title: ' ',
-          desc: 'You get 10% of their Flex earnings, compounded and paid every second.'
+          desc: 'You get {referralFlexReward}% of their Flex earnings, compounded and paid every second.'
         }
       },
       desc: '\n' +
-        '      <p>There are <strong>no limits</strong> to the number of people you can refer for the ${bonus} bonus.</p>\n' +
+        '      <p>There are <strong>no limits</strong> to the number of people you can refer for the ${referralReward} bonus.</p>\n' +
         '      <p>Your Flex earnings are capped at $1,000,000.</p>'
     },
     terms: {
