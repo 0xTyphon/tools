@@ -2181,6 +2181,183 @@ const srouce = {
         <p>This offer is only available for a limited time.</p>
       `,
     },
+    promotionGeneral: {
+      title:`
+        <p class="header">Give us a try with a free \${kYCTrialAmount} trial bonus</p>
+        <p>Experience P2P lending without committing your own money. Try us now and enjoy an inflation-beating 4% APY on a \${kYCTrialAmount} trial bonus. After 30 days, we reclaim the bonus but you keep the interest.</p>
+        <p>This offer is only available for a limited time.</p>
+      `,
+      howItWorks: {
+        title: 'How It Works',
+        data: {
+          0: {
+            title: 'Step 1',
+            desc: `
+            <p>Sign up for your free Constant account.</p>
+            `,
+          },
+          1: {
+            title: 'Step 2',
+            desc: `
+            <p>We deposit your free \${kYCTrialAmount} bonus to earn 4% APY over 30 days.</p>
+            `,
+          },
+          2: {
+            title: 'Step 3',
+            desc: `
+            <p>Watch your money grow, compounded and paid every second.</p>
+            `,
+          },
+          3: {
+            title: 'Step 4',
+            desc: `
+            <p>After 30 days, we reclaim the bonus but you keep the interest.</p>
+            `,
+          },
+          4: {
+            title: 'Step 5',
+            desc: `
+            <p>Reinvest your earnings or withdraw to your bank account.</p>
+            `,
+          },
+        }
+      },
+      howWeProtectYou: {
+        title: 'How We Protect You',
+        data: {
+          0: {
+            title: 'Prime Trust',
+            desc: `
+            <p>Prime Trust is the accredited custodian of our USD reserve. When you deposit, your unloaned funds are stored across multiple bank accounts <strong>insured to a total of $130,000,000</strong>.</p>
+            `,
+          },
+          1: {
+            title: 'BitGo',
+            desc: `
+            <p>When you invest in P2P lending through Constant, your investment is <strong>up to 200% backed by collateral</strong>. If borrowers default or their collateral falls too much in value, we sell their collateral to repay you.</p>
+            `,
+          },
+        }
+      },
+    },
+    promotionCryptoBacked: {
+      title:`
+        <p class="header">Try secured P2P lending with a free \${kYCTrialAmount} bonus</p>
+        <p>Earn up to 7.5% APR with crypto-backed P2P lending. Sign up now to get a free \${kYCTrialAmount} bonus at 4% APY to start. After 30 days, we reclaim the bonus but you keep the interest.</p>
+        <p>This offer is only available for a limited time.</p>
+      `,
+      howItWorks: {
+        title: 'How It Works',
+        data: {
+          0: {
+            title: 'Step 1',
+            desc: `
+            <p>Sign up for your free Constant account.</p>
+            `,
+          },
+          1: {
+            title: 'Step 2',
+            desc: `
+            <p>We deposit your free \${kYCTrialAmount} bonus to earn 4% APY over 30 days.</p>
+            `,
+          },
+          2: {
+            title: 'Step 3',
+            desc: `
+            <p>Watch your money grow, compounded and paid every second.</p>
+            `,
+          },
+          3: {
+            title: 'Step 4',
+            desc: `
+            <p>After 30 days, we reclaim the bonus but you keep the interest.</p>
+            `,
+          },
+          4: {
+            title: 'Step 5',
+            desc: `
+            <p>Reinvest at 7.5% APR or withdraw earnings to your bank account.</p>
+            `,
+          },
+        }
+      },
+      howWeProtectYou: {
+        title: 'How We Protect You',
+        data: {
+          0: {
+            title: 'Prime Trust',
+            desc: `
+            <p>Prime Trust is the accredited custodian of our USD reserve. When you deposit, your unloaned funds are stored across multiple bank accounts <strong>insured to a total of $130,000,000</strong>. </p>
+            `,
+          },
+          1: {
+            title: 'BitGo',
+            desc: `
+            <p>When you invest in Flex, your money supplies loans to collateralized borrowers and liquidity to decentralized exchanges. <strong>Flex is a multi-market investment product</strong> that spreads risk across multiple platforms to offer you a consistent return and the convenience of unlimited free withdrawals.</p>
+            `,
+          },
+        }
+      },
+    },
+    promotionFlex: {
+      title:`
+        <p class="header">Get 4% APY on your free \${kYCTrialAmount} bonus now</p>
+        <p>Enjoy up to 50x better interest than a bank with Flex, our anytime-withdrawal investment account. Sign up now to get a free \${kYCTrialAmount} bonus to start. After 30 days, we reclaim the bonus but you keep the interest.</p>
+        <p>This offer is only available for a limited time.</p>
+      `,
+      howItWorks: {
+        title: 'How It Works',
+        data: {
+          0: {
+            title: 'Step 1',
+            desc: `
+            <p>Sign up for your free Constant account.</p>
+            `,
+          },
+          1: {
+            title: 'Step 2',
+            desc: `
+            <p>We deposit your free \${kYCTrialAmount} bonus to earn 4% APY over 30 days.</p>
+            `,
+          },
+          2: {
+            title: 'Step 3',
+            desc: `
+            <p>Watch your money grow, compounded and paid every second.</p>
+            `,
+          },
+          3: {
+            title: 'Step 4',
+            desc: `
+            <p>After 30 days, we reclaim the bonus but you keep the interest.</p>
+            `,
+          },
+          4: {
+            title: 'Step 5',
+            desc: `
+            <p>Reinvest your earnings or withdraw to your bank account.</p>
+            `,
+          },
+        }
+      },
+      howWeProtectYou: {
+        title: 'How We Protect You',
+        data: {
+          0: {
+            title: 'Prime Trust',
+            desc: `
+            <p>Prime Trust is the accredited custodian of our USD reserve. When you deposit, your unloaned funds are stored across multiple bank accounts <strong>insured to a total of $130,000,000</strong>. </p>
+            `,
+          },
+          1: {
+            title: 'BitGo',
+            desc: `
+            <p>When you invest in Flex, your money supplies loans to collateralized borrowers and liquidity to decentralized exchanges. <strong>Flex is a multi-market investment product</strong> that spreads risk across multiple platforms to offer you a consistent return and the convenience of unlimited free withdrawals.</p>
+            `,
+          },
+        }
+      },
+    },
     howItWorks: {
       title: 'How It Works',
       data: {
@@ -9986,5 +10163,6 @@ While Constant processes your deposits and withdrawals free of charge, transacti
     request: 'Request',
   },
 };
+
 
  module.exports = srouce;

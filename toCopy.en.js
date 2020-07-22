@@ -3780,6 +3780,177 @@ export default {
         '        <p>You can start investing from just $50.</p>\n' +
         '        <p>This offer is only available for a limited time.</p>\n' +
         '      '
+    },
+    promotionGeneral: {
+      title: '\n' +
+        '        <p class="header">Give us a try with a free ${kYCTrialAmount} trial bonus</p>\n' +
+        '        <p>Experience P2P lending without committing your own money. Try us now and enjoy an inflation-beating 4% APY on a ${kYCTrialAmount} trial bonus. After 30 days, we reclaim the bonus but you keep the interest.</p>\n' +
+        '        <p>This offer is only available for a limited time.</p>\n' +
+        '      ',
+      howItWorks: {
+        title: 'How It Works',
+        data: {
+          '0': {
+            title: 'Step 1',
+            desc: '\n' +
+              '            <p>Sign up for your free Constant account.</p>\n' +
+              '            '
+          },
+          '1': {
+            title: 'Step 2',
+            desc: '\n' +
+              '            <p>We deposit your free ${kYCTrialAmount} bonus to earn 4% APY over 30 days.</p>\n' +
+              '            '
+          },
+          '2': {
+            title: 'Step 3',
+            desc: '\n' +
+              '            <p>Watch your money grow, compounded and paid every second.</p>\n' +
+              '            '
+          },
+          '3': {
+            title: 'Step 4',
+            desc: '\n' +
+              '            <p>After 30 days, we reclaim the bonus but you keep the interest.</p>\n' +
+              '            '
+          },
+          '4': {
+            title: 'Step 5',
+            desc: '\n' +
+              '            <p>Reinvest your earnings or withdraw to your bank account.</p>\n' +
+              '            '
+          }
+        }
+      },
+      howWeProtectYou: {
+        title: 'How We Protect You',
+        data: {
+          '0': {
+            desc: '\n' +
+              '            <p>Prime Trust is the accredited custodian of our USD reserve. When you deposit, your unloaned funds are stored across multiple bank accounts <strong>insured to a total of $130,000,000</strong>.</p>\n' +
+              '            '
+          },
+          '1': {
+            desc: '\n' +
+              '            <p>When you invest in P2P lending through Constant, your investment is <strong>up to 200% backed by collateral</strong>. If borrowers default or their collateral falls too much in value, we sell their collateral to repay you.</p>\n' +
+              '            '
+          }
+        }
+      }
+    },
+    promotionCryptoBacked: {
+      title: '\n' +
+        '        <p class="header">Try secured P2P lending with a free ${kYCTrialAmount} bonus</p>\n' +
+        '        <p>Earn up to 7.5% APR with crypto-backed P2P lending. Sign up now to get a free ${kYCTrialAmount} bonus at 4% APY to start. After 30 days, we reclaim the bonus but you keep the interest.</p>\n' +
+        '        <p>This offer is only available for a limited time.</p>\n' +
+        '      ',
+      howItWorks: {
+        title: 'How It Works',
+        data: {
+          '0': {
+            title: 'Step 1',
+            desc: '\n' +
+              '            <p>Sign up for your free Constant account.</p>\n' +
+              '            '
+          },
+          '1': {
+            title: 'Step 2',
+            desc: '\n' +
+              '            <p>We deposit your free ${kYCTrialAmount} bonus to earn 4% APY over 30 days.</p>\n' +
+              '            '
+          },
+          '2': {
+            title: 'Step 3',
+            desc: '\n' +
+              '            <p>Watch your money grow, compounded and paid every second.</p>\n' +
+              '            '
+          },
+          '3': {
+            title: 'Step 4',
+            desc: '\n' +
+              '            <p>After 30 days, we reclaim the bonus but you keep the interest.</p>\n' +
+              '            '
+          },
+          '4': {
+            title: 'Step 5',
+            desc: '\n' +
+              '            <p>Reinvest at 7.5% APR or withdraw earnings to your bank account.</p>\n' +
+              '            '
+          }
+        }
+      },
+      howWeProtectYou: {
+        title: 'How We Protect You',
+        data: {
+          '0': {
+            desc: '\n' +
+              '            <p>Prime Trust is the accredited custodian of our USD reserve. When you deposit, your unloaned funds are stored across multiple bank accounts <strong>insured to a total of $130,000,000</strong>. </p>\n' +
+              '            '
+          },
+          '1': {
+            desc: '\n' +
+              '            <p>When you invest in Flex, your money supplies loans to collateralized borrowers and liquidity to decentralized exchanges. <strong>Flex is a multi-market investment product</strong> that spreads risk across multiple platforms to offer you a consistent return and the convenience of unlimited free withdrawals.</p>\n' +
+              '            '
+          }
+        }
+      }
+    },
+    promotionFlex: {
+      title: '\n' +
+        '        <p class="header">Get 4% APY on your free ${kYCTrialAmount} bonus now</p>\n' +
+        '        <p>Enjoy up to 50x better interest than a bank with Flex, our anytime-withdrawal investment account. Sign up now to get a free ${kYCTrialAmount} bonus to start. After 30 days, we reclaim the bonus but you keep the interest.</p>\n' +
+        '        <p>This offer is only available for a limited time.</p>\n' +
+        '      ',
+      howItWorks: {
+        title: 'How It Works',
+        data: {
+          '0': {
+            title: 'Step 1',
+            desc: '\n' +
+              '            <p>Sign up for your free Constant account.</p>\n' +
+              '            '
+          },
+          '1': {
+            title: 'Step 2',
+            desc: '\n' +
+              '            <p>We deposit your free ${kYCTrialAmount} bonus to earn 4% APY over 30 days.</p>\n' +
+              '            '
+          },
+          '2': {
+            title: 'Step 3',
+            desc: '\n' +
+              '            <p>Watch your money grow, compounded and paid every second.</p>\n' +
+              '            '
+          },
+          '3': {
+            title: 'Step 4',
+            desc: '\n' +
+              '            <p>After 30 days, we reclaim the bonus but you keep the interest.</p>\n' +
+              '            '
+          },
+          '4': {
+            title: 'Step 5',
+            desc: '\n' +
+              '            <p>Reinvest your earnings or withdraw to your bank account.</p>\n' +
+              '            '
+          }
+        }
+      },
+      howWeProtectYou: {
+        title: 'How We Protect You',
+        data: {
+          '0': {
+            desc: '\n' +
+              '            <p>Prime Trust is the accredited custodian of our USD reserve. When you deposit, your unloaned funds are stored across multiple bank accounts <strong>insured to a total of $130,000,000</strong>. </p>\n' +
+              '            '
+          },
+          '1': {
+            desc: '\n' +
+              '            <p>When you invest in Flex, your money supplies loans to collateralized borrowers and liquidity to decentralized exchanges. <strong>Flex is a multi-market investment product</strong> that spreads risk across multiple platforms to offer you a consistent return and the convenience of unlimited free withdrawals.</p>\n' +
+              '            '
+          }
+        }
+      }
     }
   },
   form: {

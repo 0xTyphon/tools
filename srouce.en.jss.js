@@ -1678,6 +1678,105 @@ const result =  {
     '        <p>You can start investing from just $50.</p>\n' +
     '        <p>This offer is only available for a limited time.</p>\n' +
     '      ',
+  'landingPage.promotionGeneral.title': '\n' +
+    '        <p class="header">Give us a try with a free ${kYCTrialAmount} trial bonus</p>\n' +
+    '        <p>Experience P2P lending without committing your own money. Try us now and enjoy an inflation-beating 4% APY on a ${kYCTrialAmount} trial bonus. After 30 days, we reclaim the bonus but you keep the interest.</p>\n' +
+    '        <p>This offer is only available for a limited time.</p>\n' +
+    '      ',
+  'landingPage.promotionGeneral.howItWorks.title': 'How It Works',
+  'landingPage.promotionGeneral.howItWorks.data.0.title': 'Step 1',
+  'landingPage.promotionGeneral.howItWorks.data.0.desc': '\n            <p>Sign up for your free Constant account.</p>\n            ',
+  'landingPage.promotionGeneral.howItWorks.data.1.title': 'Step 2',
+  'landingPage.promotionGeneral.howItWorks.data.1.desc': '\n' +
+    '            <p>We deposit your free ${kYCTrialAmount} bonus to earn 4% APY over 30 days.</p>\n' +
+    '            ',
+  'landingPage.promotionGeneral.howItWorks.data.2.title': 'Step 3',
+  'landingPage.promotionGeneral.howItWorks.data.2.desc': '\n' +
+    '            <p>Watch your money grow, compounded and paid every second.</p>\n' +
+    '            ',
+  'landingPage.promotionGeneral.howItWorks.data.3.title': 'Step 4',
+  'landingPage.promotionGeneral.howItWorks.data.3.desc': '\n' +
+    '            <p>After 30 days, we reclaim the bonus but you keep the interest.</p>\n' +
+    '            ',
+  'landingPage.promotionGeneral.howItWorks.data.4.title': 'Step 5',
+  'landingPage.promotionGeneral.howItWorks.data.4.desc': '\n' +
+    '            <p>Reinvest your earnings or withdraw to your bank account.</p>\n' +
+    '            ',
+  'landingPage.promotionGeneral.howWeProtectYou.title': 'How We Protect You',
+  'landingPage.promotionGeneral.howWeProtectYou.data.0.title': 'Prime Trust',
+  'landingPage.promotionGeneral.howWeProtectYou.data.0.desc': '\n' +
+    '            <p>Prime Trust is the accredited custodian of our USD reserve. When you deposit, your unloaned funds are stored across multiple bank accounts <strong>insured to a total of $130,000,000</strong>.</p>\n' +
+    '            ',
+  'landingPage.promotionGeneral.howWeProtectYou.data.1.title': 'BitGo',
+  'landingPage.promotionGeneral.howWeProtectYou.data.1.desc': '\n' +
+    '            <p>When you invest in P2P lending through Constant, your investment is <strong>up to 200% backed by collateral</strong>. If borrowers default or their collateral falls too much in value, we sell their collateral to repay you.</p>\n' +
+    '            ',
+  'landingPage.promotionCryptoBacked.title': '\n' +
+    '        <p class="header">Try secured P2P lending with a free ${kYCTrialAmount} bonus</p>\n' +
+    '        <p>Earn up to 7.5% APR with crypto-backed P2P lending. Sign up now to get a free ${kYCTrialAmount} bonus at 4% APY to start. After 30 days, we reclaim the bonus but you keep the interest.</p>\n' +
+    '        <p>This offer is only available for a limited time.</p>\n' +
+    '      ',
+  'landingPage.promotionCryptoBacked.howItWorks.title': 'How It Works',
+  'landingPage.promotionCryptoBacked.howItWorks.data.0.title': 'Step 1',
+  'landingPage.promotionCryptoBacked.howItWorks.data.0.desc': '\n            <p>Sign up for your free Constant account.</p>\n            ',
+  'landingPage.promotionCryptoBacked.howItWorks.data.1.title': 'Step 2',
+  'landingPage.promotionCryptoBacked.howItWorks.data.1.desc': '\n' +
+    '            <p>We deposit your free ${kYCTrialAmount} bonus to earn 4% APY over 30 days.</p>\n' +
+    '            ',
+  'landingPage.promotionCryptoBacked.howItWorks.data.2.title': 'Step 3',
+  'landingPage.promotionCryptoBacked.howItWorks.data.2.desc': '\n' +
+    '            <p>Watch your money grow, compounded and paid every second.</p>\n' +
+    '            ',
+  'landingPage.promotionCryptoBacked.howItWorks.data.3.title': 'Step 4',
+  'landingPage.promotionCryptoBacked.howItWorks.data.3.desc': '\n' +
+    '            <p>After 30 days, we reclaim the bonus but you keep the interest.</p>\n' +
+    '            ',
+  'landingPage.promotionCryptoBacked.howItWorks.data.4.title': 'Step 5',
+  'landingPage.promotionCryptoBacked.howItWorks.data.4.desc': '\n' +
+    '            <p>Reinvest at 7.5% APR or withdraw earnings to your bank account.</p>\n' +
+    '            ',
+  'landingPage.promotionCryptoBacked.howWeProtectYou.title': 'How We Protect You',
+  'landingPage.promotionCryptoBacked.howWeProtectYou.data.0.title': 'Prime Trust',
+  'landingPage.promotionCryptoBacked.howWeProtectYou.data.0.desc': '\n' +
+    '            <p>Prime Trust is the accredited custodian of our USD reserve. When you deposit, your unloaned funds are stored across multiple bank accounts <strong>insured to a total of $130,000,000</strong>. </p>\n' +
+    '            ',
+  'landingPage.promotionCryptoBacked.howWeProtectYou.data.1.title': 'BitGo',
+  'landingPage.promotionCryptoBacked.howWeProtectYou.data.1.desc': '\n' +
+    '            <p>When you invest in Flex, your money supplies loans to collateralized borrowers and liquidity to decentralized exchanges. <strong>Flex is a multi-market investment product</strong> that spreads risk across multiple platforms to offer you a consistent return and the convenience of unlimited free withdrawals.</p>\n' +
+    '            ',
+  'landingPage.promotionFlex.title': '\n' +
+    '        <p class="header">Get 4% APY on your free ${kYCTrialAmount} bonus now</p>\n' +
+    '        <p>Enjoy up to 50x better interest than a bank with Flex, our anytime-withdrawal investment account. Sign up now to get a free ${kYCTrialAmount} bonus to start. After 30 days, we reclaim the bonus but you keep the interest.</p>\n' +
+    '        <p>This offer is only available for a limited time.</p>\n' +
+    '      ',
+  'landingPage.promotionFlex.howItWorks.title': 'How It Works',
+  'landingPage.promotionFlex.howItWorks.data.0.title': 'Step 1',
+  'landingPage.promotionFlex.howItWorks.data.0.desc': '\n            <p>Sign up for your free Constant account.</p>\n            ',
+  'landingPage.promotionFlex.howItWorks.data.1.title': 'Step 2',
+  'landingPage.promotionFlex.howItWorks.data.1.desc': '\n' +
+    '            <p>We deposit your free ${kYCTrialAmount} bonus to earn 4% APY over 30 days.</p>\n' +
+    '            ',
+  'landingPage.promotionFlex.howItWorks.data.2.title': 'Step 3',
+  'landingPage.promotionFlex.howItWorks.data.2.desc': '\n' +
+    '            <p>Watch your money grow, compounded and paid every second.</p>\n' +
+    '            ',
+  'landingPage.promotionFlex.howItWorks.data.3.title': 'Step 4',
+  'landingPage.promotionFlex.howItWorks.data.3.desc': '\n' +
+    '            <p>After 30 days, we reclaim the bonus but you keep the interest.</p>\n' +
+    '            ',
+  'landingPage.promotionFlex.howItWorks.data.4.title': 'Step 5',
+  'landingPage.promotionFlex.howItWorks.data.4.desc': '\n' +
+    '            <p>Reinvest your earnings or withdraw to your bank account.</p>\n' +
+    '            ',
+  'landingPage.promotionFlex.howWeProtectYou.title': 'How We Protect You',
+  'landingPage.promotionFlex.howWeProtectYou.data.0.title': 'Prime Trust',
+  'landingPage.promotionFlex.howWeProtectYou.data.0.desc': '\n' +
+    '            <p>Prime Trust is the accredited custodian of our USD reserve. When you deposit, your unloaned funds are stored across multiple bank accounts <strong>insured to a total of $130,000,000</strong>. </p>\n' +
+    '            ',
+  'landingPage.promotionFlex.howWeProtectYou.data.1.title': 'BitGo',
+  'landingPage.promotionFlex.howWeProtectYou.data.1.desc': '\n' +
+    '            <p>When you invest in Flex, your money supplies loans to collateralized borrowers and liquidity to decentralized exchanges. <strong>Flex is a multi-market investment product</strong> that spreads risk across multiple platforms to offer you a consistent return and the convenience of unlimited free withdrawals.</p>\n' +
+    '            ',
   'landingPage.howItWorks.title': 'How It Works',
   'landingPage.howItWorks.data.0.title': 'Step 1',
   'landingPage.howItWorks.data.0.desc': '\n            <p>Sign up for your free Constant account.</p>\n            ',
