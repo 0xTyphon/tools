@@ -506,25 +506,53 @@ export default {
       withdrawStatus: { '1': 'Done', '3': 'Approving' },
       sendToAddress: 'Send To Address',
       orderType: {
+        '0': 'Buy',
+        '1': 'Convert',
         '2': 'Transfer',
         '3': 'Investments',
         '4': 'Interest',
+        '5': 'Fee',
+        '6': 'Import',
         '7': 'Deposit',
         '8': 'Withdraw',
+        '9': 'Risk',
         '10': 'Borrow',
+        '11': 'Pay',
+        '12': 'Reward',
+        '13': 'Interest',
+        '14': 'Earned from referral flex',
+        '15': 'Membership Reward',
+        '16': 'Referral Term Deposit',
+        '17': 'Referral Reward',
+        '18': 'Service Time Interest',
+        '19': 'Ajust Increase',
+        '20': 'Ajust Descrease',
+        '21': 'Referral Bonus',
         '22': 'Purchase',
         '23': 'Refund',
+        '24': 'LO investment',
+        '25': 'LO repayment',
         '26': 'LO Investment',
         '33': 'Badge reward',
-        '101': 'Bonus'
+        '101': 'Bonus',
+        '102': 'Coupon Signup',
+        received: 'Received'
       },
       orderStatus: {
+        '0': 'Pending',
+        '1': 'Payment pending',
+        '2': 'Coin minting',
+        '3': 'Coin burning',
+        '4': 'Transferring',
         '5': 'Redeeming',
         '6': 'Cancelled',
         '7': 'Successful',
         '8': 'In progress',
+        '11': 'Transfer failed',
         '12': 'Waiting Approving',
         '13': 'Waiting Approving',
+        '14': 'Transferring',
+        '15': 'Confirming',
         '16': 'Order timed out'
       },
       requestExecute: 'Help',
@@ -1034,6 +1062,11 @@ export default {
     },
     personalProfile: {
       statusProcessing: 'Your KYC information is being processed. We’ll notify you when you’re good to go.'
+    },
+    withdrawEmailConfirm: {
+      alreadyVerified: 'Your withdrawal has already been confirmed. Thank you',
+      verifySuccess: 'Your withdrawal order has been confirmed successfully',
+      verifyFailed: 'Your confirmation link has expired. Please create a new withdrawal order'
     }
   },
   headerBar: {
@@ -3703,7 +3736,9 @@ export default {
       uploading: 'Uploading...',
       fileupload: 'Upload'
     },
-    local: { type: { buy: 'Deposit', sell: 'Withdraw' } }
+    local: { type: { buy: 'Deposit', sell: 'Withdraw' } },
+    goToHomePage: 'Go to Home page',
+    goToLoginPage: 'Go to Sign In page'
   },
   affiliates: {
     applyForm: {
@@ -4020,7 +4055,7 @@ export default {
         '        <p class="section-title">Terms and Conditions</p>' +
         '        <p>1. The amount you earn depends on how your referees use the platform:</p>' +
         '        <p class="desc">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>' +
-        '        <p>2. We will pay you $20 for every person who signs up using your referral link and passes KYC. If they don’t pass KYC, you don’t earn the $20 bonus.</p>' +
+        "        <p>2. We will pay you $20 for every person who signs up using your referral link, passes KYC and makes a deposit into Constant. If they don't meet these requirements, you don't earn the $20 bonus.</p>" +
         '        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>' +
         '        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>' +
         '        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>' +
@@ -4156,14 +4191,18 @@ export default {
     banner: {
       desc: '' +
         '        <h2>Get a free ${referralReward} bonus for every friend you refer.</h2>' +
-        '        <p>Tell your friends and family about us and get <strong>${referralReward} free</strong> for each person who signs up and deposits. You also earn <strong>{referralFlexReward}% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>' +
+        '        <p>Tell your friends and family about us and get ${referralReward} free for each person who signs up and deposits USD (US citizens only). You also earn <strong>{referralFlexReward}% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>' +
+        '      ',
+      descNotUS: '' +
+        '        <h2>Refer friends and earn {referralFlexReward}% of their Flex interest</h2>' +
+        '        <p>Tell your friends and family about us and <strong>get {referralFlexReward}% of their Flex interest</strong> (US referees only) when they sign up and deposit USD. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>' +
         '      ',
       invite: 'Invite now'
     },
     whatForYou: {
       title: 'What’s in it for you?',
       formula: {
-        '0': 'For every friend who signs up and deposits',
+        '0': 'For every friend who signs up and deposits USD',
         '1': ' ',
         '2': 'of your friends’ Flex interest',
         '3': ' ',
@@ -4171,8 +4210,7 @@ export default {
       },
       desc: '' +
         '        <div class="section-desc-title">INVITE FRIENDS, EARN TOGETHER</div>' +
-        '        <div><strong>Earn ${referralReward} for every friend who signs up and deposits</strong>, paid instantly, and with no limits.</div>' +
-        '        <div><strong>Then earn {referralFlexReward}% of their Flex interest</strong>, capped at a generous $1,000,000.</div>' +
+        '        <div><strong>Earn ${referralReward} for every friend who signs up and deposits USD</strong>, paid instantly, and with no limits.</div>        <div><strong>Then earn {referralFlexReward}% of their Flex interest</strong>, capped at a generous $1,000,000.</div>' +
         '        <div><strong>Your friend gets a 30-day ${kYCTrialAmount} trial bonus</strong> and keeps the interest (US referees only).</div>' +
         '      ',
       descNotUS: '' +
@@ -4207,16 +4245,14 @@ export default {
         right: '' +
           '          <div>' +
           '            <div class="content-title">4% APY</div>' +
-          '            <p class="content-desc">on all Flex deposits</p>' +
-          '          </div>' +
+          '            <p class="content-desc">on all <strong>Flex</strong> deposits</p>          </div>' +
           '          <div>' +
           '            <div class="content-title">7.5% APR</div>' +
           '            <p class="content-desc">on <strong>crypto-backed</strong> investments</p>' +
           '          </div>' +
           '          <div>' +
           '            <div class="content-title">11% APR</div>' +
-          '            <p class="content-desc">on Loan Originator investments</p>' +
-          '          </div>' +
+          '            <p class="content-desc">on <strong>Loan Originator</strong> investments</p>          </div>' +
           '        '
       }
     },
@@ -4229,7 +4265,7 @@ export default {
         },
         '1': {
           title: ' ',
-          desc: 'Your referee signs up using your link, verifies their ID (KYC), and deposits'
+          desc: 'Your referee signs up using your link, verifies their ID (KYC), and deposits USD.'
         },
         '2': {
           title: ' ',
@@ -4246,23 +4282,50 @@ export default {
       },
       desc: '' +
         '      <p>There are <strong>no limits</strong> to the number of people you can refer for the ${referralReward} bonus.</p>' +
-        '      <p>Your Flex earnings are capped at $1,000,000.</p>'
+        '      <p>Your Flex earnings are capped at $1,000,000.</p>',
+      descNotUS: '      <p>Your Flex earnings are capped at $1,000,000.</p>'
     },
     terms: {
       normal: '' +
         '        <h3 class="semiBold">Terms and Conditions</h3>' +
-        '<p>1. The bonus is paid when your referee signs up, passes KYC, and deposits.</p>' +
-        '        <p>2. Your referral interest is calculated on the interest your friends earn with our Flex account.</p>' +
-        '        <p>3. Referral interest is paid to you by Constant and does not deduct from your friends’ earned Flex interest.</p>' +
-        '        <p>4. The amount you earn depends on how your friends use the platform:</p>' +
-        '        <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>' +
-        '        <p>5. You can invite as many friends as you like.</p>' +
-        '        <p>6. Your referral earnings are paid in USD, directly into your Constant account.</p>' +
-        '        <p>7. The maximum you can earn is $1,000,000.</p>' +
-        '        <p>8.You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>' +
-        "        <p>9. When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p>" +
-        '        <p>10. For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p>' +
-        '        <p>11. Constant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>' +
+        '        <ol>' +
+        '          <li><p>To qualify for referral rewards, such as the ${referralReward} bonus and {referralFlexReward}% of your referee’s Flex interest, your referee must be a US citizen.</p></li>' +
+        '          <li><p>The bonus is paid when your referee signs up, passes KYC, and deposits USD.</p></li>' +
+        '          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>' +
+        '          <li><p>Referral interest is paid to you by Constant and does not deduct from your friends’ earned Flex interest.</p></li>' +
+        '          <li>' +
+        '            <p>The amount you earn depends on how your friends use the platform:</p>' +
+        '            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>' +
+        '          </li>' +
+        '          <li><p>You can invite as many friends as you like.</p></li>' +
+        '          <li><p>Your referral earnings are paid in USD, directly into your Constant account.</p></li>' +
+        '          <li><p>The maximum you can earn is $1,000,000.</p></li>' +
+        '          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>' +
+        "          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>" +
+        '          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>' +
+        '          <li><p>Constant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>' +
+        '        </ol>' +
+        '        <p class="bold effective">Effective as of 2020/02/17 00:00 AM (GMT+0)</p>' +
+        '      ',
+      normalNotUS: '' +
+        '        <h3 class="semiBold">Terms and Conditions</h3>' +
+        '        <ol>' +
+        '          <li><p>To qualify for {referralFlexReward}% of your referee’s Flex interest, your referee must be a US citizen.</p></li>' +
+        '          <li><p>You will start earning {referralFlexReward}% of your referee’s Flex interest when they sign up, pass KYC, and deposit USD (minimum $10).</p></li>' +
+        '          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>' +
+        '          <li><p>Referral interest is paid to you by Constant and does not deduct from your friends’ earned Flex interest.</p></li>' +
+        '          <li>' +
+        '            <p>The amount you earn depends on how your friends use the platform:</p>' +
+        '            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>' +
+        '          </li>' +
+        '          <li><p>You can invite as many friends as you like.</p></li>' +
+        '          <li><p>Your referral earnings are paid in USD, directly into your Constant account.</p></li>' +
+        '          <li><p>The maximum you can earn is $1,000,000.</p></li>' +
+        '          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>' +
+        "          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>" +
+        '          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>' +
+        '          <li><p>Constant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>' +
+        '        </ol>' +
         '        <p class="bold effective">Effective as of 2020/02/17 00:00 AM (GMT+0)</p>' +
         '      '
     }
