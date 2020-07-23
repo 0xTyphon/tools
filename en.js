@@ -3515,7 +3515,7 @@ const result =  {
     '        <p class="section-title">Terms and Conditions</p>\n' +
     '        <p>1. The amount you earn depends on how your referees use the platform:</p>\n' +
     '        <p class="desc">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>\n' +
-    '        <p>2. We will pay you $20 for every person who signs up using your referral link and passes KYC. If they don’t pass KYC, you don’t earn the $20 bonus.</p>\n' +
+    '        <p>2. We will pay you $20 for every person who signs up using your referral link, passes KYC and makes a deposit into Constant. If they don\'t meet these requirements, you don\'t earn the $20 bonus.</p>\n' +
     '        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>\n' +
     '        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>\n' +
     '        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>\n' +
