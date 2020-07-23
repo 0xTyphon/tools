@@ -201,9 +201,9 @@ const result =  {
   'headerBar.extraMenu.invest.title': 'Invest',
   'headerBar.extraMenu.invest.desc': '\n          <p>Get a better return on <br/>your money.</p>\n        ',
   'headerBar.extraMenu.investFlex.title': 'Flex',
-  'headerBar.extraMenu.investFlex.desc': '{percent}% APY. Fully secured.<br/>Withdraw anytime.',
-  'headerBar.extraMenu.investCustom.title': 'Custom',
-  'headerBar.extraMenu.investCustom.desc': 'Your terms. Best rates.<br/>Fully secured.',
+  'headerBar.extraMenu.investFlex.desc': '{percent}% APY. Withdraw anytime.  <br/>No fees.',
+  'headerBar.extraMenu.investCustom.title': 'Crypto-backed',
+  'headerBar.extraMenu.investCustom.desc': 'Your terms. Best rates. <br/>Backed by crypto.',
   'headerBar.extraMenu.investLO.title': 'Loan Originator',
   'headerBar.extraMenu.investLO.desc': 'Earn up to 11% APR. Terms from <br/>6-15 months. Includes loan originator’s <br/>buy-back guarantee in case of default.',
   'headerBar.extraMenu.investFlexCrypto.title': 'Crypto Lend',
@@ -2202,7 +2202,7 @@ const result =  {
   'user.account.member': 'Member',
   'user.account.membershipReward': 'MEMBERSHIP REWARDS >>',
   'headerBar.extraMenuMobile.invest.title': 'Invest',
-  'headerBar.extraMenuMobile.investFlex.title': 'Fiat Flex',
+  'headerBar.extraMenuMobile.investFlex.title': 'Flex',
   'headerBar.extraMenuMobile.investFlex.desc': '{percent}% APY. Withdraw anytime. No fees.',
   'headerBar.extraMenuMobile.investCustom.title': 'Crypto-backed',
   'headerBar.extraMenuMobile.investCustom.desc': 'Your terms. Best rates. Backed by crypto.',
@@ -3539,7 +3539,7 @@ const result =  {
     '        <p class="section-title">Terms and Conditions</p>\n' +
     '        <p>1. The amount you earn depends on how your referees use the platform:</p>\n' +
     '        <p class="desc">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>\n' +
-    '        <p>2. We will pay you $20 for every person who signs up using your referral link and passes KYC. If they don’t pass KYC, you don’t earn the $20 bonus.</p>\n' +
+    "        <p>2. We will pay you $20 for every person who signs up using your referral link, passes KYC and makes a deposit into Constant. If they don't meet these requirements, you don't earn the $20 bonus.</p>\n" +
     '        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>\n' +
     '        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>\n' +
     '        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>\n' +
@@ -4468,6 +4468,23 @@ const result =  {
   'home.constantLoan.listApplications.itemMatched.collateralValueAtLiquidC2CDesc': 'Once the price of the collateral falls to this price, your loan will be liquidated.\n' +
     '          Note: this number is always changed unpredictably due to the fluctuation of the market. Please keep an eye on your loans to avoid liquidation.',
   'home.constantLoan.listApplications.paymentMethod.const': 'USD',
-  'home.constantLoan.listApplications.paymentMethod.collateral': 'Collateral'
-};
+  'home.constantLoan.listApplications.paymentMethod.collateral': 'Collateral',
+  'me.smsSettings.inputSms.popupTitle': 'SMS Authentication',
+  'me.smsSettings.inputSms.newTitle': 'SMS Authentication',
+  'me.smsSettings.inputSms.newInputCode': 'Please input the 6-digit code sent to your phone.',
+  'me.smsSettings.inputSms.resendCode': 'Resend code',
+  'me.smsSettings.inputSms.cantAccess': 'Can’t get SMS code?',
+  'me.smsSettings.inputSms.resendCodeSuccess': 'Resend code success!',
+  'me.smsSettings.invalidateSms': 'Sms authentication code not matched, please try again',
+  'exchangeInputDepositForm.minDepositAmount': 'Minimum investment amount: {amount}',
+  'exchangeInputDepositForm.interestRate': 'Interest rate: {interest}% APY',
+  'proLending.balances.withdrawFrom.withdrawFailedSameAddress': 'Unable to withdraw to the same wallet address.',
+  'home.buy.components.sell.title': 'Where should we send your funds to?',
+  'home.direct.components.sellInfoInput.confirmText': "You're sending {amount} {currency}",
+  'home.direct.components.sellInfoInput.confirmSubText': "Please check the recipient's bank info again.",
+  'home.direct.components.sellInfoInput.close': 'Close',
+  'home.direct.components.sellInfoInput.agreeSell': 'Agree to send',
+  'send.invalidBankAccountName': 'For your security, the beneficiary name must match the name you registered when signing up with Constant. Please enter a different name or email hello@myconstant.com if you need help',
+  'send.makeLocalOrderFailed': "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you."
+}; 
  module.exports = result;
