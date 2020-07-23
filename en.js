@@ -2687,6 +2687,8 @@ const result =  {
     '          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>\n' +
     "          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n" +
     '        ',
+  'home1.lendingSection.confirm.updateBalanceNoteInWorkingTime': "Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",
+  'home1.lendingSection.confirm.updateBalanceNote': "Please note it might take <strong>up to 1 business day</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",
   'me.proSaving.listApplications.alert.depositSavingSuccess': "Thanks! Your investment order was successful. Your term has begun and you've started earning interest.",
   'user.register.notValidEmail': 'Invalid email address',
   'me.emailVerification.resent': 'Resend email verification',
