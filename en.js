@@ -3537,6 +3537,202 @@ const result =  {
   'affiliates.referralHistory.object_amount': "Friend's earnings",
   'affiliates.referralHistory.object_type': 'Type',
   'affiliates.referralHistory.value': 'Your earnings ',
-  'affiliates.referralHistory.created_at': 'Date'
+  'affiliates.referralHistory.created_at': 'Date',
+  'home.convert.title': 'Convert',
+  'home.convert.subTitle': 'Be the first in {article} {country}',
+  'home.convert.introTitle': 'Change to cash anytime.',
+  'home.convert.headLine': 'Get Cash for your Constant from the US network, or exchange locally and avoid international transfer fees.',
+  'home.convert.subintroTitle1': 'Protect the value of your money.',
+  'home.convert.subintroDesc1': ' When your money is Constant, it always keeps its full worth. Constant is 100% backed by USD.',
+  'home.convert.subintroTitle2': 'Move your money across the world.',
+  'home.convert.subintroDesc2': 'When you have Constant, you can send it to anyone, anywhere in the world.',
+  'home.convert.subintroTitle3': 'Get USD for Constant, anytime.',
+  'home.convert.subintroDesc3': 'Anyone who holds constant can get the equivalent of 1 USD for 1 Constant, that same day.',
+  'home.convert.howItWorks': 'How it works',
+  'home.convert.max': 'Maximum',
+  'home.convert.buy.type': 'Buy',
+  'home.convert.buy.btnText': 'Buy',
+  'home.convert.buy.caption': 'Buy from local sellers',
+  'home.convert.buy.titleModal': 'Buy from local sellers',
+  'home.convert.buy.headLine': "Don't want to make an international wire transfer? Buy locally",
+  'home.convert.buy.labelConst': 'How much Constant do you want to buy?',
+  'home.convert.buy.labelExchange': 'Your price for 1 Constant',
+  'home.convert.buy.labelEqual': 'Equivalent in your local currency',
+  'home.convert.buy.newRequestBtn': 'Got Constant? Sell it at your own rates.',
+  'home.convert.buy.titleRequestModal': 'Sell Constant',
+  'home.convert.buy.buttonRequestModal': 'Sell',
+  'home.convert.buy.header.user': 'User',
+  'home.convert.buy.header.qty': 'Qty',
+  'home.convert.buy.header.rate': 'Rate',
+  'home.convert.buy.header.price': 'Price',
+  'home.convert.buy.header.actor': 'Seller',
+  'home.convert.buy.header.bank': 'Bank',
+  'home.convert.buy.orderWithdraw.title': 'Almost there.',
+  'home.convert.buy.orderWithdraw.message': 'Please make a wire transfer of {amount} to our custodian Prime Trust, so you have sufficient funds in your account to complete the transfer.',
+  'home.convert.buy.introHolderTemplate': '\n' +
+      '          <h1>Buy from local sellers in {country}</h1>\n' +
+      '          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n' +
+      '          <p>Email us at <a href=mailto:{email}">{email}</a></p>',
+  'home.convert.buy.confirmTemplate': '\n' +
+      '          <div name="thanks">\n' +
+      "            <p>Thanks! Please wire <strong>{FiatAmount} {FiatCurrency}</strong> to the seller's bank account.</p>\n" +
+      '          </div>\n' +
+      '          <div name="bank">\n' +
+      '            <p>\n' +
+      '              <span>Bank:</span>\n' +
+      '              <span>{BankName}</span>\n' +
+      '            </p>\n' +
+      '            <p>\n' +
+      '              <span>Account Name:</span>\n' +
+      '              <span>{BankAccountName}</span>\n' +
+      '            </p>\n' +
+      '            <p>\n' +
+      '              <span>Account Number: </span>\n' +
+      '              <span>{BankAccountNumber}</span>\n' +
+      '            </p>\n' +
+      '            <p>\n' +
+      '              <span>Amount: </span>\n' +
+      '              <span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n' +
+      '            </p>\n' +
+      '            <p>\n' +
+      '              <span>Constant: </span>\n' +
+      '              <span>{Amount}&nbsp;{Currency}</span>\n' +
+      '            </p>\n' +
+      '            <p>\n' +
+      '              <span>Reference: </span>\n' +
+      '              <span>{Reference}</span>\n' +
+      '            </p>\n' +
+      '          </div>\n' +
+      '          <div name="notice">\n' +
+      '            <b name="important">IMPORTANT:</b>\n' +
+      '            <span>\n' +
+      '              Do include your reference number <b>{Reference}</b> in the transfer description\n' +
+      '            </span>\n' +
+      '          </div>\n' +
+      '          <div name="window">\n' +
+      '            <strong name="minutes">30 MINUTE WINDOW: </strong>\n' +
+      '            <span>\n' +
+      '              Please complete your transfer <b>within 30 minutes</b>. After that, your\n' +
+      '              order will be automatically cancelled.\n' +
+      '            </span>\n' +
+      '          </div>\n' +
+      '        ',
+  'home.convert.buy.cryptoAddress': '{currency} address:',
+  'home.convert.buy.scanQR': 'Alternatively, scan this QR code directly from your mobile wallet to complete the investment.',
+  'home.convert.buy.scanDepositQR': 'Alternatively, scan this QR code directly from your mobile wallet to complete the deposit.',
+  'home.convert.buy.accountName': 'Account name',
+  'home.convert.buy.bankName': 'Bank name',
+  'home.convert.buy.accountNumber': 'Account number',
+  'home.convert.buy.routingNumberWire': 'Routing Number Wire',
+  'home.convert.buy.swiftCode': 'Swift Code',
+  'home.convert.buy.accountType': 'Account Type',
+  'home.convert.buy.accountAddress': 'Account Address',
+  'home.convert.buy.amount': 'Amount',
+  'home.convert.buy.minAmount': 'Minimum investment amount',
+  'home.convert.buy.flexRate': 'Interest rate',
+  'home.convert.buy.yourTopupAmount': 'Top-up Amount',
+  'home.convert.buy.collateralBalance': 'Your Balance',
+  'home.convert.buy.collateralRequired': 'Collateral Required',
+  'home.convert.buy.value': 'Value',
+  'home.convert.buy.constant': 'Constant',
+  'home.convert.buy.reference': 'Reference',
+  'home.convert.buy.buyThankMsg': 'Simply make a transfer of {fiatAmount} to complete your deposit.',
+  'home.convert.buy.buyDepositThankMsg': "Please wire {fiatAmount} {fiatCurrency} to the seller's bank account.",
+  'home.convert.buy.buyCryptoThankMsg': 'Please transfer {fiatAmount} {fiatCurrency} to the following wallet address to complete your investment.',
+  'home.convert.buy.buyCryptoDepositThankMsg': 'Please transfer {fiatAmount} {fiatCurrency} to the following wallet address to complete your deposit.',
+  'home.convert.buy.buyFlexCryptoDepositThankMsg': 'Please transfer a minimum of {fiatAmount} {fiatCurrency} to the following wallet address to start earning interest.',
+  'home.convert.buy.importantMsg': 'Do include your reference number {referenceNumber} in the transfer description.',
+  'home.convert.buy.important': 'Important',
+  'home.convert.buy.dgxFeeMsg': '(includes the 0.13% DGX transfer fee)',
+  'home.convert.buy.thankYou': 'Almost there.',
+  'home.convert.buy.minuteWindow': 'Please complete your transfer within 12 hours.',
+  'home.convert.buy.minuteWindowCryptoInvest': 'Send your cryptocurrency now to start earning interest',
+  'home.convert.buy.minuteWindowDescriptionCryptoInvest': 'For the sake of security, this order will time-out after 6 hours. If you need a little longer, just re-enter the amount you’d like to invest when you’re ready.',
+  'home.convert.buy.warningMessageCryptoInvest': 'You can deposit as much as you like, but you only earn interest on the first 5 BTC or equivalent value for each supported asset.',
+  'home.convert.buy.minuteWindowDescription': 'For the sake of security, this session will time-out after 12 hours. If you need a little longer, just re-enter the amount you would like to invest when you’re ready.',
+  'home.convert.buy.minuteWindowDepositDescription': 'For the sake of security, this session will time-out after 12 hours. If you need a little longer, just re-enter the amount you would like to deposit when you’re ready.',
+  'home.convert.buy.minuteWindowDescriptionDGX': 'Invested DGX is converted to USD. When your term ends, you can choose to withdraw in DGX at the spot price, as USD, or a supported stablecoin.',
+  'home.convert.sell.type': 'Sell',
+  'home.convert.sell.btnText': 'Get Cash',
+  'home.convert.sell.caption': 'CHANGE CONSTANT TO CASH AT LOCAL RATES',
+  'home.convert.sell.titleModal': 'Sell Constant for VND',
+  'home.convert.sell.headLine': 'Sell Constant to local buyers and get cash. No international fees.',
+  'home.convert.sell.labelConst': 'How much Constant do you want to sell?',
+  'home.convert.sell.labelExchange': 'Your price for 1 Constant',
+  'home.convert.sell.labelEqual': 'Equivalent in your local currency',
+  'home.convert.sell.newRequestBtn': 'Buy Constant at your own rates.',
+  'home.convert.sell.titleRequestModal': 'Buy Constant',
+  'home.convert.sell.buttonRequestModal': 'Buy',
+  'home.convert.sell.header.user': 'User',
+  'home.convert.sell.header.qty': 'Qty',
+  'home.convert.sell.header.rate': 'Rate',
+  'home.convert.sell.header.price': 'Price',
+  'home.convert.sell.header.actor': 'Buyer',
+  'home.convert.sell.header.bank': 'Bank',
+  'home.convert.sell.introHolderTemplate': '\n' +
+      '          <h1>Convert to local currency your country</h1>\n' +
+      '          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n' +
+      '          <p>Email us at <a href=mailto:{email}">{email}</a></p>',
+  'home.convert.sell.confirmTemplate': '<div name="thanks">\n' +
+      '            <p>Thank you!</p>\n' +
+      '            <p>We’re preparing your funds to be withdrawn to the registered bank account. You should be getting another notification once your withdrawal is in motion. Once you’ve received your funds, please click confirm on the Order History page, so we can finalize the record.</p>\n' +
+      '            <p>If you do not receive a notification confirming your withdrawal after 30 minutes, please send <a href="mailto:hello@myconstant.com">hello@myconstant.com</a> an email, and we’ll get it sorted for you.</p>\n' +
+      '          </div>',
+  'home.convert.titleRequestModal': '{type} Constant',
+  'home.convert.unitText': 'per Constant',
+  'home.convert.payTo': 'Buyer will send VND to',
+  'home.convert.payToForm.bankCountry': 'Bank Country',
+  'home.convert.payToForm.bankAddress': 'Bank address',
+  'home.convert.payToForm.depositoryBank': 'Depository Bank',
+  'home.convert.payToForm.bankPhone': 'Bank phone',
+  'home.convert.payToForm.bankName': 'Bank name',
+  'home.convert.payToForm.accountNumber': 'Account number',
+  'home.convert.payToForm.bankBranchName': 'Bank branch name',
+  'home.convert.payToForm.bankAccountName': 'Beneficiary name',
+  'home.convert.payToForm.bankAccountNumber': 'Account Number',
+  'home.convert.payToForm.bankAccountType': 'Bank Account Type',
+  'home.convert.payToForm.swiftCode': 'Swift code',
+  'home.convert.payToForm.routingNumber': 'Routing number',
+  'home.convert.payToForm.btnChangeText': 'Change',
+  'home.convert.payToForm.achCheckType': 'Ach Check Type',
+  'home.convert.payToForm.yourBanks': "Recipient's Bank",
+  'home.convert.payToForm.addNewBank': 'Add a new bank account',
+  'home.convert.payToForm.emptyBank': 'Please select a bank',
+  'home.convert.payToForm.openYourBank': 'Click here to open your banks',
+  'home.convert.payToForm.BeneficiaryAddressStreet1': 'Beneficiary Street \n',
+  'home.convert.payToForm.BeneficiaryAddressStreet2': 'Beneficiary Street 2',
+  'home.convert.payToForm.BeneficiaryAddressCity': 'Beneficiary City',
+  'home.convert.payToForm.BeneficiaryAddressCountry': 'Beneficiary Country',
+  'home.convert.payToForm.BeneficiaryAddressRegion': 'Beneficiary Region',
+  'home.convert.payToForm.BeneficiaryAddressPostalCode': 'Beneficiary Postal Code',
+  'home.convert.payToForm.createdBankFailed': 'Failed while creating new bank, please try again',
+  'home.convert.payToForm.note': 'Note (optional)',
+  'home.convert.payToForm.fullName': 'Full Name',
+  'home.convert.payToForm.transferMethod': 'Transfer Method',
+  'home.convert.payToForm.transferMethods.ach.title': 'ACH',
+  'home.convert.payToForm.transferMethods.ach.desc': 'Fee: Free. Time: 2-5 days',
+  'home.convert.payToForm.transferMethods.wire.title': 'Wire',
+  'home.convert.payToForm.transferMethods.wire.desc': 'Fee: might be charged by your bank. Time: a business day',
+  'home.convert.payToForm.transferMethodsCheckbook.ach.title': 'ACH',
+  'home.convert.payToForm.transferMethodsCheckbook.ach.desc': 'Fee: Free. Time: next business day',
+  'home.convert.fee': 'Fee',
+  'home.convert.backOrderBook': 'Back',
+  'home.convert.confirmMessage': 'After you have made a transfer, please click confirm.',
+  'home.convert.confirmButton': 'Confirm',
+  'home.convert.errorMsgs.required': 'Required',
+  'home.convert.errorMsgs.greaterThan': 'Must be greater than 0',
+  'home.convert.errorMsgs.notEnough': 'Constant is not enough',
+  'home.convert.send.confirmTemplate.title': 'Thank you!',
+  'home.convert.send.confirmTemplate.description': `Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href="/getPrices" target="_blank" class="colorLight semiBold">service times</a> for an estimation of when funds will reach you.\n` +
+      '<br/>\n' +
+      'While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.\n',
+  'home.convert.send.confirmTemplate.contact': 'If you have any questions, feel free to reach out to <a class="colorLight semiBold" href="mailto:hello@myconstant.com">hello@myconstant.com</a> anytime.',
+  'home.convert.send.confirmTemplate.actionTitle': 'Make another transfer',
+  'home.convert.withdraw.confirmTemplate.title': 'Thank you!',
+  'home.convert.withdraw.confirmTemplate.description': `Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href="/getPrices" target="_blank" class="colorLight semiBold">service times</a> for an estimation of when funds will reach you.\n` +
+      '<br/>\n' +
+      'While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.\n',
+  'home.convert.withdraw.confirmTemplate.contact': 'If you have any questions, feel free to reach out to <a class="colorLight semiBold" href="mailto:hello@myconstant.com">hello@myconstant.com</a> anytime.',
+  'home.convert.withdraw.confirmTemplate.actionTitle': 'Back to homepage'
 };
  module.exports = result;
