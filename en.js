@@ -220,11 +220,12 @@ const result =  {
   'seo.borrow.description': 'Get an easy online loan for as low as 7% APR through our fully secured peer-to-peer lending platform. No credit checks, no paperwork. Borrow money online and get a loan today!',
   'home.constantLoan.intro.content': '\n' +
     '        <p>Borrow the way you want</p>\n' +
-    '        <p class="h1">Borrow from just 7% APR.</p>\n' +
-    '        <p class="h1">Use 40+ cryptos as collateral.</p>\n' +
-    '        <h1>Get cash for crypto without selling up.</h1>\n' +
+    '        <p class="h1">Set your own rates.</p>\n' +
+    '        <p class="h1">Borrow against 60+ cryptocurrencies.</p>\n' +
+    '        <h1>Get cash for crypto without needing to sell.</h1>\n' +
     '        <p/>\n' +
-    '        <p>Borrow against your cryptocurrency portfolio from just 7% APR. You choose the term, we match you with an investor, and you can withdraw your loan in USD or stablecoins. Your collateral is securely stored and returned to you when you repay.</p>\n' +
+    '        <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and returned to you when you repay. Free withdrawals in cash or stablecoins.</p>\n' +
+    '        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href="https://blog.myconstant.com/multi-crypto-loans" target="_blank" class="underline">our blog</a> and FAQs for more details.</p>\n' +
     '        ',
   'support.newTitle': '\n' +
     "      <h6>Questions? Let's get on a call.</h6>\n" +
@@ -241,9 +242,9 @@ const result =  {
   'home1.lendingSection.form.textRegister': 'Sign up',
   'home1.lendingSection.form.btnBorrow': 'to borrow now',
   'home.constantLoan.what.title': 'Why borrow with us?',
-  'home.constantLoan.what.whatCaption0': 'Flexible terms',
+  'home.constantLoan.what.whatCaption0': 'Set your own rates',
   'home.constantLoan.what.whatDesc0': '\n' +
-    '          <p>Borrow any amount from 1-9 months, giving you the flexibility to repay at a time that suits you. </p>\n' +
+    '          <p>Our P2P matching algorithm replaces centralized banks and allows you to tap into true market demand.</p>\n' +
     '        ',
   'home.constantLoan.what.whatCaption1': 'Protected by Ethereum',
   'home.constantLoan.what.whatDesc1': '\n' +
@@ -259,12 +260,12 @@ const result =  {
     '        ',
   'ourPartners.title': 'Our Partners',
   'home.constantLoan.howItWorks.title': 'How it works',
-  'home.constantLoan.howItWorks.title1': '1. Choose a term',
-  'home.constantLoan.howItWorks.desc1': 'Borrow any amount for 30, 90, or 180 days. The shorter your term, the lower the interest.',
-  'home.constantLoan.howItWorks.title2': '2. Deposit your collateral',
-  'home.constantLoan.howItWorks.desc2': 'Send collateral to secure your loan. You can combine different cryptocurrencies to meet the minimum collateral value.',
+  'home.constantLoan.howItWorks.title1': '1. Set your own terms',
+  'home.constantLoan.howItWorks.desc1': 'Choose how much you want to borrow and for how long, and then select the interest rate you want to pay.',
+  'home.constantLoan.howItWorks.title2': '2. Wait to be matched',
+  'home.constantLoan.howItWorks.desc2': 'The Constant matching algorithm finds investors that can lend you the money you need at the rates you want.',
   'home.constantLoan.howItWorks.title3': '3. Get cash to spend',
-  'home.constantLoan.howItWorks.desc3': 'Once you’ve sent your collateral, you can withdraw your loan in fiat or stablecoins. Your collateral is securely stored and returned to you when you repay.',
+  'home.constantLoan.howItWorks.desc3': 'Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while supported collateral is held in Prime Trust cold storage. Collateral can be withdrawn once you repay.',
   'home.constantLoan.faqs.question1': 'How long will it take to get my loan?',
   'home.constantLoan.faqs.answer1': '\n' +
     '        <p>As soon as we receive your collateral, we’ll deposit your loan into your Constant account. You can withdraw your loan as fiat to your bank account or as a stablecoin to your wallet address. All withdrawals are free.</p>\n' +
@@ -531,9 +532,9 @@ const result =  {
   'home.constantC2CLoan.compareTable.withdraw': 'Free withdraws',
   'home.constantC2CLoan.compareTable.description': '(?) We search multiple exchanges to find the best price for your chosen cryptocurrency. <br/>Exchange margin accounts typically only use the price on that exchange, so you can miss out on better deals elsewhere. ',
   'home.constantC2CLoan.why.title': 'Why borrow with us?',
-  'home.constantC2CLoan.why.whatCaption0': 'Flexible terms',
+  'home.constantC2CLoan.why.whatCaption0': 'Set your own rates',
   'home.constantC2CLoan.why.whatDesc0': '\n' +
-    '          <p>Borrow any amount from 1-9 months, giving you the flexibility to buy your chosen crypto and then repay at a time that suits you.</p>\n' +
+    '          <p>Our P2P matching algorithm allows you to tap into true market demand. Choose the market rate to guarantee a match, or go higher to match even faster.</p>\n' +
     '        ',
   'home.constantC2CLoan.why.whatCaption1': 'No exchanges',
   'home.constantC2CLoan.why.whatDesc1': '\n' +
@@ -2313,14 +2314,14 @@ const result =  {
   'user.forgetPassword.notValidConfirmPassword': 'Confirm password not match',
   'error.serverCode.loginFailure': 'Please make sure your email and password are correct.',
   'memberShip.member': 'Member',
-  'yourReferral.banner.desc': `
-        <h2>Get a free \${referralReward} bonus for every friend you refer.</h2>
-        <p>Tell your friends and family about us and get \${referralReward} free for each person who signs up and deposits USD (US citizens only). You also earn <strong>{referralFlexReward}% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>
-      `,
-  'yourReferral.banner.descNotUS': `
-        <h2>Refer friends and earn {referralFlexReward}% of their Flex interest</h2>
-        <p>Tell your friends and family about us and <strong>get {referralFlexReward}% of their Flex interest</strong> (US referees only) when they sign up and deposit USD. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>
-      `,
+  'yourReferral.banner.desc': '\n' +
+    '        <h2>Get a free ${referralReward} bonus for every friend you refer.</h2>\n' +
+    '        <p>Tell your friends and family about us and get ${referralReward} free for each person who signs up and deposits USD (US citizens only). You also earn <strong>{referralFlexReward}% of their Flex interest</strong>, compounded and paid every second. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>\n' +
+    '      ',
+  'yourReferral.banner.descNotUS': '\n' +
+    '        <h2>Refer friends and earn {referralFlexReward}% of their Flex interest</h2>\n' +
+    '        <p>Tell your friends and family about us and <strong>get {referralFlexReward}% of their Flex interest</strong> (US referees only) when they sign up and deposit USD. Refer as many friends as you like, however you like, and <strong>grow your money together</strong>.</p>\n' +
+    '      ',
   'yourReferral.whatForYou.title': 'What’s in it for you?',
   'yourReferral.whatForYou.formula.0': 'For every friend who signs up and deposits USD',
   'yourReferral.whatForYou.formula.1': ' ',
@@ -2329,8 +2330,7 @@ const result =  {
   'yourReferral.whatForYou.formula.4': 'for your friend if they’re a US resident',
   'yourReferral.whatForYou.desc': '\n' +
     '        <div class="section-desc-title">INVITE FRIENDS, EARN TOGETHER</div>\n' +
-    '        <div><strong>Earn ${referralReward} for every friend who signs up and deposits USD</strong>, paid instantly, and with no limits.</div>' +
-    '        <div><strong>Then earn {referralFlexReward}% of their Flex interest</strong>, capped at a generous $1,000,000.</div>\n' +
+    '        <div><strong>Earn ${referralReward} for every friend who signs up and deposits USD</strong>, paid instantly, and with no limits.</div>        <div><strong>Then earn {referralFlexReward}% of their Flex interest</strong>, capped at a generous $1,000,000.</div>\n' +
     '        <div><strong>Your friend gets a 30-day ${kYCTrialAmount} trial bonus</strong> and keeps the interest (US referees only).</div>\n' +
     '      ',
   'yourReferral.whatForYou.descNotUS': '\n' +
@@ -2353,16 +2353,14 @@ const result =  {
   'yourReferral.whatForThem.content.right': '\n' +
     '          <div>\n' +
     '            <div class="content-title">4% APY</div>\n' +
-    '            <p class="content-desc">on all <strong>Flex</strong> deposits</p>' +
-    '          </div>\n' +
+    '            <p class="content-desc">on all <strong>Flex</strong> deposits</p>          </div>\n' +
     '          <div>\n' +
     '            <div class="content-title">7.5% APR</div>\n' +
     '            <p class="content-desc">on <strong>crypto-backed</strong> investments</p>\n' +
     '          </div>\n' +
     '          <div>\n' +
     '            <div class="content-title">11% APR</div>\n' +
-    '            <p class="content-desc">on <strong>Loan Originator</strong> investments</p>' +
-    '          </div>\n' +
+    '            <p class="content-desc">on <strong>Loan Originator</strong> investments</p>          </div>\n' +
     '        ',
   'yourReferral.howItWorks.title': 'How it works',
   'yourReferral.howItWorks.data.0.title': ' ',
@@ -2378,8 +2376,7 @@ const result =  {
   'yourReferral.howItWorks.desc': '\n' +
     '      <p>There are <strong>no limits</strong> to the number of people you can refer for the ${referralReward} bonus.</p>\n' +
     '      <p>Your Flex earnings are capped at $1,000,000.</p>',
-  'yourReferral.howItWorks.descNotUS': '\n' +
-    '      <p>Your Flex earnings are capped at $1,000,000.</p>',
+  'yourReferral.howItWorks.descNotUS': '\n      <p>Your Flex earnings are capped at $1,000,000.</p>',
   'user.login.loginFailureCaptchaV2': "Please check I'm not a robot.",
   'affiliates.applyForm.userName': 'Your name',
   'affiliates.applyForm.userEmail': 'Your email address',
@@ -2417,48 +2414,48 @@ const result =  {
   'badges.submitForm.errNeedKyc': 'You must pass KYC before you can request this badge. <a href="/me/profile">Submit your KYC documents or approval.</>',
   'badges.group.referring_desc': 'We love it when you share your experiences with others. These badges reward you for referring friends and family, writing or streaming about us, or reviewing the platform for your community.',
   'me.emailSetting.emailConfirmation.two2faRequired': 'Please <a href="/me/securities" class="underline">enable 2-Factor Authorization</a> before {action} email notifications.',
-  'yourReferral.terms.normal': `
-        <h3 class="semiBold">Terms and Conditions</h3>
-        <ol>
-          <li><p>To qualify for referral rewards, such as the \${referralReward} bonus and {referralFlexReward}% of your referee’s Flex interest, your referee must be a US citizen.</p></li>
-          <li><p>The bonus is paid when your referee signs up, passes KYC, and deposits USD.</p></li>
-          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>
-          <li><p>Referral interest is paid to you by Constant and does not deduct from your friends’ earned Flex interest.</p></li>
-          <li>
-            <p>The amount you earn depends on how your friends use the platform:</p>
-            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>
-          </li>
-          <li><p>You can invite as many friends as you like.</p></li>
-          <li><p>Your referral earnings are paid in USD, directly into your Constant account.</p></li>
-          <li><p>The maximum you can earn is $1,000,000.</p></li>
-          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>
-          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>
-          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>
-          <li><p>Constant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>
-        </ol>
-        <p class="bold effective">Effective as of 2020/02/17 00:00 AM (GMT+0)</p>
-      `,
-  'yourReferral.terms.normalNotUS': `
-        <h3 class="semiBold">Terms and Conditions</h3>
-        <ol>
-          <li><p>To qualify for {referralFlexReward}% of your referee’s Flex interest, your referee must be a US citizen.</p></li>
-          <li><p>You will start earning {referralFlexReward}% of your referee’s Flex interest when they sign up, pass KYC, and deposit USD (minimum $10).</p></li>
-          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>
-          <li><p>Referral interest is paid to you by Constant and does not deduct from your friends’ earned Flex interest.</p></li>
-          <li>
-            <p>The amount you earn depends on how your friends use the platform:</p>
-            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>
-          </li>
-          <li><p>You can invite as many friends as you like.</p></li>
-          <li><p>Your referral earnings are paid in USD, directly into your Constant account.</p></li>
-          <li><p>The maximum you can earn is $1,000,000.</p></li>
-          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>
-          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>
-          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>
-          <li><p>Constant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>
-        </ol>
-        <p class="bold effective">Effective as of 2020/02/17 00:00 AM (GMT+0)</p>
-      `,
+  'yourReferral.terms.normal': '\n' +
+    '        <h3 class="semiBold">Terms and Conditions</h3>\n' +
+    '        <ol>\n' +
+    '          <li><p>To qualify for referral rewards, such as the ${referralReward} bonus and {referralFlexReward}% of your referee’s Flex interest, your referee must be a US citizen.</p></li>\n' +
+    '          <li><p>The bonus is paid when your referee signs up, passes KYC, and deposits USD.</p></li>\n' +
+    '          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>\n' +
+    '          <li><p>Referral interest is paid to you by Constant and does not deduct from your friends’ earned Flex interest.</p></li>\n' +
+    '          <li>\n' +
+    '            <p>The amount you earn depends on how your friends use the platform:</p>\n' +
+    '            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>\n' +
+    '          </li>\n' +
+    '          <li><p>You can invite as many friends as you like.</p></li>\n' +
+    '          <li><p>Your referral earnings are paid in USD, directly into your Constant account.</p></li>\n' +
+    '          <li><p>The maximum you can earn is $1,000,000.</p></li>\n' +
+    '          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>\n' +
+    "          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>\n" +
+    '          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>\n' +
+    '          <li><p>Constant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>\n' +
+    '        </ol>\n' +
+    '        <p class="bold effective">Effective as of 2020/02/17 00:00 AM (GMT+0)</p>\n' +
+    '      ',
+  'yourReferral.terms.normalNotUS': '\n' +
+    '        <h3 class="semiBold">Terms and Conditions</h3>\n' +
+    '        <ol>\n' +
+    '          <li><p>To qualify for {referralFlexReward}% of your referee’s Flex interest, your referee must be a US citizen.</p></li>\n' +
+    '          <li><p>You will start earning {referralFlexReward}% of your referee’s Flex interest when they sign up, pass KYC, and deposit USD (minimum $10).</p></li>\n' +
+    '          <li><p>Your referral interest is calculated on the interest your friends earn with our Flex account.</p></li>\n' +
+    '          <li><p>Referral interest is paid to you by Constant and does not deduct from your friends’ earned Flex interest.</p></li>\n' +
+    '          <li>\n' +
+    '            <p>The amount you earn depends on how your friends use the platform:</p>\n' +
+    '            <p>You earn {referralFlexReward}% of your friends’ earned Flex interest during their first year. We pay this interest every second that your friends are earning. (Your friends can also refer others to boost your and their earnings, too).</p>\n' +
+    '          </li>\n' +
+    '          <li><p>You can invite as many friends as you like.</p></li>\n' +
+    '          <li><p>Your referral earnings are paid in USD, directly into your Constant account.</p></li>\n' +
+    '          <li><p>The maximum you can earn is $1,000,000.</p></li>\n' +
+    '          <li><p>You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p></li>\n' +
+    "          <li><p>When 365 days have passed following your friend’s sign-up, you’ll no longer earn on their Flex interest. For example, on the 366th day, you won't earn interest but on the 365th one you will.</p></li>\n" +
+    '          <li><p>For friends referred before the effective date (2020/02/17), you’ll earn on their Flex transactions after the effective date only.</p></li>\n' +
+    '          <li><p>Constant reserves the right to change the terms of the referral program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p></li>\n' +
+    '        </ol>\n' +
+    '        <p class="bold effective">Effective as of 2020/02/17 00:00 AM (GMT+0)</p>\n' +
+    '      ',
   'yourReferral.whatForYou.trialBonus': 'a ${kYCTrialAmount} trial bonus',
   'affiliates.whyBecome.trialBonus': 'a ${kYCTrialAmount} trial bonus',
   'home.loanOriginator.listApplications.settingStatus.active': 'Active',
@@ -2721,7 +2718,6 @@ const result =  {
     "          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>\n" +
     '        ',
   'home1.lendingSection.confirm.updateBalanceNoteInWorkingTime': "Please note it might take <strong>up to 1 hour</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",
-  'home1.lendingSection.confirm.updateBalanceNote': "Please note it might take <strong>up to 1 business day</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",
   'me.proSaving.listApplications.alert.depositSavingSuccess': "Thanks! Your investment order was successful. Your term has begun and you've started earning interest.",
   'user.register.notValidEmail': 'Invalid email address',
   'me.emailVerification.resent': 'Resend email verification',
@@ -3547,7 +3543,7 @@ const result =  {
     '        <p class="section-title">Terms and Conditions</p>\n' +
     '        <p>1. The amount you earn depends on how your referees use the platform:</p>\n' +
     '        <p class="desc">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>\n' +
-    '        <p>2. We will pay you $20 for every person who signs up using your referral link, passes KYC and makes a deposit into Constant. If they don\'t meet these requirements, you don\'t earn the $20 bonus.</p>\n' +
+    '        <p>2. We will pay you $20 for every person who signs up using your referral link and passes KYC. If they don’t pass KYC, you don’t earn the $20 bonus.</p>\n' +
     '        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>\n' +
     '        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>\n' +
     '        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>\n' +
@@ -3602,87 +3598,68 @@ const result =  {
   'home.convert.buy.orderWithdraw.title': 'Almost there.',
   'home.convert.buy.orderWithdraw.message': 'Please make a wire transfer of {amount} to our custodian Prime Trust, so you have sufficient funds in your account to complete the transfer.',
   'home.convert.buy.introHolderTemplate': '\n' +
-      '          <h1>Buy from local sellers in {country}</h1>\n' +
-      '          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n' +
-      '          <p>Email us at <a href=mailto:{email}">{email}</a></p>',
+    '          <h1>Buy from local sellers in {country}</h1>\n' +
+    '          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n' +
+    '          <p>Email us at <a href=mailto:{email}">{email}</a></p>',
   'home.convert.buy.confirmTemplate': '\n' +
-      '          <div name="thanks">\n' +
-      "            <p>Thanks! Please wire <strong>{FiatAmount} {FiatCurrency}</strong> to the seller's bank account.</p>\n" +
-      '          </div>\n' +
-      '          <div name="bank">\n' +
-      '            <p>\n' +
-      '              <span>Bank:</span>\n' +
-      '              <span>{BankName}</span>\n' +
-      '            </p>\n' +
-      '            <p>\n' +
-      '              <span>Account Name:</span>\n' +
-      '              <span>{BankAccountName}</span>\n' +
-      '            </p>\n' +
-      '            <p>\n' +
-      '              <span>Account Number: </span>\n' +
-      '              <span>{BankAccountNumber}</span>\n' +
-      '            </p>\n' +
-      '            <p>\n' +
-      '              <span>Amount: </span>\n' +
-      '              <span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n' +
-      '            </p>\n' +
-      '            <p>\n' +
-      '              <span>Constant: </span>\n' +
-      '              <span>{Amount}&nbsp;{Currency}</span>\n' +
-      '            </p>\n' +
-      '            <p>\n' +
-      '              <span>Reference: </span>\n' +
-      '              <span>{Reference}</span>\n' +
-      '            </p>\n' +
-      '          </div>\n' +
-      '          <div name="notice">\n' +
-      '            <b name="important">IMPORTANT:</b>\n' +
-      '            <span>\n' +
-      '              Do include your reference number <b>{Reference}</b> in the transfer description\n' +
-      '            </span>\n' +
-      '          </div>\n' +
-      '          <div name="window">\n' +
-      '            <strong name="minutes">30 MINUTE WINDOW: </strong>\n' +
-      '            <span>\n' +
-      '              Please complete your transfer <b>within 30 minutes</b>. After that, your\n' +
-      '              order will be automatically cancelled.\n' +
-      '            </span>\n' +
-      '          </div>\n' +
-      '        ',
-  'home.convert.buy.cryptoAddress': '{currency} address:',
+    '          <div name="thanks">\n' +
+    "            <p>Thanks! Please wire <strong>{FiatAmount} {FiatCurrency}</strong> to the seller's bank account.</p>\n" +
+    '          </div>\n' +
+    '          <div name="bank">\n' +
+    '            <p>\n' +
+    '              <span>Bank:</span>\n' +
+    '              <span>{BankName}</span>\n' +
+    '            </p>\n' +
+    '            <p>\n' +
+    '              <span>Account Name:</span>\n' +
+    '              <span>{BankAccountName}</span>\n' +
+    '            </p>\n' +
+    '            <p>\n' +
+    '              <span>Account Number: </span>\n' +
+    '              <span>{BankAccountNumber}</span>\n' +
+    '            </p>\n' +
+    '            <p>\n' +
+    '              <span>Amount: </span>\n' +
+    '              <span>{FiatAmount}&nbsp;{FiatCurrency}</span>\n' +
+    '            </p>\n' +
+    '            <p>\n' +
+    '              <span>Constant: </span>\n' +
+    '              <span>{Amount}&nbsp;{Currency}</span>\n' +
+    '            </p>\n' +
+    '            <p>\n' +
+    '              <span>Reference: </span>\n' +
+    '              <span>{Reference}</span>\n' +
+    '            </p>\n' +
+    '          </div>\n' +
+    '          <div name="notice">\n' +
+    '            <b name="important">IMPORTANT:</b>\n' +
+    '            <span>\n' +
+    '              Do include your reference number <b>{Reference}</b> in the transfer description\n' +
+    '            </span>\n' +
+    '          </div>\n' +
+    '          <div name="window">\n' +
+    '            <strong name="minutes">30 MINUTE WINDOW: </strong>\n' +
+    '            <span>\n' +
+    '              Please complete your transfer <b>within 30 minutes</b>. After that, your\n' +
+    '              order will be automatically cancelled.\n' +
+    '            </span>\n' +
+    '          </div>\n' +
+    '        ',
   'home.convert.buy.scanQR': 'Alternatively, scan this QR code directly from your mobile wallet to complete the investment.',
-  'home.convert.buy.scanDepositQR': 'Alternatively, scan this QR code directly from your mobile wallet to complete the deposit.',
-  'home.convert.buy.accountName': 'Account name',
-  'home.convert.buy.bankName': 'Bank name',
-  'home.convert.buy.accountNumber': 'Account number',
   'home.convert.buy.routingNumberWire': 'Routing Number Wire',
   'home.convert.buy.swiftCode': 'Swift Code',
   'home.convert.buy.accountType': 'Account Type',
   'home.convert.buy.accountAddress': 'Account Address',
-  'home.convert.buy.amount': 'Amount',
-  'home.convert.buy.minAmount': 'Minimum investment amount',
-  'home.convert.buy.flexRate': 'Interest rate',
   'home.convert.buy.yourTopupAmount': 'Top-up Amount',
   'home.convert.buy.collateralBalance': 'Your Balance',
   'home.convert.buy.collateralRequired': 'Collateral Required',
   'home.convert.buy.value': 'Value',
   'home.convert.buy.constant': 'Constant',
-  'home.convert.buy.reference': 'Reference',
   'home.convert.buy.buyThankMsg': 'Simply make a transfer of {fiatAmount} to complete your deposit.',
-  'home.convert.buy.buyDepositThankMsg': "Please wire {fiatAmount} {fiatCurrency} to the seller's bank account.",
   'home.convert.buy.buyCryptoThankMsg': 'Please transfer {fiatAmount} {fiatCurrency} to the following wallet address to complete your investment.',
   'home.convert.buy.buyCryptoDepositThankMsg': 'Please transfer {fiatAmount} {fiatCurrency} to the following wallet address to complete your deposit.',
-  'home.convert.buy.buyFlexCryptoDepositThankMsg': 'Please transfer a minimum of {fiatAmount} {fiatCurrency} to the following wallet address to start earning interest.',
-  'home.convert.buy.importantMsg': 'Do include your reference number {referenceNumber} in the transfer description.',
-  'home.convert.buy.important': 'Important',
   'home.convert.buy.dgxFeeMsg': '(includes the 0.13% DGX transfer fee)',
-  'home.convert.buy.thankYou': 'Almost there.',
-  'home.convert.buy.minuteWindow': 'Please complete your transfer within 12 hours.',
-  'home.convert.buy.minuteWindowCryptoInvest': 'Send your cryptocurrency now to start earning interest',
-  'home.convert.buy.minuteWindowDescriptionCryptoInvest': 'For the sake of security, this order will time-out after 6 hours. If you need a little longer, just re-enter the amount you’d like to invest when you’re ready.',
-  'home.convert.buy.warningMessageCryptoInvest': 'You can deposit as much as you like, but you only earn interest on the first 5 BTC or equivalent value for each supported asset.',
   'home.convert.buy.minuteWindowDescription': 'For the sake of security, this session will time-out after 12 hours. If you need a little longer, just re-enter the amount you would like to invest when you’re ready.',
-  'home.convert.buy.minuteWindowDepositDescription': 'For the sake of security, this session will time-out after 12 hours. If you need a little longer, just re-enter the amount you would like to deposit when you’re ready.',
   'home.convert.buy.minuteWindowDescriptionDGX': 'Invested DGX is converted to USD. When your term ends, you can choose to withdraw in DGX at the spot price, as USD, or a supported stablecoin.',
   'home.convert.sell.type': 'Sell',
   'home.convert.sell.btnText': 'Get Cash',
@@ -3702,14 +3679,14 @@ const result =  {
   'home.convert.sell.header.actor': 'Buyer',
   'home.convert.sell.header.bank': 'Bank',
   'home.convert.sell.introHolderTemplate': '\n' +
-      '          <h1>Convert to local currency your country</h1>\n' +
-      '          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n' +
-      '          <p>Email us at <a href=mailto:{email}">{email}</a></p>',
+    '          <h1>Convert to local currency your country</h1>\n' +
+    '          <p>To be the first to buy and sell Constant in your country, simply reach out to us to get started.</p>\n' +
+    '          <p>Email us at <a href=mailto:{email}">{email}</a></p>',
   'home.convert.sell.confirmTemplate': '<div name="thanks">\n' +
-      '            <p>Thank you!</p>\n' +
-      '            <p>We’re preparing your funds to be withdrawn to the registered bank account. You should be getting another notification once your withdrawal is in motion. Once you’ve received your funds, please click confirm on the Order History page, so we can finalize the record.</p>\n' +
-      '            <p>If you do not receive a notification confirming your withdrawal after 30 minutes, please send <a href="mailto:hello@myconstant.com">hello@myconstant.com</a> an email, and we’ll get it sorted for you.</p>\n' +
-      '          </div>',
+    '            <p>Thank you!</p>\n' +
+    '            <p>We’re preparing your funds to be withdrawn to the registered bank account. You should be getting another notification once your withdrawal is in motion. Once you’ve received your funds, please click confirm on the Order History page, so we can finalize the record.</p>\n' +
+    '            <p>If you do not receive a notification confirming your withdrawal after 30 minutes, please send <a href="mailto:hello@myconstant.com">hello@myconstant.com</a> an email, and we’ll get it sorted for you.</p>\n' +
+    '          </div>',
   'home.convert.titleRequestModal': '{type} Constant',
   'home.convert.unitText': 'per Constant',
   'home.convert.payTo': 'Buyer will send VND to',
@@ -3728,27 +3705,14 @@ const result =  {
   'home.convert.payToForm.btnChangeText': 'Change',
   'home.convert.payToForm.achCheckType': 'Ach Check Type',
   'home.convert.payToForm.yourBanks': "Recipient's Bank",
-  'home.convert.payToForm.addNewBank': 'Add a new bank account',
   'home.convert.payToForm.emptyBank': 'Please select a bank',
   'home.convert.payToForm.openYourBank': 'Click here to open your banks',
-  'home.convert.payToForm.BeneficiaryAddressStreet1': 'Beneficiary Street \n',
   'home.convert.payToForm.BeneficiaryAddressStreet2': 'Beneficiary Street 2',
-  'home.convert.payToForm.BeneficiaryAddressCity': 'Beneficiary City',
   'home.convert.payToForm.BeneficiaryAddressCountry': 'Beneficiary Country',
-  'home.convert.payToForm.BeneficiaryAddressRegion': 'Beneficiary Region',
-  'home.convert.payToForm.BeneficiaryAddressPostalCode': 'Beneficiary Postal Code',
   'home.convert.payToForm.createdBankFailed': 'Failed while creating new bank, please try again',
-  'home.convert.payToForm.note': 'Note (optional)',
-  'home.convert.payToForm.fullName': 'Full Name',
-  'home.convert.payToForm.transferMethod': 'Transfer Method',
-  'home.convert.payToForm.transferMethods.ach.title': 'ACH',
-  'home.convert.payToForm.transferMethods.ach.desc': 'Fee: Free. Time: 2-5 days',
-  'home.convert.payToForm.transferMethods.wire.title': 'Wire',
-  'home.convert.payToForm.transferMethods.wire.desc': 'Fee: might be charged by your bank. Time: a business day',
   'home.convert.payToForm.transferMethodsCheckbook.ach.title': 'ACH',
   'home.convert.payToForm.transferMethodsCheckbook.ach.desc': 'Fee: Free. Time: next business day',
   'home.convert.fee': 'Fee',
-  'home.convert.backOrderBook': 'Back',
   'home.convert.confirmMessage': 'After you have made a transfer, please click confirm.',
   'home.convert.confirmButton': 'Confirm',
   'home.convert.errorMsgs.required': 'Required',
@@ -3756,27 +3720,21 @@ const result =  {
   'home.convert.errorMsgs.notEnough': 'Constant is not enough',
   'home.convert.send.confirmTemplate.title': 'Thank you!',
   'home.convert.send.confirmTemplate.description': `Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href="/getPrices" target="_blank" class="colorLight semiBold">service times</a> for an estimation of when funds will reach you.\n` +
-      '<br/>\n' +
-      'While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.\n',
+    '<br/>\n' +
+    'While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.\n',
   'home.convert.send.confirmTemplate.contact': 'If you have any questions, feel free to reach out to <a class="colorLight semiBold" href="mailto:hello@myconstant.com">hello@myconstant.com</a> anytime.',
   'home.convert.send.confirmTemplate.actionTitle': 'Make another transfer',
   'home.convert.withdraw.confirmTemplate.title': 'Thank you!',
   'home.convert.withdraw.confirmTemplate.description': `Your funds are on the way to your recipient's bank account. Times may vary based on the bank and location. Please view our <a href="/getPrices" target="_blank" class="colorLight semiBold">service times</a> for an estimation of when funds will reach you.\n` +
-      '<br/>\n' +
-      'While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.\n',
+    '<br/>\n' +
+    'While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.\n',
   'home.convert.withdraw.confirmTemplate.contact': 'If you have any questions, feel free to reach out to <a class="colorLight semiBold" href="mailto:hello@myconstant.com">hello@myconstant.com</a> anytime.',
   'home.convert.withdraw.confirmTemplate.actionTitle': 'Back to homepage',
   'me.history.orderType.0': 'Buy',
   'me.history.orderType.1': 'Convert',
-  'me.history.orderType.2': 'Transfer',
-  'me.history.orderType.3': 'Investments',
-  'me.history.orderType.4': 'Interest',
   'me.history.orderType.5': 'Fee',
   'me.history.orderType.6': 'Import',
-  'me.history.orderType.7': 'Deposit',
-  'me.history.orderType.8': 'Withdraw',
   'me.history.orderType.9': 'Risk',
-  'me.history.orderType.10': 'Borrow',
   'me.history.orderType.11': 'Pay',
   'me.history.orderType.12': 'Reward',
   'me.history.orderType.13': 'Interest',
@@ -3788,13 +3746,8 @@ const result =  {
   'me.history.orderType.19': 'Ajust Increase',
   'me.history.orderType.20': 'Ajust Descrease',
   'me.history.orderType.21': 'Referral Bonus',
-  'me.history.orderType.22': 'Purchase',
-  'me.history.orderType.23': 'Refund',
   'me.history.orderType.24': 'LO investment',
   'me.history.orderType.25': 'LO repayment',
-  'me.history.orderType.26': 'LO Investment',
-  'me.history.orderType.33': 'Badge reward',
-  'me.history.orderType.101': 'Bonus',
   'me.history.orderType.102': 'Coupon Signup',
   'me.history.orderType.received': 'Received',
   'me.history.orderStatus.0': 'Pending',
@@ -3802,20 +3755,723 @@ const result =  {
   'me.history.orderStatus.2': 'Coin minting',
   'me.history.orderStatus.3': 'Coin burning',
   'me.history.orderStatus.4': 'Transferring',
-  'me.history.orderStatus.5': 'Redeeming',
-  'me.history.orderStatus.6': 'Cancelled',
-  'me.history.orderStatus.7': 'Successful',
-  'me.history.orderStatus.8': 'In progress',
   'me.history.orderStatus.11': 'Transfer failed',
-  'me.history.orderStatus.12': 'Waiting Approving',
-  'me.history.orderStatus.13': 'Waiting Approving',
   'me.history.orderStatus.14': 'Transferring',
   'me.history.orderStatus.15': 'Confirming',
-  'me.history.orderStatus.16': 'Order timed out',
   'me.withdrawEmailConfirm.alreadyVerified': 'Your withdrawal has already been confirmed. Thank you',
   'me.withdrawEmailConfirm.verifySuccess': 'Your withdrawal order has been confirmed successfully',
   'me.withdrawEmailConfirm.verifyFailed': 'Your confirmation link has expired. Please create a new withdrawal order',
   'app.goToHomePage': 'Go to Home page',
-  'app.goToLoginPage': 'Go to Sign In page'
-};
+  'app.goToLoginPage': 'Go to Sign In page',
+  'home.transfer.title': 'Transfer',
+  'home.transfer.transferType': 'Transfer Type',
+  'home.transfer.transferTypeCaption.email': 'Via Email',
+  'home.transfer.transferTypeCaption.batch': 'To multiple people',
+  'home.transfer.transferFeeLabel': 'Transfer fee',
+  'home.transfer.subTitle': 'Free. To anyone, anywhere.',
+  'home.transfer.introTitle': 'Send money to anyone, anywhere.',
+  'home.transfer.phToAddress': 'Recipient’s email or Ethereum wallet address',
+  'home.transfer.batchConfirmMsg': 'Are you sure you want to transfer to multiple people from the uploaded file?',
+  'home.transfer.transferFailed': 'Failed while transfering, please try again',
+  'home.transfer.transferSuccessful': 'Your transfer was completed successfully',
+  'home.transfer.transferConfirm': "We've already sent you a verification link by email. Please click this link to approve your transaction.",
+  'home.transfer.verifyEmailRequired': '\n' +
+    '      <p>You need to verify your email to do this action.</p>\n' +
+    '      <p>Please verify your email <a href="/me/information" class="underline bold">here</a>.</p>\n' +
+    '      ',
+  'home.transfer.timeLimit2': '48 hours',
+  'home.transfer.subintroTitle1': 'No banks, no borders.',
+  'home.transfer.subintroDesc1': 'Constant is a digital currency, so you can send it to anyone, anywhere in the world - within minutes.',
+  'home.transfer.subintroTitle2': 'Zero fees. No transaction limits.',
+  'home.transfer.subintroDesc2': 'You can send any amount of Constant to anyone at anytime, for free.',
+  'home.transfer.subintroTitle3': 'Always reliable.',
+  'home.transfer.subintroDesc3': 'Unlike other digital currencies, Constant keeps a stable value. This means you can get the equivalent of 1 USD for 1 Constant. In any location, at any time.',
+  'home.transfer.backToNewOrder': 'Another transfer',
+  'home.transfer.goHistory': 'Orders and Transactions',
+  'home.transfer.components.orderInfo.title': 'Transfer confirmation',
+  'home.transfer.components.orderInfo.desc': ' ',
+  'home.transfer.components.orderInfo.cryptoAddress': 'To address',
+  'home.transfer.components.orderInfo.email': 'To email',
+  'home.transfer.components.orderInfo.amount': 'Amount',
+  'home.transfer.components.orderInfo.promotionAmount': 'Bonus',
+  'home.transfer.components.orderInfo.serviceTime': '\n' +
+    '          <h6 class="bold colorLight">Service time guarantee &#10004; </h6>\n' +
+    '          <p class="colorLight">Most stablecoin withdrawals take under an hour. Occasionally, we have to source extra liquidity but try to process your order as soon as possible (please refer to our service times). If there is any delay, we’ll pay you 12% APY on your withdrawal amount for every second we’re late.</p>\n' +
+    '          ',
+  'home.transfer.components.orderInfo.serviceTimeTransferViaEmail': '\n' +
+    '            <p class="colorLight">Your transfer is being processed and should be completed within a few minutes. </p>\n' +
+    '            <p class="colorLight">If you still can’t see your funds after 10 minutes, please contact customer support.</p>\n' +
+    '          ',
+  'home.transfer.howItWorks': 'How it works',
+  'home.transfer.amount': 'Amount',
+  'home.transfer.to': 'To',
+  'home.transfer.input2FA': 'Input 2FA',
+  'home.transferCrypto.title': 'Transfer',
+  'home.transferCrypto.caption': 'SEND CONSTANT ANYWHERE',
+  'home.transferCrypto.transferType': 'Transfer Type',
+  'home.transferCrypto.transferTypeCaption': 'To an {currency} address',
+  'home.transferCrypto.transferTypesCaption.eth': 'To an ETH address',
+  'home.transferCrypto.transferTypesCaption.eos': 'To an EOS address',
+  'home.transferCrypto.transferTypesCaption.tomo': 'To a TOMO address',
+  'home.transferCrypto.exchangeRate': 'Exchange rate',
+  'home.transferCrypto.yourBalance': 'Your balance',
+  'home.transferCrypto.validateMaxInputBalanceZero': 'Please make sure your balance is sufficient.',
+  'home.transferCrypto.transferFeeLabel': 'Transfer fee',
+  'home.transferCrypto.subTitle': 'Free. To anyone, anywhere.',
+  'home.transferCrypto.introTitle': 'Withdraw to your crypto wallet.',
+  'home.transferCrypto.phToAddress': 'Recipient’s email or Ethereum wallet address',
+  'home.transferCrypto.batchConfirmMsg': 'Are you sure you want to transfer to multiple people from the uploaded file?',
+  'home.transferCrypto.transferFailed': 'Failed while transfering, please try again',
+  'home.transferCrypto.transferSuccessful': 'Your transfer was completed successfully',
+  'home.transferCrypto.transferConfirm': "We've already sent you a verification link by email. Please click this link to approve your transaction.",
+  'home.transferCrypto.verifyEmailRequired': '\n' +
+    '      <p>You need to verify your email to do this action.</p>\n' +
+    '      <p>Please verify your email <a href="/me/information" class="underline bold">here</a>.</p>\n' +
+    '      ',
+  'home.transferCrypto.timeLimitInWorkingTime': 'Your money will arrive within 1 hour',
+  'home.transferCrypto.timeLimit24h': '24 hours',
+  'home.transferCrypto.timeLimit3': '36 ~ 72 hours',
+  'home.transferCrypto.subintroTitle1': 'No banks, no borders.',
+  'home.transferCrypto.subintroDesc1': 'Constant is a digital currency, so you can send it to anyone, anywhere in the world - within minutes.',
+  'home.transferCrypto.subintroTitle2': 'Zero fees. No transaction limits.',
+  'home.transferCrypto.subintroDesc2': 'You can send any amount of Constant to anyone at anytime, for free.',
+  'home.transferCrypto.subintroTitle3': 'Always reliable.',
+  'home.transferCrypto.subintroDesc3': 'Unlike other digital currencies, Constant keeps a stable value. This means you can get the equivalent of 1 USD for 1 Constant. In any location, at any time.',
+  'home.transferCrypto.backToNewOrder': 'Place new order',
+  'home.transferCrypto.goHistory': 'Go to Open Orders',
+  'home.transferCrypto.components.orderInfo.title': 'Transfer confirmation',
+  'home.transferCrypto.howItWorks': 'How it works',
+  'home.transferCrypto.amount': 'Amount',
+  'home.transferCrypto.to': 'To',
+  'home.transferCrypto.input2FA': 'Input 2FA',
+  'home.transferCrypto.promotion': 'Withdraw in {currency} and get a {percent}% bonus',
+  'me.kycVerification.pleaseComplete': 'Please complete the KYC process to {action}.',
+  'me.kycVerification.complete': 'Verify',
+  'me.kycVerification.pleaseKYCBeforeAction': 'For your security, we’ll need you to verify your ID before {action}.',
+  'me.kycVerification.updatedSuccess': 'Your information was updated successfully',
+  'me.kycVerification.updatedFailed': 'Failed while updating your information, please try again!',
+  'me.kycVerification.checkVerifyFailed': 'Failed while checking your verify status',
+  'me.kycVerification.action.invest': 'making a deposit',
+  'me.kycVerification.action.transfer': 'making a transfer',
+  'me.kycVerification.action.deposit': 'making a deposit',
+  'me.kycVerification.action.withdraw': 'withdrawing',
+  'home.constantC2CLoan.headLine': 'Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.',
+  'home.constantC2CLoan.exchange.stakingTimeMessage': 'Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.',
+  'home.constantC2CLoan.exchange.usedMarketRate': 'Use market rate ',
+  'home.constantC2CLoan.exchange.usedMarketRateDesc': "When market rate is enabled, you're guaranteed a match at the best rate and term available in the market.",
+  'home.constantC2CLoan.exchange.maxRate': 'Maximum interest rate',
+  'home.constantC2CLoan.exchange.maxRateTooltip': 'This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.',
+  'home.constantC2CLoan.exchange.month': '{period}-month',
+  'home.constantC2CLoan.exchange.months': '{period}-months',
+  'home.constantC2CLoan.exchange.apr': 'APR',
+  'home.constantC2CLoan.exchange.termLabel': 'Pick a loan term',
+  'home.constantC2CLoan.exchange.collateralLabel': 'Collateral required (75% Loan to Value ratio)',
+  'home.constantC2CLoan.exchange.startDateLabel': 'Start date',
+  'home.constantC2CLoan.exchange.endDateLabel': 'End date',
+  'home.constantC2CLoan.exchange.collateralNote': 'For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.',
+  'home.constantC2CLoan.exchange.collateralNoteFee': 'Fee: {fee} {currency} (1%)',
+  'home.constantC2CLoan.exchange.collateralNoteMatchedFee': 'Fee: 1%',
+  'home.constantC2CLoan.exchange.yourBalance': 'Your current balance is {value} {symbol}',
+  'home.constantC2CLoan.exchange.collateralNoteTotal': 'Total loan received: {total} {currency}',
+  'home.constantC2CLoan.exchange.collateralNoteDGXExtraFees': 'Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance.',
+  'home.constantC2CLoan.exchange.collateralNoteMatch': 'Estimated time to match: {hours} hours',
+  'home.constantC2CLoan.exchange.collateralNoteMatchTime': 'The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching {hours} hours {type}.',
+  'home.constantC2CLoan.exchange.collateralNoteMatchNoneTime': 'The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching.',
+  'home.constantC2CLoan.exchange.collateralNoteMatchTimeMax': 'maximum',
+  'home.constantC2CLoan.exchange.collateralNoteMatchTimeApprox': 'approx',
+  'home.constantC2CLoan.exchange.collateralNoteMatchInWorkingTime': 'Estimated time to match 1 hour',
+  'home.constantC2CLoan.exchange.walletAddressLabel': 'Which {symbol} wallet should we return your collateral to?',
+  'home.constantC2CLoan.exchange.walletAlias': 'Enter your {symbol} wallet address',
+  'home.constantC2CLoan.exchange.moreInfo': 'Your funds will reach you as soon as your collateral is confirmed on its blockchain.  ETA: 2 minutes for ETH and 10 minutes for BTC.',
+  'home.constantC2CLoan.exchange.monthLoan': '{term}-month loans',
+  'home.constantC2CLoan.exchange.monthsLoan': '{term}-months loans',
+  'home.constantC2CLoan.exchange.dayLoan': '{term}-day loans',
+  'home.constantC2CLoan.compareTable.apr': 'Average cost to borrow (APR)',
+  'home.constantC2CLoan.compareTable.trading': 'Free trading (no fees)',
+  'home.constantC2CLoan.compareTable.percent': '7%',
+  'home.constantC2CLoan.compareTable.otherPercent': 'Up to 13.%',
+  'home.constantC2CLoan.howItWorks.step1': 'STEP 1',
+  'home.constantC2CLoan.howItWorks.step2': 'STEP 2',
+  'home.constantC2CLoan.howItWorks.step3': 'STEP 3',
+  'home.constantC2CLoan.howItWorks.step4': 'STEP 4',
+  'home.constantC2CLoan.howItWorks.step5': 'STEP 5',
+  'home.constantC2CLoan.reference': '\n' +
+    '        <div name="ref-container">\n' +
+    '          <div name="ref-item">\n' +
+    '            <span name="ref-label">Interested rate:</span>\n' +
+    '            <span name="ref-value">{intRate}</span>\n' +
+    '          </div>\n' +
+    '          <div name="ref-item">\n' +
+    '            <span name="ref-label">Collateral value:</span>\n' +
+    '            <span name="ref-value">{colValue}</span>\n' +
+    '          </div>\n' +
+    '          <div name="ref-item">\n' +
+    '            <span name="ref-label">Collateral return:</span>\n' +
+    '            <span name="ref-value">{colReturn}</span>\n' +
+    '          </div>\n' +
+    '          <div name="ref-item">\n' +
+    '            <span name="ref-label">Default threshold:</span>\n' +
+    '            <span name="ref-value">{defThreshold}</span>\n' +
+    '          </div>\n' +
+    '        </div>\n' +
+    '      ',
+  'home.constantC2CLoan.transaction.title': 'Almost there.',
+  'home.constantC2CLoan.transaction.message': 'To finalize your loan, please send your collateral to the following wallet address.',
+  'home.constantC2CLoan.transaction.exchangeMaxAmount': 'Exchange Max Amount',
+  'home.constantC2CLoan.transaction.copiedAddress': 'Address is copied to clipboard',
+  'home.constantC2CLoan.transaction.scanQR': 'Alternatively, scan this QR code directly from your mobile wallet to complete the transfer.',
+  'home.constantC2CLoan.transaction.summarizeTitle': 'Here are the loan terms:',
+  'home.constantC2CLoan.transaction.messageDescription': '\n' +
+    '        <p>Please open your cryptocurrency wallet, enter the required collateral amount, paste the Constant wallet address into the recipient field, and click send.</p>\n' +
+    '        <p>Having difficulty finding your cryptocurrency wallet?\n' +
+    '           If you purchase cryptocurrency from an exchange, you will have a wallet with them, usually accessible from your Accounts page.</p>\n' +
+    '        ',
+  'home.constantC2CLoan.transaction.minuteWindow': 'Please complete your transfer within 60 minutes.',
+  'home.constantC2CLoan.transaction.minuteWindowDescription': 'For the sake of security, this session will time-out after 60 minutes. If you need a little longer, just re-enter the amount you would like to borrow <a href="/borrow" >here</a>.',
+  'home.constantC2CLoan.transaction.msgInfoManual': '\n' +
+    "          <span>At the moment, {symbol} deposits aren’t automatic, so we need to change your loan status manually. Therefore, please give us <b>up to 12 hours</b> to confirm receipt of your collateral (it's usually much faster).</span>\n" +
+    '          <br />\n' +
+    "          <span>If you have any questions, please email us at hello@myconstant.com or message <a href='https://t.me/@andy_9210'>Andy</a>, our head of customer service, on Telegram.</span>\n" +
+    '          <br />\n' +
+    "          <span>We'll start finding you a match as soon as we receive your collateral.</span>\n" +
+    '        ',
+  'home.constantC2CLoan.transaction.msgInfoAuto': '\n' +
+    '          <span>\n' +
+    '            Once we receive your collateral, your loan status will change from <b>pending</b> to <b>matching</b>. This is usually very fast – around 1 block confirmation – but might take a little longer during busy times. When your status changes, it means we’ve begun finding an investor to accept your terms. We’ll email you as soon as we find you a match.\n' +
+    '          </span>\n' +
+    '        ',
+  'home.constantC2CLoan.transaction.collateralNoteDGXExtraFees': 'Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance.',
+  'home.constantC2CLoan.transaction.transactionID': 'transaction ID',
+  'home.constantC2CLoan.transaction.noticeTpl': 'Please send <strong>{collateralAmount} {collateralSymbol}</strong> as collateral to the following address within the next <strong>60 minutes</strong>.',
+  'home.constantC2CLoan.transaction.summarizeContent': '\n' +
+    '          <div name="ref-container">\n' +
+    '            <div name="ref-item">\n' +
+    '              <span name="ref-label">Loan amount:</span>\n' +
+    '              <span name="ref-value">{loanAmount}</span>\n' +
+    '            </div>\n' +
+    '            <div name="ref-item">\n' +
+    '              <span name="ref-label">Interested rate:</span>\n' +
+    '              <span name="ref-value">{interestedRate}</span>\n' +
+    '            </div>\n' +
+    '            <div name="ref-item">\n' +
+    '              <span name="ref-label">Collaterals:</span>\n' +
+    '              <span name="ref-value">{collaterals}</span>\n' +
+    '            </div>\n' +
+    '            <div name="ref-item">\n' +
+    '              <span name="ref-label">Term:</span>\n' +
+    '              <span name="ref-value">{term}</span>\n' +
+    '            </div>\n' +
+    '          </div>\n' +
+    '        ',
+  'home.constantC2CLoan.transaction.summarizeContent1': '\n' +
+    '          <div class="row">\n' +
+    '            <div class="col-md-6 col-sm-4">\n' +
+    '                <p class="semiBold">Loan amount:</p>\n' +
+    '            </div>\n' +
+    '            <div class="col">\n' +
+    '                <p>{loanAmount}</p>\n' +
+    '            </div>\n' +
+    '           </div>\n' +
+    '           <div class="row">\n' +
+    '            <div class="col-md-6 col-sm-4">\n' +
+    '                <p class="semiBold">Interested rate:</p>\n' +
+    '            </div>\n' +
+    '            <div class="col">\n' +
+    '                <p>{interestedRate}</p>\n' +
+    '            </div>\n' +
+    '           </div>\n' +
+    '           <div class="row">\n' +
+    '            <div class="col-md-6 col-sm-4">\n' +
+    '                <p class="semiBold">Collaterals:</p>\n' +
+    '            </div>\n' +
+    '            <div class="col">\n' +
+    '                <p>{collaterals}</p>\n' +
+    '            </div>\n' +
+    '           </div>\n' +
+    '        ',
+  'home.constantC2CLoan.transaction.repaymentField': '\n' +
+    '            <div class="row">\n' +
+    '              <div class="col-md-6 col-sm-4">\n' +
+    '                  <p class="semiBold">Repayment date:</p>\n' +
+    '              </div>\n' +
+    '              <div class="col">\n' +
+    '                  <p>{repayment}</p>\n' +
+    '              </div>\n' +
+    '           </div>\n' +
+    '        ',
+  'home.constantC2CLoan.transaction.borrowMore': 'Borrow more',
+  'home.constantC2CLoan.transaction.termField': 'Term',
+  'home.constantC2CLoan.transaction.termUnit': '{period} month',
+  'home.constantC2CLoan.transaction.termUnit1': '{period} months',
+  'home.constantC2CLoan.transaction.loanAmount': 'Loan amount:',
+  'home.constantC2CLoan.transaction.collaterals': 'Collateral:',
+  'home.constantC2CLoan.transaction.collateralRequired': 'Collateral Required:',
+  'home.constantC2CLoan.transaction.collateralBalance': 'Your Collateral Balance:',
+  'home.constantC2CLoan.transaction.term': 'Term:',
+  'home.constantC2CLoan.transaction.interestedRate': 'Interest rate:',
+  'home.constantC2CLoan.transaction.interestedRateValue': '{percent} APR',
+  'home.constantC2CLoan.transaction.matchingFee': 'Matching fee:',
+  'home.constantC2CLoan.transaction.matchingFeeValue': '1% of loan amount',
+  'home.constantC2CLoan.transaction.cryptoAddress': '{currency} address:',
+  'home.constantC2CLoan.transaction.backOrderBook': 'Back',
+  'home.constantC2CLoan.transaction.backAccount': 'Done',
+  'home.constantC2CLoan.transaction.bitgo.title': 'Secured by BitGo',
+  'home.constantC2CLoan.transaction.bitgo.content': 'You’re sending your collateral to BitGo, a qualified digital asset custodian. Your collateral will be securely stored inside a Prime Trust wallet that’s insured to $100M. So no matter what happens to Constant, your collateral is secure.',
+  'home.constantC2CLoan.history.itemTpl': '\n' +
+    '          <div name="loan-info-container">\n' +
+    '            <div name="loan-info-item">\n' +
+    '              <span name="loan-info-label">Loan amount:</span>\n' +
+    '              <span name="loan-info-value">{loanAmount}</span>\n' +
+    '            </div>\n' +
+    '            <div name="loan-info-item">\n' +
+    '              <span name="loan-info-label">Interest rate:</span>\n' +
+    '              <span name="loan-info-value">{interestedRate}</span>\n' +
+    '            </div>\n' +
+    '            <div name="loan-info-item">\n' +
+    '              <span name="loan-info-label">Collaterals:</span>\n' +
+    '              <span name="loan-info-value">{collaterals}</span>\n' +
+    '            </div>\n' +
+    '            <div name="loan-info-item">\n' +
+    '              <span name="loan-info-label">Term:</span>\n' +
+    '              <span name="loan-info-value">{term}</span>\n' +
+    '            </div>\n' +
+    '          </div>\n' +
+    '        ',
+  'home.constantC2CLoan.history.address': 'Address',
+  'home.constantC2CLoan.history.collateralAddress': 'Collateral Address',
+  'home.constantC2CLoan.history.renew': 'Renew',
+  'home.constantC2CLoan.history.status.pending': 'pending',
+  'home.constantC2CLoan.history.status.accepted': 'accepted',
+  'home.constantC2CLoan.history.status.payingInterest': 'paying',
+  'home.constantC2CLoan.history.status.done': 'done',
+  'home.constantC2CLoan.history.status.cancelled': 'cancelled',
+  'home.constantC2CLoan.history.status.withdrawed': 'withdrawed',
+  'home.constantC2CLoan.history.status.expired': 'Expired',
+  'home.constantC2CLoan.history.status.fullPayment': 'full payment',
+  'home.constantC2CLoan.history.confirmPay.payingInterest.title': 'Interest Payment',
+  'home.constantC2CLoan.history.confirmPay.payingInterest.content': '\n' +
+    '              <p>Your Interest payment is <strong>{amountConstant}</strong> Constant</p>\n' +
+    '              <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>\n' +
+    '            ',
+  'home.constantC2CLoan.history.confirmPay.payingInterest.success': 'Pay Successfully',
+  'home.constantC2CLoan.history.confirmPay.fullPayment.title': 'Full Payment',
+  'home.constantC2CLoan.history.confirmPay.fullPayment.content': '\n' +
+    '              <p>Your Interest payment is <strong>{amountConstant}</strong> Constant</p>\n' +
+    '              <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>\n' +
+    '            ',
+  'home.constantC2CLoan.history.confirmPay.fullPayment.success': 'Pay successfully',
+  'home.constantC2CLoan.history.interestPaymentTitle': 'Interest Payment',
+  'home.constantC2CLoan.history.interestPaymentContent': '<p>Your Interest payment is <strong>{amountPayInterest}</strong> Constant</p>',
+  'home.constantC2CLoan.history.balanceNotEnough': 'Your Balance is not enough to pay',
+  'home.constantC2CLoan.history.paySuccess': 'Pay Successfully',
+  'home.constantC2CLoan.history.noHistoryData': 'Get Crypto loan here',
+  'home.constantC2CLoan.history.paymentDetail': 'Payment detail',
+  'home.constantC2CLoan.history.itemPayment': '#{id} {description} <strong>{amount}</strong> Constant at {paymentDate}',
+  'home.constantC2CLoan.history.noPaymentDetail': 'No payment detail',
+  'home.constantC2CLoan.history.payConstant': 'Pay by Constant',
+  'home.constantC2CLoan.history.payCollateral': 'Pay by Collateral',
+  'home.constantC2CLoan.errorMessages.Required': 'Required',
+  'home.constantC2CLoan.errorMessages.collateralAmountRequired': 'Collateral amount is required to make a borrow!',
+  'home.constantC2CLoan.errorMessages.walletAddressRequired': 'Wallet Address is required to make a borrow!',
+  'home.constantC2CLoan.errorMessages.minimumBorrowAmount': 'The minimum amount that you can borrow is {amount} {symbol}',
+  'home.constantC2CLoan.errorMessages.inValidWalletAddress': 'Your wallet address invalid',
+  'home.constantC2CLoan.errorMessages.notSupportBech32': 'BTC bech32 not supported',
+  'home.constantC2CLoan.errorMessages.rangeInterestRate': 'Interest rate must be greater than {min}% and less than {max}%',
+  'home.constantC2CLoan.errorMessages.rangeMarketRate': 'Please choose the market rate or higher so you’re guaranteed to match with an investor.',
+  'home.constantC2CLoan.errorMessages.notEnoughCollateral': 'You don’t have enough {symbol} to use as collateral. Please deposit {amount} {symbol} to complete your loan',
+  'home.constantC2CLoan.depositCollateral.collateralTypeLabel': 'Collateral type',
+  'home.constantC2CLoan.depositCollateral.walletAddressLabel': 'Your {symbol} wallet address',
+  'home.constantC2CLoan.depositCollateral.walletAlias': '0x687C906b2....8bd9369242e',
+  'home.constantC2CLoan.depositCollateral.generateWallet': 'Generate wallet address',
+  'home.constantC2CLoan.learnMore': 'Learn more',
+  'home.constantC2CLoan.listApplications.noLoans': 'Request your first fixed rate loan.',
+  'home.constantC2CLoan.listApplications.bep2Memo': 'Memo',
+  'home.constantC2CLoan.listApplications.bep2MemoRequired': 'Memo is required!',
+  'home.constantC2CLoan.listApplications.bep2MemoDesc': 'Memo maybe is your ID if PEP2 crypto!',
+  'home.constantC2CLoan.listApplications.walletAlias': '0x687C906b2....8bd9369242e',
+  'home.constantC2CLoan.listApplications.walletAddressLabel': 'Return to your {symbol} address',
+  'home.constantC2CLoan.listApplications.loan': 'loan',
+  'home.constantC2CLoan.listApplications.staked': 'STAKED',
+  'home.constantC2CLoan.listApplications.pendingAmount': 'Pending Amount',
+  'home.constantC2CLoan.listApplications.exchangeRates': 'Exchange rates: 1 {symbol}/{value} USD',
+  'home.constantC2CLoan.listApplications.endTerm': 'Term ends',
+  'home.constantC2CLoan.listApplications.principal': 'Principal',
+  'home.constantC2CLoan.listApplications.interests': 'Interest',
+  'home.constantC2CLoan.listApplications.created': 'Created',
+  'home.constantC2CLoan.listApplications.cancel': 'Cancel',
+  'home.constantC2CLoan.listApplications.delete': 'Delete',
+  'home.constantC2CLoan.listApplications.dueDays': 'Due',
+  'home.constantC2CLoan.listApplications.getCollateral': 'Recall excess',
+  'home.constantC2CLoan.listApplications.payCollateral': 'Pay',
+  'home.constantC2CLoan.listApplications.payOffLoan': 'Repay',
+  'home.constantC2CLoan.listApplications.depositMatched': 'Top up',
+  'home.constantC2CLoan.listApplications.redeemApply': 'Redeem STAR',
+  'home.constantC2CLoan.listApplications.cancelDepositMatched': 'Cancel Deposit',
+  'home.constantC2CLoan.listApplications.cashback': 'Cash back',
+  'home.constantC2CLoan.listApplications.collateral': 'Collateral',
+  'home.constantC2CLoan.listApplications.liquidWaring': 'Your collateral will be liquidated, Please top up more collateral...',
+  'home.constantC2CLoan.listApplications.interestPrice': 'Interest:',
+  'home.constantC2CLoan.listApplications.yourLoan': 'Match{plural} {matched}',
+  'home.constantC2CLoan.listApplications.partialMatchesDesc': 'Some loan requests may be split into smaller amounts to fill multiple investment orders. The platform will keep trying to match you completely for the duration of your term.',
+  'home.constantC2CLoan.listApplications.status': 'Status',
+  'home.constantC2CLoan.listApplications.allStatus': 'All',
+  'home.constantC2CLoan.listApplications.mapStatus.pending': 'Pending',
+  'home.constantC2CLoan.listApplications.mapStatus.recieved': 'Received',
+  'home.constantC2CLoan.listApplications.mapStatus.accepted': 'Accepted',
+  'home.constantC2CLoan.listApplications.mapStatus.payingInterest': 'Paying',
+  'home.constantC2CLoan.listApplications.mapStatus.done': 'Done',
+  'home.constantC2CLoan.listApplications.mapStatus.withdrawed': 'Withdrawed',
+  'home.constantC2CLoan.listApplications.mapStatus.tnxFailed': 'Transaction failed',
+  'home.constantC2CLoan.listApplications.mapStatus.cancelled': 'Cancelled',
+  'home.constantC2CLoan.listApplications.mapStatus.rejected': 'Rejected',
+  'home.constantC2CLoan.listApplications.mapStatus.expired': 'Expired',
+  'home.constantC2CLoan.listApplications.mapStatus.fullPayment': 'full payment',
+  'home.constantC2CLoan.listApplications.mapStatus1.approved': 'Approved',
+  'home.constantC2CLoan.listApplications.mapStatus1.rejected': 'Rejected',
+  'home.constantC2CLoan.listApplications.mapStatus1.paid': 'Paid',
+  'home.constantC2CLoan.listApplications.mapStatus1.tnxPending': 'Transaction Pending',
+  'home.constantC2CLoan.listApplications.mapStatus1.done': 'Done',
+  'home.constantC2CLoan.listApplications.mapStatus1.repayPending': 'Repay Pending',
+  'home.constantC2CLoan.listApplications.mapStatus1.repayFail': 'Repay Fail',
+  'home.constantC2CLoan.listApplications.mapStatus1.repayUpPending': 'Repay Up Pending',
+  'home.constantC2CLoan.listApplications.mapStatus1.repayUpFail': 'Repay Up Fail',
+  'home.constantC2CLoan.listApplications.mapStatus1.repayDownPending': 'Repay Down Pending',
+  'home.constantC2CLoan.listApplications.mapStatus1.repayDownFail': 'Repay Down Fail',
+  'home.constantC2CLoan.listApplications.mapStatus1.payoffPending': 'Payoff Pending',
+  'home.constantC2CLoan.listApplications.mapStatus1.payoffFail': 'Payoff Fail',
+  'home.constantC2CLoan.listApplications.mapStatus1.fillPending': 'Fill Pending',
+  'home.constantC2CLoan.listApplications.mapStatus1.fillFail': 'Fill Fail',
+  'home.constantC2CLoan.listApplications.mapStatus1.payoffDone': 'Repaid',
+  'home.constantC2CLoan.listApplications.mapStatus1.repayDownDone': 'Repay Down Done',
+  'home.constantC2CLoan.listApplications.mapStatus1.topupPending': 'Top Up Pending',
+  'home.constantC2CLoan.listApplications.mapStatus1.manualPending': 'Manual Pending',
+  'home.constantC2CLoan.listApplications.mapStatus1.liquidateApproving': 'Liquidate Approving',
+  'home.constantC2CLoan.listApplications.mapStatus1.liquidatePending': 'Liquidation In Process',
+  'home.constantC2CLoan.listApplications.mapStatus1.liquidateChainPending': 'Liquidate Chain Pending',
+  'home.constantC2CLoan.listApplications.mapStatus1.liquidateDone': 'Liquidate Done',
+  'home.constantC2CLoan.listApplications.mapStatus1.liquidateFailed': 'Liquidate Failed',
+  'home.constantC2CLoan.listApplications.mapStatus1.payoffPrvPending': 'Payoff Pending',
+  'home.constantC2CLoan.listApplications.mapStatus1.payPrvPending': 'Payoff Pending',
+  'home.constantC2CLoan.listApplications.mapStatus2.payingInterest': 'Interest due',
+  'home.constantC2CLoan.listApplications.mapStatus2.withdrawed': 'Withdrawn',
+  'home.constantC2CLoan.listApplications.mapStatus2.tnxFailed': 'Please try again',
+  'home.constantC2CLoan.listApplications.mapStatus2.rejected': 'Error occurred',
+  'home.constantC2CLoan.listApplications.mapStatus2.chainBorrowPending': 'Pending',
+  'home.constantC2CLoan.listApplications.mapStatus2.chainBorrowOk': 'Success',
+  'home.constantC2CLoan.listApplications.mapStatus2.chainBorrowFailed': 'Please try again',
+  'home.constantC2CLoan.listApplications.mapStatus2.chainCancelPending': 'Cancelled',
+  'home.constantC2CLoan.listApplications.mapStatus2.chainCancelOk': 'Cancelled',
+  'home.constantC2CLoan.listApplications.mapStatus2.chainCancelFailed': 'Please try again',
+  'home.constantC2CLoan.listApplications.mapStatus2.chainBorrowCancel': 'Cancelled',
+  'home.constantC2CLoan.listApplications.mapStatus2.creating': 'Processing',
+  'home.constantC2CLoan.listApplications.mapStatus2.cancelling': 'Cancelling',
+  'home.constantC2CLoan.listApplications.mapStatus2.manualPending': 'Pending',
+  'home.constantC2CLoan.listApplications.mapStatus2.allStatus': 'All',
+  'home.constantC2CLoan.listApplications.mapStatus2.partiallyCancelled': 'Partially cancelled',
+  'home.constantC2CLoan.listApplications.getRemainCollateral': '\n' +
+    '          Are you sure you want to recall <strong>{valueAvailable} {symbol}</strong> to bring your collateral value back to the minimum required amount?\n' +
+    '        ',
+  'home.constantC2CLoan.listApplications.actionsModal.cancel': 'Cancel',
+  'home.constantC2CLoan.listApplications.actionsModal.confirm': 'Confirm',
+  'home.constantC2CLoan.listApplications.amountLabel': 'Loan amount',
+  'home.constantC2CLoan.listApplications.feePayLabel': 'Payment fee',
+  'home.constantC2CLoan.listApplications.feePayoffLabel': 'Early repayment fee',
+  'home.constantC2CLoan.listApplications.feePayoffDesc': ' If less than 75% of your term has elapsed, the early repayment fee is 50% of the interest on your remaining term. If more than 75% has elapsed, 100% of the interest on the entire term is due.',
+  'home.constantC2CLoan.listApplications.matchingFee': 'Matching fee',
+  'home.constantC2CLoan.listApplications.interestEarly': 'Interest due to date',
+  'home.constantC2CLoan.listApplications.interestOnTime': 'Interest due',
+  'home.constantC2CLoan.listApplications.interestDue': 'Interest due',
+  'home.constantC2CLoan.listApplications.totalRepayment': 'Total repayment',
+  'home.constantC2CLoan.listApplications.totalPayment': 'Total Payment',
+  'home.constantC2CLoan.listApplications.repaymentByCollateral': 'Do you want to pay by your collateral?',
+  'home.constantC2CLoan.listApplications.repaymentMethod': 'Payment method: ',
+  'home.constantC2CLoan.listApplications.willPayCollateral': 'Collateral will be pay is',
+  'home.constantC2CLoan.listApplications.feePayoffExchangeRate': 'Collateral value is based on the current market price of {value} USD/{currency}',
+  'home.constantC2CLoan.listApplications.payCollateralFee': 'Repay with collateral fee',
+  'home.constantC2CLoan.listApplications.payCollateralFeeDesc': 'This fee is to cover the difference in price during liquidation process.',
+  'home.constantC2CLoan.listApplications.willReturnCollateral': 'Collateral will be return is',
+  'home.constantC2CLoan.listApplications.repayAddress': 'Repay address',
+  'home.constantC2CLoan.listApplications.copyMessage': 'Address has been copied!',
+  'home.constantC2CLoan.listApplications.errorRemainCollateral': 'You can not to get the remaining collateral back at the moment',
+  'home.constantC2CLoan.listApplications.errorRemainCollateralHtml': '\n' +
+    '          Please wait for assistance, or contact us at <a href="mailto:hello@myconstant.com">hello@myconstant.com</a>\n' +
+    '        ',
+  'home.constantC2CLoan.listApplications.errorCollateralNotEnoughHtml': 'Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.',
+  'home.constantC2CLoan.listApplications.errorRecallLowCreditRate': 'To recall excess, credit rate must be increased more than {recallRate}%. Your current credit rate is {creditRate}%',
+  'home.constantC2CLoan.listApplications.depositFrom.title': 'Make more deposit for your collateral',
+  'home.constantC2CLoan.listApplications.depositFrom.amount': 'Amount',
+  'home.constantC2CLoan.listApplications.depositFrom.requiredAmount': 'Amount is required!',
+  'home.constantC2CLoan.listApplications.depositFrom.amountDesc': 'How much do you want to deposit?',
+  'home.constantC2CLoan.listApplications.depositFrom.ok': 'Make deposit',
+  'home.constantC2CLoan.listApplications.depositFrom.cancel': 'Cancel',
+  'home.constantC2CLoan.listApplications.depositFrom.depositFailed': 'Failed while depositing, please try again',
+  'home.constantC2CLoan.listApplications.depositFrom.depositSuccess': 'Your deposit was completed successfully',
+  'home.constantC2CLoan.listApplications.itemMatched.maxCollateralAmount': 'Max Collateral',
+  'home.constantC2CLoan.listApplications.itemMatched.amount': 'Amount',
+  'home.constantC2CLoan.listApplications.itemMatched.interest': 'Interest',
+  'home.constantC2CLoan.listApplications.itemMatched.collateral': 'Collateral',
+  'home.constantC2CLoan.listApplications.itemMatched.collateralValue': 'Collateral value',
+  'home.constantC2CLoan.listApplications.itemMatched.createdDate': 'Created',
+  'home.constantC2CLoan.listApplications.itemMatched.dueDate': 'Due',
+  'me.proSaving.listApplications.noLoans': 'Request your first fixed rate loan here.',
+  'me.proSaving.listApplications.totalInterestEarned': 'Interest earned',
+  'me.proSaving.listApplications.noRecord': 'You have not made any investments yet.',
+  'me.proSaving.listApplications.getListFailed': 'Sorry, something went wrong. Please try again.',
+  'me.proSaving.listApplications.staking': 'Stake balance',
+  'me.proSaving.listApplications.received': 'received',
+  'me.proSaving.listApplications.interestAmount': 'Total interest',
+  'me.proSaving.listApplications.haveTimeAccount': '{term}-{termType} investment',
+  'me.proSaving.listApplications.month': 'month',
+  'me.proSaving.listApplications.day': 'day',
+  'home.constantLoan.headLine': 'Want to pay off your credit cards, medical bills or rent? Simply enter the amount of constant you want to borrow and make a deposit in ETH, which will be held securely in the Constant loan smart contact.',
+  'home.constantLoan.exchange.stakingTimeMessage': 'Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.',
+  'home.constantLoan.exchange.exchangeInfo': 'Estimate amount USD (const) you need to borrow',
+  'home.constantLoan.exchange.exchangeInfoDesc': 'Estimate amount USD (const) you need to borrow',
+  'home.constantLoan.exchange.usedMarketRate': 'Use market rate ',
+  'home.constantLoan.exchange.usedMarketRateDesc': "When market rate is enabled, you're guaranteed a match at the best rate and term available in the market.",
+  'home.constantLoan.exchange.maxRate': 'Your maximum interest rate',
+  'home.constantLoan.exchange.maxRateTooltip': 'This is the annual percentage rate (APR) you are willing to pay for your loan. If there is an investor willing to earn less, you will pay the lower interest rate.',
+  'home.constantLoan.exchange.caption': 'Crypto-backed loan',
+  'home.constantLoan.exchange.captionPRV': 'Get the best loan rate in the market',
+  'home.constantLoan.exchange.month': '{period}-month',
+  'home.constantLoan.exchange.months': '{period}-month',
+  'home.constantLoan.exchange.termLabel': 'Pick a loan term',
+  'home.constantLoan.exchange.collateralLabel': 'Collateral required (66% Loan to Value ratio)\n',
+  'home.constantLoan.exchange.startDateLabel': 'Start date',
+  'home.constantLoan.exchange.endDateLabel': 'End date',
+  'home.constantLoan.exchange.collateralNote': 'For this coin, loans will take up to 24 hours to be granted, repaid, or topped up.',
+  'home.constantLoan.exchange.collateralNoteFee': 'Fee: {fee} {currency} (1%)',
+  'home.constantLoan.exchange.collateralNoteMatchedFee': 'Fee: 1%',
+  'home.constantLoan.exchange.yourBalance': 'Your current balance is {value} {symbol}',
+  'home.constantLoan.exchange.collateralNoteTotal': 'You will receive: {total} {currency}',
+  'home.constantLoan.exchange.collateralNoteDGXExtraFees': 'Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance.',
+  'home.constantLoan.exchange.usingStaking': 'Get {discount}% off your rate by staking collateral',
+  'home.constantLoan.exchange.usingStakingMobile': 'Get {discount}% off with staking',
+  'home.constantLoan.exchange.usingStakingDesc': 'Stake your collateral in our masternode pool to save {discount}% on your loan. Please note staked collateral takes 2 business days to withdraw and you can’t recall excess.',
+  'home.constantLoan.exchange.stakingMinAmount': 'The staking amount must be greater than {minVal} {currency}',
+  'home.constantLoan.exchange.collateralNoteMatch': 'Estimated time to match: {hours} hours',
+  'home.constantLoan.exchange.collateralNoteMatchTime': 'The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching {hours} hours {type}.',
+  'home.constantLoan.exchange.collateralNoteMatchNoneTime': 'The rate you entered will have a longer time of matching, according to our past data. Estimated time of matching.',
+  'home.constantLoan.exchange.collateralNoteMatchTimeMax': 'maximum',
+  'home.constantLoan.exchange.collateralNoteMatchTimeApprox': 'approx',
+  'home.constantLoan.exchange.collateralNoteMatchInWorkingTime': 'Estimated time to match 1 hour',
+  'home.constantLoan.exchange.walletAddressLabel': 'Receiving {symbol} wallet for returned funds',
+  'home.constantLoan.exchange.walletAlias': 'Enter your {symbol} wallet address',
+  'home.constantLoan.exchange.moreInfo': 'Your funds will reach you as soon as your collateral is confirmed on its blockchain.  ETA: 2 minutes for ETH and 10 minutes for BTC.',
+  'home.constantLoan.exchange.monthLoan': '{term}-month loan',
+  'home.constantLoan.exchange.monthsLoan': '{term}-month loan',
+  'home.constantLoan.exchange.dayLoan': '{term}-day loans',
+  'home.constantLoan.interestTable.title': 'Why you should borrow with Constant.',
+  'home.constantLoan.interestTable.description': 'Constant crypto-backed loans have a generous loan to value ratio, no matter the amount you borrow. Benefit from the kindest interest rates on the market with our short term loans and get more liquidity out of your crypto.',
+  'home.constantLoan.howItWorks.intro': '\n' +
+    '          <p>Deposit cryptocurrency to secure cash, at the best rates on the market.</p>\n' +
+    '          <p>Need cash? We accept major cryptocurrencies as collateral, in exchange for USD or the equivalent in your local currency. That means you’ll have cash to spend - without needing to sell your crypto.</p>\n' +
+    '        ',
+  'home.constantLoan.howItWorks.step1': 'STEP 1',
+  'home.constantLoan.howItWorks.step2': 'STEP 2',
+  'home.constantLoan.howItWorks.step3': 'STEP 3',
+  'home.constantLoan.reference': '\n        <div name=ref-container">',
+  'home.constantLoan.transaction.messageDescription': '\n' +
+    '        <p>Please open your cryptocurrency wallet, enter the required collateral amount, paste the Constant wallet address into the recipient field, and click send.</p>\n' +
+    '        <p>Having difficulty finding your cryptocurrency wallet?\n' +
+    '           If you purchase cryptocurrency from an exchange, you will have a wallet with them, usually accessible from your Accounts page.</p>\n' +
+    '        ',
+  'home.constantLoan.transaction.msgInfoManual': '\n' +
+    "          <span>At the moment, {symbol} deposits aren’t automatic, so we need to change your loan status manually. Therefore, please give us <b>up to 12 hours</b> to confirm receipt of your collateral (it's usually much faster).</span>\n" +
+    '          <br />\n' +
+    "          <span>If you have any questions, please email us at hello@myconstant.com or message <a href='https://t.me/@andy_9210'>Andy</a>, our head of customer service, on Telegram.</span>\n" +
+    '          <br />\n' +
+    "          <span>We'll start finding you a match as soon as we receive your collateral.</span>\n" +
+    '        ',
+  'home.constantLoan.transaction.collateralNoteDGXExtraFees': 'Digix deducts an additional 0.13% fee on all DGX transfers. This fee will be deducted from your coin balance.',
+  'home.constantLoan.transaction.transactionID': 'transaction ID',
+  'home.constantLoan.transaction.noticeTpl': 'To receive this loan, please deposit the required collateral. Simply go to your cryptocurrency wallet and send <strong>{collateralAmount} {collateralSymbol}</strong> to the following wallet address. Please complete this action within the next <strong>60 minutes</strong>.',
+  'home.constantLoan.transaction.summarizeContent': '\n          <div name=ref-container">',
+  'home.constantLoan.transaction.summarizeContent1': '\n          <div class=row">',
+  'home.constantLoan.transaction.borrowMore': 'Borrow more',
+  'home.constantLoan.transaction.termField': 'Term',
+  'home.constantLoan.transaction.termUnit1': '{period} months',
+  'home.constantLoan.transaction.collaterals': 'Collateral:',
+  'home.constantLoan.history.itemTpl': '\n          <div name=loan-info-container">',
+  'home.constantLoan.history.address': 'Address',
+  'home.constantLoan.history.collateralAddress': 'Collateral Address',
+  'home.constantLoan.history.renew': 'Renew',
+  'home.constantLoan.history.status.pending': 'pending',
+  'home.constantLoan.history.status.accepted': 'accepted',
+  'home.constantLoan.history.status.payingInterest': 'paying',
+  'home.constantLoan.history.status.done': 'done',
+  'home.constantLoan.history.status.cancelled': 'cancelled',
+  'home.constantLoan.history.status.withdrawed': 'withdrawn',
+  'home.constantLoan.history.status.expired': 'Timed out',
+  'home.constantLoan.history.status.fullPayment': 'full payment',
+  'home.constantLoan.history.confirmPay.payingInterest.title': 'Interest Payment',
+  'home.constantLoan.history.confirmPay.payingInterest.content': '\n' +
+    '<p>Your Interest payment is <strong>{amountConstant}</strong> Usd/Constant</p>               <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>            ',
+  'home.constantLoan.history.confirmPay.payingInterest.success': 'Pay Successfully',
+  'home.constantLoan.history.confirmPay.fullPayment.title': 'Full Payment',
+  'home.constantLoan.history.confirmPay.fullPayment.content': '\n' +
+    '<p>Your Interest payment is <strong>{amountConstant}</strong> Usd/Constant</p>               <p>Your collateral payment is <strong>{amountCollateral} {symbol}</strong></p>            ',
+  'home.constantLoan.history.confirmPay.fullPayment.success': 'Pay successfully',
+  'home.constantLoan.history.interestPaymentTitle': 'Interest Payment',
+  'home.constantLoan.history.interestPaymentContent': '<p>Your Interest payment is <strong>{amountPayInterest}</strong> USD/Constant</p>',
+  'home.constantLoan.history.balanceNotEnough': 'Your Balance is not enough to pay',
+  'home.constantLoan.history.paySuccess': 'Pay Successfully',
+  'home.constantLoan.history.noHistoryData': 'Explore our USD loans.',
+  'home.constantLoan.history.paymentDetail': 'Repayment details',
+  'home.constantLoan.history.itemPayment': '#{id} {description} <strong>{amount}</strong> USD/Constant on {paymentDate}',
+  'home.constantLoan.history.noPaymentDetail': 'No payment detail',
+  'home.constantLoan.history.payConstant': 'Pay by Constant',
+  'home.constantLoan.history.payCollateral': 'Pay by Collateral',
+  'home.constantLoan.errorMessages.Required': 'Required',
+  'home.constantLoan.errorMessages.collateralAmountRequired': 'Collateral amount is required to make a borrow!',
+  'home.constantLoan.errorMessages.walletAddressRequired': 'Wallet Address is required to make a borrow!',
+  'home.constantLoan.errorMessages.inValidWalletAddress': 'Your wallet address is invalid',
+  'home.constantLoan.errorMessages.notSupportBech32': 'BTC bech32 not supported',
+  'home.constantLoan.errorMessages.rangeInterestRate': 'Interest rate must be greater than {min}% and less than {max}%',
+  'home.constantLoan.errorMessages.rangeMarketRate': 'Interest rate must be greater than or equivalent {value}%',
+  'home.constantLoan.errorMessages.stakingMinTimeRequire': 'Length of term must be equal or greater than {days} days',
+  'home.constantLoan.depositCollateral.collateralTypeLabel': 'Collateral type',
+  'home.constantLoan.depositCollateral.walletAddressLabel': 'Returning {symbol} wallet address',
+  'home.constantLoan.depositCollateral.walletAlias': '0x687C906b2....8bd9369242e',
+  'home.constantLoan.depositCollateral.generateWallet': 'Generate wallet address',
+  'home.constantLoan.learnMore': 'Learn more',
+  'home.constantLoan.listApplications.bep2Memo': 'Memo',
+  'home.constantLoan.listApplications.bep2MemoRequired': 'Memo is required!',
+  'home.constantLoan.listApplications.bep2MemoDesc': 'Memo maybe is your ID if PEP2 crypto!',
+  'home.constantLoan.listApplications.walletAlias': '0x687C906b2....8bd9369242e',
+  'home.constantLoan.listApplications.walletAddressLabel': 'Return to your {symbol} address',
+  'home.constantLoan.listApplications.loan': 'loan',
+  'home.constantLoan.listApplications.staked': 'STAKED',
+  'home.constantLoan.listApplications.availableBalance': 'Available Balance',
+  'home.constantLoan.listApplications.minAmount': 'Min Amount',
+  'home.constantLoan.listApplications.maxAmount': 'Max Amount',
+  'home.constantLoan.listApplications.minIsolateMessage': 'To isolate this loan using {symbol}, you need to enter a minimum of {amount} {symbol}. This is {rate}% of the loan amount.',
+  'home.constantLoan.listApplications.maxIsolateMessage': 'To avoid risking other loans, the maximum you can enter is {amount} {symbol}.',
+  'home.constantLoan.listApplications.maxIsolateRateMessage': 'This reduces your multi-collateral balance to {rate}% of the value of all outstanding loans.',
+  'home.constantLoan.listApplications.recommendMessage': 'To restore your collateral value to the recommended {recommendedRate}%, please top up {amount} {currency}',
+  'home.constantLoan.listApplications.pendingAmount': 'Pending Amount',
+  'home.constantLoan.listApplications.exchangeRates': 'Exchange rates: 1 {symbol}/{value} USD',
+  'home.constantLoan.listApplications.endTerm': 'Term ends',
+  'home.constantLoan.listApplications.principal': 'Principal',
+  'home.constantLoan.listApplications.interests': 'Interest',
+  'home.constantLoan.listApplications.created': 'Created',
+  'home.constantLoan.listApplications.dueDays': 'Due',
+  'home.constantLoan.listApplications.getCollateral': 'Recall excess',
+  'home.constantLoan.listApplications.payCollateral': 'Pay',
+  'home.constantLoan.listApplications.depositMatched': 'Top up',
+  'home.constantLoan.listApplications.topup': 'Top-up',
+  'home.constantLoan.listApplications.recall': 'Recall',
+  'home.constantLoan.listApplications.cancelDepositMatched': 'Cancel Deposit',
+  'home.constantLoan.listApplications.cashback': 'Cash back',
+  'home.constantLoan.listApplications.collateral': 'Collateral',
+  'home.constantLoan.listApplications.liquidWaring': 'Your collateral will be liquidated, Please top up more collateral.',
+  'home.constantLoan.listApplications.interestPrice': 'Interest',
+  'home.constantLoan.listApplications.status': 'Status',
+  'home.constantLoan.listApplications.allStatus': 'All',
+  'home.constantLoan.listApplications.mapStatus.pending': 'Pending',
+  'home.constantLoan.listApplications.mapStatus.recieved': 'Received',
+  'home.constantLoan.listApplications.mapStatus.accepted': 'Accepted',
+  'home.constantLoan.listApplications.mapStatus.payingInterest': 'Paying',
+  'home.constantLoan.listApplications.mapStatus.done': 'Done',
+  'home.constantLoan.listApplications.mapStatus.withdrawed': 'Withdrawed',
+  'home.constantLoan.listApplications.mapStatus.tnxFailed': 'Transaction failed',
+  'home.constantLoan.listApplications.mapStatus.cancelled': 'Cancelled',
+  'home.constantLoan.listApplications.mapStatus.rejected': 'Rejected',
+  'home.constantLoan.listApplications.mapStatus.expired': 'Timed out',
+  'home.constantLoan.listApplications.mapStatus.fullPayment': 'full payment',
+  'home.constantLoan.listApplications.mapStatus1.rejected': 'Rejected',
+  'home.constantLoan.listApplications.mapStatus1.paid': 'Paid',
+  'home.constantLoan.listApplications.mapStatus1.tnxPending': 'Transaction Pending',
+  'home.constantLoan.listApplications.mapStatus1.repayPending': 'Repay Pending',
+  'home.constantLoan.listApplications.mapStatus1.repayUpPending': 'Repay Up Pending',
+  'home.constantLoan.listApplications.mapStatus1.repayUpFail': 'Repay Up Fail',
+  'home.constantLoan.listApplications.mapStatus1.repayDownPending': 'Repay Down Pending',
+  'home.constantLoan.listApplications.mapStatus1.repayDownFail': 'Repay Down Fail',
+  'home.constantLoan.listApplications.mapStatus1.payoffPending': 'Payoff Pending',
+  'home.constantLoan.listApplications.mapStatus1.payoffFail': 'Payoff Fail',
+  'home.constantLoan.listApplications.mapStatus1.fillPending': 'Fill Pending',
+  'home.constantLoan.listApplications.mapStatus1.fillFail': 'Fill Fail',
+  'home.constantLoan.listApplications.mapStatus1.repayDownDone': 'Repay Down Done',
+  'home.constantLoan.listApplications.mapStatus1.topupPending': 'Top Up Pending',
+  'home.constantLoan.listApplications.mapStatus1.manualPending': 'Manual Pending',
+  'home.constantLoan.listApplications.mapStatus1.liquidateApproving': 'Liquidate Approving',
+  'home.constantLoan.listApplications.mapStatus1.liquidateChainPending': 'Liquidate Chain Pending',
+  'home.constantLoan.listApplications.mapStatus1.liquidateDone': 'Liquidate Done',
+  'home.constantLoan.listApplications.mapStatus1.payoffPrvPending': 'Payoff Pending',
+  'home.constantLoan.listApplications.mapStatus1.payPrvPending': 'Payoff Pending',
+  'home.constantLoan.listApplications.mapStatus2.payingInterest': 'Interest due',
+  'home.constantLoan.listApplications.mapStatus2.withdrawed': 'Withdrawn',
+  'home.constantLoan.listApplications.mapStatus2.tnxFailed': 'Please try again',
+  'home.constantLoan.listApplications.mapStatus2.rejected': 'Error occurred',
+  'home.constantLoan.listApplications.mapStatus2.chainBorrowPending': 'Pending',
+  'home.constantLoan.listApplications.mapStatus2.chainBorrowOk': 'Success',
+  'home.constantLoan.listApplications.mapStatus2.chainBorrowFailed': 'Please try again',
+  'home.constantLoan.listApplications.mapStatus2.chainCancelPending': 'Cancelled',
+  'home.constantLoan.listApplications.mapStatus2.chainCancelOk': 'Cancelled',
+  'home.constantLoan.listApplications.mapStatus2.chainCancelFailed': 'Please try again',
+  'home.constantLoan.listApplications.mapStatus2.chainBorrowCancel': 'Cancelled',
+  'home.constantLoan.listApplications.mapStatus2.creating': 'Processing',
+  'home.constantLoan.listApplications.mapStatus2.cancelling': 'Cancelling',
+  'home.constantLoan.listApplications.mapStatus2.manualPending': 'Pending',
+  'home.constantLoan.listApplications.mapStatus2.allStatus': 'All',
+  'home.constantLoan.listApplications.mapStatus2.partiallyCancelled': 'Partially cancelled',
+  'home.constantLoan.listApplications.getRemainCollateral': '\n' +
+    '          Are you sure you want to recall <strong>{valueAvailable} {symbol}</strong> to bring your collateral value back to the minimum required amount?\n' +
+    '        ',
+  'home.constantLoan.listApplications.actionsModal.cancel': 'Cancel',
+  'home.constantLoan.listApplications.actionsModal.confirm': 'Confirm',
+  'home.constantLoan.listApplications.amountLabel': 'Loan amount',
+  'home.constantLoan.listApplications.feePayLabel': 'Late Payment Fee',
+  'home.constantLoan.listApplications.feePayoffLabel': 'Early repayment fee',
+  'home.constantLoan.listApplications.feePayoffDesc': ' If less than 75% of your term has elapsed, the early repayment fee is 50% of the interest on your remaining term. If more than 75% has elapsed, 100% of the interest on the entire term is due.',
+  'home.constantLoan.listApplications.matchingFee': 'Matching fee',
+  'home.constantLoan.listApplications.interestEarly': 'Interest due to date',
+  'home.constantLoan.listApplications.interestOnTime': 'Interest due',
+  'home.constantLoan.listApplications.interestDue': 'Interest due',
+  'home.constantLoan.listApplications.totalRepayment': 'Total repayment',
+  'home.constantLoan.listApplications.totalPayment': 'Total Payment',
+  'home.constantLoan.listApplications.repaymentByCollateral': 'Do you want to repay with collateral?',
+  'home.constantLoan.listApplications.repaymentMethod': 'Payment method: ',
+  'home.constantLoan.listApplications.willPayCollateral': 'Collateral to be repaid',
+  'home.constantLoan.listApplications.willReturnCollateral': 'Collateral to be returned',
+  'home.constantLoan.listApplications.feePayoffExchangeRate': 'Collateral value is based on the current market price of {value} USD/{currency}',
+  'home.constantLoan.listApplications.payCollateralFee': 'Repay with collateral fee',
+  'home.constantLoan.listApplications.payCollateralFeeDesc': 'This fee is to cover the difference in price during liquidation process.',
+  'home.constantLoan.listApplications.repayAddress': 'Repay address',
+  'home.constantLoan.listApplications.copyMessage': 'Address has been copied!',
+  'home.constantLoan.listApplications.errorRemainCollateral': 'You can not to get the remaining collateral back at the moment',
+  'home.constantLoan.listApplications.errorRemainCollateralHtml': '\n' +
+    '          Please wait for assistance, or contact us at <a href=mailto:hello@myconstant.com">hello@myconstant.com</a>',
+  'home.constantLoan.listApplications.errorCollateralNotEnoughHtml': 'Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.',
+  'home.constantLoan.listApplications.errorRecallLowCollateralRate': 'To recall excess, <a href="">collateral rate must be more than {requiredRate}%. Your current collateral value is {currentRate}%',
+  'home.constantLoan.listApplications.errorIsolateNotEnough': 'Your Collateral Balance does not meet the minimum amount required to set multi-collateral to isolated.',
+  'home.constantLoan.listApplications.depositFrom.title': 'Deposit more collateral',
+  'home.constantLoan.listApplications.depositFrom.amount': 'Amount',
+  'home.constantLoan.listApplications.depositFrom.requiredAmount': 'Amount is required!',
+  'home.constantLoan.listApplications.depositFrom.amountDesc': 'How much do you want to deposit?',
+  'home.constantLoan.listApplications.depositFrom.ok': 'Make deposit',
+  'home.constantLoan.listApplications.depositFrom.cancel': 'Cancel',
+  'home.constantLoan.listApplications.depositFrom.depositFailed': 'Failed while depositing, please try again',
+  'home.constantLoan.listApplications.depositFrom.depositSuccess': 'Your deposit was completed successfully',
+  'home.constantLoan.listApplications.itemMatched.matchedAmount': 'Matched (USD)',
+  'home.constantLoan.listApplications.itemMatched.matchedAmountDesc': 'The amount of USD you borrowed. This might be less than your original order if you only got a partial match.',
+  'home.constantLoan.listApplications.itemMatched.filledCollateralAmount': 'Bought (Crypto)',
+  'home.constantLoan.listApplications.itemMatched.filledCollateralAmountDesc': 'How much crypto we bought using your USD loan. Depending on the final sale price, this might be a bit less than your original order',
+  'home.constantLoan.listApplications.itemMatched.maxCollateralAmount': 'Max Collateral',
+  'home.constantLoan.listApplications.itemMatched.filledAmount': 'Used (USD)',
+  'home.constantLoan.listApplications.itemMatched.filledAmountDesc': "The amount of USD we used to buy your chosen crypto. If we pay less than the matched amount, we'll return the difference to your account.",
+  'home.constantLoan.listApplications.itemMatched.collateral': 'Collateral',
+  'home.constantLoan.listApplications.itemMatched.collateralValue': 'Collateral value',
+  'home.constantLoan.listApplications.itemMatched.collateralRate': 'Collateral Rate',
+  'home.constantLoan.listApplications.itemMatched.liquidationPrice': 'Liquidation Price',
+  'home.constantLoan.listApplications.itemMatched.collateralValueDesc': 'This represents your collateral value as a percentage of your loan. It accounts for the interest accrued so far, as well as the repayment fee should you choose to repay today. If it falls to 110%, your collateral will be liquidated, and the difference refunded to you.',
+  'home.constantLoan.listApplications.itemMatched.repayAddress': 'Repay Address',
+  'home.constantLoan.listApplications.itemMatched.collateralValueAtLiquid': 'Liquidation price',
+  'home.constantLoan.listApplications.itemMatched.collateralValueAtLiquidDesc': 'Once the price of the token falls to this price, your loan will be liquidated.\n' +
+    '          Note: this number is always changed unpredictably due to the fluctuation of the market. Please keep an eye on your loans to avoid liquidation.',
+  'home.constantLoan.listApplications.itemMatched.collateralValueAtLiquidC2CDesc': 'Once the price of the collateral falls to this price, your loan will be liquidated.\n' +
+    '          Note: this number is always changed unpredictably due to the fluctuation of the market. Please keep an eye on your loans to avoid liquidation.',
+  'home.constantLoan.listApplications.paymentMethod.const': 'USD',
+  'home.constantLoan.listApplications.paymentMethod.collateral': 'Collateral'
+}; 
  module.exports = result;

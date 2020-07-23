@@ -3,7 +3,6 @@ const sourcejs = require('./srouce.en.jss'); // get last of en.js in lang folder
 const _ = require('lodash');
 const util = require('util');
 const en = require('./en');
-const { promises } = require('fs');
 const fs = require('fs');
 const readline = require('readline');
 
@@ -34,7 +33,7 @@ rd.on('line', async function(line) {
 }).on('close', async function() {
     results = Object.assign({}, en, results);
     dataString = await util.inspect(results, false, 1000, false);
-    await promises.writeFile('en.js', `const result =  ${dataString}; \n module.exports = result;`, function(err) {
+    fs.writeFile('en.js', `const result =  ${dataString}; \n module.exports = result;`, function(err) {
       if(err) console.lo(err);
       console.log('writeFile source done!')
     });
