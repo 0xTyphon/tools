@@ -2048,6 +2048,7 @@ const result =  {
   'home1.lendingSection.confirm.accountType': 'Account Type',
   'home1.lendingSection.confirm.accountAddress': 'Account address',
   'home1.lendingSection.confirm.bankPhone': 'Bank phone',
+  'home1.lendingSection.confirm.refNumber': 'Reference number',
   'home1.lendingSection.confirm.updateBalanceNote': "Please note it might take <strong>up to 1 business day</strong> to update your balance after receiving your deposit. We're working hard to reduce this time, so thanks for your patience.",
   'home1.lendingSection.confirm.referNote': 'Your reference number is {refNumber}',
   'home1.lendingSection.confirm.minuteWindow': 'Please complete your transfer within 3 days.',
