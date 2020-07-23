@@ -3503,6 +3503,39 @@ const result =  {
   'home.transferCrypto.confirmMsg': '\n' +
     '      <p>You’re about to convert {constAmount} CONST (USD) to {amount} {name} and then withdraw it to wallet address {address}.</p>\n' +
     '      <p>Do you want to proceed?</p>\n' +
-    '      '
+    '      ',
+  'yourReferral.invite.affiliateUser': '\n' +
+    '      <p>\n' +
+    '      You’re already registered under our affiliate program so can’t refer here. Please visit your <a href="/affiliates" class="underline bold">affiliate dashboard</a> to get your unique affiliate link, sharing tools, and to track your earnings.\n' +
+    '      </p>\n' +
+    '      ',
+  'affiliates.greetingForm.inviteFriends': 'Invite friends',
+  'affiliates.terms.content': '\n' +
+    '        <p class="section-title">Terms and Conditions</p>\n' +
+    '        <p>1. The amount you earn depends on how your referees use the platform:</p>\n' +
+    '        <p class="desc">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>\n' +
+    '        <p>2. We will pay you $20 for every person who signs up using your referral link and passes KYC. If they don’t pass KYC, you don’t earn the $20 bonus.</p>\n' +
+    '        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>\n' +
+    '        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>\n' +
+    '        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>\n' +
+    '        <p>6. If you make false or misleading statements about Constant, use Constant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with Constant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p>\n' +
+    '        <p>7. To qualify for affiliate earnings, your referees must be US citizens.</p>\n' +
+    '        <p>8. Constant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>\n' +
+    '      ',
+  'affiliates.referralUsers.title': 'Emailed invites',
+  'affiliates.referralUsers.user_email': 'Email',
+  'affiliates.referralUsers.statusHtml': 'Status',
+  'affiliates.referralUsers.date': 'Date & Time',
+  'affiliates.greetingForm.title': '\n' +
+    '        <p class="header">Hello {name},</p>\n' +
+    '        <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>\n' +
+    '        <p>Your total referral earnings to date: <strong>${totalEarned}</strong>.</p>\n' +
+    '      ',
+  'affiliates.referralHistory.title': 'Referral history',
+  'affiliates.referralHistory.user_email': "Referee's email address",
+  'affiliates.referralHistory.object_amount': "Friend's earnings",
+  'affiliates.referralHistory.object_type': 'Type',
+  'affiliates.referralHistory.value': 'Your earnings ',
+  'affiliates.referralHistory.created_at': 'Date'
 };
  module.exports = result;
