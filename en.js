@@ -899,10 +899,6 @@ const result =  {
   'whyPeopleLoveUs.partners.custody.data.0.desc': '\n' +
     '            <p>Prime Trust is the independent, accredited custodian of our USD reserve. When you deposit, Prime Trust stores your money across multiple bank accounts <strong>insured to a total of $130,000,000.</strong></p>\n' +
     '            ',
-  'whyPeopleLoveUs.partners.custody.readMore': 'Read more',
-  'whyPeopleLoveUs.partners.custody.data.1.desc': '\n' +
-    '            <p>BitGo is our approved custodian of digital asset collateral. When you borrow against a BitGo-supported cryptocurrency, your collateral is sent to a BitGo escrow <strong>insured to $100,000,000.</strong></p>\n' +
-    '            ',
   'whyPeopleLoveUs.partners.settlement.title': 'Settlement',
   'whyPeopleLoveUs.partners.settlement.data.cb.desc': '\n' +
     '            <p>Checkbook helps settle withdrawals via ACH and digital cheque, making transfers cheaper for US residents.</p>\n' +
@@ -4473,5 +4469,5 @@ const result =  {
     '          Note: this number is always changed unpredictably due to the fluctuation of the market. Please keep an eye on your loans to avoid liquidation.',
   'home.constantLoan.listApplications.paymentMethod.const': 'USD',
   'home.constantLoan.listApplications.paymentMethod.collateral': 'Collateral'
-}; 
+};
  module.exports = result;
