@@ -2363,7 +2363,7 @@ const result =  {
   'yourReferral.howItWorks.data.0.title': ' ',
   'yourReferral.howItWorks.data.0.desc': 'Share your unique referral link by email or social media.',
   'yourReferral.howItWorks.data.1.title': ' ',
-  'yourReferral.howItWorks.data.1.desc': 'Your referee signs up using your link and verifies their ID (KYC).',
+  'yourReferral.howItWorks.data.1.desc': 'Your referee signs up using your link, verifies their ID (KYC), and deposits',
   'yourReferral.howItWorks.data.2.title': ' ',
   'yourReferral.howItWorks.data.2.desc': 'You get ${referralReward} paid instantly to your Constant account.',
   'yourReferral.howItWorks.data.3.title': ' ',
@@ -3502,5 +3502,5 @@ const result =  {
     '      <p>You’re about to convert {constAmount} CONST (USD) to {amount} {name} and then withdraw it to wallet address {address}.</p>\n' +
     '      <p>Do you want to proceed?</p>\n' +
     '      '
-}; 
+};
  module.exports = result;
