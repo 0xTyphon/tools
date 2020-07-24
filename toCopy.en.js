@@ -371,7 +371,9 @@ export default {
     howMuchDoYouWantToInvest: 'Which cryptocurrency would you like to invest?',
     howMuchDoYouWantToDeposit: 'How much do you want to grow?',
     minDepositRequired: 'Please enter an amount larger than {amount} {currency}',
-    minAmountRequired: 'All investments must be at least {amount} {currency}'
+    minAmountRequired: 'All investments must be at least {amount} {currency}',
+    minDepositAmount: 'Minimum investment amount: {amount}',
+    interestRate: 'Interest rate: {interest}% APY'
   },
   history: {
     deposit: {
@@ -503,7 +505,15 @@ export default {
       collateral: 'Collateral',
       openOrders: 'Open orders',
       withdraw: 'Withdraw',
-      withdrawStatus: { '1': 'Done', '3': 'Approving' },
+      withdrawStatus: {
+        '0': 'Pending',
+        '1': 'Done',
+        '2': 'Failed',
+        '3': 'Approving',
+        '4': 'Rejected',
+        '5': '<span style="color: rgb(227,152,77)">Confirming</span>',
+        '6': '<span style="color: rgb(227,152,77)">Order timed out</span>'
+      },
       sendToAddress: 'Send To Address',
       orderType: {
         '0': 'Buy',
@@ -657,7 +667,8 @@ export default {
             matching: 'Matching',
             matched: 'Matched',
             done: 'Done',
-            closed: 'Cancelled'
+            closed: 'Cancelled',
+            allStatus: 'All'
           },
           secondary_investment: {
             voiding: 'Selling',
@@ -691,7 +702,16 @@ export default {
           created: 'Matched',
           voided: 'Sold',
           matched: 'Matched',
-          voiding: 'Selling'
+          voiding: 'Selling',
+          rejected: 'Closed',
+          pending_kyc: 'Pending',
+          cancelled: 'Closed',
+          partially_cancelled: 'Partially cancelled',
+          approving: 'Approving',
+          transferring_fiat: 'Pending',
+          closed_soon: 'Matched',
+          undefined: '',
+          locked: 'Verifying'
         },
         balanceStarDesc: '\n' +
           '        A STAR is a reward token you can redeem for 1% bonus interest on an investment or a 1% discount on a loan. Earn STAR every time you reach Diamond membership (invest or borrow $100,000 in 180 days).\n' +
@@ -705,7 +725,9 @@ export default {
         autoRenewDesc: 'Tired of manual labour? Turn this on to automatically reinvest at the same interest rate & term!',
         dialog: {
           cancelInvestment: {
-            messageConfirm: 'Are you sure you want to cancel your investment order before a match is found?'
+            messageConfirm: 'Are you sure you want to cancel your investment order before a match is found?',
+            confirm: 'Yes, cancel',
+            cancel: 'Go back'
           },
           cancelDeposit: {
             confirm: 'Yes, cancel',
@@ -714,24 +736,143 @@ export default {
           },
           autoRenewInvestment: {
             messageConfirm: {
-              false: 'Auto Reinvest enabled. At maturity, your principal will be automatically placed in an order at the same interest rate and term.'
+              false: 'Auto Reinvest enabled. At maturity, your principal will be automatically placed in an order at the same interest rate and term.',
+              true: 'Are you sure you want to disable Auto Reinvest? With Auto Reinvest, your money earns interest around the clock, with no downtime, and no extra effort from you.'
             },
             confirm: 'Yes',
             cancel: 'No',
-            autoRenewInvestmentSuccess: { false: 'Enabled Auto Reinvest successfully' }
+            autoRenewInvestmentSuccess: {
+              false: 'Enabled Auto Reinvest successfully',
+              true: 'Disabled Auto Reinvest successfully'
+            },
+            autoRenewInvestmentFailed: {
+              true: 'Failed to disable Auto Reinvest',
+              false: 'Failed to enable Auto Reinvest'
+            }
           },
           autoTopup: {
             messageConfirm: {
-              enable: 'Auto top-up enabled. Collateral value that falls to {AutoTopupPer}% will be restored to {AutoTopupToPer}%.'
+              enable: 'Auto top-up enabled. Collateral value that falls to {AutoTopupPer}% will be restored to {AutoTopupToPer}%.',
+              false: 'Auto top-up enabled. Collateral value that falls to {AutoTopupPer}% will be restored to {AutoTopupToPer}%.',
+              true: 'Are you sure you want to turn off auto top-up? Your collateral will be liquidated if it falls to {LiqPer}%.',
+              disable: 'Are you sure you want to turn off auto top-up? Your collateral will be liquidated if it falls to {LiqPer}%.'
+            },
+            confirm: 'Yes',
+            cancel: 'No',
+            autoTopUpCollateralSuccess: {
+              true: 'Auto top-up turned on successfully',
+              false: 'Auto top-up turned off successfully'
+            },
+            autoTopUpCollateralFailed: {
+              true: 'Turn auto top up on failed',
+              false: 'Turn auto top up off failed'
+            }
+          },
+          cancelLoan: {
+            messageConfirm: 'Are you sure you want to cancel this loan request?',
+            confirm: 'Yes',
+            cancel: 'No'
+          },
+          deleteLoan: {
+            messageConfirm: 'Are you sure you want to delete this loan request?',
+            confirm: 'Yes',
+            cancel: 'No'
+          },
+          payment: {
+            caption: 'Payment required.',
+            amount: 'Amount',
+            label: 'Transfer to address',
+            message: 'Address has been copied!',
+            description: 'To repay your loan, please transfer {amount} {currency} to the address above.',
+            ok: 'Close'
+          },
+          autoRenew: {
+            messageConfirm: {
+              true: 'Are you sure you want to turn off auto renew?',
+              false: 'When you repay your loan, your collateral balance will be used to secure a new loan order at the same amount, interest rate, and term.'
+            },
+            autoRenewCollateralSuccess: {
+              true: 'Auto-renew turned on successfully',
+              false: 'Auto-renew turned off successfully'
+            },
+            autoRenewCollateralFailed: {
+              true: 'Turn auto top up on failed',
+              false: 'Turn auto top up off failed'
             },
             confirm: 'Yes',
             cancel: 'No'
           },
-          cancelLoan: {
-            messageConfirm: 'Are you sure you want to cancel this loan request?'
+          withdrawAccount: {
+            title: 'Investments',
+            body: 'Want to get more out of your money? Invest in fully secured peer-to-peer lending and choose your own interest rate.',
+            termTitle: '{month} month{termType}',
+            percentReceive: 'You will earn {percent}% APR.',
+            confirm: 'Invest',
+            cancel: 'Cancel',
+            messageConfirm: 'You are about to invest {amount} Constant.',
+            validateMaxAmountError: 'Please top up your Constant account with sufficient funds.',
+            validateMinAmountError: 'Please enter an amount larger than {amount} USD.'
           },
-          deleteLoan: {
-            messageConfirm: 'Are you sure you want to delete this loan request?'
+          checkTrialKyc: {
+            messageConfirm: 'For your security, please verify your identity before making a withdrawal.',
+            confirm: 'Verify my ID',
+            cancel: 'Maybe later'
+          },
+          deleteInvestment: {
+            messageConfirm: 'Are you sure you want to delete your investment order?',
+            confirm: 'Yes',
+            cancel: 'Go back'
+          },
+          cancelDepositMatched: {
+            message: 'Your successfully cancelled to up.',
+            messageConfirm: 'Are you sure you want to cancel your top up?',
+            confirm: 'Yes, cancel',
+            cancel: 'Go back'
+          },
+          cancelDepositKyc: {
+            messageConfirm: 'Are you sure you want to cancel your investment free trial?',
+            confirm: 'Yes, cancel',
+            cancel: 'Verify my ID'
+          },
+          getRemainCollateral: {
+            amount: 'Amount',
+            requiredAmount: 'Amount is required!',
+            maxAmount: 'Amount must less than {max} {symbol}',
+            amountDesc: 'How much do you want to remain?',
+            messageConfirm: 'Are you sure you want to recall <strong>{valueAvailable} {symbol}</strong> to bring your collateral value back to the minimum required amount?',
+            remainCollateralFailed: 'Failed to remain collateral.',
+            confirm: 'Yes',
+            cancel: 'No'
+          },
+          payOff: {
+            early: {
+              messageConfirm: 'Are you sure you want to repay?',
+              confirm: 'Repay',
+              cancel: 'Cancel'
+            },
+            onTime: {
+              messageConfirm: 'Are you sure you want to repay?',
+              confirm: 'Repay',
+              cancel: 'Not now'
+            },
+            payOffSuccess: 'Repayment made. Thanks!',
+            payOffFailed: 'Repay failed',
+            notEnoughConstantRepay: 'Your current balance is ${balance}. Please deposit ${requireAmount} to cover the amount due, then click repay again. ',
+            makeADeposit: 'Make a deposit'
+          },
+          pay: {
+            messageConfirm: 'Are you sure you want to pay?',
+            confirm: 'Pay',
+            cancel: 'Not now',
+            paySuccess: 'Payment made. Thanks!',
+            payFailed: 'Pay failed',
+            notEnoughConstantRepay: 'Your current balance is ${balance}. Please deposit ${requireAmount} to cover the amount due, then click repay again. ',
+            makeADeposit: 'Make a deposit'
+          },
+          cancelBorrow: {
+            messageConfirm: 'Are you sure you want to cancel the buying coin process?',
+            confirm: 'Yes',
+            cancel: 'No'
           }
         },
         yourInvestments: 'Match{plural} {matched}',
@@ -748,7 +889,9 @@ export default {
               messageConfirm: '\n' +
                 '              <p>To end your term early, you can sell your investment to another investor. Once sold, you get your principal of ${amount} back and 2% APR on elapsed term time, but you’ll lose any earned membership points on this investment. Selling normally takes around 24 hours.</p> \n' +
                 '              <p>Would you like to sell your investment?</p> \n' +
-                '              '
+                '              ',
+              confirm: 'Yes',
+              cancel: 'Go back'
             }
           }
         },
@@ -764,7 +907,12 @@ export default {
           rewardNote: 'This will lower your rate by {rateDown}%',
           maxAmount: 'Your amount must be <= {max}.',
           rewardApplySuccess: 'Rewards redeemed.',
-          rewardInvestNote: 'This will increase your rate by {rateUp}%'
+          rewardInvestNote: 'This will increase your rate by {rateUp}%',
+          title: 'Deposit more collateral',
+          amountDesc: 'How much do you want to apply?',
+          close: 'Close',
+          notAvailable: 'Uh oh! Something went wrong, Your reward not available. please try again...',
+          rewardApplyFailed: 'Something went wrong. Please try again.'
         },
         noData: 'No data available',
         holding: 'balance holding',
@@ -772,7 +920,21 @@ export default {
           stopSavingSuccess: 'You successfully cancelled your investment.',
           depositSavingSuccess: "Thanks! Your investment order was successful. Your term has begun and you've started earning interest.",
           voidInvestmentSuccess: 'Thanks. Your investment has rejoined the matching queue and we’ll let you know when we find a buyer. In the meantime, you can cancel your sell order from your Accounts page.',
-          stopSellingInvestmentSuccess: 'Thanks – we’ve cancelled your sell order and the investment remains yours.'
+          stopSellingInvestmentSuccess: 'Thanks – we’ve cancelled your sell order and the investment remains yours.',
+          cancelBorrowSuccess: 'You successfully cancelled borrow',
+          deleteSavingSuccess: 'Investment order deleted',
+          deleteSavingFailed: 'Failed To delete Invest Saving',
+          depositSavingFailed: 'Failed To Invest Saving. Please refresh your browser and try again.',
+          stopSavingFailed: 'End your term failed.',
+          stopSellingInvestmentFailed: 'End your term failed.',
+          applyReferralSuccess: 'Thanks! Your rewards have been applied.',
+          applyReferralFailed: 'Sorry, something went wrong. Please try again.',
+          batchTransferSuccess: 'You successfully sent the batch file',
+          batchTransferFailed: 'Failed to sent the batch file',
+          confirmBatchTransferSuccess: 'Success',
+          confirmBatchTransferFailed: 'Failed',
+          voidInvestmentFailed: 'Sorry, we couldn’t create your sell order. Please try again later. If you keep seeing this message, please email us at <a href="mailto:hello@myconstant.com">hello@myconstant.com</a>.',
+          voidInvestmentFailedMinAmount: "Sorry, we couldn't create your sell order as your investment is less than ${minAmount}."
         },
         rewardApply: 'Redeem STAR',
         investment: 'investment',
@@ -785,7 +947,137 @@ export default {
         interestAmount: 'Total interest',
         haveTimeAccount: '{term}-{termType} investment',
         month: 'month',
-        day: 'day'
+        day: 'day',
+        anyTimeAccount: 'Anytime deposit',
+        balanceInterestDesc: '\n' +
+          '        <p><strong>Why is my balance increasing?</strong></p>\n' +
+          '            <p>As of <strong>Sep 10 2019</strong>, you’ll automatically earn <strong>{systemInterest}% APY</strong> on your current balance. These earnings will update real-time, and compound daily! You’ll still be able to withdraw anytime.</p>\n' +
+          '        ',
+        referralDescUS: '\n' +
+          '        Get a $10 reward for you and your friends when you refer them to invest with us. Additionally, get rewarded 10% of their earned interest in their first year - paid out every second. So if your friend earns $100 we’ll give you $10. There’s no limit to the number of friends you can refer.\n' +
+          '        ',
+        trial: 'TRIAL',
+        trial_description: 'You keep the interest. Term has ended',
+        loanRecords: 'Loan Records',
+        repaySuccess: 'Thanks. Please bear with us while we deduct from your balance.Your collateral will be returned to the wallet address it was sent from.',
+        balanceInterest: 'Interest earned so far',
+        holdingBalance: 'Holding Balance',
+        input2FA: 'Input 2FA',
+        matchedList: 'Matched List',
+        getCollateral: 'Recall excess',
+        payCollateral: 'Pay',
+        getRemainCollateral: 'Get Remaining Collateral',
+        payOffLoan: 'Payoff',
+        payOffLoanTitle: 'Payoff Loan',
+        allStatus: 'All',
+        interestInfo: {
+          header: {
+            title: 'Want to increase interest earnings across all your accounts?'
+          },
+          body: {
+            item1: {
+              title: '+{percent}%',
+              description: 'Deposit 1,000 USD or more'
+            },
+            item2: {
+              title: '+{total_percent}% {percent_claimed}',
+              description: '{refer} Get an extra {referralRate}% each',
+              refer: 'Refer up to 15 friends.',
+              percent_claimed: '(+{percent}% claimed)'
+            },
+            item3: {
+              title: '+{percent}%',
+              description: 'Share Constant on {facebook}',
+              facebook: 'Facebook',
+              twitter: 'Twitter'
+            }
+          },
+          footer: {
+            title: 'That’s {percent}%',
+            description: 'On top of what you already earn - for every account.'
+          },
+          shareFbSuccess: 'Success! Thanks for telling your friends about Constant.'
+        },
+        shareAndEarnUS: 'Invite a friend, earn $10 or more.',
+        batchtransfer: 'Transfer to multiple people',
+        depositMatched: 'Deposit',
+        cancelDepositMatched: 'Cancel Deposit',
+        row: 'Row',
+        errorMessage: 'Error Message',
+        autoRenewLoan: 'Auto renew',
+        autoRenewLoanDesc: 'Tired of manual labour? Turn this on to automatically re-loan at the same interest rate & term!',
+        confirm: {
+          batch: {
+            title: 'Confirm Submit',
+            desc: 'Are you sure to submit?',
+            confirm: 'Confirm',
+            cancel: 'Cancel'
+          }
+        },
+        batchTransferDialog: {
+          title: '',
+          desc: '\n' +
+            '            <p>\n' +
+            `              For your convenience, here's a template format you can <a href=https://drive.google.com/open?id=141JCoBRpf7lUAiK0Y3IRBrMX1ChOfLbM&export=download">download</a>. <br />`
+        },
+        field: {
+          amount: 'USD amount number greater than 0',
+          to_email: 'Email address is invalid',
+          schedule_date: 'Date format must be YYYY-MM-DDTHH:MM',
+          invalid: ' is invalid.',
+          endline: 'Please ensure all rows are filled.',
+          cycle_duration: 'Schedule dates required'
+        },
+        name: 'Name',
+        email: 'Email',
+        phone: 'Phone',
+        status: 'Status',
+        note: 'Note',
+        investMore: 'Save More',
+        depositFrom: {
+          title: 'Deposit more collateral',
+          collateralRecommended: 'To restore your collateral value to the recommended {LvtPer}%, please top up {amount} {symbol}. <br>You are free to top up any amount you wish.',
+          amount: 'Amount',
+          requiredAmount: 'Amount is required!',
+          amountDesc: 'How much do you want to deposit?',
+          bep2Memo: 'Memo',
+          bep2MemoDesc: 'Memo maybe is your ID if PEP2 crypto!',
+          bep2MemoRequired: 'Memo is required!',
+          ok: 'Make deposit',
+          cancel: 'Cancel',
+          depositFailed: 'Failed while depositing, please try again',
+          depositSuccess: 'Your deposit was completed successfully'
+        },
+        noOpenData: 'No open order available'
+      },
+      applicationDetail: {
+        dueDays: 'Due Days',
+        interestAmount: 'Interest Amount',
+        originalAmount: 'Original Amount',
+        totalAmount: 'Total Amount',
+        paid: 'Paid',
+        paidDate: 'Paid Date',
+        paidStatus: 'Paid Status',
+        payDate: 'Pay Date',
+        createdAt: 'Created At',
+        dueDayValueLeft: '{day} days left',
+        dueDayValueOver: '{day} days overdue',
+        payConfirmMsg: 'You will pay {amount} from your wallet ({balance})',
+        requireTopup: 'You balance ({balance}) not enough to pay {amount}. Top-up now?',
+        backBtn: 'Back to list',
+        cancel: 'Cancel',
+        payForThisTerm: 'Pay for this term',
+        getDetailFailed: 'Failed while getting application detail, please try again',
+        cancelSuccessfully: 'Your application was canceled successfully',
+        cancelFailed: 'Failed while canceling your application, please try again',
+        payFailed: 'Failed while paying your term, please try again',
+        paySuccessfully: 'Your paying was processed successfully',
+        activities: {
+          activityLog: 'Activity Log',
+          showActivities: 'Show all activities',
+          hideActivities: 'Hide all activities',
+          timeAt: 'at'
+        }
       }
     },
     navigation: {
@@ -956,9 +1248,9 @@ export default {
         cancel: { title: 'No' },
         enableFlexSuccess: {
           true: '<p>Your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust stores your funds across multiple insured bank accounts, giving total coverage of $130,000,000. You can withdraw anytime for free, but your balance will not earn interest.</p>\n' +
-            '<a href="/blog/meet-scott-purcell-—-ceo-of-prime-trust" class="underline" target="_blank">Find out more about Prime Trust</a>\n',
+            '<a href="https://blog.myconstant.com/meet-scott-purcell-—-ceo-of-prime-trust" class="underline" target="_blank">Find out more about Prime Trust</a>\n',
           false: '<p>Congratulations! Your balance will now earn 4% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>\n' +
-            '<a href="/blog/flex-or-prime-trust-you-decide!" class="underline" target="_blank">Find out how Flex works</a>\n'
+            '<a href="https://blog.myconstant.com/flex-or-prime-trust-you-decide!" class="underline" target="_blank">Find out how Flex works</a>\n'
         }
       },
       noteOff: 'Your balance is escrowed with Prime Trust and insured to $130,000,000.'
@@ -1068,7 +1360,16 @@ export default {
       done: 'Done',
       disableSmsSuccess: 'Thanks for disabling SMS authentication. We recommend using all available security measures to protect your account.',
       enableSms: 'Enable SMS Authentication',
-      enableSmsSuccess: 'Thanks for enabling SMS authentication. You’ll receive an authorization code via SMS whenever you request a withdrawal or transfer. You can disable this setting at any time.'
+      enableSmsSuccess: 'Thanks for enabling SMS authentication. You’ll receive an authorization code via SMS whenever you request a withdrawal or transfer. You can disable this setting at any time.',
+      inputSms: {
+        popupTitle: 'SMS Authentication',
+        newTitle: 'SMS Authentication',
+        newInputCode: 'Please input the 6-digit code sent to your phone.',
+        resendCode: 'Resend code',
+        cantAccess: 'Can’t get SMS code?',
+        resendCodeSuccess: 'Resend code success!'
+      },
+      invalidateSms: 'Sms authentication code not matched, please try again'
     },
     personalProfile: {
       statusProcessing: 'Your KYC information is being processed. We’ll notify you when you’re good to go.'
@@ -1111,11 +1412,11 @@ export default {
       },
       investFlex: {
         title: 'Flex',
-        desc: '{percent}% APY. Fully secured.<br/>Withdraw anytime.'
+        desc: '{percent}% APY. Withdraw anytime.  <br/>No fees.'
       },
       investCustom: {
-        title: 'Custom',
-        desc: 'Your terms. Best rates.<br/>Fully secured.'
+        title: 'Crypto-backed',
+        desc: 'Your terms. Best rates. <br/>Backed by crypto.'
       },
       investLO: {
         title: 'Loan Originator',
@@ -1149,7 +1450,7 @@ export default {
         desc: '\n          <p>Get a better return on your money.</p>\n        '
       },
       investFlex: {
-        title: 'Fiat Flex',
+        title: 'Flex',
         desc: '{percent}% APY. Withdraw anytime. No fees.'
       },
       investCustom: {
@@ -1807,14 +2108,8 @@ export default {
             desc: '\n' +
               '            <p>Prime Trust is the independent, accredited custodian of our USD reserve. When you deposit, Prime Trust stores your money across multiple bank accounts <strong>insured to a total of $130,000,000.</strong></p>\n' +
               '            '
-          },
-          '1': {
-            desc: '\n' +
-              '            <p>BitGo is our approved custodian of digital asset collateral. When you borrow against a BitGo-supported cryptocurrency, your collateral is sent to a BitGo escrow <strong>insured to $100,000,000.</strong></p>\n' +
-              '            '
           }
-        },
-        readMore: 'Read more'
+        }
       },
       settlement: {
         title: 'Settlement',
@@ -3455,6 +3750,19 @@ export default {
         },
         paymentScheduleStatus: { paid: 'Paid', scheduled: 'Schedule' }
       }
+    },
+    buy: {
+      components: { sell: { title: 'Where should we send your funds to?' } }
+    },
+    direct: {
+      components: {
+        sellInfoInput: {
+          confirmText: "You're sending {amount} {currency}",
+          confirmSubText: "Please check the recipient's bank info again.",
+          close: 'Close',
+          agreeSell: 'Agree to send'
+        }
+      }
     }
   },
   support: {
@@ -3674,7 +3982,7 @@ export default {
       answer3: '\n' +
         '        <p>Enter how much you want to invest and for how long. Transfer that amount to one of our international bank accounts – we have banks in the US and abroad to make transfers quick and easy for you. As soon as your funds arrive, you’ll immediately start earning interest.</p>\n' +
         '        <p>At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – reinvest, withdraw, or send money abroad.</p>\n' +
-        '        <p><a href="/blog/how-to-invest-with-constant-in-3-simple-steps" className="underline" target="_blank">How to invest in 3 simple steps.</a></p>\n' +
+        '        <p><a href="https://blog.myconstant.com/how-to-invest-with-constant-in-3-simple-steps" className="underline" target="_blank">How to invest in 3 simple steps.</a></p>\n' +
         '      ',
       question4: 'How do you protect my investment?',
       answer4: '\n' +
@@ -3685,7 +3993,7 @@ export default {
         '          <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>\n' +
         '        </ol>\n' +
         '        <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>\n' +
-        '        <p><a href="/blog/how-we-protect-your-money-and-collateral" className="underline" target="_blank">Read more about how we protect you.</a></p>\n' +
+        '        <p><a href="https://blog.myconstant.com/how-we-protect-your-money-and-collateral" className="underline" target="_blank">Read more about how we protect you.</a></p>\n' +
         '      ',
       question5: 'What happens when my money isn’t on loan?',
       answer5: '\n' +
@@ -3719,13 +4027,13 @@ export default {
     whatCaption1: 'Invest or insure deposits',
     whatDesc1: '      <p>Earn 4% APY on your balance with Flex. Or, insure your balance up to $130,000,000 with our custodial partner, Prime Trust.</p>\n' +
       '      <br />\n' +
-      '      <a href="/blog/flex-or-prime-trust-constant" target="_blank">Your balance, your choice.</a>',
+      '      <a href="https://blog.myconstant.com/flex-or-prime-trust-constant" target="_blank">Your balance, your choice.</a>',
     whatCaption3: 'Collateral backed',
     whatDesc3: '<p>Every loan is up to 200% backed by cryptocurrency collateral. To borrow $10,000, for example, a borrower must put up to $20,000 worth of cryptocurrency into escrow. Then if the borrower defaults, we sell the collateral to repay you. </p>\n' +
       '      <br />\n' +
       '      <p>So if borrowers default, you don’t lose a cent.</p>\n' +
       '      <br />\n' +
-      `      <a href="/blog/how-constant-protects-money-and-collateral" target="_blank">How we protect investors' funds.</a>`,
+      `      <a href="https://blog.myconstant.com/how-constant-protects-money-and-collateral" target="_blank">How we protect investors' funds.</a>`,
     whatCaption2: 'Built for you',
     whatDesc2: '<p>Enjoy 24-7 customer service, unlimited free withdrawals, and a library of useful content to help you do more with your money. Constant is an open, alternative financial platform and you can <a href="https://github.com/constant-money" target="_blank">view all our code</a> as well as suggest features you’d like to see</p>',
     howItWorks: {
@@ -4813,7 +5121,7 @@ export default {
         '        <p class="section-title">Terms and Conditions</p>\n' +
         '        <p>1. The amount you earn depends on how your referees use the platform:</p>\n' +
         '        <p class="desc">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>\n' +
-        '        <p>2. We will pay you $20 for every person who signs up using your referral link and passes KYC. If they don’t pass KYC, you don’t earn the $20 bonus.</p>\n' +
+        "        <p>2. We will pay you $20 for every person who signs up using your referral link, passes KYC and makes a deposit into Constant. If they don't meet these requirements, you don't earn the $20 bonus.</p>\n" +
         '        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>\n' +
         '        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>\n' +
         '        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>\n' +
@@ -5148,7 +5456,8 @@ export default {
         ok: 'Ok',
         cancel: 'Cancel',
         amountDesc: 'How much do you want to withdraw?',
-        addressDesc: 'Receiving crypto wallet address.\n'
+        addressDesc: 'Receiving crypto wallet address.\n',
+        withdrawFailedSameAddress: 'Unable to withdraw to the same wallet address.'
       },
       title: 'Balances',
       withdraw: 'Withdraw cash',
@@ -5764,5 +6073,9 @@ export default {
   },
   saving: {
     invalid_payment_method: 'To deposit USD, you must be a KYC-verified US citizen. Please choose another currency to deposit.'
+  },
+  send: {
+    invalidBankAccountName: 'For your security, the beneficiary name must match the name you registered when signing up with Constant. Please enter a different name or email hello@myconstant.com if you need help',
+    makeLocalOrderFailed: "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you."
   }
 };
