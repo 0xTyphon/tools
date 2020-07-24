@@ -4247,9 +4247,9 @@ export default {
     topup: 'Top-up',
     withdraw: 'Withdraw',
     hideDesc: 'Only show balances greater than zero. ',
-    topupCollateralTitle: 'Top-up Collateral',
+    topupCollateralTitle: 'Top-up',
     topupNote: 'Your crypto will be sent to your multi-collateral balance. To top up an isolated (single-collateral) loan, go to your active loans page and click the top-up button next to the loan you wish to top-up.',
-    depositCollateralTitle: 'Deposit Collateral',
+    depositCollateralTitle: 'Deposit',
     topupSuccess: 'Top-up Collateral successfully',
     flexBalance: 'Flex Balance',
     cryptoWallet: 'Crypto Wallet'
@@ -4264,7 +4264,8 @@ export default {
         cancel: 'Cancel',
         amountDesc: 'How much do you want to withdraw?',
         addressDesc: 'Receiving crypto wallet address.',
-        withdrawFailedSameAddress: 'Unable to withdraw to the same wallet address.'
+        withdrawFailedSameAddress: 'Unable to withdraw to the same wallet address.',
+        withdraw: 'Withdraw'
       },
       title: 'Balances',
       withdraw: 'Withdraw cash',
@@ -4291,7 +4292,7 @@ export default {
       voidInvestmentBorrowsDesc: 'These are matched orders investors want to sell. You can’t change the term or rate on a secondary investment, but you earn all the interest due on the loan regardless of how much time is left in the term.'
     },
     depositFundsTitle: 'Deposit Funds',
-    depositCollateralTitle: 'Deposit Collateral',
+    depositCollateralTitle: 'Deposit',
     investBooking: {
       deposit: {
         depositNote: 'Invest USD or USD stablecoins.',
