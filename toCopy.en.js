@@ -493,7 +493,23 @@ export default {
           waitAgentTransferMoney: 'Processing',
           approving: 'Waiting for admin approval',
           done: 'Successful',
-          transferMoneyToAgent: 'Please make a transfer to complete your deposit'
+          transferMoneyToAgent: 'Please make a transfer to complete your deposit',
+          transferredMoneyToAgentInvest: 'Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.',
+          inProgress: 'Order in progress',
+          transferring_fiat: 'Transferring Fiat'
+        },
+        account: 'User',
+        fullName: 'Full name',
+        userName: 'User name',
+        email: 'Email',
+        phone: 'Phone',
+        paymentMethods: {
+          auto_bank: 'Checkbook',
+          email: 'Zelle',
+          google_pay: 'Google Pay',
+          venmo: 'Venmo',
+          paypal: 'Paypal',
+          fiat: 'Bank Transfer'
         }
       },
       date: 'Date',
@@ -5575,7 +5591,13 @@ export default {
     btnTransfer: 'Transfer',
     btnWithdrawFiat: '<div class="textLeft"><small>Withdraw to</small><div>Fiat</div></div>',
     btnWithdrawCrypto: '<div class="textLeft"><small>Withdraw to</small><div>Crypto</div></div>',
-    greeting: { hi: 'Hi you', title: 'Good', evening: 'Evening' },
+    greeting: {
+      hi: 'Hi you',
+      title: 'Good',
+      evening: 'Evening',
+      morning: 'Morning',
+      afternoon: 'Afternoon'
+    },
     about: 'About',
     team: 'Our Story',
     privacy: 'Privacy Policy',
