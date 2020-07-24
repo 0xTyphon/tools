@@ -432,7 +432,7 @@ const result =  {
   'home1.faqs.answer3': '\n' +
     '        <p>Enter how much you want to invest and for how long. Transfer that amount to one of our international bank accounts – we have banks in the US and abroad to make transfers quick and easy for you. As soon as your funds arrive, you’ll immediately start earning interest.</p>\n' +
     '        <p>At the end of the loan term, the borrower will repay the loan and interest which we’ll then transfer to your Constant account. It’s up to you what you’d like to do next – reinvest, withdraw, or send money abroad.</p>\n' +
-    '        <p><a href="/blog/how-to-invest-with-constant-in-3-simple-steps" className="underline" target="_blank">How to invest in 3 simple steps.</a></p>\n' +
+    '        <p><a href="https://blog.myconstant.com/how-to-invest-with-constant-in-3-simple-steps" className="underline" target="_blank">How to invest in 3 simple steps.</a></p>\n' +
     '      ',
   'deposit.what.title': 'Why invest with us?',
   'home1.whatCaption0': 'Match instantly',
@@ -442,13 +442,13 @@ const result =  {
   'home1.whatCaption1': 'Invest or insure deposits',
   'home1.whatDesc1': '      <p>Earn 4% APY on your balance with Flex. Or, insure your balance up to $130,000,000 with our custodial partner, Prime Trust.</p>\n' +
     '      <br />\n' +
-    '      <a href="/blog/flex-or-prime-trust-constant" target="_blank">Your balance, your choice.</a>',
+    '      <a href="https://blog.myconstant.com/flex-or-prime-trust-constant" target="_blank">Your balance, your choice.</a>',
   'home1.whatCaption3': 'Collateral backed',
   'home1.whatDesc3': '<p>Every loan is up to 200% backed by cryptocurrency collateral. To borrow $10,000, for example, a borrower must put up to $20,000 worth of cryptocurrency into escrow. Then if the borrower defaults, we sell the collateral to repay you. </p>\n' +
     '      <br />\n' +
     '      <p>So if borrowers default, you don’t lose a cent.</p>\n' +
     '      <br />\n' +
-    `      <a href="/blog/how-constant-protects-money-and-collateral" target="_blank">How we protect investors' funds.</a>`,
+    `      <a href="https://blog.myconstant.com/how-constant-protects-money-and-collateral" target="_blank">How we protect investors' funds.</a>`,
   'home1.whatCaption2': 'Built for you',
   'home1.whatDesc2': '<p>Enjoy 24-7 customer service, unlimited free withdrawals, and a library of useful content to help you do more with your money. Constant is an open, alternative financial platform and you can <a href="https://github.com/constant-money" target="_blank">view all our code</a> as well as suggest features you’d like to see</p>',
   'home.blockTitle2': 'How to invest',
@@ -1771,11 +1771,11 @@ const result =  {
   'me.history.cryptoAddress': 'Crypto address',
   'collateralBalance.topupSuccess': 'Top-up Collateral successfully',
   'me.flexInterestConfig.enableFlex.enableFlexSuccess.true': '<p>Your balance will be escrowed with Prime Trust, an accredited US financial institution. Prime Trust stores your funds across multiple insured bank accounts, giving total coverage of $130,000,000. You can withdraw anytime for free, but your balance will not earn interest.</p>\n' +
-    '<a href="/blog/meet-scott-purcell-—-ceo-of-prime-trust" class="underline" target="_blank">Find out more about Prime Trust</a>\n',
+    '<a href="https://blog.myconstant.com/meet-scott-purcell-—-ceo-of-prime-trust" class="underline" target="_blank">Find out more about Prime Trust</a>\n',
   'me.flexInterestConfig.noteOff': 'Your balance is escrowed with Prime Trust and insured to $130,000,000.',
   'me.flexInterestConfig.enableFlex.messageConfirm.false': 'Your balance earns 4% APY through Flex. You can withdraw anytime for free.',
   'me.flexInterestConfig.enableFlex.enableFlexSuccess.false': '<p>Congratulations! Your balance will now earn 4% APY through Flex. You can withdraw anytime for free and your balance is protected by borrower collateral.</p>\n' +
-    '<a href="/blog/flex-or-prime-trust-you-decide!" class="underline" target="_blank">Find out how Flex works</a>\n',
+    '<a href="https://blog.myconstant.com/flex-or-prime-trust-you-decide!" class="underline" target="_blank">Find out how Flex works</a>\n',
   'me.twoFa.invalidatePassword': 'Password not matched, please try again',
   'me.notificationSetting.secondaryMarketSetting.messageConfirmDisable': 'Are you sure you want to disable secondary market notifications? You might miss out on the best deals.',
   'me.notificationSetting.secondaryMarketSetting.disableSuccess': 'Successfully Disabled',
@@ -3328,7 +3328,7 @@ const result =  {
     '          <li>We only accept vetted, quality cryptocurrencies and cap our exposure to these markets by daily trading volume. This ensures we can sell the collateral should the market dip.</li>\n' +
     '        </ol>\n' +
     '        <p>These protective measures help ensure you get the returns promised. However, all investment involves risk, and despite our best efforts, we can’t guarantee the return of your principal and profit. Therefore please invest wisely.</p>\n' +
-    '        <p><a href="/blog/how-we-protect-your-money-and-collateral" className="underline" target="_blank">Read more about how we protect you.</a></p>\n' +
+    '        <p><a href="https://blog.myconstant.com/how-we-protect-your-money-and-collateral" className="underline" target="_blank">Read more about how we protect you.</a></p>\n' +
     '      ',
   'home1.faqs.question5': 'What happens when my money isn’t on loan?',
   'home1.faqs.answer5': '\n' +
