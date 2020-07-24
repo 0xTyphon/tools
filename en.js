@@ -2176,7 +2176,7 @@ const result =  {
   'menuMobile.security': 'Security',
   'menuMobile.signout': 'Sign out',
   'me.bankInfo.dialog.delete.title': 'Confirm Delete',
-  'me.bankInfo.dialog.delete.body': 'Are you sure to delete?',
+  'me.bankInfo.dialog.delete.body': 'Are you sure you want to delete?',
   'me.bankInfo.dialog.delete.confirm': 'Yes',
   'me.bankInfo.dialog.delete.cancel': 'No',
   'me.bankInfo.alert.deleteSuccess': 'Successfully Deleted',
