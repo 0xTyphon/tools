@@ -5033,5 +5033,10 @@ const result =  {
   'menuMobile.greeting.afternoon': 'Afternoon',
   'menuMobile.greeting.evening': 'Evening',
   'menuMobile.greeting.hi': 'Hi you',
+  'home1.lendingSection.form.btnKyc1': '<a>Verify your ID</a> to invest',
+  'proLending.investBooking.messLoginFirst.invest': 'Please log in to make an investment.',
+  'proLending.investBooking.messLoginFirst.borrow': 'Please log in to request a loan.',
+  'proLending.investBooking.messDepositFirst': 'Please deposit sufficient funds to make this investment.',
+
 }; 
  module.exports = result;

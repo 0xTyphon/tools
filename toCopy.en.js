@@ -3803,7 +3803,8 @@ export default {
         },
         deposit: 'to deposit now',
         btn1: 'Invest now',
-        gotoVerifyKyc: 'Go to verify now'
+        gotoVerifyKyc: 'Go to verify now',
+        btnKyc1: '<a>Verify your ID</a> to invest'
       },
       intro: {
         content: '\n' +
@@ -5515,7 +5516,12 @@ export default {
         termDesc: 'If there is a borrower looking for a shorter loan at your rates, you will be partially matched. We will continue to find you a match for the rest of the term.'
       },
       amountRequired: 'Please enter an amount.',
-      matchedSuccess: "Thanks! Your investment order was successful. Your term has begun and you've started earning interest. To review your investments, please visit your Accounts page."
+      matchedSuccess: "Thanks! Your investment order was successful. Your term has begun and you've started earning interest. To review your investments, please visit your Accounts page.",
+      messLoginFirst: {
+        invest: 'Please log in to make an investment.',
+        borrow: 'Please log in to request a loan.'
+      },
+      messDepositFirst: 'Please deposit sufficient funds to make this investment.'
     },
     deposits: {
       depositLabel: 'Select loan collateral',
