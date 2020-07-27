@@ -3094,7 +3094,9 @@ export default {
           close: 'Close',
           agreeSell: 'Agree to send'
         }
-      }
+      },
+      goHistory: 'Go to History',
+      backToNewOrder: 'Make another transfer '
     }
   },
   support: {
@@ -3131,7 +3133,18 @@ export default {
       },
       alert: {
         investUsingBalanceConfirm: 'You’re about to invest {amount} {currency} for {term} days at a rate of {rate}% APR. Click confirm to start your term and begin earning interest. Once you confirm, you won’t be able to cancel your investment but can sell it on our secondary market.',
-        invalid_payment_method: 'To invest USD, you must be a KYC-verified US citizen. Please choose another currency to deposit.'
+        invalid_payment_method: 'To invest USD, you must be a KYC-verified US citizen. Please choose another currency to deposit.',
+        success: 'Success',
+        sendEmailVerifyForTrialSuccess: 'Thanks! We sent you a verification email to unlock your free trial.',
+        sendEmailVerifyForTrialFailed: 'Send email failedSorry, we could not send your verification email. Please make sure your email address is valid and try again.',
+        trialFailed: 'Sorry, we can only offer one free trial per user.',
+        normalSuccess: 'Submit normal success',
+        normalFailed: 'Submit normal failed. Please refresh your browser and try again.',
+        trialSuccess: "Thanks! We're connecting you with a borrower glad to pay your rates. We'll send you an email when you're matched.",
+        zelleSuccess: 'Thanks! Please proceed with the transfer.',
+        zelleFailed: 'Something went wrong. Please try again.',
+        needKyc: '',
+        investNotUsingBalanceConfirm: 'You’re about to invest {amount} {currency} for {term} days at {rate}% APR. Click confirm and you’ll start earning interest as soon as we receive your funds. Once your term starts, you won’t be able to cancel your investment but can sell it on our secondary market.'
       },
       confirm: {
         thankYou1: 'Almost there.',
@@ -3203,6 +3216,10 @@ export default {
             placeholder: 'Please enter the full name here',
             submitButton: 'Submit',
             referNoteDesc: 'To streamline the deposit process, please include this reference number when making the bank transfer.'
+          },
+          primetrust: {
+            desc: '            <p class="title"><strong>Important info for Prime Trust transfers</strong></p>            <p class="desc">Prime Trust only accepts wire transfers, not ACH. Make sure you complete a wire transfer from your personal bank account or we might be unable to locate your funds.</p>            <p class="desc">For more information on transferring to Prime Trust, <a href="https://blog.myconstant.com/how-to-wire-your-money-to-constant-via-prime-trust/" target="_blank" class="underline">check out our blog</a>. It’s vital you include your reference number when you wire the money so we can match it to your account.</p>            <p class="desc">When you have made your transfer, please send an email with your wire receipt to <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a> to help us speed up the process. Your wire receipt, sometimes called a transaction confirmation, holds all the details of the transfer and might be emailed to you or be made available through online banking.</p>            ',
+            referNoteDesc: 'To receive your deposit you MUST include this reference number when your wire your funds from your bank.'
           }
         },
         zelle: "          <p>Amount: {amount} USD</p>          <p>Send to: <strong>finance@myconstant.com</strong></p>          <p>Full name: <strong>Const LLC</strong></p>          <p>Type: <strong>Personal Account</strong></p>          <br /><br />          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>        ",
@@ -4289,7 +4306,13 @@ export default {
         amountDesc: 'How much do you want to withdraw?',
         addressDesc: 'Receiving crypto wallet address.',
         withdrawFailedSameAddress: 'Unable to withdraw to the same wallet address.',
-        withdraw: 'Withdraw'
+        withdraw: 'Withdraw',
+        bep2Memo: 'Memo',
+        bep2MemoDesc: "If you are withdrawing to an exchange, please include a MEMO so your funds don't get lost.",
+        bep2MemoRequired: 'Please include a memo.',
+        withdrawFailed: "Something's not right. Please try again.",
+        withdrawSuccess: 'Withdrawal successful.',
+        transferConfirm: "We've already sent you a verification link by email. Please click this link to approve your transaction."
       },
       title: 'Balances',
       withdraw: 'Withdraw cash',
@@ -4845,6 +4868,11 @@ export default {
   },
   send: {
     invalidBankAccountName: 'For your security, the beneficiary name must match the name you registered when signing up with Constant. Please enter a different name or email hello@myconstant.com if you need help',
-    makeLocalOrderFailed: "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you."
+    makeLocalOrderFailed: "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
+    makeLocalOrderSuccess: 'Thanks! Your transfer is now processing.',
+    zelleOverLimit: "Sorry, we've reached our Zelle transaction limit. Please try again later or choose another withdraw method.",
+    makeDirectOrderSuccess: 'Thanks! Your transfer is now processing.',
+    makeDirectOrderFailed: "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
+    transferConfirm: "We've already sent you a verification link by email. Please click this link to approve your transaction."
   }
 };
