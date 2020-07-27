@@ -1115,7 +1115,8 @@ export default {
     changeRef: {
       title: 'Change your referral code',
       btnChange: 'Change',
-      changeSuccess: 'Your referral code was changed successfully'
+      changeSuccess: 'Your referral code was changed successfully',
+      oldPassword: 'Old password'
     },
     changePassword: {
       title: 'Change your password',
@@ -1243,7 +1244,20 @@ export default {
       invalidateSms: 'Sms authentication code not matched, please try again'
     },
     personalProfile: {
-      statusProcessing: 'Your KYC information is being processed. We’ll notify you when you’re good to go.'
+      statusProcessing: 'Your KYC information is being processed. We’ll notify you when you’re good to go.',
+      title: 'Personal Detail',
+      name: 'Name',
+      userName: 'Name',
+      optional: 'Optional',
+      fullName: 'Full name',
+      email: 'Email',
+      dob: 'Date of birth',
+      gender: 'Gender',
+      save: 'Submit',
+      genderFemale: 'Female',
+      genderMale: 'Male',
+      address: 'Address',
+      city: 'City'
     },
     withdrawEmailConfirm: {
       alreadyVerified: 'Your withdrawal has already been confirmed. Thank you',
@@ -2993,7 +3007,9 @@ export default {
           action: ' ',
           investmentStatusDesc: "            <p>Status of a specific investment.</p>            <p>1. Initial: The Fund is being held at Constant's approved custodian's bank account waiting to be wired to the Loan Originator on the next Settlement Date.</p>            <p>2. Fund in transit: The wire transfer is being processed and fund is being sent to the Loan Originator. This process generally takes 3 to 7 business days.</p>            <p>3. Active: The Investment transaction has been settled. The investment is active and has started to earn interest.</p>            <p>4. Closed: The Investment reached the end of loan term and principal fully repaid OR The Investment has been purchased back by the Loan Originator OR  the Investment has been sold in the Secondary Market.</p>            <p>5. Bad Debt: The Investment has passed the loan term for more than 60 days, the Buy Back Guarantee failed to be executed and the principal or part of the principal has not been recovered.</p>          ",
           receivablesDesc: "Money that is currently in the process of being credited to your account. The borrower has made a payment, and we're waiting for the lending company to transfer the money to us. We'll credit the money to your account as soon as we have it.",
-          totalPaymentReceivedDesc: "Total interest payment and principal payment (if applicable) that have been received, credited and settled in the Investor's account"
+          totalPaymentReceivedDesc: "Total interest payment and principal payment (if applicable) that have been received, credited and settled in the Investor's account",
+          interestRateDesc: 'The rate at which loans are available for investors to invest in. Interest rate is generally stated in the form of annual NET interest rate paid to the investor. This is the final interest rate earned by the investor which already reflected all potential fees, commission and reserves (if any).',
+          interestAccruedDesc: 'interest earned but not yet being paid out, calculated proportionately based on the number of days from last payment date over total number of days from last payment day to next schedule payment date'
         },
         noHistoryData: 'Make your first investment of any amount today.',
         investmentStatus: {
@@ -3179,6 +3195,14 @@ export default {
           '-6': {
             desc: '            <p class="title"><strong>Important info for Prime Trust transfers</strong></p>            <p class="desc">Prime Trust only accepts wire transfers, not ACH. Make sure you complete a wire transfer from your personal bank account or we might be unable to locate your funds.</p>            <p class="desc">For more information on transferring to Prime Trust, <a href="https://blog.myconstant.com/how-to-wire-your-money-to-constant-via-prime-trust/" target="_blank" class="underline">check out our blog</a>. It’s vital you include your reference number when you wire the money so we can match it to your account.</p>            <p class="desc">When you have made your transfer, please send an email with your wire receipt to <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a> to help us speed up the process. Your wire receipt, sometimes called a transaction confirmation, holds all the details of the transfer and might be emailed to you or be made available through online banking.</p>            ',
             referNoteDesc: 'To receive your deposit you MUST include this reference number when your wire your funds from your bank.'
+          },
+          email: {
+            desc: '              <p>For direct deposits and wire transfers, we have accounts at major banks to receive your deposits faster.</p>              <p>Please select the bank that is most convenient for you to transfer funds to.</p>            ',
+            note: 'Before making a transfer, please enter the full name associated with the Zelle account here',
+            paymentInfo: '              <div class="row">                <div class="col">                    <label>Amount</label>                    <p>{amount} USD</p>                </div>                <div class="col">                    <label>Send to</label>                    <p>{email}</p>                </div>              </div>              <div class="row">                <div class="col">                    <label>Full name</label>                    <p>{name}</p>                </div>                <div class="col">                    <label>Type</label>                    <p>{type}</p>                </div>              </div>            ',
+            placeholder: 'Please enter the full name here',
+            submitButton: 'Submit',
+            referNoteDesc: 'To streamline the deposit process, please include this reference number when making the bank transfer.'
           }
         },
         zelle: "          <p>Amount: {amount} USD</p>          <p>Send to: <strong>finance@myconstant.com</strong></p>          <p>Full name: <strong>Const LLC</strong></p>          <p>Type: <strong>Personal Account</strong></p>          <br /><br />          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>        ",
@@ -3821,7 +3845,7 @@ export default {
     sellBtn: 'Send',
     recipientBankInformation: 'Recipient’s bank information',
     yourAnytimeBalance: 'Your Balance: {balance} {currency}',
-    email: { name: 'Recipient' },
+    email: { name: 'Recipient', placeholder: 'Enter receiving email address' },
     countryNotSupport: 'Your country is not supported at the moment. Our support team will get in touch with you via email.',
     validateMaxInput: 'Please make sure your balance is sufficient.'
   },
