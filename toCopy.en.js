@@ -425,7 +425,8 @@ export default {
           google_pay: 'Google Pay',
           venmo: 'Venmo',
           paypal: 'Paypal',
-          fiat: 'Bank Transfer'
+          fiat: 'Bank Transfer',
+          plaid: 'Linked Bank'
         }
       },
       date: 'Date',
@@ -1093,13 +1094,30 @@ export default {
           body: 'Are you sure to delete?',
           confirm: 'Yes',
           cancel: 'No'
+        },
+        update: {
+          title: 'Confirm Update',
+          body: 'Are you sure to update?',
+          confirm: 'Yes',
+          cancel: 'No'
         }
       },
       alert: {
         deleteSuccess: 'Successfully Deleted',
         failed: 'Failed To Update',
-        success: 'Successfully Updated'
-      }
+        success: 'Successfully Updated',
+        deleteFailed: 'Failed To Delete'
+      },
+      getBankFailed: 'Failed while getting user list banks',
+      title: 'Bank Information',
+      desc: 'Add your bank account details now to receive attractive commission from referral programs and faster payment',
+      bankAccountCurrency: 'Account Currency',
+      bankCountryAndCurrency: 'Country/Currency',
+      bankBranchName: 'Bank branch name',
+      bankNameHolder: 'Enter Bank Name',
+      bankAccountNameHolder: 'Enter Bank Account Name',
+      bankAccountNumberHolder: 'Enter Bank Account Number',
+      input2FA: 'Please, enter your OTP'
     },
     accountInfo: {
       title: 'Your account details',
@@ -1197,9 +1215,18 @@ export default {
       status: {
         '0': 'Pending',
         '1': 'Done',
+        '2': 'Received',
         '3': 'Expired',
         '4': 'Allocating',
-        '12': 'Cancelled'
+        '5': 'Allocated',
+        '6': 'Voting',
+        '7': 'Voted',
+        '8': 'Failed',
+        '9': 'UnVoting',
+        '10': 'UnVoted',
+        '11': 'Transfering',
+        '12': 'Cancelled',
+        '13': 'Reward Pending'
       }
     },
     wallet: {
@@ -1208,7 +1235,14 @@ export default {
     emailVerification: {
       pleaseVerify: 'Please verify your email to activate your account',
       resent: 'Resend email verification',
-      sent: 'Sent email'
+      sent: 'Sent email',
+      sendCodeSuccess: 'Verify code was sent successfully to your email, please check.',
+      sendCodeFailed: 'Failed while sending verify code, please try again!',
+      verifyFailed: 'Verify failed, please try again!',
+      verifySuccess: 'Your email was verified successfully.',
+      pleaseUpdateEmail: 'Please update your email to activate your account',
+      updateEmail: 'Update Email',
+      alreadyVerified: 'Your email address has already been verified. Thank you'
     },
     accountLevel: {
       alert: {
@@ -3864,7 +3898,9 @@ export default {
     yourAnytimeBalance: 'Your Balance: {balance} {currency}',
     email: { name: 'Recipient', placeholder: 'Enter receiving email address' },
     countryNotSupport: 'Your country is not supported at the moment. Our support team will get in touch with you via email.',
-    validateMaxInput: 'Please make sure your balance is sufficient.'
+    validateMaxInput: 'Please make sure your balance is sufficient.',
+    validateMaxInputBalanceZero: 'Please make sure your balance is sufficient.',
+    suggestOtherPayment: "Minimum withdrawal by bank transfer is ${minDirect}. Please use Zelle instead (it's much faster, too)."
   },
   transferCrypto: {
     info: {
