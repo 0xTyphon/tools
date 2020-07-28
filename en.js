@@ -3601,5 +3601,10 @@ const result =  {
   'me.staking.status.11': 'Transfering',
   'me.staking.status.13': 'Reward Pending',
   'saving.makeLocalOrderFailed': "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
+  'memberShip.reviewMemberShip.redeemButton': 'Unlock your rewards',
+  'memberShip.reviewMemberShip.redeemButtonMobile': 'Rewards',
+  'memberShip.reviewMemberShip.redeemPopup.messageConfirm': 'To unlock your rewards, please <a href="https://www.trustpilot.com/review/myconstant.com" class="underline" target="_blank">review us on TrustPilot</a>. Then enter your TrustPilot username below and click Submit. Your rewards will be released to your account immediately.',
+  'memberShip.reviewMemberShip.redeemPopup.confirm': 'Submit',
+  'memberShip.reviewMemberShip.redeemPopup.cancel': 'Cancel',
 };
 module.exports = result;

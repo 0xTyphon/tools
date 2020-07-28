@@ -273,7 +273,16 @@ export default {
     invested: 'Invested',
     pointExpiredDate: '{value} points will expire on {date}',
     tierProgressDesc: 'Earn {points} points by {date} to maintain {level} membership',
-    getLevelDate: 'From {date}'
+    getLevelDate: 'From {date}',
+    reviewMemberShip: {
+      redeemButton: 'Unlock your rewards',
+      redeemButtonMobile: 'Rewards',
+      redeemPopup: {
+        messageConfirm: 'To unlock your rewards, please <a href="https://www.trustpilot.com/review/myconstant.com" class="underline" target="_blank">review us on TrustPilot</a>. Then enter your TrustPilot username below and click Submit. Your rewards will be released to your account immediately.',
+        confirm: 'Submit',
+        cancel: 'Cancel'
+      }
+    }
   },
   exchangeInputDepositForm: {
     submitBtn: {
