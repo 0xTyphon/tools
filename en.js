@@ -3600,5 +3600,6 @@ const result =  {
   'me.staking.status.10': 'UnVoted',
   'me.staking.status.11': 'Transfering',
   'me.staking.status.13': 'Reward Pending',
+  'saving.makeLocalOrderFailed': "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
 };
 module.exports = result;

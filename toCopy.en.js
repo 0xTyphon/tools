@@ -4969,7 +4969,8 @@ export default {
     submit: 'Submit'
   },
   saving: {
-    invalid_payment_method: 'To deposit USD, you must be a KYC-verified US citizen. Please choose another currency to deposit.'
+    invalid_payment_method: 'To deposit USD, you must be a KYC-verified US citizen. Please choose another currency to deposit.',
+    makeLocalOrderFailed: "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you."
   },
   send: {
     invalidBankAccountName: 'For your security, the beneficiary name must match the name you registered when signing up with Constant. Please enter a different name or email hello@myconstant.com if you need help',
