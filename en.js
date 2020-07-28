@@ -318,6 +318,7 @@ const result =  {
   'me.history.user.paymentMethods.venmo': 'Venmo',
   'me.history.user.paymentMethods.paypal': 'Paypal',
   'me.history.user.paymentMethods.fiat': 'Bank Transfer',
+  'me.history.user.paymentMethods.plaid': 'Linked Bank',
   'me.history.date': 'Date',
   'me.history.reference_number': 'Reference No.',
   'me.history.value': 'Currency Amount',
