@@ -4758,7 +4758,7 @@ export default {
       getting_started_desc: "It's easy to earn your first four badges – just set up your account, secure it, and deposit at least $100 to earn 4% APY. That's it!",
       referring_desc: 'We love it when you share your experiences with others. These badges reward you for referring friends and family, writing or streaming about us, or reviewing the platform for your community.',
       warming_up_desc: "These badges reward experimentation – they're all about getting to know our products and trying them out for the first time. Then, sharing your experiences with people and helping them sign up.",
-      membership_desc: `We'd love that you choose Constant and use our platform for a long time. In order to award each member, we have three tiers for membership. Depending on the level of membership, you will have different privileges. Please <a href="/membership">click here></a> for full details.`,
+      membership_desc: 'Invest or borrow regularly to become a Gold, Platinum, and then Diamond member. Each membership tier offers exclusive platform benefits and rewards. The higher your membership, the better the better the rewards, so start your membership journey now.',
       winning_desc: "Once you've conquered the previous levels, now it's time to prove you're a winner! These badges reward the biggest and best achievements, and in turn, offer some of the best rewards."
     },
     detail: 'Details',
