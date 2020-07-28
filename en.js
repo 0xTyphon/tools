@@ -3619,5 +3619,6 @@ const result =  {
   'memberShip.reviewMemberShip.redeemPopup.messageConfirm': 'To unlock your rewards, please <a href="https://www.trustpilot.com/review/myconstant.com" class="underline" target="_blank">review us on TrustPilot</a>. Then enter your TrustPilot username below and click Submit. Your rewards will be released to your account immediately.',
   'memberShip.reviewMemberShip.redeemPopup.confirm': 'Submit',
   'memberShip.reviewMemberShip.redeemPopup.cancel': 'Cancel',
+  'user.login.loginFailed': 'Failed while logging in, please try again',
 };
 module.exports = result;

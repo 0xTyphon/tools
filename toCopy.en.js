@@ -30,7 +30,8 @@ export default {
       username: 'Your email',
       loginFailureCaptchaV2: "Please check I'm not a robot.",
       notValidUsername: 'Invalid email address',
-      twoFaRequired: '2FA authentication is required for all users with balance over 1000 USD'
+      twoFaRequired: '2FA authentication is required for all users with balance over 1000 USD',
+      loginFailed: 'Failed while logging in, please try again'
     },
     forgetPassword: {
       title: 'Forgot your password?',
@@ -1126,7 +1127,11 @@ export default {
       bankNameHolder: 'Enter Bank Name',
       bankAccountNameHolder: 'Enter Bank Account Name',
       bankAccountNumberHolder: 'Enter Bank Account Number',
-      input2FA: 'Please, enter your OTP'
+      input2FA: 'Please, enter your OTP',
+      linkBankSectionTitle: 'Link your US bank account with Plaid, our ACH processor',
+      linkBankSectionDesc: '<p>Deposit or withdraw using ACH bank transfers with Plaid. Link up to two bank accounts now to save time and money transferring funds to and from your Constant account. Since most savings accounts limit the number of withdrawals, we recommend you link a checking account not a savings account to avoid ACH reversals. <a href="#">How to avoid ACH reversals</a>.</p> <p><strong>*Please note: For your security, you must withdraw to the same bank account from which you made your deposit. This restriction applies for 60 days and can be lifted upon supplying additional verification information. <a href="#">How linked banking works</a>.</strong></p> <p>To get started, click <strong>+ Add new bank</strong>.',
+      unlinkBankSectionTitle: 'Add an unlinked bank account for manual transfers',
+      unlinkBankSectionDesc: "<p>If you want to send more than $5,000 per transaction, or if your bank is outside of the US or doesn't support ACH transfers through Plaid, please add alternative banking details below. You can then preselect these details the next time you create a withdrawal order.</p> <p><strong>*Please note: We can't accept ACH transfers from unlinked bank accounts. If you send an ACH transfer from an unlinked bank account, it will be returned to you according to your bank’s schedule. Please only use Zelle or wire transfer only.</strong></p> <p>To get started, click <strong>+ Add new bank</strong>."
     },
     accountInfo: {
       title: 'Your account details',
@@ -3258,11 +3263,22 @@ export default {
             paymentInfo: '              <div class="row">                <div class="col">                    <label>Amount</label>                    <p>{amount} USD</p>                </div>                <div class="col">                    <label>Send to</label>                    <p>{email}</p>                </div>              </div>              <div class="row">                <div class="col">                    <label>Full name</label>                    <p>{name}</p>                </div>                <div class="col">                    <label>Type</label>                    <p>{type}</p>                </div>              </div>            ',
             placeholder: 'Please enter the full name here',
             submitButton: 'Submit',
-            referNoteDesc: 'To streamline the deposit process, please include this reference number when making the bank transfer.'
+            referNoteDesc: 'To streamline the deposit process, please include this reference number when making the bank transfer.',
+            notAvailableAmount: '<p>The maximum amount you can send through Zelle is {amount}. Please choose either a wire transfer or ACH transfer (available for linked US bank accounts only).</p><p><a href="#">How to link a US bank account for ACH transfers.</a></p>'
           },
           primetrust: {
-            desc: '            <p class="title"><strong>Important info for Prime Trust transfers</strong></p>            <p class="desc">Prime Trust only accepts wire transfers, not ACH. Make sure you complete a wire transfer from your personal bank account or we might be unable to locate your funds.</p>            <p class="desc">For more information on transferring to Prime Trust, <a href="https://blog.myconstant.com/how-to-wire-your-money-to-constant-via-prime-trust/" target="_blank" class="underline">check out our blog</a>. It’s vital you include your reference number when you wire the money so we can match it to your account.</p>            <p class="desc">When you have made your transfer, please send an email with your wire receipt to <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a> to help us speed up the process. Your wire receipt, sometimes called a transaction confirmation, holds all the details of the transfer and might be emailed to you or be made available through online banking.</p>            ',
+            desc: '            <h4>Important info for Prime Trust transfers</h4>            <p class="desc">Prime Trust only accepts wire transfers, not ACH. Make sure you complete a wire transfer from your personal bank account or we might be unable to locate your funds.</p>            <p class="desc">For more information on transferring to Prime Trust, <a href="https://blog.myconstant.com/how-to-wire-your-money-to-constant-via-prime-trust/" target="_blank" class="underline">check out our blog</a>. It’s vital you include your reference number when you wire the money so we can match it to your account.</p>            <p class="desc">When you have made your transfer, please send an email with your wire receipt to <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a> to help us speed up the process. Your wire receipt, sometimes called a transaction confirmation, holds all the details of the transfer and might be emailed to you or be made available through online banking.</p>            ',
             referNoteDesc: 'To receive your deposit you MUST include this reference number when your wire your funds from your bank.'
+          },
+          plaid: {
+            title: 'Transfer from a linked US bank account',
+            subtitle: '<p>Make an ACH transfer from a linked US bank account through our partner Plaid. Please ensure you have sufficient funds in your account and your bank supports ACH transfers before you proceed.</p><p>To process your transfer, please choose your linked US bank account below and then click <strong>Submit</strong>.</p><p>If you’ve not linked a US bank account yet, please click <strong>+ Add bank</strong> and follow the on-screen instructions.</p>',
+            desc: "<p>We've partnered with ACH processor Plaid to make transfers easy for you. Once you’ve linked your US bank account, please select it from the options shown and click <strong>Submit</strong>.</p> <p>Please note the maximum you can send via ACH is $5,000 per transaction. If you'd like to send more, please select wire transfer.</p>",
+            updateBalanceNoteInWorkingTime: 'Please note it might take <strong>up to five business days</strong> for the ACH transfer to complete and show in your account.',
+            referNoteDesc: '<h4>Before you click submit...</h4> <p>Please check the following to avoid any delays or ACH reversals</p>',
+            checkListNote: "<ul><li>You've linked a US checking account that supports outgoing ACH transfers.</li><li>You've linked a US checking account thats supports outgoing ACH transfers.</li><li>The amount you're sending is less than $5,000.</li><li>You expect to keep the same linked bank account(s) for the next 60 days.</li><li>You've read our linked banking and ACH transfers guide.</li></ul>",
+            sendNote: "<p>Please send your funds <strong>within 3 business days</strong> otherwise this transaction will time-out for the sake of security. If you need more time, please re-enter your investment amount when you're ready.</p><p>Please <strong>don't send</strong> an ACH via any method other than linking your US bank account or we won't be able to accept or trace it (and it will likely return to your bank).</p>",
+            notAvailableAmount: '<p>The maximum amount you can send via ACH is {amount}. Please choose a wire transfer. For more information on ACH limits, please read our <a href="#">Guide to Linking US Bank Accounts.</a></p>'
           }
         },
         zelle: "          <p>Amount: {amount} USD</p>          <p>Send to: <strong>finance@myconstant.com</strong></p>          <p>Full name: <strong>Const LLC</strong></p>          <p>Type: <strong>Personal Account</strong></p>          <br /><br />          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>        ",
