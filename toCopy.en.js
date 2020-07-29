@@ -535,8 +535,10 @@ export default {
       cryptoAddress: 'Crypto address',
       bankInfo: {
         bankName: 'Bank Name',
-        bankAccountName: 'Beneficiary name',
-        bankAccountNumber: 'Your account number'
+        bankCountryAndCurrency: 'Country/Currency',
+        bankAccountCurrency: 'Account Currency',
+        bankCountry: 'Bank Country',
+        bankAccountName: 'Beneficiary name'
       },
       note: 'Note',
       received: 'received'
@@ -1131,9 +1133,12 @@ export default {
       bankAccountNumberHolder: 'Enter Bank Account Number',
       input2FA: 'Please, enter your OTP',
       linkBankSectionTitle: 'Link your US bank account with Plaid, our ACH processor',
-      linkBankSectionDesc: '<p>Deposit or withdraw using ACH bank transfers with Plaid. Link up to two bank accounts now to save time and money transferring funds to and from your Constant account. Since most savings accounts limit the number of withdrawals, we recommend you link a checking account not a savings account to avoid ACH reversals. <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How to avoid ACH reversals</a>.</p> <p><strong>*Please note: For your security, you must withdraw to the same bank account from which you made your deposit. This restriction applies for 60 days and can be lifted upon supplying additional verification information. <a href="#">How linked banking works</a>.</strong></p> <p>To get started, click <strong>+ Add new bank</strong>.',
+      linkBankSectionDesc: '<p>Deposit or withdraw using ACH bank transfers with Plaid. Link up to two bank accounts now to save time and money transferring funds to and from your Constant account. Since most savings accounts limit the number of withdrawals, we recommend you link a checking account not a savings account to avoid ACH reversals. <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How to avoid ACH reversals</a>.</p>',
+      linkBankImportantNote: '<strong>*Please note</strong>: For your security, you must withdraw to the same bank account from which you made your deposit. This restriction applies for 60 days and can be lifted upon supplying additional verification information. <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How linked banking works</a>.',
       unlinkBankSectionTitle: 'Add an unlinked bank account for manual transfers',
-      unlinkBankSectionDesc: "<p>If you want to send more than $5,000 per transaction, or if your bank is outside of the US or doesn't support ACH transfers through Plaid, please add alternative banking details below. You can then preselect these details the next time you create a withdrawal order.</p> <p><strong>*Please note: We can't accept ACH transfers from unlinked bank accounts. If you send an ACH transfer from an unlinked bank account, it will be returned to you according to your bank’s schedule. Please only use Zelle or wire transfer only.</strong></p> <p>To get started, click <strong>+ Add new bank</strong>."
+      unlinkBankSectionDesc: "<p>If you want to send more than $5,000 per transaction, or if your bank is outside of the US or doesn't support ACH transfers through Plaid, please add alternative banking details below. You can then preselect these details the next time you create a withdrawal order.</p>",
+      unlinkBankImportantNote: '<strong>Please note</strong>: We can’t accept ACH transfers from unlinked bank accounts. If you send an ACH transfer from an unlinked bank account, it will be returned to you according to your bank’s schedule. Please only use Zelle or wire transfer only.',
+      getStartedIntruction: '<p>To get started, click <strong>+ Add new bank</strong></p>'
     },
     accountInfo: {
       title: 'Your account details',
@@ -4558,7 +4563,8 @@ export default {
       createdBankExisted: 'Nice! This bank account has already been registered.'
     },
     expiredSession: 'Your session has expired. Please log in again.',
-    withdrawLessThanOrEqual: 'The maximum withdrawal amount is {max}. Please try other available methods.'
+    withdrawLessThanOrEqual: 'The maximum withdrawal amount is {max}. Please try other available methods.',
+    withdrawGreaterThan: 'The minimum withdrawal amount is {min}'
   },
   menuMobile: {
     btnSignIn: 'Sign in',
