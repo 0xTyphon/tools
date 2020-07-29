@@ -299,7 +299,8 @@ export default {
     minDepositRequired: 'Please enter an amount larger than {amount} {currency}',
     minAmountRequired: 'All investments must be at least {amount} {currency}',
     minDepositAmount: 'Minimum investment amount: {amount}',
-    interestRate: 'Interest rate: {interest}% APY'
+    interestRate: 'Interest rate: {interest}% APY',
+    getAmountFailed: 'Failed while getting amount, please try again'
   },
   history: {
     deposit: {
@@ -537,7 +538,8 @@ export default {
         bankAccountName: 'Beneficiary name',
         bankAccountNumber: 'Your account number'
       },
-      note: 'Note'
+      note: 'Note',
+      received: 'received'
     },
     twoFa: {
       input2Fa: {
@@ -1129,7 +1131,7 @@ export default {
       bankAccountNumberHolder: 'Enter Bank Account Number',
       input2FA: 'Please, enter your OTP',
       linkBankSectionTitle: 'Link your US bank account with Plaid, our ACH processor',
-      linkBankSectionDesc: '<p>Deposit or withdraw using ACH bank transfers with Plaid. Link up to two bank accounts now to save time and money transferring funds to and from your Constant account. Since most savings accounts limit the number of withdrawals, we recommend you link a checking account not a savings account to avoid ACH reversals. <a href="#">How to avoid ACH reversals</a>.</p> <p><strong>*Please note: For your security, you must withdraw to the same bank account from which you made your deposit. This restriction applies for 60 days and can be lifted upon supplying additional verification information. <a href="#">How linked banking works</a>.</strong></p> <p>To get started, click <strong>+ Add new bank</strong>.',
+      linkBankSectionDesc: '<p>Deposit or withdraw using ACH bank transfers with Plaid. Link up to two bank accounts now to save time and money transferring funds to and from your Constant account. Since most savings accounts limit the number of withdrawals, we recommend you link a checking account not a savings account to avoid ACH reversals. <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How to avoid ACH reversals</a>.</p> <p><strong>*Please note: For your security, you must withdraw to the same bank account from which you made your deposit. This restriction applies for 60 days and can be lifted upon supplying additional verification information. <a href="#">How linked banking works</a>.</strong></p> <p>To get started, click <strong>+ Add new bank</strong>.',
       unlinkBankSectionTitle: 'Add an unlinked bank account for manual transfers',
       unlinkBankSectionDesc: "<p>If you want to send more than $5,000 per transaction, or if your bank is outside of the US or doesn't support ACH transfers through Plaid, please add alternative banking details below. You can then preselect these details the next time you create a withdrawal order.</p> <p><strong>*Please note: We can't accept ACH transfers from unlinked bank accounts. If you send an ACH transfer from an unlinked bank account, it will be returned to you according to your bank’s schedule. Please only use Zelle or wire transfer only.</strong></p> <p>To get started, click <strong>+ Add new bank</strong>."
     },
@@ -1357,7 +1359,7 @@ export default {
       },
       investFlexCrypto: {
         title: 'Crypto Lend',
-        desc: 'Get 10% APY on BTC, ETH,<br/>and BNB.'
+        desc: 'Get 9% APY on BTC, ETH,<br/>and BNB.'
       },
       borrow: {
         title: 'Borrow',
@@ -1390,7 +1392,7 @@ export default {
       },
       investFlexCrypto: {
         title: 'Crypto Lend',
-        desc: 'Get 10% APY on BTC, ETH, and BNB.'
+        desc: 'Get 9% APY on BTC, ETH, and BNB.'
       },
       investLO: {
         title: 'Loan Originator',
@@ -1443,7 +1445,7 @@ export default {
     cryptoLend: {
       title: 'Crypto Lending - Make your crypto work for you - MyConstant',
       keyword: 'crypto lending platform, p2p cryto lending',
-      description: 'Earn 10.00% APY on BTC, ETH, and BNB on MyConstant Crypto Lending platform. Send your cryptocurrencies to our P2P crypto lending and earn interest on transactions. Withdraw anytime. No fees. Compounded every second.'
+      description: 'Earn 9% APY on BTC, ETH, and BNB on MyConstant Crypto Lending platform. Send your cryptocurrencies to our P2P crypto lending and earn interest on transactions. Withdraw anytime. No fees. Compounded every second.'
     },
     cryptoCredit: {
       title: 'Crypro Credit - Peer-to-Peer Lending Platform - MyConstant',
@@ -1560,7 +1562,7 @@ export default {
         btn: 'Explore'
       },
       loanOriginator: {
-        title: '          <p>            <strong>INVEST <sup>NEW</sup></strong>            Loan Originator          </p>        ',
+        title: '          <p>            <strong>INVEST</strong>            Loan Originator          </p>        ',
         cap: '          <div class="row">            <div class="col">              Interest rate              <strong>Up to 11%</strong>            </div>            <div class="col">              Loan term              <strong>6-15 <span>months</span></strong>            </div>          </div>          <p class="clearBottom">            Includes loan originator’s buy-back guarantee in case of default          </p>        ',
         btn: 'Explore'
       },
@@ -3264,11 +3266,13 @@ export default {
             placeholder: 'Please enter the full name here',
             submitButton: 'Submit',
             referNoteDesc: 'To streamline the deposit process, please include this reference number when making the bank transfer.',
-            notAvailableAmount: '<p>The maximum amount you can send through Zelle is {amount}. Please choose either a wire transfer or ACH transfer (available for linked US bank accounts only).</p><p><a href="#">How to link a US bank account for ACH transfers.</a></p>'
+            notAvailableAmount: '<p>The maximum amount you can send through Zelle is {amount}. Please choose either a wire transfer or ACH transfer (available for linked US bank accounts only).</p><p><a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How to link a US bank account for ACH transfers.</a></p>'
           },
           primetrust: {
             desc: '            <h4>Important info for Prime Trust transfers</h4>            <p class="desc">Prime Trust only accepts wire transfers, not ACH. Make sure you complete a wire transfer from your personal bank account or we might be unable to locate your funds.</p>            <p class="desc">For more information on transferring to Prime Trust, <a href="https://blog.myconstant.com/how-to-wire-your-money-to-constant-via-prime-trust/" target="_blank" class="underline">check out our blog</a>. It’s vital you include your reference number when you wire the money so we can match it to your account.</p>            <p class="desc">When you have made your transfer, please send an email with your wire receipt to <a href="mailto:hello@myconstant.com" target="_blank" class="underline">hello@myconstant.com</a> to help us speed up the process. Your wire receipt, sometimes called a transaction confirmation, holds all the details of the transfer and might be emailed to you or be made available through online banking.</p>            ',
-            referNoteDesc: 'To receive your deposit you MUST include this reference number when your wire your funds from your bank.'
+            referNoteDesc: 'To receive your deposit you MUST include this reference number when your wire your funds from your bank.',
+            minuteWindow: '15 MINUTE WINDOW',
+            minuteWindowDescription: 'Please complete your transfer within 15 minutes. After that, your order will be automatically cancelled.'
           },
           plaid: {
             title: 'Transfer from a linked US bank account',
@@ -3276,9 +3280,9 @@ export default {
             desc: "<p>We've partnered with ACH processor Plaid to make transfers easy for you. Once you’ve linked your US bank account, please select it from the options shown and click <strong>Submit</strong>.</p> <p>Please note the maximum you can send via ACH is $5,000 per transaction. If you'd like to send more, please select wire transfer.</p>",
             updateBalanceNoteInWorkingTime: 'Please note it might take <strong>up to five business days</strong> for the ACH transfer to complete and show in your account.',
             referNoteDesc: '<h4>Before you click submit...</h4> <p>Please check the following to avoid any delays or ACH reversals</p>',
-            checkListNote: "<ul><li>You've linked a US checking account that supports outgoing ACH transfers.</li><li>You've linked a US checking account thats supports outgoing ACH transfers.</li><li>The amount you're sending is less than $5,000.</li><li>You expect to keep the same linked bank account(s) for the next 60 days.</li><li>You've read our linked banking and ACH transfers guide.</li></ul>",
+            checkListNote: `<ul><li>You've linked a US checking account that supports outgoing ACH transfers.</li><li>You've linked a US checking account thats supports outgoing ACH transfers.</li><li>The amount you're sending is less than $5,000.</li><li>You expect to keep the same linked bank account(s) for the next 60 days.</li><li>You've read <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">our linked banking and ACH transfers guide.</a></li></ul>`,
             sendNote: "<p>Please send your funds <strong>within 3 business days</strong> otherwise this transaction will time-out for the sake of security. If you need more time, please re-enter your investment amount when you're ready.</p><p>Please <strong>don't send</strong> an ACH via any method other than linking your US bank account or we won't be able to accept or trace it (and it will likely return to your bank).</p>",
-            notAvailableAmount: '<p>The maximum amount you can send via ACH is {amount}. Please choose a wire transfer. For more information on ACH limits, please read our <a href="#">Guide to Linking US Bank Accounts.</a></p>'
+            notAvailableAmount: '<p>The maximum amount you can send via ACH is {amount}. Please choose a wire transfer. For more information on ACH limits, please read our <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">Guide to Linking US Bank Accounts.</a></p>'
           }
         },
         zelle: "          <p>Amount: {amount} USD</p>          <p>Send to: <strong>finance@myconstant.com</strong></p>          <p>Full name: <strong>Const LLC</strong></p>          <p>Type: <strong>Personal Account</strong></p>          <br /><br />          <p>We recommend Zelle because it is faster than direct deposit, and cheaper than wire transfers.</p>          <p>Don't have Zelle? Simply register for the service through your bank's website or mobile app with an email address or phone number.</p>        ",
@@ -3841,12 +3845,7 @@ export default {
     desc: '    <div>All times shown below are maximum estimates. In all cases, the team strives for ASAP.</div>    <div>While Constant processes your deposits and withdrawals free of charge, transaction fees may be applied separately by your financial institution.</div>    ',
     loanOriginator: { head1: 'Loan Originators', head2: ' ' },
     loanOrigiantorNote: `    <p class="title">* You'll start earning interest once your funds arrive in the Loan Originator's bank account, not when funds are deducted from your account.</p>    `,
-    depositFiat: {
-      head1: 'Fiats',
-      head2: 'Business hours (9am-6pm GMT +7, Mon-Fri)',
-      head3: 'Outside business hours',
-      head4: 'Fee'
-    },
+    depositFiat: { head1: 'Fiats', head2: 'A business day', head3: 'Free' },
     depositCrypto: {
       head1: 'Stablecoins',
       head2: 'Business hours (9am-6pm GMT +7, Mon-Fri)',
@@ -4754,6 +4753,61 @@ export default {
           '1': {
             desc: '            <p>When you invest in Flex, your money supplies loans to collateralized borrowers and liquidity to decentralized exchanges. <strong>Flex is a multi-market investment product</strong> that spreads risk across multiple platforms to offer you a consistent return and the convenience of unlimited free withdrawals.</p>            '
           }
+        }
+      }
+    },
+    faqs: {
+      data: {
+        '0': {
+          question: 'What is Constant?',
+          answer: '\n' +
+            '            <p>Constant is a multi-market P2P investment platform that pays up to 11% APR. With us, you can invest in people and businesses around the world, without fees or limits, with all lending backed by collateral or loan originator’s buy-back guarantee. We have a range of easy and accessible investment products for every risk appetite and goal, and provide you with the learning resources to achieve those goals, fast.</p>\n' +
+            '            '
+        },
+        '1': {
+          question: 'What is the ${kYCTrialAmount} trial bonus?',
+          answer: '\n' +
+            '            <p>The ${kYCTrialAmount} trial bonus is a way to experience investing on our platform without committing any of your own money. Instead, we credit your Flex account with a ${kYCTrialAmount} bonus that you can watch grow at 4% APY, compounded and paid every second. Then, at the end of 30 days, we take back the ${kYCTrialAmount} and you keep the interest, which you can then reinvest with some of your own money or withdraw to your bank account.</p>\n' +
+            '            '
+        },
+        '2': {
+          question: 'Why are you offering this bonus?',
+          answer: '\n' +
+            '            <p>We understand that investing can be a little daunting at first – especially if you’ve never done it before. The bonus therefore gives you a taste for investing with us and will hopefully inspire you to continue investing with us for even bigger returns.</p>\n' +
+            '            '
+        },
+        '3': {
+          question: 'How do I get the bonus?',
+          answer: '\n' +
+            '            <p>To qualify for the bonus, you must be a US citizen. Then, you simply sign up for a free Constant account, verify your ID (KYC), and your ${kYCTrialAmount} bonus will be paid into your account immediately. You won’t be able to withdraw the bonus, and it’ll be debited from your account after 30 days, but you keep all the interest.</p>\n' +
+            '            '
+        },
+        '4': {
+          question: 'How do I verify my ID?',
+          answer: '\n' +
+            '            <p>We have to verify your ID to comply with US Anti-Money Laundering (AML) and Know Your Customer (KYC) regulations.</p>\n' +
+            '            <p>Once you’ve created an account, you’ll be asked to submit address and ID proof, so we can verify your ID and approve your account.</p>\n' +
+            '            <p>KYC verification is usually very fast, assuming you submit all relevant details and they’re clear, legible, and valid.</p>\n' +
+            '            <p>Here’s a tip sheet: How to verify your ID on Constant.</p>\n' +
+            '            '
+        },
+        '5': {
+          question: 'Can I withdraw the ${kYCTrialAmount}?',
+          answer: '\n' +
+            '            <p>No, the ${kYCTrialAmount} is locked into your Flex account for the 30 days. After 30 days, we take back the ${kYCTrialAmount} but you keep the interest.</p>\n' +
+            '            '
+        },
+        '6': {
+          question: 'What happens after the trial?',
+          answer: '\n' +
+            '            <p>Once we’ve taken back the ${kYCTrialAmount}, you keep the interest. It’s up to you what you’d like to do next. You can keep your interest in Flex earning 4% APY with anytime free withdrawals, or you can add some of your own money and reinvest in a crypto-backed loan for 7.5% APR (minimum investment is $50). You can also just withdraw it to your bank account. The choice is yours!</p>\n' +
+            '            '
+        },
+        '7': {
+          question: 'How do I withdraw my interest?',
+          answer: '\n' +
+            '            <p>After the 30 days is up, you can withdraw the interest on the ${kYCTrialAmount} bonus. To do so, head to your Accounts page and click Withdraw to fiat. You can only withdraw in fiat and not in a digital currency such as a stablecoin.</p>\n' +
+            '            '
         }
       }
     }

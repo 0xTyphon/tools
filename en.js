@@ -3656,5 +3656,7 @@ const result =  {
   'memberShip.reviewMemberShip.redeemPopup.confirm': 'Submit',
   'memberShip.reviewMemberShip.redeemPopup.cancel': 'Cancel',
   'user.login.loginFailed': 'Failed while logging in, please try again',
+  'exchangeInputDepositForm.getAmountFailed': 'Failed while getting amount, please try again',
+  'me.history.received': 'received',
 };
 module.exports = result;
