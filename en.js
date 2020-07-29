@@ -3214,6 +3214,7 @@ const result =  {
   'error.serverCode.createdBankExisted': 'Nice! This bank account has already been registered.',
   'error.expiredSession': 'Your session has expired. Please log in again.',
   'error.withdrawLessThanOrEqual': 'The maximum withdrawal amount is {max}. Please try other available methods.',
+  'error.withdrawGreaterThan': 'The minimum withdrawal amount is {min}',
   'menuMobile.btnSignIn': 'Sign in',
   'menuMobile.btnReferral': 'Share & Earn',
   'menuMobile.btnTransfer': 'Transfer',
