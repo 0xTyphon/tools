@@ -1092,7 +1092,7 @@ const result =  {
   'newHome.banner.invest.title': '          <p>            <strong>INVEST</strong>            Crypto-backed          </p>        ',
   'newHome.banner.invest.cap': '          <div class="row">            <div class="col">              Interest rate              <strong>Up to 7.5%</strong>            </div>            <div class="col">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class="clearBottom">            All lending secured by digital assets          </p>        ',
   'newHome.banner.invest.btn': 'Explore',
-  'newHome.banner.loanOriginator.title': '          <p>            <strong>INVEST <sup>NEW</sup></strong>            Loan Originator          </p>        ',
+  'newHome.banner.loanOriginator.title': '          <p>            <strong>INVEST</strong>            Loan Originator          </p>        ',
   'newHome.banner.loanOriginator.cap': '          <div class="row">            <div class="col">              Interest rate              <strong>Up to 11%</strong>            </div>            <div class="col">              Loan term              <strong>6-15 <span>months</span></strong>            </div>          </div>          <p class="clearBottom">            Includes loan originator’s buy-back guarantee in case of default          </p>        ',
   'newHome.banner.loanOriginator.btn': 'Explore',
   'newHome.banner.borrow.title': '          <p>            <strong>BORROW</strong>            Crypto Collateral          </p>        ',
@@ -2820,9 +2820,8 @@ const result =  {
   'getPrices.loanOriginator.head2': ' ',
   'getPrices.loanOrigiantorNote': `    <p class="title">* You'll start earning interest once your funds arrive in the Loan Originator's bank account, not when funds are deducted from your account.</p>    `,
   'getPrices.depositFiat.head1': 'Fiats',
-  'getPrices.depositFiat.head2': 'Business hours (9am-6pm GMT +7, Mon-Fri)',
-  'getPrices.depositFiat.head3': 'Outside business hours',
-  'getPrices.depositFiat.head4': 'Fee',
+  'getPrices.depositFiat.head2': 'A business day',
+  'getPrices.depositFiat.head3': 'Free',
   'getPrices.depositCrypto.head1': 'Stablecoins',
   'getPrices.depositCrypto.head2': 'Business hours (9am-6pm GMT +7, Mon-Fri)',
   'getPrices.depositCrypto.head3': 'Outside business hours',
@@ -3306,6 +3305,41 @@ const result =  {
   'landingPage.promotionFlex.howWeProtectYou.title': 'How We Protect You',
   'landingPage.promotionFlex.howWeProtectYou.data.0.desc': '            <p>Prime Trust is the accredited custodian of our USD reserve. When you deposit, your unloaned funds are stored across multiple bank accounts <strong>insured to a total of $130,000,000</strong>. </p>            ',
   'landingPage.promotionFlex.howWeProtectYou.data.1.desc': '            <p>When you invest in Flex, your money supplies loans to collateralized borrowers and liquidity to decentralized exchanges. <strong>Flex is a multi-market investment product</strong> that spreads risk across multiple platforms to offer you a consistent return and the convenience of unlimited free withdrawals.</p>            ',
+  'landingPage.faqs.data.0.question': 'What is Constant?',
+  'landingPage.faqs.data.0.answer': `
+            <p>Constant is a multi-market P2P investment platform that pays up to 11% APR. With us, you can invest in people and businesses around the world, without fees or limits, with all lending backed by collateral or loan originator’s buy-back guarantee. We have a range of easy and accessible investment products for every risk appetite and goal, and provide you with the learning resources to achieve those goals, fast.</p>
+            `,
+  'landingPage.faqs.data.1.question': 'What is the ${kYCTrialAmount} trial bonus?',
+  'landingPage.faqs.data.1.answer': `
+            <p>The \${kYCTrialAmount} trial bonus is a way to experience investing on our platform without committing any of your own money. Instead, we credit your Flex account with a \${kYCTrialAmount} bonus that you can watch grow at 4% APY, compounded and paid every second. Then, at the end of 30 days, we take back the \${kYCTrialAmount} and you keep the interest, which you can then reinvest with some of your own money or withdraw to your bank account.</p>
+            `,
+  'landingPage.faqs.data.2.question': 'Why are you offering this bonus?',
+  'landingPage.faqs.data.2.answer': `
+            <p>We understand that investing can be a little daunting at first – especially if you’ve never done it before. The bonus therefore gives you a taste for investing with us and will hopefully inspire you to continue investing with us for even bigger returns.</p>
+            `,
+  'landingPage.faqs.data.3.question': 'How do I get the bonus?',
+  'landingPage.faqs.data.3.answer': `
+            <p>To qualify for the bonus, you must be a US citizen. Then, you simply sign up for a free Constant account, verify your ID (KYC), and your \${kYCTrialAmount} bonus will be paid into your account immediately. You won’t be able to withdraw the bonus, and it’ll be debited from your account after 30 days, but you keep all the interest.</p>
+            `,
+  'landingPage.faqs.data.4.question': 'How do I verify my ID?',
+  'landingPage.faqs.data.4.answer': `
+            <p>We have to verify your ID to comply with US Anti-Money Laundering (AML) and Know Your Customer (KYC) regulations.</p>
+            <p>Once you’ve created an account, you’ll be asked to submit address and ID proof, so we can verify your ID and approve your account.</p>
+            <p>KYC verification is usually very fast, assuming you submit all relevant details and they’re clear, legible, and valid.</p>
+            <p>Here’s a tip sheet: How to verify your ID on Constant.</p>
+            `,
+  'landingPage.faqs.data.5.question': 'Can I withdraw the ${kYCTrialAmount}?',
+  'landingPage.faqs.data.5.answer': `
+            <p>No, the \${kYCTrialAmount} is locked into your Flex account for the 30 days. After 30 days, we take back the \${kYCTrialAmount} but you keep the interest.</p>
+            `,
+  'landingPage.faqs.data.6.question': 'What happens after the trial?',
+  'landingPage.faqs.data.6.answer': `
+            <p>Once we’ve taken back the \${kYCTrialAmount}, you keep the interest. It’s up to you what you’d like to do next. You can keep your interest in Flex earning 4% APY with anytime free withdrawals, or you can add some of your own money and reinvest in a crypto-backed loan for 7.5% APR (minimum investment is $50). You can also just withdraw it to your bank account. The choice is yours!</p>
+            `,
+  'landingPage.faqs.data.7.question': 'How do I withdraw my interest?',
+  'landingPage.faqs.data.7.answer': `
+            <p>After the 30 days is up, you can withdraw the interest on the \${kYCTrialAmount} bonus. To do so, head to your Accounts page and click Withdraw to fiat. You can only withdraw in fiat and not in a digital currency such as a stablecoin.</p>
+            `,
   'form.required': 'Required',
   'form.invalidEmail': 'Invalid Email Address',
   'form.unSupportFile': 'Unsupported Format',
