@@ -62,7 +62,8 @@ export default {
       password: 'Password',
       registerFailed: 'Failed while creating your account, please try again',
       passwordTooWeak: 'Please try a stronger password with at least 2 of the following: 1 lowercase character, 1 uppercase character, 1 numeric character, and 1 special character.',
-      notValidEmail: 'Invalid email address'
+      notValidEmail: 'Invalid email address',
+      requiredEmail: 'Email is required'
     },
     account: {
       currentBalance: 'Current Balance',

@@ -3664,5 +3664,6 @@ const result =  {
   'user.login.loginFailed': 'Failed while logging in, please try again',
   'exchangeInputDepositForm.getAmountFailed': 'Failed while getting amount, please try again',
   'me.history.received': 'received',
+  'user.register.requiredEmail': 'Email is required',
 };
 module.exports = result;
