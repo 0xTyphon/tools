@@ -3665,5 +3665,6 @@ const result =  {
   'exchangeInputDepositForm.getAmountFailed': 'Failed while getting amount, please try again',
   'me.history.received': 'received',
   'user.register.requiredEmail': 'Email is required',
+  'me.changePassword.changeSuccess': 'Your password was changed successfully',
 };
 module.exports = result;

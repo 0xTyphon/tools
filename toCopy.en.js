@@ -1164,7 +1164,8 @@ export default {
       newPasswordIsRequired: 'New password is required',
       oldPassword: 'Old password',
       newPassword: 'New password',
-      changeFailed: 'Please make sure you have typed in your old password correctly'
+      changeFailed: 'Please make sure you have typed in your old password correctly',
+      changeSuccess: 'Your password was changed successfully'
     },
     flexInterestConfig: {
       title: 'Earn 4% APY on your balance with Flex',
