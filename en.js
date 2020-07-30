@@ -3237,6 +3237,7 @@ const result =  {
   'menuMobile.aboutYou': 'About You',
   'menuMobile.interest': 'Interest',
   'menuMobile.accountActivity': 'Account Activity',
+  'menuMobile.badges': 'Your badges',
   'menuMobile.blog': 'Blog',
   'menuMobile.wallet': 'Wallet',
   'menuMobile.membership': 'Membership',
