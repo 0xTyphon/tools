@@ -1095,7 +1095,7 @@ const result =  {
   'newHome.banner.invest.cap': '          <div class="row">            <div class="col">              Interest rate              <strong>Up to 7.5%</strong>            </div>            <div class="col">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class="clearBottom text-left">            All lending secured by<br/>digital assets          </p>        ',
   'newHome.banner.invest.btn': 'Explore',
   'newHome.banner.loanOriginator.title': '<p>INVEST<br/>Loan Originator</p>',
-  'newHome.banner.loanOriginator.cap': '          <div class="row">            <div class="col">              Interest rate              <strong>Up to 11%</strong>            </div>            <div class="col">              Loan term              <strong>6-15 <span>months</span></strong>            </div>          </div>          <p class="clearBottom text-left">            Includes loan originator’s<br/>buy-back guarantee in case of<br/>default          </p>        ',
+  'newHome.banner.loanOriginator.cap': '          <div class="row">            <div class="col">              Interest rate              <strong>From 7.5%</strong>            </div>            <div class="col">              Loan term              <strong>6-15 <span>months</span></strong>            </div>          </div>          <p class="clearBottom text-left">            Includes loan originator’s<br/>buy-back guarantee in case of<br/>default          </p>        ',
   'newHome.banner.loanOriginator.btn': 'Explore',
   'newHome.banner.borrow.title': '<p>BORROW<br/>Crypto Collateral</p>',
   'newHome.banner.borrow.cap': '          <div class="row">            <div class="col">              Interest rate              <strong>From 7%</strong>            </div>            <div class="col">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class="clearBottom text-left">            Borrow against<br/>60+ cryptocurrencies          </p>        ',
@@ -2769,30 +2769,97 @@ const result =  {
   'depositCrypto.howItWorks.2.caption': 'Watch your crypto grow',
   'depositCrypto.howItWorks.2.desc': '<p>Interest is compounded and paid every second, giving you immediate returns. When you’re ready, withdraw again to a wallet of your choice absolutely free.</p>',
   'depositCrypto.howItWorks.title': 'How it works',
-  'deposit1.faqs.question1': 'What is Flex?',
-  'deposit1.faqs.answer1': '      <p>Flex is a deposit account that earns you 4% APY through automatic lending. When you deposit money into Flex, it goes into a liquidity pool managed by Compound Finance. Borrowers who’ve put up collateral can then secure loans from the pool in return for interest – and we pay that interest to you. Since your deposits go to a pool rather than individual borrowers, you can withdraw or deposit anytime, as often as you like, and without any fees.</p>      <p><a href="https://blog.myconstant.com/flex-apy-account-compound-finance" class="underline" target="_blank">How Flex works.</a></p>      ',
-  'deposit1.faqs.question2': 'Why 4% APY?',
-  'deposit1.faqs.answer2': 'Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 4% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market.',
-  'deposit1.faqs.question3': 'What is Compound Finance?',
-  'deposit1.faqs.answer3': '      <p>Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time.</p>      <p>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!</p>      <p><a href="https://compound.finance/" class="underline" target="_blank">Learn more about Compound Finance.</a></p>      ',
-  'deposit1.faqs.question4': 'Do you have a referral program for Flex?',
-  'deposit1.faqs.answer4': 'Yes, we do. For every friend you refer to Flex, you’ll get 10% of their interest earnings for the first year (up to a maximum of $1,000,000). For more details, <a href="/referral">visit your Referrals page.</a>',
-  'deposit1.faqs.question5': 'Can I withdraw anytime?',
-  'deposit1.faqs.answer5': 'Yes. Since you’re not lending your deposits to an individual, but to a lending pool, you can deposit or withdraw as much and as often as you like.',
-  'deposit1.faqs.question6': 'How do my deposits earn interest?',
-  'deposit1.faqs.answer6': 'Flex uses an API with Compound Finance to lend your deposits to a liquidity pool. Others borrow from the pool in return for putting up collateral, and you earn the interest. In other words, Flex is very similar to how investments work on Constant, only with Flex you can withdraw anytime.',
-  'deposit1.faqs.question7': 'Are my deposits insured?',
-  'deposit1.faqs.answer7': `      <p>Not always, no. While held with our trust partner, Prime Trust, your deposits are covered by a $130,000,000 insurance policy. However, we expect deposits will spend most of their time earning interest through Compound Finance, so will instead be protected by collateral put up by Compound's users.</p>      <p><a href="https://blog.myconstant.com/flex-or-prime-trust-constant" class="underline" target="_blank">Earn interest on your deposits or insure them?</a></p>      `,
-  'deposit1.faqs.question8': 'Can I deposit collateral or other cryptocurrency into Flex?',
-  'deposit1.faqs.answer8': 'At the moment, Flex only accepts USD and USD-backed stablecoins.',
-  'deposit1.faqs.question9': 'Can I earn interest while waiting for an investment order to match?',
-  'deposit1.faqs.answer9': "No, your funds are set aside while waiting for a match so won't earn interest on Flex. If you decide to cancel the order, your funds will return to earning interest in Flex.",
-  'deposit1.faqs.question10': 'Will the interest rate change?',
-  'deposit1.faqs.answer10': "The interest rate depends on supply and demand in Compound's lending market. Sometimes it's higher, sometimes it's lower, but for the time being we've fixed this at 4% APY.",
-  'deposit1.faqs.question11': 'Are there any fees?',
-  'deposit1.faqs.answer11': 'No – all deposits and withdrawals on Flex are free.',
-  'deposit1.faqs.question12': 'How does Constant make money?',
-  'deposit1.faqs.answer12': 'Flex deposits earn interest through an API with Compound Finance, another lending platform. Compound sets interest rates according to supply and demand, and Constant will make a slim profit on any difference between the Flex and Compound rates.',
+  'deposit.faqs.0.question': 'What is Flex?',
+  'deposit.faqs.0.answer': '      <p>Flex is a deposit account that earns you 4% APY through automatic lending. When you deposit money into Flex, it goes into a liquidity pool managed by Compound Finance. Borrowers who’ve put up collateral can then secure loans from the pool in return for interest – and we pay that interest to you. Since your deposits go to a pool rather than individual borrowers, you can withdraw or deposit anytime, as often as you like, and without any fees.</p>      <p><a href="https://blog.myconstant.com/flex-apy-account-compound-finance" class="underline" target="_blank">How Flex works.</a></p>      ',
+  'deposit.faqs.1.question': 'Why 4% APY?',
+  'deposit.faqs.1.answer': 'Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 4% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market.',
+  'deposit.faqs.2.question': 'What is Compound Finance?',
+  'deposit.faqs.2.answer': '      <p>Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time.</p>      <p>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!</p>      <p><a href="https://compound.finance/" class="underline" target="_blank">Learn more about Compound Finance.</a></p>      ',
+  'deposit.faqs.3.question': 'Do you have a referral program for Flex?',
+  'deposit.faqs.3.answer': 'Yes, we do. For every friend you refer to Flex, you’ll get 10% of their interest earnings for the first year (up to a maximum of $1,000,000). For more details, <a href="/referral">visit your Referrals page.</a>',
+  'deposit.faqs.4.question': 'Can I withdraw anytime?',
+  'deposit.faqs.4.answer': 'Yes. Since you’re not lending your deposits to an individual, but to a lending pool, you can deposit or withdraw as much and as often as you like.',
+  'deposit.faqs.5.question': 'How do my deposits earn interest?',
+  'deposit.faqs.5.answer': 'Flex uses an API with Compound Finance to lend your deposits to a liquidity pool. Others borrow from the pool in return for putting up collateral, and you earn the interest. In other words, Flex is very similar to how investments work on Constant, only with Flex you can withdraw anytime.',
+  'deposit.faqs.6.question': 'Are my deposits insured?',
+  'deposit.faqs.6.answer': `      <p>Not always, no. While held with our trust partner, Prime Trust, your deposits are covered by a $130,000,000 insurance policy. However, we expect deposits will spend most of their time earning interest through Compound Finance, so will instead be protected by collateral put up by Compound's users.</p>      <p><a href="https://blog.myconstant.com/flex-or-prime-trust-constant" class="underline" target="_blank">Earn interest on your deposits or insure them?</a></p>      `,
+  'deposit.faqs.7.question': 'Can I deposit collateral or other cryptocurrency into Flex?',
+  'deposit.faqs.7.answer': 'At the moment, Flex only accepts USD and USD-backed stablecoins.',
+  'deposit.faqs.8.question': 'Can I earn interest while waiting for an investment order to match?',
+  'deposit.faqs.8.answer': "No, your funds are set aside while waiting for a match so won't earn interest on Flex. If you decide to cancel the order, your funds will return to earning interest in Flex.",
+  'deposit.faqs.9.question': 'Will the interest rate change?',
+  'deposit.faqs.9.answer': "The interest rate depends on supply and demand in Compound's lending market. Sometimes it's higher, sometimes it's lower, but for the time being we've fixed this at 4% APY.",
+  'deposit.faqs.10.question': 'Are there any fees?',
+  'deposit.faqs.10.answer': 'No – all deposits and withdrawals on Flex are free.',
+  'deposit.faqs.11.question': 'How does Constant make money?',
+  'deposit.faqs.11.answer': 'Flex deposits earn interest through an API with Compound Finance, another lending platform. Compound sets interest rates according to supply and demand, and Constant will make a slim profit on any difference between the Flex and Compound rates.',
+  'deposit.faqs2.0.question': 'How do I deposit?',
+  'deposit.faqs2.0.answer': `
+          <p>To deposit into your Constant account, click <strong>Withdraw to fiat</strong> from <a href="/accounts" class="underline">your Accounts page</a> or visit <a href="/flex" class="underline">our Flex page</a>. (You’ll end up on the Flex page either way as it also serves as our deposit gateway.)</p>
+          <p>Choose how much you want to deposit and then click <strong>Start growing</strong>.</p>
+          <p>On the next screen, you can choose from three deposit methods. We support Zelle for amounts under $2,000, ACH transfers for linked US accounts up to $5,000, and wire transfers which are unlimited.</p>
+          <p>Choose the appropriate deposit method and then follow the on-screen instructions.</p>
+          <p>Once we receive your deposit, which may take 1-5 business days depending on the method you choose, your balance will update within 1 business day.</p>
+          <p>Please read our <a href="/getPrices" class="underline">standard service times</a> for more information.</p>
+        `,
+  'deposit.faqs2.1.question': 'What deposit methods do you accept?',
+  'deposit.faqs2.1.answer': `
+          <p>We currently support Zelle for amounts under $2,000, ACH transfers for <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">linked US accounts</a> up to $5,000, and wire transfers which are unlimited.</p>
+          <p>In the interest of security, we’re in the process of moving all cash management to our custodial partner, Prime Trust. This means in the future we won’t need to handle your funds at all.</p>
+          <p>However, we’re somewhat limited by the deposit methods Prime Trust accept, and it’s likely Zelle will be phased out in the next few months.</p>
+        `,
+  'deposit.faqs2.2.question': 'How long do deposits take?',
+  'deposit.faqs2.2.answer': `
+          <p>This depends on the deposit method you choose.</p>
+          <p>Here’s a brief summary:</p>
+          <p>
+            <div>Zelle: 1 business day.</div>
+            <div>ACH: 3-5 business days.</div>
+            <div>Wire: 1-2 business days.</div>
+          </p>
+          <p>Your bank might delay these times if they need a manual review or there’s missing information. For a full breakdown of timings, please <a href="/getPrices" class="underline">check out our service times</a>.</p>
+        `,
+  'deposit.faqs2.3.question': 'Are there any limits on deposits?',
+  'deposit.faqs2.3.answer': `
+          <p>Yes. We currently support Zelle for amounts under $2,000 and ACH transfers for <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">linked US accounts</a> up to $5,000. Wire transfers are unlimited.</p>
+        `,
+  'deposit.faqs2.4.question': 'What’s the difference between a wire and an ACH bank transfer?',
+  'deposit.faqs2.4.answer': `
+          <p>A wire is typically faster and more expensive than an ACH. Wires are settled between banks and are considered “cleared” money and can’t be reversed.</p>
+          <p>ACH transfers, on the other hand, are settled in batches by an automated clearing system. This makes them much cheaper than wires.</p>
+        `,
+  'deposit.faqs2.5.question': 'How do I link my bank account for ACH transfers?',
+  'deposit.faqs2.5.answer': `
+          <p>Please check out <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">our guide</a> for step-by-step instructions.</p>
+        `,
+  'deposit.faqs2.6.question': 'What is an ACH reversal and how can I avoid them?',
+  'deposit.faqs2.6.answer': `
+          <p>ACH reversals happen when the transfer gets canceled. Usually because of incorrect information, duplicate transfers, insufficient funds, or the bank account doesn’t support ACH transfers. To avoid ACH reversals, please ensure you:</p>
+          <p>
+            <ol>
+              <li>Link a bank account that supports ACH.</li>
+              <li>Have enough money in your account for at least 48 hours after your ACH request.</li>
+              <li>Link a checking account, not a savings account, to avoid any withdrawal limits.</li>
+            </ol>
+          </p>
+          <p>If your account incurs multiple ACH reversals you’ll lose your Instant Deposit benefits and might be charged a fee of up to $20. Please read <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">our guide</a> carefully to learn how to correctly link a US bank account for ACH transfers.</p>
+        `,
+  'deposit.faqs2.7.question': 'Why do you limit Zelle deposits?',
+  'deposit.faqs2.7.answer': `
+          <p>Our custodial partner, Prime Trust, doesn’t currently support Zelle transfers. Until now, we’ve accepted these deposits and then transferred them to Prime Trust on your behalf. However, this is both inefficient and means you have to entrust us with your money.</p>
+          <p>Our aim has always to be a non-custodial platform, and as a result, we’re phasing out Zelle so Prime Trust manages all cashflow on our behalf. You have the option of Zelle deposits during this transitionary period as we know it’s convenient for you, but limited to under $2,000 per transaction.</p>
+        `,
+  'deposit.faqs2.8.question': 'Why can’t I send an ACH from outside the US?',
+  'deposit.faqs2.8.answer': `
+          <p>Our custodial partner, Prime Trust, accepts ACH through Plaid, an ACH processor. At the moment, you can only link US bank accounts through Plaid. If you bank outside of the US, please send a wire instead.</p>
+        `,
+  'deposit.faqs2.9.question': 'What are Instant Deposits?',
+  'deposit.faqs2.9.answer': `
+          <p>Instant Deposits is a program we developed to pay you interest on ACH deposits while they’re being processed. Since ACH transfers can take up to 5 business days, that’s quite a long time for your money to stay idle. With Instant Deposits, you earn 4% APY from the moment you create the ACH transfer.</p>
+          <p>Until your ACH has finished processing, you won’t be able to withdraw or invest your deposit in a crypto-backed or Loan Originator loan. Instant Deposits transaction limits are calculated using the formula below:</p>
+          <p class="font-italic">Your Instant Deposit Limit = Your current balance + $1,000 (max $25,000 per transaction)</p>
+          <p>For example, if your balance is $5,000, your Instant Deposit limit is $6,000. This means you’ll earn 4% APY on a transaction of up to $6,000 while your ACH is processed.</p>
+        `,
   'ourStory.title': 'Our Story',
   'ourStory.b1.time': 'Jan 2019',
   'ourStory.b1.title1': 'Hi there.',
