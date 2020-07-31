@@ -3402,7 +3402,7 @@ const result =  {
             <p>We have to verify your ID to comply with US Anti-Money Laundering (AML) and Know Your Customer (KYC) regulations.</p>
             <p>Once you’ve created an account, you’ll be asked to submit address and ID proof, so we can verify your ID and approve your account.</p>
             <p>KYC verification is usually very fast, assuming you submit all relevant details and they’re clear, legible, and valid.</p>
-            <p>Here’s a tip sheet: How to verify your ID on Constant.</p>
+            <p>Here’s a tip sheet: <a href="https://blog.myconstant.com/how-to-verify-your-id-on-constant-kyc/" class="underline" target="_blank">How to verify your ID on Constant</a>.</p>
             `,
   'landingPage.faqs.data.5.question': 'Can I withdraw the ${kYCTrialAmount}?',
   'landingPage.faqs.data.5.answer': `
