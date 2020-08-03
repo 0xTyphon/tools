@@ -669,6 +669,10 @@ const result =  {
         <div>Instant credit: <strong>\${instantCredit}</strong></div>
         <div>Trial: <strong>\${trialBalance}</strong></div>
         `,
+  'me.proSaving.listApplications.balanceInterestDescNotTrial': `
+        <div>Available balance: <strong>\${availableBalance}</strong></div>
+        <div>Instant credit: <strong>\${instantCredit}</strong></div>
+        `,
   'me.proSaving.listApplications.referralDescUS': '        Get a $10 reward for you and your friends when you refer them to invest with us. Additionally, get rewarded 10% of their earned interest in their first year - paid out every second. So if your friend earns $100 we’ll give you $10. There’s no limit to the number of friends you can refer.        ',
   'me.proSaving.listApplications.trial': 'TRIAL',
   'me.proSaving.listApplications.trial_description': 'You keep the interest. Term has ended',
