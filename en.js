@@ -664,7 +664,11 @@ const result =  {
   'me.proSaving.listApplications.month': 'month',
   'me.proSaving.listApplications.day': 'day',
   'me.proSaving.listApplications.anyTimeAccount': 'Anytime deposit',
-  'me.proSaving.listApplications.balanceInterestDesc': '        <p><strong>Why is my balance increasing?</strong></p>            <p>As of <strong>Sep 10 2019</strong>, you’ll automatically earn <strong>{systemInterest}% APY</strong> on your current balance. These earnings will update real-time, and compound daily! You’ll still be able to withdraw anytime.</p>        ',
+  'me.proSaving.listApplications.balanceInterestDesc': `
+        <div>Available balance: <strong>\${availableBalance}</strong></div>
+        <div>Instant credit: <strong>\${instantCredit}</strong></div>
+        <div>Trial: <strong>\${trialBalance}</strong></div>
+        `,
   'me.proSaving.listApplications.referralDescUS': '        Get a $10 reward for you and your friends when you refer them to invest with us. Additionally, get rewarded 10% of their earned interest in their first year - paid out every second. So if your friend earns $100 we’ll give you $10. There’s no limit to the number of friends you can refer.        ',
   'me.proSaving.listApplications.trial': 'TRIAL',
   'me.proSaving.listApplications.trial_description': 'You keep the interest. Term has ended',
@@ -733,6 +737,7 @@ const result =  {
   'me.proSaving.listApplications.depositFrom.depositFailed': 'Failed while depositing, please try again',
   'me.proSaving.listApplications.depositFrom.depositSuccess': 'Your deposit was completed successfully',
   'me.proSaving.listApplications.noOpenData': 'No open order available',
+  'me.proSaving.listApplications.footer.desc': 'Showing {start} - {end} of {total} selected entries',
   'me.proSaving.applicationDetail.dueDays': 'Due Days',
   'me.proSaving.applicationDetail.interestAmount': 'Interest Amount',
   'me.proSaving.applicationDetail.originalAmount': 'Original Amount',
@@ -961,11 +966,12 @@ const result =  {
   'me.withdrawEmailConfirm.verifySuccess': 'Your withdrawal order has been confirmed successfully',
   'me.withdrawEmailConfirm.verifyFailed': 'Your confirmation link has expired. Please create a new withdrawal order',
   'me.kycVerification.pleaseComplete': 'Please complete the KYC process to {action}.',
-  'me.kycVerification.complete': 'Verify',
+  'me.kycVerification.complete': 'Verify your ID',
   'me.kycVerification.pleaseKYCBeforeAction': 'For your security, we’ll need you to verify your ID before {action}.',
   'me.kycVerification.updatedSuccess': 'Your information was updated successfully',
   'me.kycVerification.updatedFailed': 'Failed while updating your information, please try again!',
   'me.kycVerification.checkVerifyFailed': 'Failed while checking your verify status',
+  'me.kycVerification.statusUnverifiedUS': `Please verify your ID to get a <span style="color:#FF9F00;">\${kYCTrialAmount} bonus</span>`,
   'me.kycVerification.action.invest': 'making a deposit',
   'me.kycVerification.action.transfer': 'making a transfer',
   'me.kycVerification.action.deposit': 'making a deposit',
