@@ -3204,6 +3204,7 @@ const result =  {
   'collateralBalance.topupNote': 'Your crypto will be sent to your multi-collateral balance. To top up an isolated (single-collateral) loan, go to your active loans page and click the top-up button next to the loan you wish to top-up.',
   'collateralBalance.depositCollateralTitle': 'Deposit',
   'collateralBalance.topupSuccess': 'Top-up Collateral successfully',
+  'collateralBalance.depositSuccess': 'Deposit Collateral successfully',
   'collateralBalance.flexBalance': 'Flex Balance',
   'collateralBalance.cryptoWallet': 'Crypto Wallet',
   'proLending.balances.withdrawFrom.title': 'Withdraw your crypto collateral',
