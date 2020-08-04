@@ -3459,6 +3459,7 @@ const result =  {
   'badges.term.5': "Badges are awarded retroactively but rewards apply to qualifying activities after July 16th 2020 only. For example, if you passed KYC before July 16th 2020, you'll earn the “Member” badge but not the reward.",
   'badges.term.6': 'Constant reserves the right to withhold rewards and change the terms and conditions of Constant Badges at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.',
   'badges.term.7': 'To be eligible for rewards, you must have passed KYC.',
+  'badges.term.8': 'Badges awarded for depositing apply to fiat deposits only.',
   'badges.term.title': 'Terms and Conditions',
   'badges.term.note': 'Effective as of 2020/07/16 00:00 AM (GMT+0)',
   'badges.request': 'Request',
