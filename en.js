@@ -1291,7 +1291,14 @@ const result =  {
   'modules.faqs.desc': `Here you'll find answers to the most common questions our customers ask. If you can't find your answer here, please email us at <a href="mailto:hello@myconstant.com" class="landing-link semiBold" target="_top">hello@myconstant.com</a> and we'll be happy to help you.`,
   'modules.faqs.viewAll': 'View all',
   'modules.faqs.viewLess': 'View less',
-  'home.constantLoan.intro.content': '        <p>Borrow the way you want</p>        <p class="h1">Set your own rates.</p>        <p class="h1">Borrow against 60+ cryptocurrencies.</p>        <h1>Get cash for crypto without needing to sell.</h1>        <p/>        <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and returned to you when you repay. Free withdrawals in cash or stablecoins.</p>        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href="https://blog.myconstant.com/multi-crypto-loans" target="_blank" class="underline">our blog</a> and FAQs for more details.</p>        ',
+  'home.constantLoan.intro.content': `
+            <p>Borrow the way you want</p>
+            <p class="h1">Borrow from just 7% APR.</p>
+            <p class="h1">Use 40+ cryptos as collateral.</p>
+            <h1>Get <span style="color:#F5A623;">cash for crypto</span> without selling up.</h1>
+            <br/>
+            <p>Borrow against your cryptocurrency portfolio from just 7% APR. You choose the term, we match you with an investor, and you can withdraw your loan in USD or stablecoins. Your collateral is securely stored and returned to you when you repay.</p>
+        `,
   'home.constantLoan.intro.youtube.title': 'Why borrow with Constant?',
   'home.constantLoan.intro.desc.1': 'Secure escrow',
   'home.constantLoan.intro.desc.2': 'No credit checks',
@@ -1349,8 +1356,8 @@ const result =  {
   'home.constantLoan.exchange.monthsLoan': '{term}-month loan',
   'home.constantLoan.exchange.dayLoan': '{term}-day loans',
   'home.constantLoan.what.title': 'Why borrow with us?',
-  'home.constantLoan.what.whatCaption0': 'Set your own rates',
-  'home.constantLoan.what.whatDesc0': '          <p>Our P2P matching algorithm replaces centralized banks and allows you to tap into true market demand.</p>        ',
+  'home.constantLoan.what.whatCaption0': 'Flexible terms',
+  'home.constantLoan.what.whatDesc0': '<p>Borrow any amount from 1-9 months, giving you the flexibility to repay at a time that suits you.</p>',
   'home.constantLoan.what.whatCaption1': 'Protected by Ethereum',
   'home.constantLoan.what.whatDesc1': '          <p>Loans secured by Ethereum (ETH) are protected by smart contracts that always run exactly as programmed.</p>        ',
   'home.constantLoan.what.whatCaption2': 'Secure escrow',
@@ -1358,12 +1365,12 @@ const result =  {
   'home.constantLoan.what.whatCaption3': 'No credit scoring',
   'home.constantLoan.what.whatDesc3': '          <p>No credit scoring or background checks. Get funds instantly, no month-long waiting games for approval.</p>        ',
   'home.constantLoan.howItWorks.title': 'How it works',
-  'home.constantLoan.howItWorks.title1': '1. Set your own terms',
-  'home.constantLoan.howItWorks.desc1': 'Choose how much you want to borrow and for how long, and then select the interest rate you want to pay.',
-  'home.constantLoan.howItWorks.title2': '2. Wait to be matched',
-  'home.constantLoan.howItWorks.desc2': 'The Constant matching algorithm finds investors that can lend you the money you need at the rates you want.',
+  'home.constantLoan.howItWorks.title1': '1. Choose a term',
+  'home.constantLoan.howItWorks.desc1': 'Borrow any amount for 30, 90, or 180 days. The shorter your term, the lower the interest.',
+  'home.constantLoan.howItWorks.title2': '2. Deposit your collateral',
+  'home.constantLoan.howItWorks.desc2': 'Send collateral to secure your loan. You can combine different cryptocurrencies to meet the minimum collateral value.',
   'home.constantLoan.howItWorks.title3': '3. Get cash to spend',
-  'home.constantLoan.howItWorks.desc3': 'Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while supported collateral is held in Prime Trust cold storage. Collateral can be withdrawn once you repay.',
+  'home.constantLoan.howItWorks.desc3': 'Once you’ve sent your collateral, you can withdraw your loan in fiat or stablecoins. Your collateral is securely stored and returned to you when you repay.',
   'home.constantLoan.howItWorks.intro': '          <p>Deposit cryptocurrency to secure cash, at the best rates on the market.</p>          <p>Need cash? We accept major cryptocurrencies as collateral, in exchange for USD or the equivalent in your local currency. That means you’ll have cash to spend - without needing to sell your crypto.</p>        ',
   'home.constantLoan.howItWorks.step1': 'STEP 1',
   'home.constantLoan.howItWorks.step2': 'STEP 2',
