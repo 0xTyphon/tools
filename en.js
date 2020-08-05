@@ -3234,6 +3234,8 @@ const result =  {
   'proLending.watchBoard.term': 'Term',
   'proLending.watchBoard.matched': 'Time',
   'proLending.watchBoard.voidInvestmentBorrowsDesc': 'These are matched orders investors want to sell. You can’t change the term or rate on a secondary investment, but you earn all the interest due on the loan regardless of how much time is left in the term.',
+  'proLending.watchBoard.loanOriginatorInvestments': 'Loan Originator Investments',
+  'proLending.watchBoard.loanOriginatorInvestmentsDesc': 'Investments backed by the loan originator’s buy-back guarantee. Unlike crypto-backed investments, there might not always be collateral securing the loan. Instead, the loan originator guarantees to buy back the loan should the borrower default for 60 days or more, returning your principal and earned profit.',
   'proLending.depositFundsTitle': 'Deposit Funds',
   'proLending.depositCollateralTitle': 'Deposit',
   'proLending.investBooking.deposit.depositNote': 'Invest USD or USD stablecoins.',
