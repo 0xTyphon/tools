@@ -368,6 +368,7 @@ const result =  {
   'me.history.orderType.33': 'Badge reward',
   'me.history.orderType.101': 'Bonus',
   'me.history.orderType.102': 'Coupon Signup',
+  'me.history.orderType.105': 'Instant Credit Interest',
   'me.history.orderType.received': 'Received',
   'me.history.orderStatus.0': 'Pending',
   'me.history.orderStatus.1': 'Payment pending',
