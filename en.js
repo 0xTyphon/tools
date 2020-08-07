@@ -3309,6 +3309,7 @@ const result =  {
   'error.serverCode.generalCode500': 'Something went wrong, please try again! (500)',
   'error.serverCode.loginFailure': 'Please make sure your email and password are correct.',
   'error.serverCode.createdBankExisted': 'Nice! This bank account has already been registered.',
+  'error.serverCode.collateralSuspendRecall': 'Sorry, you can\'t recall excess on {symbol} collateral due to pricing volatility. We regularly review market activity and {symbol} prices are highly volatile at the moment. We\'ve therefore limited recall excess on {symbol} to protect you from an increased risk of liquidation. For more information, please contact hello@myconstant.com.',
   'error.expiredSession': 'Your session has expired. Please log in again.',
   'error.withdrawLessThanOrEqual': 'The maximum withdrawal amount is {max}. Please try other available methods.',
   'error.withdrawGreaterThan': 'The minimum withdrawal amount is {min}',
