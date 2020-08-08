@@ -3742,6 +3742,7 @@ const result =  {
   'me.bankInfo.nonUSbankSectionDesc': '<p>Speed up the transfer process by adding your bank account details below. Once saved, you can preselect these details the next time you create a deposit or withdrawal order instead of entering them manually.</p>',
   'me.bankInfo.nonUSbankImportantNote': '<strong>Please note</strong>: We can\'t accept ACH transfers from non-US bank accounts. Please send your funds via wire or Zelle only.',
   'me.bankInfo.getStartedIntruction': '<p>To get started, click <strong>+ Add new bank</strong></p>',
+  'me.bankInfo.errorLinkBank': '<p>For further information about the error, please go <a target="_blank" href="https://blog.myconstant.com/plaid-errors-and-what-to-do-about-them/">here</a>.</p>',
   'me.bankInfo.alert.deleteFailed': 'Failed To Delete',
   'me.bankInfo.dialog.update.title': 'Confirm Update',
   'me.bankInfo.dialog.update.body': 'Are you sure to update?',
