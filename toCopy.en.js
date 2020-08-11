@@ -353,10 +353,19 @@ export default {
       wireReceiptRemove: 'Remove receipt'
     },
     transferConstant: {
-      title: 'History',
-      tabs: { sent: 'Sent', received: 'Received', openOrders: 'Open Orders' },
+      title: 'Transfer History',
+      tabs: {
+        fiat: 'Fiat',
+        crypto: 'Crypto',
+        sent: 'Sent',
+        received: 'Received',
+        openOrders: 'Open Orders'
+      },
       headers: {
         orderNo: '#',
+        send: 'Send',
+        received: 'Received',
+        type: 'Type',
         amount: 'Amount',
         fromEmail: 'From Email',
         toEmail: 'To Email',
@@ -385,7 +394,7 @@ export default {
     },
     withdrawCrypto: {
       title: 'Withdrawals History',
-      tabs: { crypto: 'Crypto', openOrders: 'Open Orders' },
+      tabs: { fiat: 'Fiat', crypto: 'Crypto', openOrders: 'Open Orders' },
       headers: {
         orderNo: '#',
         usdAmount: 'USD Amount',
@@ -401,18 +410,20 @@ export default {
   me: {
     history: {
       exportToExcel: 'Export to excel',
+      depositNow: 'Deposit Now',
       cancel: 'Cancel',
       backToOrder: 'View detail',
-      balance: 'Total balance: {balance} USD',
-      holding: 'Holding: {holding} USD',
-      totalIn: 'Total In: {totalIn} USD',
-      totalOut: 'Total Out: {totalOut} USD',
+      balances: 'Total balance',
+      holdings: 'Holding',
+      totalIns: 'Total In',
+      totalOuts: 'Total Out',
       amountText: 'Amount',
       topup: 'Top up',
       topUpStatus: { '1': 'Done', '3': 'Expired', '5': 'Cancelled', '7': 'Pending' },
       loanId: 'Loan ID',
       loanDate: 'Loan date',
       loanStatus: 'Loan status',
+      balance: 'Total balance: {balance} USD',
       user: {
         status: {
           transferredMoneyToAgent: 'Your account will be credited once we have received your transfer.',
@@ -424,7 +435,8 @@ export default {
           transferMoneyToAgent: 'Please make a transfer to complete your deposit',
           transferredMoneyToAgentInvest: 'Your existing balance is: {balance} USD. To invest of {investAmount} USD, please top up {remainAmount} USD.',
           inProgress: 'Order in progress',
-          transferring_fiat: 'Transferring Fiat'
+          transferring_fiat: 'Transferring Fiat',
+          orderProcessing: 'Transaction is being processed'
         },
         account: 'User',
         fullName: 'Full name',
@@ -488,9 +500,11 @@ export default {
         '24': 'LO investment',
         '25': 'LO repayment',
         '26': 'LO Investment',
+        '27': 'LO Investment Interest',
         '33': 'Badge reward',
         '101': 'Bonus',
         '102': 'Coupon Signup',
+        '105': 'Instant Credit Interest',
         received: 'Received'
       },
       orderStatus: {
@@ -605,6 +619,8 @@ export default {
         loans_title: 'Loans',
         coin2coin_title: 'Crypto Credit',
         secondInvestments: 'Secondary Market',
+        secondInvestmentsLO: 'Loan Originator Secondary Market',
+        secondInvestmentsLODesc: 'Buy and sell matched investments on our secondary market. Sell your investment to end your term early or buy another investor’s order to earn their interest. View or cancel your secondary market orders below.',
         termStatusFilter: {
           investment: {
             pending: 'Pending',
@@ -886,7 +902,15 @@ export default {
         month: 'month',
         day: 'day',
         anyTimeAccount: 'Anytime deposit',
-        balanceInterestDesc: '        <p><strong>Why is my balance increasing?</strong></p>            <p>As of <strong>Sep 10 2019</strong>, you’ll automatically earn <strong>{systemInterest}% APY</strong> on your current balance. These earnings will update real-time, and compound daily! You’ll still be able to withdraw anytime.</p>        ',
+        balanceInterestDesc: '\n' +
+          '        <div>Available balance: <strong>${availableBalance}</strong></div>\n' +
+          '        <div>Instant credit: <strong>${instantCredit}</strong></div>\n' +
+          '        <div>Trial: <strong>${trialBalance}</strong></div>\n' +
+          '        ',
+        balanceInterestDescNotTrial: '\n' +
+          '        <div>Available balance: <strong>${availableBalance}</strong></div>\n' +
+          '        <div>Instant credit: <strong>${instantCredit}</strong></div>\n' +
+          '        ',
         referralDescUS: '        Get a $10 reward for you and your friends when you refer them to invest with us. Additionally, get rewarded 10% of their earned interest in their first year - paid out every second. So if your friend earns $100 we’ll give you $10. There’s no limit to the number of friends you can refer.        ',
         trial: 'TRIAL',
         trial_description: 'You keep the interest. Term has ended',
@@ -930,7 +954,7 @@ export default {
           },
           shareFbSuccess: 'Success! Thanks for telling your friends about Constant.'
         },
-        shareAndEarnUS: 'Invite a friend, earn $10 or more.',
+        shareAndEarnUS: 'Invite a friend, earn $20 or more.',
         batchtransfer: 'Transfer to multiple people',
         depositMatched: 'Deposit',
         cancelDepositMatched: 'Cancel Deposit',
@@ -978,7 +1002,8 @@ export default {
           depositFailed: 'Failed while depositing, please try again',
           depositSuccess: 'Your deposit was completed successfully'
         },
-        noOpenData: 'No open order available'
+        noOpenData: 'No open order available',
+        footer: { desc: 'Showing {start} - {end} of {total} selected entries' }
       },
       applicationDetail: {
         dueDays: 'Due Days',
@@ -1031,6 +1056,7 @@ export default {
       viewConstantWallet: 'Receive CONST here',
       fiatStableCoin: 'Fiat - Stablecoins',
       collateral: 'Collateral',
+      crypto: 'Crypto',
       topupHistory: 'Top-up History',
       localHistory: 'Transfers and interest earnings',
       fiat: 'Fiat',
@@ -1056,6 +1082,8 @@ export default {
       plFirstName: 'First Name',
       plMiddleName: 'Middle Name (Optional)',
       plLastName: 'Last Name',
+      plEmail: 'Email Address',
+      lEmail: 'Email Address',
       isUSYes: 'Yes',
       isUSNo: 'No',
       plTaxCountry: 'Select your country',
@@ -1079,7 +1107,9 @@ export default {
       descAddrUpload: '<div>        <p>Valid documents: utility bill, phone bill, mortgage statement, tenancy        agreement, bank/credit card statement, insurance letter (motor, home, or        life), or financial statement (pension, endowment).</p>        <p>        <strong>Document must be dated within the last 90 days.</strong>        </p>        <p>        Please ensure your proof of address is an exact match with the address        provided in your application, including all shorthands and abbreviations.</p>        <p>              Please make sure that the photo is complete and clearly visible, in BMP,         JPG, JPEG, PNG or PDF format, and is smaller than 10MB.</p>      </div>      ',
       btnBack: 'Back',
       reviewing: '        <p>Thanks, it’s nice to meet you.</p>        <p>          We’re looking over your information and will let you know once you’re          good to go.        </p>      ',
-      uploadImageClick: 'Click here to upload your images.'
+      uploadImageClick: 'Click here to upload your images.',
+      discardNoteTitle: 'Your KYC application has not yet been approved due to:',
+      discardNote: 'Please make sure all your documents are in order and just click submit again.'
     },
     bankInfo: {
       subject: 'Bank account details for receiving withdrawals or transfers ',
@@ -1103,6 +1133,21 @@ export default {
       routingNumber: 'Routing number',
       achCheckType: 'Ach Check Type',
       bankAccountType: 'Bank Account Type',
+      beneficiaryStreet: 'Beneficiary street',
+      beneficiaryRegion: 'Beneficiary region',
+      beneficiaryPostalCode: 'Beneficiary postal code',
+      linkBankSectionTitle: 'Link your US bank account with Plaid, our ACH processor',
+      linkBankSectionDesc: '<p>Deposit or withdraw using ACH bank transfers with Plaid. Link up to two bank accounts now to save time and money transferring funds to and from your Constant account. Since most savings accounts limit the number of withdrawals, we recommend you link a checking account not a savings account to avoid ACH reversals. <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How to avoid ACH reversals</a>.</p>',
+      linkBankImportantNote: '<strong>Please note</strong>: For your security, you must withdraw to the same bank account from which you made your deposit. This restriction applies for 60 days and can be lifted upon supplying additional verification information. <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How linked banking works</a>.',
+      unlinkBankSectionTitle: 'Add an unlinked bank account for manual transfers',
+      unlinkBankSectionDesc: "<p>If you want to send more than $5,000 per transaction, or if your bank is outside of the US or doesn't support ACH transfers through Plaid, please add alternative banking details below. You can then preselect these details the next time you create a withdrawal order.</p>",
+      unlinkBankImportantNote: '<strong>Please note</strong>: We can’t accept ACH transfers from unlinked bank accounts. If you send an ACH transfer from an unlinked bank account, it will be returned to you according to your bank’s schedule. Please only use Zelle or wire transfer only.',
+      nonUSbankSectionTitle: 'Add a bank account for deposits and withdrawals',
+      nonUSbankSectionDesc: '<p>Speed up the transfer process by adding your bank account details below. Once saved, you can preselect these details the next time you create a deposit or withdrawal order instead of entering them manually.</p>',
+      nonUSbankImportantNote: "<strong>Please note</strong>: We can't accept ACH transfers from non-US bank accounts. Please send your funds via wire or Zelle only.",
+      getStartedIntruction: '<p>To get started, click <strong>+ Add new bank</strong></p>',
+      errorLinkBank: '<p>For further information about the error, please go <a target="_blank" href="https://blog.myconstant.com/plaid-errors-and-what-to-do-about-them/">here</a>.</p>',
+      btnCancel: 'Cancel',
       dialog: {
         delete: {
           title: 'Confirm Delete',
@@ -1132,14 +1177,7 @@ export default {
       bankNameHolder: 'Enter Bank Name',
       bankAccountNameHolder: 'Enter Bank Account Name',
       bankAccountNumberHolder: 'Enter Bank Account Number',
-      input2FA: 'Please, enter your OTP',
-      linkBankSectionTitle: 'Link your US bank account with Plaid, our ACH processor',
-      linkBankSectionDesc: '<p>Deposit or withdraw using ACH bank transfers with Plaid. Link up to two bank accounts now to save time and money transferring funds to and from your Constant account. Since most savings accounts limit the number of withdrawals, we recommend you link a checking account not a savings account to avoid ACH reversals. <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How to avoid ACH reversals</a>.</p>',
-      linkBankImportantNote: '<strong>*Please note</strong>: For your security, you must withdraw to the same bank account from which you made your deposit. This restriction applies for 60 days and can be lifted upon supplying additional verification information. <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/">How linked banking works</a>.',
-      unlinkBankSectionTitle: 'Add an unlinked bank account for manual transfers',
-      unlinkBankSectionDesc: "<p>If you want to send more than $5,000 per transaction, or if your bank is outside of the US or doesn't support ACH transfers through Plaid, please add alternative banking details below. You can then preselect these details the next time you create a withdrawal order.</p>",
-      unlinkBankImportantNote: '<strong>Please note</strong>: We can’t accept ACH transfers from unlinked bank accounts. If you send an ACH transfer from an unlinked bank account, it will be returned to you according to your bank’s schedule. Please only use Zelle or wire transfer only.',
-      getStartedIntruction: '<p>To get started, click <strong>+ Add new bank</strong></p>'
+      input2FA: 'Please, enter your OTP'
     },
     accountInfo: {
       title: 'Your account details',
@@ -1150,7 +1188,7 @@ export default {
       alert: { success: 'Your name was changed successfully' },
       emailNotVerified: 'Please verify your email.',
       verifyBtn: 'Resend verification',
-      enableSms: 'Enable SMS Authentication to add extra security to your account'
+      enableSms: 'Enable SMS Authentication'
     },
     changeRef: {
       title: 'Change your referral code',
@@ -1197,6 +1235,7 @@ export default {
         labelOff: 'Enable',
         noteOff: '            <p>Uh oh – email confirmations are disabled. Enable them now to add extra security to your account.</p>            ',
         messageConfirmDisable: '        <p>Are you sure you want to disable email notifications? Without them, your transactions are authorized using 2-Factor Authorization only.</p>        <p>For your security, you won’t be able to withdraw or transfer for 24 hours after disabling email notifications. Do you want to continue?</p>        ',
+        messageConfirmEnable: '<p>Thank you. Email confirmations have been enabled. Anytime you withdraw or transfer, we’ll email you a link to authorize the transaction.</p>',
         confirm: 'Yes',
         cancel: 'No',
         disableSuccess: 'Successfully Disabled',
@@ -1323,11 +1362,12 @@ export default {
     },
     kycVerification: {
       pleaseComplete: 'Please complete the KYC process to {action}.',
-      complete: 'Verify',
+      complete: 'Verify your ID',
       pleaseKYCBeforeAction: 'For your security, we’ll need you to verify your ID before {action}.',
       updatedSuccess: 'Your information was updated successfully',
       updatedFailed: 'Failed while updating your information, please try again!',
       checkVerifyFailed: 'Failed while checking your verify status',
+      statusUnverifiedUS: 'Please verify your ID to get a <span style="color:#FF9F00;">${kYCTrialAmount} bonus</span>',
       action: {
         invest: 'making a deposit',
         transfer: 'making a transfer',
@@ -1564,18 +1604,18 @@ export default {
         youtube: { title: 'Fully Secured Peer To Peer Lending - How It Works' }
       },
       invest: {
-        title: '          <p>            <strong>INVEST</strong>            Crypto-backed          </p>        ',
-        cap: '          <div class="row">            <div class="col">              Interest rate              <strong>Up to 7.5%</strong>            </div>            <div class="col">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class="clearBottom">            All lending secured by digital assets          </p>        ',
+        title: '<p>INVEST<br/>Crypto-backed</p>',
+        cap: '          <div class="row">            <div class="col">              Interest rate              <strong>Up to 7.5%</strong>            </div>            <div class="col">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class="clearBottom text-left">            All lending secured by<br/>digital assets          </p>        ',
         btn: 'Explore'
       },
       loanOriginator: {
-        title: '          <p>            <strong>INVEST</strong>            Loan Originator          </p>        ',
-        cap: '          <div class="row">            <div class="col">              Interest rate              <strong>Up to 11%</strong>            </div>            <div class="col">              Loan term              <strong>6-15 <span>months</span></strong>            </div>          </div>          <p class="clearBottom">            Includes loan originator’s buy-back guarantee in case of default          </p>        ',
+        title: '<p>INVEST<br/>Loan Originator</p>',
+        cap: '          <div class="row">            <div class="col">              Interest rate              <strong>From 7.5%</strong>            </div>            <div class="col">              Loan term              <strong>6-15 <span>months</span></strong>            </div>          </div>          <p class="clearBottom text-left">            Includes loan originator’s<br/>buy-back guarantee in case of<br/>default          </p>        ',
         btn: 'Explore'
       },
       borrow: {
-        title: '          <p>            <strong>BORROW</strong>            Crypto Collateral          </p>        ',
-        cap: '          <div class="row">            <div class="col">              Interest rate              <strong>From 7%</strong>            </div>            <div class="col">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class="clearBottom">            Borrow against 60+ cryptocurrencies          </p>        ',
+        title: '<p>BORROW<br/>Crypto Collateral</p>',
+        cap: '          <div class="row">            <div class="col">              Interest rate              <strong>From 7%</strong>            </div>            <div class="col">              Loan term              <strong>1-6 <span>months</span></strong>            </div>          </div>          <p class="clearBottom text-left">            Borrow against<br/>60+ cryptocurrencies          </p>        ',
         btn: 'Explore'
       }
     }
@@ -1930,7 +1970,14 @@ export default {
   home: {
     constantLoan: {
       intro: {
-        content: '        <p>Borrow the way you want</p>        <p class="h1">Set your own rates.</p>        <p class="h1">Borrow against 60+ cryptocurrencies.</p>        <h1>Get cash for crypto without needing to sell.</h1>        <p/>        <p>Get the funds you need at rates you’re willing to pay. Your collateral is securely escrowed and returned to you when you repay. Free withdrawals in cash or stablecoins.</p>        <p>Now you can pool your buying power with multi-collateral loans! Check out <a href="https://blog.myconstant.com/multi-crypto-loans" target="_blank" class="underline">our blog</a> and FAQs for more details.</p>        ',
+        content: '\n' +
+          '            <p>Borrow the way you want</p>\n' +
+          '            <p class="h1">Borrow from just 7% APR.</p>\n' +
+          '            <p class="h1">Use 40+ cryptos as collateral.</p>\n' +
+          '            <h1>Get <span style="color:#F5A623;">cash for crypto</span> without selling up.</h1>\n' +
+          '            <br/>\n' +
+          '            <p>Borrow against your cryptocurrency portfolio from just 7% APR. You choose the term, we match you with an investor, and you can withdraw your loan in USD or stablecoins. Your collateral is securely stored and returned to you when you repay.</p>\n' +
+          '        ',
         youtube: { title: 'Why borrow with Constant?' },
         desc: {
           '1': 'Secure escrow',
@@ -1947,11 +1994,17 @@ export default {
         apr: 'APR',
         availableCredit: 'Available Credit',
         buttonText: 'Borrow cash',
-        borrowConfirm: "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {percent} collateralization. Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your Accounts page.",
+        borrowConfirm: "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate}. Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your Accounts page.",
+        borrowIsolateConfirm: "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. Click confirm to start your term and receive your loan. Once your term begins you won’t be able to cancel your loan, but you can repay early from your Accounts page",
+        borrowCoinConfirm: "You're about to borrow {amount} {currency} for {term} at {rate} beginning {startDate} and ending {endDate}. We'll use these funds to buy a maximum of {receiveAmount} to be deposited into your coin balance.\n" +
+          '\n' +
+          "Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your History page.",
+        borrowCoinIsolateConfirm: "You're about to borrow {amount} {currency} for {term} at {rate} beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. We'll use these funds to buy a maximum of {receiveAmount} to be deposited into your coin balance.\n" +
+          '\n' +
+          "Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your History page.",
         collateralBalance: 'Collateral Balance',
         isolate: 'Isolate',
         isolateDesc: 'Isolate your loan to use a single cryptocurrency as collateral. If you already have a multi-collateral loan the amount of collateral you can isolate may be limited. Check out our FAQs for more details',
-        borrowIsolateConfirm: "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. Click confirm to start your term and receive your loan. Once your term begins you won’t be able to cancel your loan, but you can repay early from your Accounts page",
         stakingTimeMessage: 'Your collateral will be sent to the Constant node. Please note: early repayment won’t be possible for at least {dayNum} days.',
         exchangeInfo: 'Estimate amount USD (const) you need to borrow',
         exchangeInfoDesc: 'Estimate amount USD (const) you need to borrow',
@@ -1992,8 +2045,8 @@ export default {
       },
       what: {
         title: 'Why borrow with us?',
-        whatCaption0: 'Set your own rates',
-        whatDesc0: '          <p>Our P2P matching algorithm replaces centralized banks and allows you to tap into true market demand.</p>        ',
+        whatCaption0: 'Flexible terms',
+        whatDesc0: '          <p>Borrow any amount from 1-9 months, giving you the flexibility to repay at a time that suits you.</p>        ',
         whatCaption1: 'Protected by Ethereum',
         whatDesc1: '          <p>Loans secured by Ethereum (ETH) are protected by smart contracts that always run exactly as programmed.</p>        ',
         whatCaption2: 'Secure escrow',
@@ -2003,12 +2056,12 @@ export default {
       },
       howItWorks: {
         title: 'How it works',
-        title1: '1. Set your own terms',
-        desc1: 'Choose how much you want to borrow and for how long, and then select the interest rate you want to pay.',
-        title2: '2. Wait to be matched',
-        desc2: 'The Constant matching algorithm finds investors that can lend you the money you need at the rates you want.',
+        title1: '1. Choose a term',
+        desc1: 'Borrow any amount for 30, 90, or 180 days. The shorter your term, the lower the interest.',
+        title2: '2. Deposit your collateral',
+        desc2: 'Send collateral to secure your loan. You can combine different cryptocurrencies to meet the minimum collateral value.',
         title3: '3. Get cash to spend',
-        desc3: 'Once you’ve found a match, you’ll receive the loan in your account. ETH collateral is securely escrowed in a smart contract, while supported collateral is held in Prime Trust cold storage. Collateral can be withdrawn once you repay.',
+        desc3: 'Once you’ve sent your collateral, you can withdraw your loan in fiat or stablecoins. Your collateral is securely stored and returned to you when you repay.',
         intro: '          <p>Deposit cryptocurrency to secure cash, at the best rates on the market.</p>          <p>Need cash? We accept major cryptocurrencies as collateral, in exchange for USD or the equivalent in your local currency. That means you’ll have cash to spend - without needing to sell your crypto.</p>        ',
         step1: 'STEP 1',
         step2: 'STEP 2',
@@ -2246,7 +2299,8 @@ export default {
           depositFailed: 'Failed while depositing, please try again',
           depositSuccess: 'Your deposit was completed successfully'
         },
-        paymentMethod: { const: 'USD', collateral: 'Collateral' }
+        paymentMethod: { const: 'USD', collateral: 'Collateral' },
+        footer: { desc: 'Showing {start} - {end} of {total} selected entries' }
       },
       transaction: {
         copiedAddress: 'Address is copied to clipboard',
@@ -2380,7 +2434,7 @@ export default {
         exchangeInfoDesc: 'You are borrowing USD that we will then use to buy your chosen cryptocurrency. Any USD left over from the purchase is returned to your Constant account.',
         toolTipCollateral: '          This is the amount of collateral required for the {exchangeUnit} loan. Collateral value is based on the current market price of {exchangeRate}.        ',
         amountDesc: 'Choose a cryptocurrency and amount. You might receive a little less of your chosen cryptocurrency if prices change before completing the sale.',
-        borrowConfirm: "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {percent} collateralization. Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your Accounts page.",
+        borrowConfirm: "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate}. Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your Accounts page.",
         minTermTooltip: 'This is the minimum amount of time you want to borrow.',
         collateralBalance: 'Collateral Balance',
         isolate: 'Isolate',
@@ -2436,8 +2490,8 @@ export default {
       },
       why: {
         title: 'Why borrow with us?',
-        whatCaption0: 'Set your own rates',
-        whatDesc0: '          <p>Our P2P matching algorithm allows you to tap into true market demand. Choose the market rate to guarantee a match, or go higher to match even faster.</p>        ',
+        whatCaption0: 'Flexible terms',
+        whatDesc0: '          <p>Borrow any amount from 1-9 months, giving you the flexibility to buy your chosen crypto and then repay at a time that suits you.</p>        ',
         whatCaption1: 'No exchanges',
         whatDesc1: '          <p>We match you with an investor and then source your chosen cryptocurrency at the best rates. No expensive middlemen. No trading fees.</p>        ',
         whatCaption2: 'Multiple pricing oracles',
@@ -2668,7 +2722,8 @@ export default {
           cancel: 'Cancel',
           depositFailed: 'Failed while depositing, please try again',
           depositSuccess: 'Your deposit was completed successfully'
-        }
+        },
+        footer: { desc: 'Showing {start} - {end} of {total} selected entries' }
       },
       errorMessages: {
         exchangeMaxAmountRequired: 'Amount is required to make a borrow!',
@@ -3072,7 +3127,10 @@ export default {
         investmentStatus: {
           active: 'Active',
           ready: 'Initial',
-          activating: 'Fund in transit'
+          activating: 'Fund in transit',
+          voiding: 'Selling',
+          voided: 'Sold',
+          pending: 'Pending'
         },
         loanOriginatorHeaders: {
           loanOriginator: 'Loan Originator (LO)',
@@ -3117,9 +3175,34 @@ export default {
               true: 'Disabled Auto Reinvest successfully',
               false: 'Enabled Auto Reinvest successfully'
             }
+          },
+          void: {
+            messageConfirm: '\n' +
+              '                <p>To end your term early, you can sell your investment and any rights to future loan repayments to another investor. Once sold, you’ll get your principal of ${amount} back plus 2% of interest accrued.</p>\n' +
+              '                <p>Would you like to sell your investment?</p>\n' +
+              '            ',
+            confirm: 'Yes',
+            cancel: 'Go back'
+          },
+          cancelVoid: {
+            messageConfirm: '<p>Are you sure you want to cancel selling your investment?</p>',
+            confirm: 'Yes',
+            cancel: 'Go back'
+          },
+          cancelPendingBuy: {
+            messageConfirm: '<p>Are you sure you want to cancel this secondary market order? Once canceled, you might not be able to buy it again.</p>',
+            confirm: 'Yes',
+            cancel: 'Go back'
           }
         },
-        investedLoanStatus: { default: 'Default' },
+        investedLoanStatus: {
+          default: 'Default',
+          current: 'Current',
+          late_1_15: '1-15 Days Late',
+          late_16_30: '16-30 Days Late',
+          late_31_60: '31-60 Days Late',
+          bad_debt: 'Bad Debt'
+        },
         reInvest_desc: 'This option enables investors to automatically invest borrower repayments (such as an interest or principal repayment) in new loans. This maximizes your returns by minimizing the amount of time your money spends idle.',
         stopConfirm: {
           shortTerm: '            <p>If you deactivate your Best Interest Investment Plan, your available funds – if any – will not be used to invest in new loans.</p>             <p>Deactivate your Best Interest Investment Plan?</p>          '
@@ -3137,7 +3220,28 @@ export default {
           paymentDate: 'Payment Date',
           status: 'Status'
         },
-        paymentScheduleStatus: { paid: 'Paid', scheduled: 'Schedule' }
+        paymentScheduleStatus: { paid: 'Paid', scheduled: 'Schedule' },
+        secondaryMarketLoanOriginator: {
+          mapStatus: {
+            pending: 'Pending',
+            voiding: 'Selling',
+            voided: 'Sold',
+            active: 'Bought',
+            closed: 'Done'
+          }
+        },
+        void: 'End your term early',
+        cancelVoid: 'Cancel',
+        cancelPendingBuy: 'Cancel',
+        alert: {
+          voidInvestmentSuccess: 'Thanks. Your investment has rejoined the matching queue and we’ll let you know when we find a buyer. In the meantime, you can cancel your sell order from your Accounts page.',
+          voidInvestmentFailed: 'Sorry, we couldn’t create your sell order. Please try again later. If you keep seeing this message, please email us at <a href="mailto:hello@myconstant.com">hello@myconstant.com</a>.',
+          voidInvestmentFailedMinAmount: "Sorry, we couldn't create your sell order as your investment is less than ${minAmount}.",
+          cancelVoidInvestmentSuccess: 'You successfully cancelled investment.',
+          cancelVoidInvestmentFailed: 'Failed to cancel investment',
+          cancelPendingBuyInvestmentSuccess: 'You successfully cancelled buying investment.',
+          cancelPendingBuyInvestmentFailed: 'Failed to cancel buying investment'
+        }
       }
     },
     buy: {
@@ -3284,6 +3388,7 @@ export default {
           plaid: {
             title: 'Transfer from a linked US bank account',
             subtitle: '<p>Make an ACH transfer from a linked US bank account through our partner Plaid. Please ensure you have sufficient funds in your account and your bank supports ACH transfers before you proceed.</p><p>To process your transfer, please choose your linked US bank account below and then click <strong>Submit</strong>.</p><p>If you’ve not linked a US bank account yet, please click <strong>+ Add bank</strong> and follow the on-screen instructions.</p>',
+            noBankDesc: '<p>Link a US bank account to do ACH transfers through our partner, Plaid.</p><p>You don’t have any linked bank accounts at the moment. To link a US bank account to do ACH transfers, please click <strong>+ Add new bank</strong>.</p>',
             desc: "<p>We've partnered with ACH processor Plaid to make transfers easy for you. Once you’ve linked your US bank account, please select it from the options shown and click <strong>Submit</strong>.</p> <p>Please note the maximum you can send via ACH is $5,000 per transaction. If you'd like to send more, please select wire transfer.</p>",
             updateBalanceNoteInWorkingTime: 'Please note it might take <strong>up to five business days</strong> for the ACH transfer to complete and show in your account.',
             referNoteDesc: '<h4>Before you click submit...</h4> <p>Please check the following to avoid any delays or ACH reversals</p>',
@@ -3641,7 +3746,8 @@ export default {
         interestRate: 'Interest Rate',
         investmentAmount: 'Available Investment Amount (USD)',
         title: 'Your investment criteria',
-        term: 'Term'
+        term: 'Term',
+        done: 'Done'
       },
       investButton: 'Invest',
       ads: {
@@ -3722,6 +3828,145 @@ export default {
         others: 'FDIC deposit insurance'
       },
       description: '* Data taken from first 100 results on <a href="https://www.bankrate.com/banking/savings/rates/" target="_blank" class="underline">https://www.bankrate.com/banking/savings/rates/</a> and correct as of April 29, 2020. '
+    },
+    faqs: {
+      '0': {
+        question: 'What is Flex?',
+        answer: '      <p>Flex is a deposit account that earns you 4% APY through automatic lending. When you deposit money into Flex, it goes into a liquidity pool managed by Compound Finance. Borrowers who’ve put up collateral can then secure loans from the pool in return for interest – and we pay that interest to you. Since your deposits go to a pool rather than individual borrowers, you can withdraw or deposit anytime, as often as you like, and without any fees.</p>      <p><a href="https://blog.myconstant.com/flex-apy-account-compound-finance" class="underline" target="_blank">How Flex works.</a></p>      '
+      },
+      '1': {
+        question: 'Why 4% APY?',
+        answer: 'Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 4% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market.'
+      },
+      '2': {
+        question: 'What is Compound Finance?',
+        answer: '      <p>Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time.</p>      <p>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!</p>      <p><a href="https://compound.finance/" class="underline" target="_blank">Learn more about Compound Finance.</a></p>      '
+      },
+      '3': {
+        question: 'Do you have a referral program for Flex?',
+        answer: 'Yes, we do. For every friend you refer to Flex, you’ll get 10% of their interest earnings for the first year (up to a maximum of $1,000,000). For more details, <a href="/referral">visit your Referrals page.</a>'
+      },
+      '4': {
+        question: 'Can I withdraw anytime?',
+        answer: 'Yes. Since you’re not lending your deposits to an individual, but to a lending pool, you can deposit or withdraw as much and as often as you like.'
+      },
+      '5': {
+        question: 'How do my deposits earn interest?',
+        answer: 'Flex uses an API with Compound Finance to lend your deposits to a liquidity pool. Others borrow from the pool in return for putting up collateral, and you earn the interest. In other words, Flex is very similar to how investments work on Constant, only with Flex you can withdraw anytime.'
+      },
+      '6': {
+        question: 'Are my deposits insured?',
+        answer: `      <p>Not always, no. While held with our trust partner, Prime Trust, your deposits are covered by a $130,000,000 insurance policy. However, we expect deposits will spend most of their time earning interest through Compound Finance, so will instead be protected by collateral put up by Compound's users.</p>      <p><a href="https://blog.myconstant.com/flex-or-prime-trust-constant" class="underline" target="_blank">Earn interest on your deposits or insure them?</a></p>      `
+      },
+      '7': {
+        question: 'Can I deposit collateral or other cryptocurrency into Flex?',
+        answer: 'At the moment, Flex only accepts USD and USD-backed stablecoins.'
+      },
+      '8': {
+        question: 'Can I earn interest while waiting for an investment order to match?',
+        answer: "No, your funds are set aside while waiting for a match so won't earn interest on Flex. If you decide to cancel the order, your funds will return to earning interest in Flex."
+      },
+      '9': {
+        question: 'Will the interest rate change?',
+        answer: "The interest rate depends on supply and demand in Compound's lending market. Sometimes it's higher, sometimes it's lower, but for the time being we've fixed this at 4% APY."
+      },
+      '10': {
+        question: 'Are there any fees?',
+        answer: 'No – all deposits and withdrawals on Flex are free.'
+      },
+      '11': {
+        question: 'How does Constant make money?',
+        answer: 'Flex deposits earn interest through an API with Compound Finance, another lending platform. Compound sets interest rates according to supply and demand, and Constant will make a slim profit on any difference between the Flex and Compound rates.'
+      }
+    },
+    faqs2: {
+      '0': {
+        question: 'How do I deposit?',
+        answer: '\n' +
+          '          <p>To deposit into your Constant account, click <strong>Withdraw to fiat</strong> from <a href="/accounts" class="underline">your Accounts page</a> or visit <a href="/flex" class="underline">our Flex page</a>. (You’ll end up on the Flex page either way as it also serves as our deposit gateway.)</p>\n' +
+          '          <p>Choose how much you want to deposit and then click <strong>Start growing</strong>.</p>\n' +
+          '          <p>On the next screen, you can choose from three deposit methods. We support Zelle for amounts under $2,000, ACH transfers for linked US accounts up to $5,000, and wire transfers which are unlimited.</p>\n' +
+          '          <p>Choose the appropriate deposit method and then follow the on-screen instructions.</p>\n' +
+          '          <p>Once we receive your deposit, which may take 1-5 business days depending on the method you choose, your balance will update within 1 business day.</p>\n' +
+          '          <p>Please read our <a href="/getPrices" class="underline">standard service times</a> for more information.</p>\n' +
+          '        '
+      },
+      '1': {
+        question: 'What deposit methods do you accept?',
+        answer: '\n' +
+          '          <p>We currently support Zelle for amounts under $2,000, ACH transfers for <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">linked US accounts</a> up to $5,000, and wire transfers which are unlimited.</p>\n' +
+          '          <p>In the interest of security, we’re in the process of moving all cash management to our custodial partner, Prime Trust. This means in the future we won’t need to handle your funds at all.</p>\n' +
+          '          <p>However, we’re somewhat limited by the deposit methods Prime Trust accept, and it’s likely Zelle will be phased out in the next few months.</p>\n' +
+          '        '
+      },
+      '2': {
+        question: 'How long do deposits take?',
+        answer: '\n' +
+          '          <p>This depends on the deposit method you choose.</p>\n' +
+          '          <p>Here’s a brief summary:</p>\n' +
+          '          <p>\n' +
+          '            <div>Zelle: 1 business day.</div>\n' +
+          '            <div>ACH: 3-5 business days.</div>\n' +
+          '            <div>Wire: 1-2 business days.</div>\n' +
+          '          </p>\n' +
+          '          <p>Your bank might delay these times if they need a manual review or there’s missing information. For a full breakdown of timings, please <a href="/getPrices" class="underline">check out our service times</a>.</p>\n' +
+          '        '
+      },
+      '3': {
+        question: 'Are there any limits on deposits?',
+        answer: '\n' +
+          '          <p>Yes. We currently support Zelle for amounts under $2,000 and ACH transfers for <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">linked US accounts</a> up to $5,000. Wire transfers are unlimited.</p>\n' +
+          '        '
+      },
+      '4': {
+        question: 'What’s the difference between a wire and an ACH bank transfer?',
+        answer: '\n' +
+          '          <p>A wire is typically faster and more expensive than an ACH. Wires are settled between banks and are considered “cleared” money and can’t be reversed.</p>\n' +
+          '          <p>ACH transfers, on the other hand, are settled in batches by an automated clearing system. This makes them much cheaper than wires.</p>\n' +
+          '        '
+      },
+      '5': {
+        question: 'How do I link my bank account for ACH transfers?',
+        answer: '\n' +
+          '          <p>Please check out <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">our guide</a> for step-by-step instructions.</p>\n' +
+          '        '
+      },
+      '6': {
+        question: 'What is an ACH reversal and how can I avoid them?',
+        answer: '\n' +
+          '          <p>ACH reversals happen when the transfer gets canceled. Usually because of incorrect information, duplicate transfers, insufficient funds, or the bank account doesn’t support ACH transfers. To avoid ACH reversals, please ensure you:</p>\n' +
+          '          <p>\n' +
+          '            <ol>\n' +
+          '              <li>Link a bank account that supports ACH.</li>\n' +
+          '              <li>Have enough money in your account for at least 48 hours after your ACH request.</li>\n' +
+          '              <li>Link a checking account, not a savings account, to avoid any withdrawal limits.</li>\n' +
+          '            </ol>\n' +
+          '          </p>\n' +
+          '          <p>If your account incurs multiple ACH reversals you’ll lose your Instant Deposit benefits and might be charged a fee of up to $20. Please read <a href="https://blog.myconstant.com/how-to-link-your-bank-account-for-ach-transfers-on-constant/" class="underline" target="_blank">our guide</a> carefully to learn how to correctly link a US bank account for ACH transfers.</p>\n' +
+          '        '
+      },
+      '7': {
+        question: 'Why do you limit Zelle deposits?',
+        answer: '\n' +
+          '          <p>Our custodial partner, Prime Trust, doesn’t currently support Zelle transfers. Until now, we’ve accepted these deposits and then transferred them to Prime Trust on your behalf. However, this is both inefficient and means you have to entrust us with your money.</p>\n' +
+          '          <p>Our aim has always to be a non-custodial platform, and as a result, we’re phasing out Zelle so Prime Trust manages all cashflow on our behalf. You have the option of Zelle deposits during this transitionary period as we know it’s convenient for you, but limited to under $2,000 per transaction.</p>\n' +
+          '        '
+      },
+      '8': {
+        question: 'Why can’t I send an ACH from outside the US?',
+        answer: '\n' +
+          '          <p>Our custodial partner, Prime Trust, accepts ACH through Plaid, an ACH processor. At the moment, you can only link US bank accounts through Plaid. If you bank outside of the US, please send a wire instead.</p>\n' +
+          '        '
+      },
+      '9': {
+        question: 'What are Instant Deposits?',
+        answer: '\n' +
+          '          <p>Instant Deposits is a program we developed to pay you interest on ACH deposits while they’re being processed. Since ACH transfers can take up to 5 business days, that’s quite a long time for your money to stay idle. With Instant Deposits, you earn 4% APY from the moment you create the ACH transfer.</p>\n' +
+          '          <p>Until your ACH has finished processing, you won’t be able to withdraw or invest your deposit in a crypto-backed or Loan Originator loan. Instant Deposits transaction limits are calculated using the formula below:</p>\n' +
+          '          <p class="font-italic">Your Instant Deposit Limit = Your current balance + $1,000 (max $25,000 per transaction)</p>\n' +
+          '          <p>For example, if your balance is $5,000, your Instant Deposit limit is $6,000. This means you’ll earn 4% APY on a transaction of up to $6,000 while your ACH is processed.</p>\n' +
+          '        '
+      }
     }
   },
   depositCrypto: {
@@ -3767,34 +4012,6 @@ export default {
         desc: '<p>Interest is compounded and paid every second, giving you immediate returns. When you’re ready, withdraw again to a wallet of your choice absolutely free.</p>'
       },
       title: 'How it works'
-    }
-  },
-  deposit1: {
-    faqs: {
-      question1: 'What is Flex?',
-      answer1: '      <p>Flex is a deposit account that earns you 4% APY through automatic lending. When you deposit money into Flex, it goes into a liquidity pool managed by Compound Finance. Borrowers who’ve put up collateral can then secure loans from the pool in return for interest – and we pay that interest to you. Since your deposits go to a pool rather than individual borrowers, you can withdraw or deposit anytime, as often as you like, and without any fees.</p>      <p><a href="https://blog.myconstant.com/flex-apy-account-compound-finance" class="underline" target="_blank">How Flex works.</a></p>      ',
-      question2: 'Why 4% APY?',
-      answer2: 'Compound Finance uses a blockchain protocol that intelligently manages the lending pool. It also sets interest rates according to supply and demand. At the moment, the rate is fixed at 4% APY. In the future, it could be higher or lower depending on activity in Compound’s lending market.',
-      question3: 'What is Compound Finance?',
-      answer3: '      <p>Compound Finance is a technology that intelligently manages a lending pool of over $150 million in assets (as of September 2019). Flex interfaces with this technology through an API that allows you to withdraw your deposits and earned interest at any time.</p>      <p>Compound Finance lends in a similar way to banks: your deposits go in and are lent to borrowers in exchange for interest and collateral. But since Compound Finance is a technology, there is no need for branches or staff, so you enjoy a much better interest rate!</p>      <p><a href="https://compound.finance/" class="underline" target="_blank">Learn more about Compound Finance.</a></p>      ',
-      question4: 'Do you have a referral program for Flex?',
-      answer4: 'Yes, we do. For every friend you refer to Flex, you’ll get 10% of their interest earnings for the first year (up to a maximum of $1,000,000). For more details, <a href="/referral">visit your Referrals page.</a>',
-      question5: 'Can I withdraw anytime?',
-      answer5: 'Yes. Since you’re not lending your deposits to an individual, but to a lending pool, you can deposit or withdraw as much and as often as you like.',
-      question6: 'How do my deposits earn interest?',
-      answer6: 'Flex uses an API with Compound Finance to lend your deposits to a liquidity pool. Others borrow from the pool in return for putting up collateral, and you earn the interest. In other words, Flex is very similar to how investments work on Constant, only with Flex you can withdraw anytime.',
-      question7: 'Are my deposits insured?',
-      answer7: `      <p>Not always, no. While held with our trust partner, Prime Trust, your deposits are covered by a $130,000,000 insurance policy. However, we expect deposits will spend most of their time earning interest through Compound Finance, so will instead be protected by collateral put up by Compound's users.</p>      <p><a href="https://blog.myconstant.com/flex-or-prime-trust-constant" class="underline" target="_blank">Earn interest on your deposits or insure them?</a></p>      `,
-      question8: 'Can I deposit collateral or other cryptocurrency into Flex?',
-      answer8: 'At the moment, Flex only accepts USD and USD-backed stablecoins.',
-      question9: 'Can I earn interest while waiting for an investment order to match?',
-      answer9: "No, your funds are set aside while waiting for a match so won't earn interest on Flex. If you decide to cancel the order, your funds will return to earning interest in Flex.",
-      question10: 'Will the interest rate change?',
-      answer10: "The interest rate depends on supply and demand in Compound's lending market. Sometimes it's higher, sometimes it's lower, but for the time being we've fixed this at 4% APY.",
-      question11: 'Are there any fees?',
-      answer11: 'No – all deposits and withdrawals on Flex are free.',
-      question12: 'How does Constant make money?',
-      answer12: 'Flex deposits earn interest through an API with Compound Finance, another lending platform. Compound sets interest rates according to supply and demand, and Constant will make a slim profit on any difference between the Flex and Compound rates.'
     }
   },
   ourStory: {
@@ -3955,14 +4172,55 @@ export default {
     goToLoginPage: 'Go to Sign In page'
   },
   affiliates: {
+    greetingForm: {
+      title: '\n' +
+        '        <p class="header">Hello {name},</p>\n' +
+        '        <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>\n' +
+        '        <p>Your total referral earnings to date: <strong>{totalEarned}</strong>.</p>\n' +
+        '      ',
+      inviteFriends: 'Invite friends'
+    },
     applyForm: {
       applyNow: 'Apply now',
-      title: '        <p class="header">Get paid for your content.</p>        <p>Become a Constant affiliate and earn money on your content. <strong>Get $20</strong> for every person<sup>1</sup> you refer plus <strong>20% of their Flex interest in their first year</strong> (capped at $1 million). Refer as many people as you like. </p>      ',
-      titleDesc: '      <p class="reference"><sup>1</sup> To qualify for the $20 reward, your referee must be a US citizen (see Affiliate Terms and Conditions).</p>      ',
+      titleReward: '\n' +
+        '        <p class="header">Get paid for your content.</p>\n' +
+        '        <p>Become a Constant affiliate and earn money on your content. <strong>Get ${affiliateReward}</strong><sup>1</sup> for every person<sup>2</sup> you refer plus <strong>20% of their Flex interest in their first year</strong> (capped at $1 million). Refer as many people as you like. </p>\n' +
+        '        ',
+      titleDescReward: '\n' +
+        '        <p class="reference clearBottom"><sup>1</sup> Valid until {affiliateRewardEnd}</p>\n' +
+        '        <p class="reference"><sup>2</sup> To qualify for the ${affiliateReward} reward, your referee must be a US citizen (see Affiliate Terms and Conditions).</p>\n' +
+        '        ',
+      title: '\n' +
+        '        <p class="header">Get paid for your content.</p>\n' +
+        '        <p>Become a Constant affiliate and earn money on your content. <strong>Get ${affiliateReward}</strong> for every person<sup>1</sup> you refer plus <strong>20% of their Flex interest in their first year</strong> (capped at $1 million). Refer as many people as you like. </p>\n' +
+        '        ',
+      titleDesc: '\n' +
+        '        <p class="reference"><sup>1</sup> To qualify for the ${affiliateReward} reward, your referee must be a US citizen (see Affiliate Terms and Conditions).</p>\n' +
+        '        ',
       userName: 'Your name',
       userEmail: 'Your email address',
       notValidEmail: 'Invalid email address',
       requestSuccess: 'Successfully Requested'
+    },
+    applicationForm: {
+      title: '\n' +
+        '      <p class="header">Constant Affiliate Application Form</p>\n' +
+        '      ',
+      desc: '\n' +
+        '      <p>Thanks for your interest in our affiliate program. To progress your application, please fill out the details below:</p>\n' +
+        '        ',
+      fullName: 'Your full name (as it appears on your ID)',
+      emailAddress: 'Email address',
+      phoneNumber: 'Phone number',
+      permanentAddress: 'Permanent address (in full)',
+      taxId: 'Tax ID',
+      website: 'Website',
+      socialMediaLinks: 'Social media links',
+      howToAdvertise: 'How will you advertise us? (CPC, blog, SEO, and so on)',
+      others: 'Anything else that might help us approve your application',
+      applyNow: 'Apply now',
+      requestSuccess: 'Successfully Submitted',
+      requestFailed: 'Failed To Submit'
     },
     summary: {
       title: 'P2P lending done right. No fees. All loans secured.',
@@ -3981,7 +4239,7 @@ export default {
         '3': ' ',
         '4': 'for your referee'
       },
-      desc: '        <div class="section-desc-title">YOU EARN MORE</div>        <div><strong>Earn $20 for every US citizen who registers</strong>, paid instantly after they make their first deposit, and with no limits.</div>        <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>        <div><strong>Your referee also gets a ${kYCTrialAmount} Flex trial</strong> when they pass KYC. We’ll take the trial funds back at the end of the month, but they’ll keep the interest.</div>      ',
+      desc: '        <div class="section-desc-title">YOU EARN MORE</div>        <div><strong>Earn ${affiliateReward} for every US citizen who registers</strong>, paid instantly after they make their first deposit, and with no limits.</div>        <div><strong>Then earn 20% of their Flex interest</strong>, paid every second, and capped at a generous $1,000,000.</div>        <div><strong>Your referee also gets a ${kYCTrialAmount} Flex trial</strong> when they pass KYC. We’ll take the trial funds back at the end of the month, but they’ll keep the interest.</div>      ',
       data: {
         '0': {
           title: 'REWARD YOUR COMMUNITY',
@@ -4011,7 +4269,7 @@ export default {
         },
         '2': {
           title: ' ',
-          desc: 'You get $20 paid instantly to your Constant account.'
+          desc: 'You get ${affiliateReward} paid instantly to your Constant account.'
         },
         '3': {
           title: ' ',
@@ -4022,7 +4280,7 @@ export default {
           desc: 'You get 20% of their Flex earnings, paid every second.'
         }
       },
-      desc: '      <p>There are <strong>no limits</strong> to the number of people you can refer for the $20 bonus.</p>      <p>Your Flex earnings are capped at $1,000,000.</p>'
+      desc: '      <p>There are <strong>no limits</strong> to the number of people you can refer for the ${affiliateReward} bonus.</p>      <p>Your Flex earnings are capped at $1,000,000.</p>'
     },
     aboutYou: {
       title: 'About you',
@@ -4045,7 +4303,7 @@ export default {
     faqs: {
       '0': {
         question: 'What is the Constant affiliate program?',
-        answer: '          <p>          The Constant Affiliate Program rewards you for referring people to Constant through your website, service, or platform. For every person who signs up using your referral link, you’ll earn a $20 bonus, paid immediately upon them making their first deposit (minimum $10). You’ll also earn 20% of their Flex earnings, paid every second, and capped at $1,000,000.          </p>          <p>          We track your referrals using cookies with a 30-day lifespan. If someone clicks your affiliate link and signs up within a 30-day period, you’ll earn the bonus and commission – even if they don’t sign up immediately. Of course, should your referee clear their cookies, we won’t be able to track them, so please bear this in mind. You want people to sign up as soon as possible.          </p>          '
+        answer: '          <p>          The Constant Affiliate Program rewards you for referring people to Constant through your website, service, or platform. For every person who signs up using your referral link, you’ll earn a ${affiliateReward} bonus, paid immediately upon them making their first deposit (minimum $10). You’ll also earn 20% of their Flex earnings, paid every second, and capped at $1,000,000.          </p>          <p>          We track your referrals using cookies with a 30-day lifespan. If someone clicks your affiliate link and signs up within a 30-day period, you’ll earn the bonus and commission – even if they don’t sign up immediately. Of course, should your referee clear their cookies, we won’t be able to track them, so please bear this in mind. You want people to sign up as soon as possible.          </p>          '
       },
       '1': {
         question: 'Who can become a Constant affiliate?',
@@ -4145,12 +4403,13 @@ export default {
       },
       desc: 'Unlike traditional P2P platforms that prey on vulnerable borrowers and expect investors to shoulder the risk, Constant is designed to protect them both.'
     },
-    greetingForm: {
-      inviteFriends: 'Invite friends',
-      title: '        <p class="header">Hello {name},</p>        <p>Welcome to your affiliate dashboard. You’ll find your affiliate link and sharing options below. You can track your earnings here, too.</p>        <p>Your total referral earnings to date: <strong>${totalEarned}</strong>.</p>      '
-    },
     terms: {
-      content: `        <p class="section-title">Terms and Conditions</p>        <p>1. The amount you earn depends on how your referees use the platform:</p>        <p class="desc">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>        <p>2. We will pay you $20 for every person who signs up using your referral link, passes KYC and makes a deposit into Constant. If they don't meet these requirements, you don't earn the $20 bonus.</p>        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>        <p>6. If you make false or misleading statements about Constant, use Constant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with Constant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p>        <p>7. To qualify for affiliate earnings, your referees must be US citizens.</p>        <p>8. Constant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>      `
+      content: '\n' +
+        '        <p class="section-title">Terms and Conditions</p>\n' +
+        '        <p>1. The amount you earn depends on how your referees use the platform:</p>\n' +
+        '        <p class="desc">You earn 20% of your referees’ earned Flex interest. We pay this interest every second that your referees earn.</p>\n' +
+        "        <p>2. We will pay you ${affiliateReward} for every person who signs up using your referral link, passes KYC and makes a deposit into Constant. If they don't meet these requirements, you don't earn the ${affiliateReward} bonus.</p>        <p>3. Your referral earnings are paid in USD, directly into your Constant account.</p>        <p>4. The maximum affiliate interest you can earn through Flex is $1,000,000.</p>        <p>5. You can’t self-invite by creating multiple accounts. If we detect such activity, all referrals and earnings (if any) will be forfeit.</p>        <p>6. If you make false or misleading statements about Constant, use Constant keywords in Google ads, use visitor exchange systems, forced clicks, and other methods that lead to unqualified traffic, send spam with Constant ads or use other aggressive marketing methods, your affiliate earnings will be forfeit and your membership cancelled.</p>        <p>7. To qualify for affiliate earnings, your referees must be US citizens.</p>        <p>8. Constant reserves the right to change the terms of the affiliate program at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.</p>\n" +
+        '      '
     },
     referralUsers: {
       title: 'Emailed invites',
@@ -4164,6 +4423,7 @@ export default {
       object_amount: "Friend's earnings",
       object_type: 'Type',
       value: 'Your earnings ',
+      valueDesc: 'As soon as you’ve earned at least 1 cent, you can track your earnings below.',
       created_at: 'Date'
     }
   },
@@ -4359,8 +4619,12 @@ export default {
     topupNote: 'Your crypto will be sent to your multi-collateral balance. To top up an isolated (single-collateral) loan, go to your active loans page and click the top-up button next to the loan you wish to top-up.',
     depositCollateralTitle: 'Deposit',
     topupSuccess: 'Top-up Collateral successfully',
+    depositSuccess: 'Deposit Collateral successfully',
     flexBalance: 'Flex Balance',
-    cryptoWallet: 'Crypto Wallet'
+    cryptoWallet: 'Crypto Wallet',
+    recommendMessage: 'To restore your collateral value to the recommended {recommendedRate}%, please top up {amount} {currency}',
+    errorMaxValue: 'Amount must less than {max}',
+    errorMinValue: 'Amount must greater than {min}'
   },
   proLending: {
     balances: {
@@ -4403,7 +4667,11 @@ export default {
       interest: 'Interest (APR)',
       term: 'Term',
       matched: 'Time',
-      voidInvestmentBorrowsDesc: 'These are matched orders investors want to sell. You can’t change the term or rate on a secondary investment, but you earn all the interest due on the loan regardless of how much time is left in the term.'
+      voidInvestmentBorrowsDesc: 'These are matched orders investors want to sell. You can’t change the term or rate on a secondary investment, but you earn all the interest due on the loan regardless of how much time is left in the term.',
+      loanOriginatorInvestments: 'Loan Originator Investments',
+      loanOriginatorInvestmentsDesc: 'Investments backed by the loan originator’s buy-back guarantee. Unlike crypto-backed investments, there might not always be collateral securing the loan. Instead, the loan originator guarantees to buy back the loan should the borrower default for 60 days or more, returning your principal and earned profit.',
+      loSecondaryMarket: 'LO Secondary Investments',
+      loSecondaryMarketDesc: 'Investments backed by the loan originator’s buy-back guarantee. Unlike crypto-backed investments, there might not always be collateral securing the loan. Instead, the loan originator guarantees to buy back the loan should the borrower default for 60 days or more, returning your principal and earned profit.'
     },
     depositFundsTitle: 'Deposit Funds',
     depositCollateralTitle: 'Deposit',
@@ -4438,7 +4706,8 @@ export default {
         borrow: 'Please log in to request a loan.'
       },
       messDepositFirst: 'Please deposit sufficient funds to make this investment.',
-      minAmountRequired: 'The minimum amount to invest is {value}.'
+      minAmountRequired: 'The minimum amount to invest is {value}.',
+      matchedSecondaryInvestmentSuccess: "Done! You've bought a new investment. To track it, please visit the Secondary Market tab on your Accounts page."
     },
     deposits: {
       depositLabel: 'Select loan collateral',
@@ -4453,6 +4722,8 @@ export default {
         availableCredit: 'Available Credit',
         minTerm: 'Term (Days)',
         buttonText: 'Borrow',
+        receiveType: 'Receive type',
+        receiveAmount: 'Receive amount',
         minTermTooltip: 'This is how long you want to borrow for.',
         collateralNoteMatchedFee: 'Fee: 1%',
         amountRequired: 'Amount is required to make a borrow!',
@@ -4544,7 +4815,8 @@ export default {
       term: 'Days',
       date: 'Created',
       matched: 'Matched',
-      titleDesc: 'These are orders waiting for a match.'
+      titleDesc: 'These are orders waiting for a match.',
+      messageSuccess: 'Your order book have been canceled successfully'
     },
     matchedOrders: {
       title: 'Order History',
@@ -4562,7 +4834,15 @@ export default {
       registerWithExistEmail: 'This email already exists in our system. Please try another.',
       generalCode500: 'Something went wrong, please try again! (500)',
       loginFailure: 'Please make sure your email and password are correct.',
-      createdBankExisted: 'Nice! This bank account has already been registered.'
+      createdBankExisted: 'Nice! This bank account has already been registered.',
+      systemError: 'System error',
+      transferUserNotFound: 'Please enter a valid email.',
+      loginFailureCaptchaV2: 'Something went wrong please try again',
+      stakingRequireMinTerm: 'Since you staked your collateral to reduce the interest on your loan, you can’t un-stake until your loan matures.',
+      generalCode400: 'Something went wrong, please try again! (400)',
+      generalError: 'Oops! Something went wrong, please try again',
+      collateralSuspendRecall: "Sorry, you can't recall excess on {symbol} collateral due to pricing volatility. We regularly review market activity and {symbol} prices are highly volatile at the moment. We've therefore limited recall excess on {symbol} to protect you from an increased risk of liquidation. For more information, please contact hello@myconstant.com.",
+      not_enough_balance: 'Your balance is insufficient. Please try again with a different amount.'
     },
     expiredSession: 'Your session has expired. Please log in again.',
     withdrawLessThanOrEqual: 'The maximum withdrawal amount is {max}. Please try other available methods.',
@@ -4588,6 +4868,7 @@ export default {
     prices: 'Pricing & Service times',
     account: 'Account',
     aboutYou: 'About You',
+    badges: 'Your badges',
     interest: 'Interest',
     accountActivity: 'Account Activity',
     blog: 'Blog',
@@ -4599,6 +4880,7 @@ export default {
     btnInvestments: '<div class="textLeft"><small>Investments</small><div>Crypto-back</div></div>',
     btnBuyBackInvestments: '<div class="textLeft"><small>Investments</small><div>Loan Originator</div></div>',
     btnSecondaryMarket: '<div class="textLeft"><small>Secondary</small><div>Market</div></div>',
+    btnLOSecondaryMarket: '<div class="textLeft"><small>Loan Originator</small><div>Secondary Market</div></div>',
     btnLoans: 'Loans',
     btnLoansC2C: 'Crypto Credit'
   },
@@ -4796,7 +5078,7 @@ export default {
             '            <p>We have to verify your ID to comply with US Anti-Money Laundering (AML) and Know Your Customer (KYC) regulations.</p>\n' +
             '            <p>Once you’ve created an account, you’ll be asked to submit address and ID proof, so we can verify your ID and approve your account.</p>\n' +
             '            <p>KYC verification is usually very fast, assuming you submit all relevant details and they’re clear, legible, and valid.</p>\n' +
-            '            <p>Here’s a tip sheet: How to verify your ID on Constant.</p>\n' +
+            '            <p>Here’s a tip sheet: <a href="https://blog.myconstant.com/how-to-verify-your-id-on-constant-kyc/" class="underline" target="_blank">How to verify your ID on Constant</a>.</p>\n' +
             '            '
         },
         '5': {
@@ -4860,6 +5142,7 @@ export default {
       '5': "Badges are awarded retroactively but rewards apply to qualifying activities after July 16th 2020 only. For example, if you passed KYC before July 16th 2020, you'll earn the “Member” badge but not the reward.",
       '6': 'Constant reserves the right to withhold rewards and change the terms and conditions of Constant Badges at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.',
       '7': 'To be eligible for rewards, you must have passed KYC.',
+      '8': 'Badges awarded for depositing apply to fiat deposits only.',
       title: 'Terms and Conditions',
       note: 'Effective as of 2020/07/16 00:00 AM (GMT+0)'
     },
@@ -5067,5 +5350,72 @@ export default {
     makeDirectOrderSuccess: 'Thanks! Your transfer is now processing.',
     makeDirectOrderFailed: "Sorry, we couldn't create your order this time. Please try again. If you continue experiencing problems, please contact us at hello@myconstant.com. Thank you.",
     transferConfirm: "We've already sent you a verification link by email. Please click this link to approve your transaction."
+  },
+  callUs: {
+    title: 'Call Us',
+    header: 'Set your preferred time',
+    yourName: 'Your name',
+    phoneNumber: 'Phone number',
+    emailAddress: 'Email address',
+    content: 'Content',
+    contentDesc: 'You want to ask about…',
+    selectPreferredTime: 'Select your preferred time (UTC)',
+    desc: 'Once you’ve clicked Book a call, we’ll give you a ring at the time specified.',
+    bookACall: 'Book a call',
+    requestSuccess: 'Successfully Submitted',
+    requestFailed: 'Failed To Submit'
+  },
+  helpAndSupport: {
+    searchPlaceholder: 'Search for an article or question',
+    title: 'Help & Support',
+    what: 'What could you like to do?',
+    whatDesc: 'Click a button below to access step-by-step guides and tutorials',
+    question: 'Have a specific question?',
+    questionDesc: 'Click a topic below and we’ll answer it as best we can.',
+    socials: {
+      telegram: {
+        link: 'https://t.me/constantp2p',
+        title: 'Join our Telegram community',
+        desc: 'Get help from 1,000s of customers.'
+      },
+      blog: {
+        link: '/blog',
+        title: 'Read our blog',
+        desc: 'Discover the latest news, guides, and opinon from the team and guests.'
+      },
+      chat: {
+        link: 'https://constant.zendesk.com/hc/en-us',
+        title: 'Chat with us live',
+        desc: 'Speak to our customer support team, day or night.'
+      },
+      email: {
+        link: 'mailto:hello@myconstant.com',
+        title: 'Send us an email',
+        desc: 'We’d love to hear from you.'
+      },
+      fb: { link: 'https://www.facebook.com/constantp2p' },
+      tw: { link: 'https://twitter.com/constantp2p' },
+      linkedin: { link: 'https://www.linkedin.com/company/constantp2p/' }
+    },
+    announcements: 'Announcements',
+    announcementsDesc: 'All you need to know, in one place.',
+    help: 'Help',
+    categories: 'FAQ categories',
+    form: {
+      caption: "Can't find what you're looking for? Tell us what you need below.",
+      email: 'Your email address',
+      title: 'Subject',
+      note: 'Description',
+      submit: 'Submit',
+      emailError: 'Requester email address is invalid.',
+      titleError: 'Subject: cannot be blank',
+      noteError: 'Description: cannot be blank',
+      posts: {
+        false: 'Uh oh! Something went wrong - ',
+        retry: 'please try again.'
+      }
+    },
+    noResults: 'Sorry! content not found',
+    browseCategories: 'Browse categories'
   }
 };
