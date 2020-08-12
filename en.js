@@ -1676,7 +1676,7 @@ const result =  {
   'home.constantLoan.listApplications.errorRemainCollateral': 'You can not to get the remaining collateral back at the moment',
   'home.constantLoan.listApplications.errorRemainCollateralHtml': '          Please wait for assistance, or contact us at <a href=mailto:hello@myconstant.com">hello@myconstant.com</a>',
   'home.constantLoan.listApplications.errorCollateralNotEnoughHtml': 'Your collateral value is {percent}% of loan to value. That’s why you can’t do recall excess.',
-  'home.constantLoan.listApplications.errorRecallLowCollateralRate': 'To recall excess, <a href="">collateral rate must be more than {requiredRate}%. Your current collateral value is {currentRate}%',
+  'home.constantLoan.listApplications.errorRecallLowCollateralRate': 'To recall excess, collateral rate must be more than {requiredRate}%. Your current collateral value is {currentRate}%',
   'home.constantLoan.listApplications.errorIsolateNotEnough': 'Your Collateral Balance does not meet the minimum amount required to set multi-collateral to isolated.',
   'home.constantLoan.listApplications.depositFrom.title': 'Deposit more collateral',
   'home.constantLoan.listApplications.depositFrom.amount': 'Amount',
