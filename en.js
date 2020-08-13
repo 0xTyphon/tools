@@ -1400,10 +1400,10 @@ const result =  {
   'home.constantLoan.exchange.buttonText': 'Borrow cash',
   'home.constantLoan.exchange.borrowConfirm': "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate}. Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your Accounts page.",
   'home.constantLoan.exchange.borrowIsolateConfirm': "You're about to borrow {amount} {currency} for {term} days at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. Click confirm to start your term and receive your loan. Once your term begins you won’t be able to cancel your loan, but you can repay early from your Accounts page",
-  'home.constantLoan.exchange.borrowCoinConfirm': "You're about to borrow {amount} {currency} for {term} at {rate} beginning {startDate} and ending {endDate}. We'll use these funds to buy a maximum of {receiveAmount} to be deposited into your coin balance.\n" +
+  'home.constantLoan.exchange.borrowCoinConfirm': "You're about to borrow {amount} {currency} for {term} at {rate}% beginning {startDate} and ending {endDate}. We'll use these funds to buy a maximum of {receiveAmount} to be deposited into your coin balance.\n" +
     '\n' +
     "Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your History page.",
-  'home.constantLoan.exchange.borrowCoinIsolateConfirm': "You're about to borrow {amount} {currency} for {term} at {rate} beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. We'll use these funds to buy a maximum of {receiveAmount} to be deposited into your coin balance.\n" +
+  'home.constantLoan.exchange.borrowCoinIsolateConfirm': "You're about to borrow {amount} {currency} for {term} at {rate}% beginning {startDate} and ending {endDate} with {collateralAmount} {collateral} as collateral. We'll use these funds to buy a maximum of {receiveAmount} to be deposited into your coin balance.\n" +
     '\n' +
     "Click confirm to start your term and receive your loan. Once your term begins you won't be able to cancel your loan, but you can repay early from your History page.",
   'home.constantLoan.exchange.collateralBalance': 'Collateral Balance',
