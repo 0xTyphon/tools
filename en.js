@@ -3585,6 +3585,7 @@ const result =  {
   'error.expiredSession': 'Your session has expired. Please log in again.',
   'error.withdrawLessThanOrEqual': 'The maximum withdrawal amount is {max}. Please try other available methods.',
   'error.withdrawGreaterThan': 'The minimum withdrawal amount is {min}',
+  'error.suspendWithdrawalTo': '<p>For your security, withdrawals and transfers have been temporarily suspended on your account until {date}. This follows a recent change to your security settings. To reinstate withdrawals and transfers early, please <a href="/me/securities" target="_blank" class="underline bold">enable email confirmations</a>.</p>',
   'menuMobile.btnSignIn': 'Sign in',
   'menuMobile.btnReferral': 'Share & Earn',
   'menuMobile.btnTransfer': 'Transfer',
